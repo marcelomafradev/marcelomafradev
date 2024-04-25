@@ -1,7 +1,7 @@
 'use server';
 
 import { getFavoriteSongs, getPlayingNow, parseSong } from '@/lib/spotify';
-import { RawSongModel, SongModel } from '@/utils/types';
+import { RawSongModel, SongModel } from '@/helpers/types';
 
 const notPlayingBody = {
   message: 'No song is currently playing.',

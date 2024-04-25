@@ -16,7 +16,7 @@ import { Separator } from '../../ui/separator';
 import { AudioLines } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { SongModel } from '@/utils/types';
+import { SongModel } from '@/helpers/types';
 import { useRouter } from 'next/navigation';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { SearchSongVideo } from '@/actions/youtube';

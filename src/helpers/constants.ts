@@ -12,14 +12,14 @@ import {
   Twitter,
 } from 'lucide-react';
 
-interface SidebarItem {
+export interface SidebarItem {
   name: string;
   icon: IconType;
   href: string;
   isInactive?: boolean;
 }
 
-interface SidebarGroup {
+export interface SidebarGroup {
   title?: string;
   hasArrowIcon?: boolean;
   items: SidebarItem[];

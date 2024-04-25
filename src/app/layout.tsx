@@ -1,13 +1,13 @@
+import './globals.css';
 import type { Metadata } from 'next';
 import { Sora } from 'next/font/google';
-import './globals.css';
 import { Navigation } from '@/components/app';
 
 const sora = Sora({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Marcelo Mafra - Fullstack developer',
-  description: 'Developed by @officialmafra',
+  title: 'Marcelo Mafra - Fullstack Developer',
+  description: 'Developed by @marcelomafradev',
   icons: {
     icon: '/marcelomafra.jpg',
   },

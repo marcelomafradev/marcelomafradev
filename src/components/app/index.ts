@@ -4,6 +4,7 @@ import Navigation from './navigation';
 import ProgressBar from './sidebar/progress-bar';
 import Sidebar from './sidebar';
 import SpotifyIndicator from './sidebar/spotify-indicator';
+import FadeInMotion from './fade-in-motion';
 
 export {
   DropdownSettings,
@@ -12,4 +13,5 @@ export {
   ProgressBar,
   Sidebar,
   SpotifyIndicator,
+  FadeInMotion,
 };
