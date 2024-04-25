@@ -1,5 +1,5 @@
 import { GetFavoriteSongs } from '@/actions/spotify';
-import { SongModel } from '@/models';
+import { SongModel } from '@/utils/types';
 
 const FavoriteSongsGrid = async () => {
   const favoriteSongs = (await GetFavoriteSongs()) as SongModel[];

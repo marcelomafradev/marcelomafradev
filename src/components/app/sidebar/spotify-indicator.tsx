@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { SongModel } from '@/models';
+import { SongModel } from '@/utils/types';
 import { GetPlayingNowSongs } from '@/actions/spotify';
 import { Icon } from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';

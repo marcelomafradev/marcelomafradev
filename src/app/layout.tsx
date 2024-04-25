@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Marcelo Mafra - Fullstack developer',
   description: 'Developed by @officialmafra',
   icons: {
-    icon: '/logo.svg',
+    icon: '/marcelomafra.jpg',
   },
 };
 

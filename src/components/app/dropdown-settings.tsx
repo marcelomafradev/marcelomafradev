@@ -11,7 +11,7 @@ import { Settings } from 'lucide-react';
 const DropdownSettings = () => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
+      <DropdownMenuTrigger className="hover:animate-spin-slow transition-all hover:text-primary/80">
         <Settings size={18} />
       </DropdownMenuTrigger>
       <DropdownMenuContent>

@@ -1,4 +1,4 @@
-import { RawSongModel, SongModel } from '@/models';
+import { RawSongModel, SongModel } from '@/utils/types';
 
 const {
   SPOTIFY_CLIENT_ID: client_id,
