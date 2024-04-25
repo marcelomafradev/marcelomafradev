@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 233 13% 13%;
+    --foreground: 60 30% 96%;
+
+    --card: 231 15% 18%;
+    --card-foreground: 60 30% 96%;
+
+    --popover: 231 15% 18%;
+    --popover-foreground: 60 30% 96%;
+
+    --primary: 250 100% 75%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 230 15% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 13% 9%;
+    --muted-foreground: 219 6% 57%;
+
+    --accent: 220 13% 9%;
+    --accent-foreground: 219 6% 57%;
+
+    --destructive: 10 100% 75%;
+    --destructive-foreground: 0 0% 0%;
+
+    --border: 230 15% 30%;
+    --input: 230 15% 30%;
+    --ring: 250 100% 75%;
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-primary selection:text-primary-foreground;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  body::after {
+    content: '';
+    position: fixed;
+    background-image: url(/noise.webp);
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    inset: 0;
+    opacity: 0.75;
+    z-index: 100;
+    pointer-events: none;
   }
 }
