@@ -3,10 +3,11 @@ import { PERSONAL_INFO } from '@/helpers/constants';
 import Image from 'next/image';
 import FadeInMotion from '../fade-in-motion';
 import TypingText from '../typing-text';
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 
 const PersonalInfo = () => {
   return (
-    <section className="flex select-none space-x-4">
+    <section className="flex select-none space-x-4 overflow-hidden">
       <FadeInMotion delay={0.3}>
         <Image
           src={PERSONAL_INFO.image}
@@ -14,7 +15,7 @@ const PersonalInfo = () => {
           width={0}
           height={0}
           sizes="100vw"
-          className="h-24 w-24 rounded-lg object-cover"
+          className="h-24 min-w-24 rounded-lg object-cover"
         />
       </FadeInMotion>
 
@@ -27,15 +28,19 @@ const PersonalInfo = () => {
           />
         </FadeInMotion>
 
-        <div className="flex gap-2">
-          {PERSONAL_INFO.stack.map((stack, index) => (
-            <FadeInMotion key={stack} delay={0.3 + 0.15 * index}>
-              <Badge variant="secondary" className="font-medium">
-                {stack}
-              </Badge>
-            </FadeInMotion>
-          ))}
-        </div>
+        <ScrollArea className="max-w-[75%] md:max-w-full">
+          <ScrollBar orientation="horizontal" />
+
+          <div className="flex w-max space-x-2 pb-3">
+            {PERSONAL_INFO.stack.map((stack, index) => (
+              <FadeInMotion key={stack} delay={0.3 + 0.15 * index}>
+                <Badge variant="secondary" className="font-medium">
+                  {stack}
+                </Badge>
+              </FadeInMotion>
+            ))}
+          </div>
+        </ScrollArea>
       </div>
     </section>
   );

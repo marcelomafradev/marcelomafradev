@@ -27,10 +27,12 @@ const CustomCard = ({
   return (
     <FadeInMotion delay={delay}>
       <Card>
-        <CardHeader className="flex-row items-center justify-between pb-4">
-          <CardTitle>{title}</CardTitle>
+        <CardHeader className="flex-row items-center justify-between pb-0 md:pb-4">
+          <CardTitle className="text-lg lg:text-xl 2xl:text-2xl">
+            {title}
+          </CardTitle>
 
-          <Button variant={'link'} className="group gap-1 text-xs">
+          <Button variant={'link'} className="group gap-1 p-0 text-xs">
             {linkTitle}
             <ArrowUpRight
               size={15}

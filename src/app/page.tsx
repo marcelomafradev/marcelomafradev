@@ -7,11 +7,11 @@ import {
 
 export default function Home() {
   return (
-    <div className="mx-auto w-full space-y-6 py-12 md:max-w-[80%]">
+    <div className="container mx-auto w-full space-y-6 py-8 md:max-w-[90%] md:py-12">
       <PersonalInfo />
       <ResumeAboutMe />
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
         <Experiences />
         <LastPosts />
       </div>

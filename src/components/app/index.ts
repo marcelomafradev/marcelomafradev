@@ -1,9 +1,11 @@
+import Navigation from './navigation';
+import ProgressBar from './navigation/sidebar/progress-bar';
+import Sidebar from './navigation/sidebar';
+import SpotifyIndicator from './navigation/sidebar/spotify-indicator';
+import SongDialog from './navigation/sidebar/song-dialog';
+
 import DropdownSettings from './dropdown-settings';
 import FavoriteSongsGrid from './favorite-songs-grid';
-import Navigation from './navigation';
-import ProgressBar from './sidebar/progress-bar';
-import Sidebar from './sidebar';
-import SpotifyIndicator from './sidebar/spotify-indicator';
 import FadeInMotion from './fade-in-motion';
 import CustomCard from './custom-card';
 
@@ -16,4 +18,5 @@ export {
   SpotifyIndicator,
   FadeInMotion,
   CustomCard,
+  SongDialog,
 };

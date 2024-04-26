@@ -2,13 +2,13 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { PERSONAL_INFO, SIDEBAR_ITEMS, SidebarItem } from '@/helpers/constants';
-import DropdownSettings from '../dropdown-settings';
-import SpotifyIndicator from './spotify-indicator';
-import { Button } from '@/components/ui/button';
-import { ArrowUpRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import FadeInMotion from '../fade-in-motion';
+import { PERSONAL_INFO, SIDEBAR_ITEMS } from '@/helpers/constants';
+import {
+  FadeInMotion,
+  DropdownSettings,
+  SpotifyIndicator,
+} from '@/components/app';
+import NavigationButton from '../navigation-button';
 
 const Sidebar = () => {
   const router = useRouter();
@@ -16,7 +16,7 @@ const Sidebar = () => {
   const isHomepage = pathname === '/';
 
   return (
-    <aside className="relative flex h-screen flex-col justify-between border-r md:w-80">
+    <aside className="relative hidden h-screen flex-col justify-between border-r md:w-80 lg:flex">
       <div>
         {!isHomepage && (
           <div className="flex items-center justify-start gap-2 border-b p-4">
@@ -50,7 +50,7 @@ const Sidebar = () => {
 
               <div className="flex flex-col">
                 {items.map((item, index) => (
-                  <SidebarButton
+                  <NavigationButton
                     {...item}
                     key={index}
                     pathname={pathname}
@@ -66,7 +66,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex h-16 items-center justify-between gap-6 border-t pr-3">
+      <div className="flex h-16 items-center justify-between gap-6 border-t pr-3 pt-3">
         <FadeInMotion delay={0.3}>
           <SpotifyIndicator />
         </FadeInMotion>
@@ -76,49 +76,6 @@ const Sidebar = () => {
         </FadeInMotion>
       </div>
     </aside>
-  );
-};
-
-interface SidebarButtonProps extends SidebarItem {
-  onClick: () => void;
-  pathname: string;
-  hasArrowIcon: boolean;
-}
-
-const SidebarButton = ({
-  icon: Icon,
-  name,
-  href,
-  isInactive,
-  pathname,
-  hasArrowIcon,
-  onClick,
-}: SidebarButtonProps) => {
-  return (
-    <Button
-      variant={'ghost'}
-      className={cn('group justify-between', pathname === href && 'bg-accent')}
-      onClick={onClick}
-      disabled={isInactive}
-    >
-      <div className="flex gap-2">
-        <Icon
-          className={cn(
-            'transition-all group-hover:text-primary/80',
-            pathname === href && 'text-primary/80',
-          )}
-          size={15}
-        />
-        <span className="text-xs">{name}</span>
-      </div>
-
-      {hasArrowIcon && (
-        <ArrowUpRight
-          size={15}
-          className="transition-all group-hover:rotate-45 group-hover:text-primary/80"
-        />
-      )}
-    </Button>
   );
 };
 

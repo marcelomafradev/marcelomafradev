@@ -19,10 +19,10 @@ const Experiences = () => {
     <section>
       <CustomCard
         title="💼 Experiências"
-        linkTitle="Entre em contato"
+        linkTitle="Contrate-me"
         href="https://www.linkedin.com/in/marcelomafradev/"
       >
-        <div className="space-y-4">
+        <div className=" space-y-4">
           {EXPERIENCES.map(
             ({ description, logo, title, workingTime, href }, index) => (
               <div key={index} className="flex items-start gap-4">
@@ -43,8 +43,8 @@ const Experiences = () => {
                   >
                     {title}
                   </h2>
-                  <p className="text-xs">{description}</p>
-                  <p className="text-xs">{workingTime}</p>
+                  <p className="text-[0.7rem] md:text-xs">{description}</p>
+                  <p className="text-[0.7rem] md:text-xs">{workingTime}</p>
                 </div>
               </div>
             ),
@@ -56,7 +56,11 @@ const Experiences = () => {
             size={'sm'}
             asChild
           >
-            <Link href={'/documents/marcelomafra-br.pdf'} target="_blank">
+            <Link
+              href={'/documents/marcelomafra-br.pdf'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visualizar currículo <Telescope size={18} />
             </Link>
           </Button>

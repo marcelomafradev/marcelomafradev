@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Dialog,
   DialogContent,
@@ -12,7 +14,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { Separator } from '../../ui/separator';
+import { Separator } from '@/components/ui/separator';
 import { AudioLines } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';

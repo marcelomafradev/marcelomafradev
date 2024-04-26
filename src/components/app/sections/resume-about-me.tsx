@@ -5,7 +5,9 @@ const ResumeAboutMe = () => {
   return (
     <section>
       <CustomCard title="📖 Sobre mim" href="/about" linkTitle="Ver mais">
-        {PERSONAL_INFO.paragraphs[0]}
+        <p className="line-clamp-5 text-xs md:text-sm">
+          {PERSONAL_INFO.paragraphs[0]}
+        </p>
       </CustomCard>
     </section>
   );
