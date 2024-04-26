@@ -1,7 +1,20 @@
+import {
+  ResumeAboutMe,
+  PersonalInfo,
+  Experiences,
+  LastPosts,
+} from '@/components/app/sections';
+
 export default function Home() {
   return (
-    <main className="flex h-screen w-full items-center justify-center">
-      <h1>Hello world</h1>
-    </main>
+    <div className="mx-auto w-full space-y-6 py-12 md:max-w-[80%]">
+      <PersonalInfo />
+      <ResumeAboutMe />
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <Experiences />
+        <LastPosts />
+      </div>
+    </div>
   );
 }

@@ -9,10 +9,11 @@ const Navigation = ({ children }: { children: ReactNode }) => {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
-    <div className={cn('flex', isMobile ? 'flex-col' : 'flex-row')}>
+    <main className={cn('flex', isMobile ? 'flex-col' : 'flex-row')}>
       {isMobile ? <div>use sheet</div> : <Sidebar />}
-      {children}
-    </div>
+
+      <div className="flex-1">{children}</div>
+    </main>
   );
 };
 

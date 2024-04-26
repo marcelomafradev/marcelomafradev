@@ -59,7 +59,7 @@ const SpotifyIndicator = () => {
           onMouseEnter={playPreview}
           onMouseLeave={stopPreview}
           variant={'ghost'}
-          className="max-w-[120px] items-center justify-start gap-2 p-0 text-start hover:bg-transparent"
+          className="max-w-[14rem] items-center justify-start gap-2 text-start hover:bg-transparent"
         >
           <Image
             src={songData.album_image_url}
@@ -67,7 +67,7 @@ const SpotifyIndicator = () => {
             width={0}
             height={0}
             sizes="100vw"
-            className="h-10 w-10"
+            className="h-10 w-10 rounded-md"
           />
 
           <div className="flex w-full flex-col justify-center gap-0.5">
@@ -86,7 +86,7 @@ const SpotifyIndicator = () => {
           />
         </Button>
       ) : (
-        <div className="flex h-14 items-center justify-start gap-2 pl-2 hover:bg-transparent">
+        <div className="flex items-center justify-start gap-2 pl-3 hover:bg-transparent">
           <Icon.spotify className="h-6 w-6" />
           <p className="text-xs font-medium">Nada tocando agora</p>
         </div>

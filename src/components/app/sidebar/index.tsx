@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { SIDEBAR_ITEMS, SidebarItem } from '@/helpers/constants';
+import { PERSONAL_INFO, SIDEBAR_ITEMS, SidebarItem } from '@/helpers/constants';
 import DropdownSettings from '../dropdown-settings';
 import SpotifyIndicator from './spotify-indicator';
 import { Button } from '@/components/ui/button';
@@ -18,10 +18,10 @@ const Sidebar = () => {
   return (
     <aside className="relative flex h-screen flex-col justify-between border-r md:w-80">
       <div>
-        {isHomepage && (
+        {!isHomepage && (
           <div className="flex items-center justify-start gap-2 border-b p-4">
             <Image
-              src={'/marcelomafra.jpg'}
+              src={PERSONAL_INFO.image}
               alt={`Marcelo Mafra image`}
               width={0}
               height={0}
@@ -29,9 +29,9 @@ const Sidebar = () => {
               className="h-10 w-10 rounded-lg object-cover"
             />
             <div>
-              <h2 className="text-sm italic">Marcelo Mafra</h2>
+              <h2 className="text-sm italic">{PERSONAL_INFO.name}</h2>
               <p className="text-xs font-light text-muted-foreground">
-                Fullstack Developer
+                {PERSONAL_INFO.title}
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Sidebar = () => {
           {SIDEBAR_ITEMS.map(({ title, items, hasArrowIcon }, index) => (
             <FadeInMotion
               key={index}
-              delay={0.1 + 0.3 * index}
+              delay={0.3 + 0.15 * index}
               className="flex flex-col gap-2"
             >
               <h2 className="px-2 text-xs font-medium italic text-muted-foreground">
@@ -66,12 +66,12 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-6 border-t pl-2 pr-3">
-        <FadeInMotion delay={1.5}>
+      <div className="flex h-16 items-center justify-between gap-6 border-t pr-3">
+        <FadeInMotion delay={0.3}>
           <SpotifyIndicator />
         </FadeInMotion>
 
-        <FadeInMotion delay={1.8}>
+        <FadeInMotion delay={0.5}>
           <DropdownSettings />
         </FadeInMotion>
       </div>

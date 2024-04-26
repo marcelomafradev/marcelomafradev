@@ -103,3 +103,39 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
     ],
   },
 ];
+
+export const PERSONAL_INFO = {
+  title: 'Fullstack Developer',
+  name: 'Marcelo Mafra',
+  image: '/marcelomafra.jpg',
+  stack: ['TypeScript', 'JavaScript', 'ReactJs', 'NextJs', 'NodeJs'],
+  paragraphs: [
+    'Olá, eu sou Marcelo Mafra, um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras. Com proficiência em TS, JS, ReactJS e NodeJS, minha jornada tecnológica me levou a dominar tanto o front-end quanto o back-end do desenvolvimento web.',
+    'Do design da interface do usuário à arquitetura de sistemas complexos, estou sempre em busca de excelência técnica e inovação. Sou motivado pela oportunidade de enfrentar novos desafios e aprender constantemente, buscando maneiras de aprimorar minhas habilidades e contribuir para o sucesso dos projetos em que estou envolvido.',
+    'Estou ansioso para colaborar em projetos empolgantes.',
+  ],
+};
+
+export const EXPERIENCES = [
+  {
+    href: 'https://postpay.com.br/',
+    logo: '/companies/postpay.svg',
+    title: 'Postpay',
+    description: 'Desenvolvedor Fullstack',
+    workingTime: '2024 - Atualmente',
+  },
+  {
+    href: 'https://www.mincejoias.com/',
+    logo: '/companies/mince-joias.png',
+    title: 'Mince Joias',
+    description: 'Desenvolvedor Fullstack - Manutenção',
+    workingTime: '2023 - 2024 • Freelancer',
+  },
+  {
+    href: 'https://www.grieblerremodeling.com/',
+    logo: '/companies/griebler-remodeling.svg',
+    title: 'Griebler Remodeling',
+    description: 'Desenvolvedor Fullstack - Manutenção',
+    workingTime: '2022 - 2024 • Freelancer',
+  },
+];
