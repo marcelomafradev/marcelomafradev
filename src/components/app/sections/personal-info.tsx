@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { PERSONAL_INFO } from '@/helpers/constants';
-import Image from 'next/image';
+import { Image } from '@/components/app';
 import FadeInMotion from '../fade-in-motion';
 import TypingText from '../typing-text';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
@@ -12,9 +12,6 @@ const PersonalInfo = () => {
         <Image
           src={PERSONAL_INFO.image}
           alt={`Marcelo Mafra image`}
-          width={0}
-          height={0}
-          sizes="100vw"
           className="h-24 min-w-24 rounded-lg object-cover"
         />
       </FadeInMotion>

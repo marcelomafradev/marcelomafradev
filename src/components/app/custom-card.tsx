@@ -32,12 +32,15 @@ const CustomCard = ({
             {title}
           </CardTitle>
 
-          <Button variant={'link'} className="group gap-1 p-0 text-xs">
+          <Button
+            variant={'link'}
+            className="group gap-1 p-0 text-xs"
+            onClick={() => router.push(href)}
+          >
             {linkTitle}
             <ArrowUpRight
               size={15}
               className="transition-all group-hover:rotate-45"
-              onClick={() => router.push(href)}
             />
           </Button>
         </CardHeader>

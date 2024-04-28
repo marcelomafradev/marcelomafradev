@@ -5,13 +5,17 @@ import SpotifyIndicator from './navigation/sidebar/spotify-indicator';
 import SongDialog from './navigation/sidebar/song-dialog';
 
 import DropdownSettings from './dropdown-settings';
-import FavoriteSongsGrid from './favorite-songs-grid';
+import FavoriteSongsCarousel from './favorite-songs-carousel';
+import FavoriteBooksCarousel from './favorite-books-carousel';
 import FadeInMotion from './fade-in-motion';
 import CustomCard from './custom-card';
+import Image from './image';
+import ImageWithDescription from './image-with-description';
 
 export {
   DropdownSettings,
-  FavoriteSongsGrid,
+  FavoriteSongsCarousel,
+  FavoriteBooksCarousel,
   Navigation,
   ProgressBar,
   Sidebar,
@@ -19,4 +23,6 @@ export {
   FadeInMotion,
   CustomCard,
   SongDialog,
+  Image,
+  ImageWithDescription,
 };

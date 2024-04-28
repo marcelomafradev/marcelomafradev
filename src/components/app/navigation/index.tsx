@@ -13,7 +13,7 @@ const Navigation = ({ children }: { children: ReactNode }) => {
     <main className={cn('flex', isMobile ? 'flex-col' : 'flex-row')}>
       {isMobile ? <Menu /> : <Sidebar />}
 
-      <div className="flex-1">{children}</div>
+      <div className="max-h-screen flex-1 overflow-y-auto">{children}</div>
     </main>
   );
 };

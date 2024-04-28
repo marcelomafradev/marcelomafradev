@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { SongModel } from '@/helpers/types';
 import { GetPlayingNowSongs } from '@/actions/spotify';
@@ -8,6 +7,7 @@ import { Icon } from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import ProgressBar from './progress-bar';
 import SongDialog from './song-dialog';
+import { Image } from '@/components/app';
 
 const SpotifyIndicator = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -64,9 +64,6 @@ const SpotifyIndicator = () => {
           <Image
             src={songData.album_image_url}
             alt={`Album cover of ${songData.title}`}
-            width={0}
-            height={0}
-            sizes="100vw"
             className="h-10 w-10 rounded-md"
           />
 

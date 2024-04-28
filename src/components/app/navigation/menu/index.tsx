@@ -2,6 +2,7 @@
 
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetFooter,
@@ -29,7 +30,7 @@ const Menu = () => {
       </SheetTrigger>
 
       <SheetContent side={'bottom'} className="pb-0">
-        <SheetHeader>
+        <SheetHeader className="pb-2">
           <SheetTitle>Marcelo Mafra Website</SheetTitle>
 
           <SheetDescription>
@@ -37,7 +38,7 @@ const Menu = () => {
           </SheetDescription>
         </SheetHeader>
 
-        <ScrollArea className="max-h-[400px] overflow-y-auto p-0 scrollbar">
+        <ScrollArea className="max-h-[400px] overflow-y-auto p-0 scrollbar-thin">
           <div className="flex w-full flex-col gap-4 py-4">
             {SIDEBAR_ITEMS.map(({ title, items, hasArrowIcon }, index) => (
               <FadeInMotion
@@ -49,19 +50,21 @@ const Menu = () => {
                   {title}
                 </h2>
 
-                <div className="flex flex-col">
-                  {items.map((item, index) => (
-                    <NavigationButton
-                      {...item}
-                      key={index}
-                      pathname={pathname}
-                      onClick={() => {
-                        !item.isInactive && router.push(item.href);
-                      }}
-                      hasArrowIcon={hasArrowIcon || false}
-                    />
-                  ))}
-                </div>
+                <SheetClose>
+                  <div className="flex flex-col">
+                    {items.map((item, index) => (
+                      <NavigationButton
+                        {...item}
+                        key={index}
+                        pathname={pathname}
+                        onClick={() => {
+                          !item.isInactive && router.push(item.href);
+                        }}
+                        hasArrowIcon={hasArrowIcon || false}
+                      />
+                    ))}
+                  </div>
+                </SheetClose>
               </FadeInMotion>
             ))}
           </div>

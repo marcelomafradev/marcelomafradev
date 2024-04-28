@@ -1,12 +1,12 @@
 'use client';
 
 import { usePathname, useRouter } from 'next/navigation';
-import Image from 'next/image';
 import { PERSONAL_INFO, SIDEBAR_ITEMS } from '@/helpers/constants';
 import {
   FadeInMotion,
   DropdownSettings,
   SpotifyIndicator,
+  Image,
 } from '@/components/app';
 import NavigationButton from '../navigation-button';
 
@@ -23,9 +23,6 @@ const Sidebar = () => {
             <Image
               src={PERSONAL_INFO.image}
               alt={`Marcelo Mafra image`}
-              width={0}
-              height={0}
-              sizes="100vw"
               className="h-10 w-10 rounded-lg object-cover"
             />
             <div>

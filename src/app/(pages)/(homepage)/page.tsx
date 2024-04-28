@@ -3,11 +3,12 @@ import {
   PersonalInfo,
   Experiences,
   LastPosts,
+  Projects,
 } from '@/components/app/sections';
 
 export default function Home() {
   return (
-    <div className="container mx-auto w-full space-y-6 py-8 md:max-w-[90%] md:py-12">
+    <div className="align-page">
       <PersonalInfo />
       <ResumeAboutMe />
 
@@ -15,6 +16,8 @@ export default function Home() {
         <Experiences />
         <LastPosts />
       </div>
+
+      <Projects />
     </div>
   );
 }

@@ -16,12 +16,12 @@ import {
 } from '@/components/ui/tooltip';
 import { Separator } from '@/components/ui/separator';
 import { AudioLines } from 'lucide-react';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { SongModel } from '@/helpers/types';
 import { useRouter } from 'next/navigation';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { SearchSongVideo } from '@/actions/youtube';
+import { Image } from '@/components/app';
 
 interface SongDialogProps {
   open: boolean;
@@ -103,9 +103,6 @@ const SongDialog = ({
             src={songData?.album_image_url}
             onClick={() => router.push(songData?.song_url)}
             alt={`Album cover of ${songData?.title}`}
-            width={0}
-            height={0}
-            sizes="100vw"
             className="h-[300px] w-full cursor-pointer rounded-[0.3rem] object-cover"
           />
         )}
