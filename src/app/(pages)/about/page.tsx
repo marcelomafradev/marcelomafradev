@@ -7,9 +7,11 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import {
+  FadeInMotion,
   FavoriteBooksCarousel,
   FavoriteSongsCarousel,
   ImageWithDescription,
+  TypingText,
 } from '@/components/app';
 import Link from 'next/link';
 
@@ -17,13 +19,14 @@ export default function About() {
   return (
     <div className="align-page">
       <div className="flex gap-2">
-        <h1 className="text-3xl font-semibold">Sobre mim</h1>
+        <TypingText title="Sobre mim" />
+
         <Badge variant={'secondary'} className="h-fit">
-          {'TL;DR'}
+          <TypingText title="TL;DR" className="text-xs" />
         </Badge>
       </div>
 
-      <div>
+      <FadeInMotion>
         <div className="space-y-1 text-pretty text-sm text-muted-foreground md:text-base">
           <p>{PERSONAL_INFO.resumeParagraph[0]}</p>
           <p>{PERSONAL_INFO.resumeParagraph[1]}</p>
@@ -40,9 +43,9 @@ export default function About() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </div>
+      </FadeInMotion>
 
-      <div className="space-y-4">
+      <FadeInMotion className="space-y-4">
         <h1 className="text-xl font-semibold">Interesses pessoais</h1>
         <p className="text-pretty text-xs text-muted-foreground md:text-sm">
           {PERSONAL_INFO.interests}
@@ -80,7 +83,7 @@ export default function About() {
 
         <FavoriteBooksCarousel />
         <FavoriteSongsCarousel />
-      </div>
+      </FadeInMotion>
     </div>
   );
 }

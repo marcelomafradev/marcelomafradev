@@ -16,10 +16,15 @@ const TypingText = ({
       variants={textContainer}
       initial="hidden"
       whileInView="show"
-      className={cn('whitespace-nowrap text-2xl font-bold', className)}
+      viewport={{ once: true, amount: 0.25 }}
+      className={cn('whitespace-nowrap text-3xl font-bold', className)}
     >
       {Array.from(title).map((letter, index) => (
-        <motion.span variants={textVariant} key={index}>
+        <motion.span
+          viewport={{ once: true, amount: 0.25 }}
+          variants={textVariant}
+          key={index}
+        >
           {letter === ' ' ? '\u00A0' : letter}
         </motion.span>
       ))}

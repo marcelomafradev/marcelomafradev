@@ -1,7 +1,7 @@
 import { PROJECTS } from '@/helpers/constants';
-import CustomCard from '../custom-card';
-import ProjectCard from '../project-card';
 import { Separator } from '@/components/ui/separator';
+import CustomCard from '../custom-card';
+import ProjectCardVertical from '../project-card-vertical';
 
 const Projects = () => {
   return (
@@ -14,7 +14,8 @@ const Projects = () => {
         <div className="space-y-4">
           {PROJECTS.map((project, index) => (
             <div key={index} className="space-y-4">
-              <ProjectCard key={index} {...project} />
+              <ProjectCardVertical key={index} {...project} />
+
               {index !== PROJECTS.length - 1 && (
                 <Separator className="lg:hidden" />
               )}

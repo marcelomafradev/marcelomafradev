@@ -1,5 +1,5 @@
 export interface FadeInProps {
-  delay: number;
+  delay?: number;
   duration?: number;
   type?: 'spring' | 'tween';
   direction?: 'left' | 'right' | 'up' | 'down';

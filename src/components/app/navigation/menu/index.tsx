@@ -25,7 +25,7 @@ const Menu = () => {
 
   return (
     <Sheet>
-      <SheetTrigger className="fixed bottom-8 right-8 rounded-full bg-secondary p-2">
+      <SheetTrigger className="fixed right-8 top-8 z-50 rounded-full bg-secondary p-2">
         <MenuIcon size={18} />
       </SheetTrigger>
 

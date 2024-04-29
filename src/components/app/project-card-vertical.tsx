@@ -6,10 +6,10 @@ import Image from './image';
 import { Button } from '../ui/button';
 import { ArrowUpRight, Github } from 'lucide-react';
 import Link from 'next/link';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../ui/dialog';
 import { useState } from 'react';
+import ImageBannerDialog from './image-banner-dialog';
 
-const ProjectCard = ({
+const ProjectCardVertical = ({
   description,
   github,
   href,
@@ -75,21 +75,14 @@ const ProjectCard = ({
         </div>
       </div>
 
-      <Dialog defaultOpen={false} open={open} onOpenChange={setOpen}>
-        <DialogContent className="h-[80vh] w-[80vw] max-w-full">
-          <DialogHeader>
-            <DialogTitle>{title} - Banner</DialogTitle>
-          </DialogHeader>
-
-          <Image
-            src={image}
-            alt={`${title} banner`}
-            className={'max-h-[70vh] w-full rounded-xl object-fill'}
-          />
-        </DialogContent>
-      </Dialog>
+      <ImageBannerDialog
+        open={open}
+        setOpen={setOpen}
+        title={title}
+        image={image}
+      />
     </>
   );
 };
 
-export default ProjectCard;
+export default ProjectCardVertical;

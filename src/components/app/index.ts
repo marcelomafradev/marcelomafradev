@@ -11,6 +11,11 @@ import FadeInMotion from './fade-in-motion';
 import CustomCard from './custom-card';
 import Image from './image';
 import ImageWithDescription from './image-with-description';
+import ProjectCardHorizontal from './project-card-horizontal';
+import ProjectCardVertical from './project-card-vertical';
+import ImageBannerDialog from './image-banner-dialog';
+import TechButton from './tech-button';
+import TypingText from './typing-text';
 
 export {
   DropdownSettings,
@@ -25,4 +30,9 @@ export {
   SongDialog,
   Image,
   ImageWithDescription,
+  ProjectCardHorizontal,
+  ProjectCardVertical,
+  ImageBannerDialog,
+  TechButton,
+  TypingText,
 };
