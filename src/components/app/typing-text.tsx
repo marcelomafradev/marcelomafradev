@@ -17,7 +17,10 @@ const TypingText = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={cn('whitespace-nowrap text-3xl font-bold', className)}
+      className={cn(
+        'whitespace-nowrap text-xl font-bold md:text-2xl lg:text-3xl',
+        className,
+      )}
     >
       {Array.from(title).map((letter, index) => (
         <motion.span

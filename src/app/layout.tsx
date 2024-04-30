@@ -1,7 +1,10 @@
 import './globals.css';
-import type { Metadata } from 'next';
-import { Sora } from 'next/font/google';
+import { SessionProvider } from 'next-auth/react';
 import { Navigation } from '@/components/app';
+import { Sora } from 'next/font/google';
+import type { Metadata } from 'next';
+import { auth } from '@/lib/auth';
+import { Toaster } from '@/components/ui/sonner';
 
 const sora = Sora({ subsets: ['latin'] });
 
@@ -13,16 +16,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await auth();
+
   return (
-    <html lang="en">
-      <body className={sora.className}>
-        <Navigation>{children}</Navigation>
-      </body>
-    </html>
+    <SessionProvider session={session}>
+      <html lang="en">
+        <body className={sora.className}>
+          <Navigation>{children}</Navigation>
+          <Toaster />
+        </body>
+      </html>
+    </SessionProvider>
   );
 }

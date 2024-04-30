@@ -22,7 +22,7 @@ export default function About() {
         <TypingText title="Sobre mim" />
 
         <Badge variant={'secondary'} className="h-fit">
-          <TypingText title="TL;DR" className="text-xs" />
+          <TypingText title="TL;DR" className="!text-xs" />
         </Badge>
       </div>
 

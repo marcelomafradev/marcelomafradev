@@ -18,16 +18,50 @@ import FadeInMotion from '../../fade-in-motion';
 import NavigationButton from '../navigation-button';
 import { usePathname, useRouter } from 'next/navigation';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { useEffect, useState } from 'react';
 
-const Menu = () => {
+const Menu = ({
+  scrollableDivRef,
+}: {
+  scrollableDivRef: React.RefObject<HTMLDivElement>;
+}) => {
   const router = useRouter();
   const pathname = usePathname();
 
+  const [hideTrigger, setHideTrigger] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollableDivRef.current) {
+        setHideTrigger(scrollableDivRef.current.scrollTop > 800);
+      }
+    };
+
+    const currentScrollableDivRef = scrollableDivRef.current;
+    if (currentScrollableDivRef) {
+      currentScrollableDivRef.addEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      if (currentScrollableDivRef) {
+        currentScrollableDivRef.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [scrollableDivRef]);
+
   return (
     <Sheet>
-      <SheetTrigger className="fixed right-8 top-8 z-50 rounded-full bg-secondary p-2">
-        <MenuIcon size={18} />
-      </SheetTrigger>
+      <div
+        className={`items container fixed z-50 flex w-full flex-row justify-between border-b bg-background py-4 ${hideTrigger && 'hidden'}`}
+      >
+        <FadeInMotion delay={0.3} className="flex items-center">
+          <SpotifyIndicator />
+        </FadeInMotion>
+
+        <SheetTrigger className="rounded-full bg-secondary p-2">
+          <MenuIcon size={15} />
+        </SheetTrigger>
+      </div>
 
       <SheetContent side={'bottom'} className="pb-0">
         <SheetHeader className="pb-2">
@@ -70,7 +104,7 @@ const Menu = () => {
           </div>
         </ScrollArea>
 
-        <SheetFooter className="h-20 flex-row items-center justify-between gap-6 border-t">
+        <SheetFooter className="h-20 flex-row items-center !justify-between gap-6 border-t">
           <FadeInMotion delay={0.3}>
             <SpotifyIndicator />
           </FadeInMotion>

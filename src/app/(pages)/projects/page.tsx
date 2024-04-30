@@ -34,7 +34,7 @@ export default function Projects() {
           </p>
         </FadeInMotion>
 
-        <div className="grid grid-cols-1 gap-4 py-6 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 py-6 lg:grid-cols-2 2xl:grid-cols-3">
           {PROJECTS.map((project, index) => (
             <FadeInMotion delay={0.3 + index * 0.1} key={index}>
               <ProjectCardHorizontal key={index} {...project} />

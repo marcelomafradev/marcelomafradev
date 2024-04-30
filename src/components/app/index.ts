@@ -16,6 +16,8 @@ import ProjectCardVertical from './project-card-vertical';
 import ImageBannerDialog from './image-banner-dialog';
 import TechButton from './tech-button';
 import TypingText from './typing-text';
+import SendMessageForm from './send-message-form';
+import MessageCard from './message-card';
 
 export {
   DropdownSettings,
@@ -35,4 +37,6 @@ export {
   ImageBannerDialog,
   TechButton,
   TypingText,
+  SendMessageForm,
+  MessageCard,
 };

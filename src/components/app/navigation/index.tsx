@@ -13,11 +13,11 @@ const Navigation = ({ children }: { children: ReactNode }) => {
 
   return (
     <main className={cn('flex', isMobile ? 'flex-col' : 'flex-row')}>
-      {isMobile ? <Menu /> : <Sidebar />}
+      {isMobile ? <Menu scrollableDivRef={scrollableDivRef} /> : <Sidebar />}
 
       <div
         ref={scrollableDivRef}
-        className="max-h-screen flex-1 overflow-y-auto"
+        className="max-h-screen flex-1 overflow-y-auto pt-14 lg:pt-0"
       >
         {children}
         <ScrollToTop scrollableDivRef={scrollableDivRef} />

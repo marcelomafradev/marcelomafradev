@@ -21,7 +21,7 @@ const PersonalInfo = () => {
           <TypingText title={PERSONAL_INFO.name} className="italic" />
           <TypingText
             title={PERSONAL_INFO.title}
-            className="text-xs font-light text-muted-foreground"
+            className="!text-xs font-light text-muted-foreground"
           />
         </FadeInMotion>
 
