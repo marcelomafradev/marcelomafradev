@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Image from './image';
-import Link from 'next/link';
+import Link from './link';
 
 interface ImageWithDescriptionProps {
   src: string;
@@ -15,7 +15,7 @@ const ImageWithDescription = ({
 }: ImageWithDescriptionProps) => {
   return (
     <div className="flex flex-1 flex-col gap-1">
-      <Link href={href} target="_blank" rel="noopener noreferrer">
+      <Link href={href} type="external">
         <Image
           src={src}
           alt="Testimonial image"

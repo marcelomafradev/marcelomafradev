@@ -1,0 +1,58 @@
+{
+  "homepage": {
+    "personal-info": {
+      "title": "Desarrollador Fullstack",
+      "paragraphs": {
+        "first": "Hola, soy Marcelo Mafra, un desarrollador full-stack apasionado por crear soluciones digitales innovadoras. Con competencia en TS, JS, ReactJS y NodeJS, mi viaje tecnológico me ha llevado a dominar tanto el front-end como el back-end del desarrollo web.",
+        "second": "Desde el diseño de la interfaz de usuario hasta la arquitectura de sistemas complejos, siempre estoy en busca de excelencia técnica e innovación. Estoy motivado por la oportunidad de enfrentar nuevos desafíos y aprender constantemente, buscando formas de mejorar mis habilidades y contribuir al éxito de los proyectos en los que estoy involucrado.",
+        "third": "Estoy ansioso por colaborar en proyectos emocionantes."
+      },
+      "resumeParagraph": {
+        "first": "Residiendo en Florianópolis - SC, Brasil. A los 17 años, soy un Desarrollador Fullstack.",
+        "second": "Tengo habilidades intermedias en inglés, y mi idioma nativo es el portugués. Además del desarrollo de software, mis intereses incluyen escuchar música, hacer ejercicios, jugar ajedrez y leer un buen libro."
+      },
+      "interests": "Soy apasionado por la neurociencia, la filosofía y la autoayuda. Amo sumergirme en libros que amplían mi comprensión del cerebro humano, la existencia y el crecimiento personal. La música es una gran parte de mi vida. Me inspira, me calma y me energiza. Siempre estoy buscando nuevas canciones para agregar a mi lista de reproducción. Además, soy un entusiasta del jiu-jitsu brasileño. Este año, estoy celebrando mi décimo año de entrenamiento y, a los 17 años, ya soy cinturón rojo. El jiu-jitsu brasileño me ha enseñado disciplina, resistencia y el arte de la estrategia. He participado en aproximadamente 40 campeonatos, cada uno una oportunidad de aprender y mejorar."
+    },
+    "resume-about-me": {
+      "title": "📖 Acerca de mí",
+      "description": "Hola, soy Marcelo Mafra, un desarrollador full-stack apasionado por crear soluciones digitales innovadoras. Con competencia en TS, JS, ReactJS y NodeJS, mi viaje tecnológico me ha llevado a dominar tanto el front-end como el back-end del desarrollo web."
+    },
+    "experiences": {
+      "title": "💼 Experiencias",
+      "cta": "Contrátame",
+      "view-resume": "Ver currículum",
+      "1": {
+        "title": "Postpay",
+        "description": "Desarrollador Fullstack",
+        "workingTime": "2024 - Presente"
+      },
+      "2": {
+        "title": "Mince Joyas",
+        "description": "Desarrollador Fullstack - Mantenimiento",
+        "workingTime": "2023 - 2024 • Freelancer"
+      },
+      "3": {
+        "title": "Griebler Remodeling",
+        "description": "Desarrollador Fullstack - Mantenimiento",
+        "workingTime": "2022 - 2024 • Freelancer"
+      }
+    },
+    "posts": {
+      "title": "📰 Publicaciones",
+      "cta": "Ver todo",
+      "not-found": "Aún no he escrito ninguna publicación.. ;/"
+    },
+    "projects": {
+      "title": "📁 Mis Proyectos",
+      "cta": "Ver todo",
+      "link": "Visitar",
+      "source-code": "Código fuente",
+      "1": {
+        "description": "Una tienda online de joyas finas, ofreciendo una colección elegante y moderna para todas las ocasiones."
+      },
+      "2": {
+        "description": "Especialistas en remodelación, transformando visiones arquitectónicas en realidad para residencias y empresas."
+      }
+    }
+  }
+}

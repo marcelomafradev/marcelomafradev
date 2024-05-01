@@ -4,7 +4,7 @@ import { ProjectProps } from '@/helpers/constants';
 import Image from './image';
 import { Button } from '../ui/button';
 import { ArrowUpRight, Github } from 'lucide-react';
-import Link from 'next/link';
+import Link from './link';
 import { useState } from 'react';
 import {
   Card,
@@ -44,7 +44,7 @@ const ProjectCardHorizontal = ({
         <CardContent>
           <CardFooter className="flex gap-3 pb-0">
             <Button className="w-full gap-2 bg-primary/90" size="sm" asChild>
-              <Link href={href} target="_blank" rel="noopener noreferrer">
+              <Link href={href} type="external">
                 <ArrowUpRight size={18} /> Visitar
               </Link>
             </Button>
@@ -55,7 +55,7 @@ const ProjectCardHorizontal = ({
               size="sm"
               asChild
             >
-              <Link href={github} target="_blank" rel="noopener noreferrer">
+              <Link href={github} type="external">
                 <Github size={18} />
                 Código-fonte
               </Link>

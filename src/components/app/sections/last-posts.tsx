@@ -1,10 +1,13 @@
 import Image from 'next/image';
 import CustomCard from '../custom-card';
+import { useTranslations } from 'next-intl';
 
 const LastPosts = () => {
+  const t = useTranslations('homepage.posts');
+
   return (
     <section>
-      <CustomCard title="📰 Posts" href="/blog" linkTitle="Ver todos">
+      <CustomCard title={t('title')} href="/blog" linkTitle={t('cta')}>
         <div className="flex h-[250px] max-h-[250px] flex-col items-center justify-center gap-2">
           <Image
             src={'/avatar.svg'}
@@ -14,7 +17,7 @@ const LastPosts = () => {
             sizes="100vw"
             className="h-20 w-20 cursor-pointer rounded-full bg-muted p-1"
           />
-          <p>{'Eu não escrevi nenhum post ainda.. ;/'}</p>
+          <p>{t('not-found')}</p>
         </div>
       </CustomCard>
     </section>

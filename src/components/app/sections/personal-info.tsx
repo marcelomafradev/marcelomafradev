@@ -4,8 +4,11 @@ import { Image } from '@/components/app';
 import FadeInMotion from '../fade-in-motion';
 import TypingText from '../typing-text';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
+import { useTranslations } from 'next-intl';
 
 const PersonalInfo = () => {
+  const t = useTranslations('homepage.personal-info');
+
   return (
     <section className="flex select-none space-x-4 overflow-hidden">
       <FadeInMotion delay={0.3}>
@@ -20,7 +23,7 @@ const PersonalInfo = () => {
         <FadeInMotion delay={0.3}>
           <TypingText title={PERSONAL_INFO.name} className="italic" />
           <TypingText
-            title={PERSONAL_INFO.title}
+            title={t('title')}
             className="!text-xs font-light text-muted-foreground"
           />
         </FadeInMotion>

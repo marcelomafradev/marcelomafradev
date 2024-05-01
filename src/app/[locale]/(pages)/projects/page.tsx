@@ -1,12 +1,12 @@
 import {
   FadeInMotion,
+  Link,
   ProjectCardHorizontal,
   TypingText,
 } from '@/components/app';
 import { Button } from '@/components/ui/button';
 import { PROJECTS } from '@/helpers/constants';
 import { Github } from 'lucide-react';
-import Link from 'next/link';
 
 export default function Projects() {
   return (
@@ -23,11 +23,7 @@ export default function Projects() {
               className="h-fit gap-1 p-0 text-sm font-light"
               asChild
             >
-              <Link
-                href="https://github.com/marcelomafradev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="https://github.com/marcelomafradev">
                 GitHub <Github size={16} />
               </Link>
             </Button>

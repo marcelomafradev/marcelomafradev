@@ -11,9 +11,9 @@ import {
   FavoriteBooksCarousel,
   FavoriteSongsCarousel,
   ImageWithDescription,
+  Link,
   TypingText,
 } from '@/components/app';
-import Link from 'next/link';
 
 export default function About() {
   return (
@@ -66,9 +66,8 @@ export default function About() {
             Recebendo a faixa roxa do mestre
             <Link
               href={'https://www.instagram.com/andredecorachadel/'}
-              target="_blank"
-              rel="noopener noreferrer"
               className="font-semibold"
+              type="external"
             >{` Andre "Deco" Rachadel `}</Link>
             em Dezembro de 2023.
           </ImageWithDescription>

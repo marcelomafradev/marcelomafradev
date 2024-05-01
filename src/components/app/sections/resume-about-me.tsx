@@ -1,13 +1,13 @@
-import { PERSONAL_INFO } from '@/helpers/constants';
+import { useTranslations } from 'next-intl';
 import CustomCard from '../custom-card';
 
 const ResumeAboutMe = () => {
+  const t = useTranslations('homepage.resume-about-me');
+
   return (
     <section>
-      <CustomCard title="📖 Sobre mim" href="/about" linkTitle="Ver mais">
-        <p className="line-clamp-5 text-xs md:text-base">
-          {PERSONAL_INFO.paragraphs[0]}
-        </p>
+      <CustomCard title={t('title')} href="/about" linkTitle="Ver mais">
+        <p className="line-clamp-5 text-xs md:text-base">{t('description')}</p>
       </CustomCard>
     </section>
   );

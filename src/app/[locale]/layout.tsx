@@ -18,14 +18,16 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
   const session = await auth();
 
   return (
     <SessionProvider session={session}>
-      <html lang="en">
+      <html lang={locale} translate="no">
         <body className={sora.className}>
           <Navigation>{children}</Navigation>
           <Toaster />

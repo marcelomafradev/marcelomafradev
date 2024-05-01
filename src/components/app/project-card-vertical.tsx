@@ -5,9 +5,14 @@ import { cn } from '@/lib/utils';
 import Image from './image';
 import { Button } from '../ui/button';
 import { ArrowUpRight, Github } from 'lucide-react';
-import Link from 'next/link';
+import Link from './link';
 import { useState } from 'react';
 import ImageBannerDialog from './image-banner-dialog';
+
+interface ProjectCardVertical extends ProjectProps {
+  ctaTranslation: string;
+  sourceCodeTranslation: string;
+}
 
 const ProjectCardVertical = ({
   description,
@@ -16,7 +21,9 @@ const ProjectCardVertical = ({
   image,
   side,
   title,
-}: ProjectProps) => {
+  ctaTranslation,
+  sourceCodeTranslation,
+}: ProjectCardVertical) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -55,8 +62,8 @@ const ProjectCardVertical = ({
 
           <div className="space-x-3">
             <Button className="gap-2 bg-primary/90" size="sm" asChild>
-              <Link href={href} target="_blank" rel="noopener noreferrer">
-                <ArrowUpRight size={18} /> Visitar
+              <Link href={href} type="external">
+                <ArrowUpRight size={18} /> {ctaTranslation}
               </Link>
             </Button>
 
@@ -66,9 +73,9 @@ const ProjectCardVertical = ({
               size="sm"
               asChild
             >
-              <Link href={github} target="_blank" rel="noopener noreferrer">
+              <Link href={github} type="external">
                 <Github size={18} />
-                Código-fonte
+                {sourceCodeTranslation}
               </Link>
             </Button>
           </div>

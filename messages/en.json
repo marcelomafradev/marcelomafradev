@@ -1,0 +1,58 @@
+{
+  "homepage": {
+    "personal-info": {
+      "title": "Fullstack Developer",
+      "paragraphs": {
+        "first": "Hello, I am Marcelo Mafra, a passionate full-stack developer dedicated to creating innovative digital solutions. With proficiency in TS, JS, ReactJS, and NodeJS, my technological journey has led me to master both front-end and back-end web development.",
+        "second": "From user interface design to complex system architecture, I am always in pursuit of technical excellence and innovation. I am driven by the opportunity to face new challenges and constantly learn, seeking ways to enhance my skills and contribute to the success of the projects I am involved in.",
+        "third": "I am eager to collaborate on exciting projects."
+      },
+      "resumeParagraph": {
+        "first": "Living in Florianópolis - SC, Brazil. At 17 years old, I am a Fullstack Developer.",
+        "second": "I have intermediate skills in English, and my native language is Portuguese. Besides software development, my interests include listening to music, exercising, playing chess, and reading a good book."
+      },
+      "interests": "I am passionate about neuroscience, philosophy, and self-help. I love diving into books that expand my understanding of the human brain, existence, and personal growth. Music is a significant part of my life. It inspires me, calms me, and energizes me. I am always on the lookout for new music to add to my playlist. Additionally, I am an enthusiast of Brazilian Jiu-Jitsu. This year, I am celebrating my tenth year of training and, at 17 years old, I am a red belt. Brazilian Jiu-Jitsu has taught me discipline, resilience, and the art of strategy. I have participated in approximately 40 championships, each an opportunity to learn and improve."
+    },
+    "resume-about-me": {
+      "title": "📖 About me",
+      "description": "Hello, I am Marcelo Mafra, a full-stack developer passionate about creating innovative digital solutions. With proficiency in TS, JS, ReactJS, and NodeJS, my technological journey has led me to master both front-end and back-end web development."
+    },
+    "experiences": {
+      "title": "💼 Experiences",
+      "cta": "Hire me",
+      "view-resume": "View resume",
+      "1": {
+        "title": "Postpay",
+        "description": "Fullstack Developer",
+        "workingTime": "2024 - Present"
+      },
+      "2": {
+        "title": "Mince Joias",
+        "description": "Fullstack Developer - Maintenance",
+        "workingTime": "2023 - 2024 • Freelancer"
+      },
+      "3": {
+        "title": "Griebler Remodeling",
+        "description": "Fullstack Developer - Maintenance",
+        "workingTime": "2022 - 2024 • Freelancer"
+      }
+    },
+    "posts": {
+      "title": "📰 Posts",
+      "cta": "View all",
+      "not-found": "I haven't written any posts yet.. ;/"
+    },
+    "projects": {
+      "title": "📁 My Projects",
+      "cta": "View all",
+      "link": "Visit",
+      "source-code": "Source code",
+      "1": {
+        "description": "An online jewelry store offering an elegant and modern collection for all occasions."
+      },
+      "2": {
+        "description": "Specialists in remodeling, transforming architectural visions into reality for homes and businesses."
+      }
+    }
+  }
+}

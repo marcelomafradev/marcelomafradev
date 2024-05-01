@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { auth } from './lib/auth';
+import { auth as AuthMiddleware } from './lib/auth';
 import {
   ADMIN_EMAILS,
   ADMIN_ROUTES,
@@ -9,6 +9,9 @@ import {
   PUBLIC_ROUTES,
   USER_ROUTES,
 } from './routes';
+import createMiddleware from 'next-intl/middleware';
+import { locales } from './i18n';
+import { localePrefix } from './lib/navigation';
 
 const isUserAdmin = (email: string) => ADMIN_EMAILS.includes(email);
 
@@ -26,7 +29,15 @@ export const matchesPublicRoute = (pathname: string) => {
   });
 };
 
-export default auth(({ nextUrl, auth }) => {
+const intlMiddleware = createMiddleware({
+  locales,
+  localePrefix,
+  defaultLocale: 'en',
+});
+
+export default AuthMiddleware((req) => {
+  const { nextUrl, auth } = req;
+
   const { pathname } = nextUrl;
   const userEmail = auth?.user?.email;
   const isLoggedIn = !!auth;
@@ -45,7 +56,7 @@ export default auth(({ nextUrl, auth }) => {
   }
 
   if (matchesPublicRoute(pathname) || matchesApiRoute(pathname)) {
-    return NextResponse.next();
+    return intlMiddleware(req);
   }
 
   if (!isLoggedIn) {
@@ -63,7 +74,7 @@ export default auth(({ nextUrl, auth }) => {
     (isAdminUser && ADMIN_ROUTES.includes(pathname)) ||
     (!isAdminUser && USER_ROUTES.includes(pathname))
   ) {
-    return NextResponse.next();
+    return intlMiddleware(req);
   }
 
   if (!isRedirectingToSamePath(redirectPath)) {

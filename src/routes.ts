@@ -1,5 +1,8 @@
 const PUBLIC_ROUTES = [
   '/',
+  '/pt-br',
+  '/en',
+  '/es',
   '/about',
   '/projects',
   '/technologies',

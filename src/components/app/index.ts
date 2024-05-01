@@ -18,6 +18,7 @@ import TechButton from './tech-button';
 import TypingText from './typing-text';
 import SendMessageForm from './send-message-form';
 import MessageCard from './message-card';
+import Link from './link';
 
 export {
   DropdownSettings,
@@ -39,4 +40,5 @@ export {
   TypingText,
   SendMessageForm,
   MessageCard,
+  Link,
 };

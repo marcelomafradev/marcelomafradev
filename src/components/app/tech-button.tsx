@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from './link';
 import Image from './image';
 import { cn } from '@/lib/utils';
 
@@ -18,8 +18,6 @@ const TechButton = ({
       key={name}
       href={link}
       className="flex items-center gap-3 rounded-md bg-accent/50 p-3 text-accent-foreground transition-colors hover:bg-accent/70 focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-ring dark:backdrop-blur-2xl"
-      target="_blank"
-      rel="noopener noreferrer"
     >
       <div className="relative flex items-center justify-center overflow-hidden rounded-lg p-2">
         <Image

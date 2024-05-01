@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/carousel';
 import { BOOKS } from '@/helpers/constants';
 import Image from './image';
-import Link from 'next/link';
+import Link from './link';
 
 const FavoriteBooksCarousel = async () => {
   return (
@@ -26,7 +26,7 @@ const FavoriteBooksCarousel = async () => {
               key={index}
               className="basis-1/2 select-none md:basis-1/4"
             >
-              <Link href={book.href} target="_blank" rel="noopener noreferrer">
+              <Link href={book.href} type="external">
                 <Image
                   src={book.image}
                   alt="Book"
