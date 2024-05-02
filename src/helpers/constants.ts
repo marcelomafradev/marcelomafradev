@@ -9,10 +9,10 @@ import {
   Linkedin,
   Mail,
   Rss,
-  Twitter,
 } from 'lucide-react';
 
 export interface SidebarItem {
+  id: number;
   name: string;
   icon: IconType;
   href: string;
@@ -29,6 +29,7 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
   {
     items: [
       {
+        id: 0,
         name: 'Início',
         icon: Home,
         href: '/',
@@ -39,16 +40,19 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
     title: 'Perfil',
     items: [
       {
+        id: 1,
         name: 'Sobre',
         icon: Book,
         href: '/about',
       },
       {
+        id: 2,
         name: 'Projetos',
         icon: FolderCheck,
         href: '/projects',
       },
       {
+        id: 3,
         name: 'Tecnologias',
         icon: LaptopMinimal,
         href: '/technologies',
@@ -59,12 +63,14 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
     title: 'Diário',
     items: [
       {
+        id: 4,
         name: 'Blog',
         icon: Rss,
         href: '/blog',
         isInactive: true,
       },
       {
+        id: 5,
         name: 'Mensagens',
         icon: Book,
         href: '/messages',
@@ -76,29 +82,28 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
     hasArrowIcon: true,
     items: [
       {
+        id: 6,
         name: 'Email',
         icon: Mail,
-        href: 'https://www.instagram.com/officialmafra',
+        href: 'https://www.instagram.com/marcelomafradev',
       },
       {
+        id: 7,
         name: 'Github',
         icon: Github,
         href: 'https://github.com/marcelomafradev',
       },
       {
+        id: 8,
         name: 'LinkedIn',
         icon: Linkedin,
         href: 'https://www.linkedin.com/in/marcelomafradev/',
       },
       {
-        name: 'X/Twitter',
-        icon: Twitter,
-        href: 'https://www.instagram.com/officialmafra',
-      },
-      {
+        id: 9,
         name: 'Instagram',
         icon: Instagram,
-        href: 'https://www.instagram.com/officialmafra',
+        href: 'https://www.instagram.com/marcelomafradev',
       },
     ],
   },

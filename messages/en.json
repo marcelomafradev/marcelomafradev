@@ -1,17 +1,51 @@
 {
+  "navigation": {
+    "titles": {
+      "1": "Profile",
+      "2": "Journal",
+      "3": "Networks"
+    },
+    "items": {
+      "0": "home",
+      "1": "About",
+      "2": "Projects",
+      "3": "Technologies",
+      "4": "Blog",
+      "5": "Messages"
+    },
+    "nothing-playing": "Nothing playing now",
+    "song-dialog": {
+      "cta": "View on Spotify",
+      "message": "Marcelo Mafra is listening to this song right now.",
+      "popularity": "Song Popularity"
+    },
+    "settings": {
+      "theme": {
+        "title": "Theme",
+        "light": "Light",
+        "dark": "Dark"
+      },
+      "language": {
+        "title": "Language",
+        "english": "English",
+        "portuguese": "Portuguese",
+        "spanish": "Spanish"
+      }
+    }
+  },
   "homepage": {
     "personal-info": {
       "title": "Fullstack Developer",
       "paragraphs": {
         "first": "Hello, I am Marcelo Mafra, a passionate full-stack developer dedicated to creating innovative digital solutions. With proficiency in TS, JS, ReactJS, and NodeJS, my technological journey has led me to master both front-end and back-end web development.",
-        "second": "From user interface design to complex system architecture, I am always in pursuit of technical excellence and innovation. I am driven by the opportunity to face new challenges and constantly learn, seeking ways to enhance my skills and contribute to the success of the projects I am involved in.",
+        "second": "From user interface design to complex system architecture, I am always in pursuit of technical excellence and innovation. I am motivated by the opportunity to face new challenges and learn constantly, seeking ways to improve my skills and contribute to the success of the projects I am involved in.",
         "third": "I am eager to collaborate on exciting projects."
       },
       "resumeParagraph": {
-        "first": "Living in Florianópolis - SC, Brazil. At 17 years old, I am a Fullstack Developer.",
-        "second": "I have intermediate skills in English, and my native language is Portuguese. Besides software development, my interests include listening to music, exercising, playing chess, and reading a good book."
+        "first": "Living in Florianópolis - SC, Brazil. At 17 years old, I am a Fullstack developer.",
+        "second": "I have intermediate skills in English, and my native language is Portuguese. In addition to software development, my interests include listening to music, exercising, playing chess, and reading a good book."
       },
-      "interests": "I am passionate about neuroscience, philosophy, and self-help. I love diving into books that expand my understanding of the human brain, existence, and personal growth. Music is a significant part of my life. It inspires me, calms me, and energizes me. I am always on the lookout for new music to add to my playlist. Additionally, I am an enthusiast of Brazilian Jiu-Jitsu. This year, I am celebrating my tenth year of training and, at 17 years old, I am a red belt. Brazilian Jiu-Jitsu has taught me discipline, resilience, and the art of strategy. I have participated in approximately 40 championships, each an opportunity to learn and improve."
+      "interests": "I am passionate about neuroscience, philosophy, and self-help. I love diving into books that expand my understanding of the human brain, existence, and personal growth. Music is a big part of my life. It inspires me, calms me, and energizes me. I am always looking for new songs to add to my playlist. Additionally, I am a jiu-jitsu enthusiast. This year, I am celebrating my tenth year of training and, at 17 years old, I am a black belt. Jiu-jitsu has taught me discipline, resilience, and the art of strategy. I have participated in approximately 40 championships, each one an opportunity to learn and improve."
     },
     "resume-about-me": {
       "title": "📖 About me",
@@ -46,13 +80,67 @@
       "title": "📁 My Projects",
       "cta": "View all",
       "link": "Visit",
-      "source-code": "Source code",
+      "source-code": "Source Code",
       "1": {
         "description": "An online jewelry store offering an elegant and modern collection for all occasions."
       },
       "2": {
         "description": "Specialists in remodeling, transforming architectural visions into reality for homes and businesses."
       }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "description": "Living in Florianópolis - SC, Brazil. At 17 years old, I am a Fullstack developer. I have intermediate skills in English, and my native language is Portuguese. In addition to software development, my interests include listening to music, exercising, playing chess, and reading a good book.",
+    "more": {
+      "title": "More..",
+      "description": "Hello, I am Marcelo Mafra, a full-stack developer passionate about creating innovative digital solutions. With proficiency in TS, JS, ReactJS, and NodeJS, my technological journey has led me to master both front-end and back-end web development. From user interface design to complex system architecture, I am always in pursuit of technical excellence and innovation. I am motivated by the opportunity to face new challenges and learn constantly, seeking ways to improve my skills and contribute to the success of the projects I am involved in."
+    },
+    "personal-interests": {
+      "title": "Personal Interests",
+      "description": "I am passionate about neuroscience, philosophy, and self-help. I love diving into books that expand my understanding of the human brain, existence, and personal growth. Music is a big part of my life. It inspires me, calms me, and energizes me. I am always looking for new songs to add to my playlist. Additionally, I am a jiu-jitsu enthusiast. This year, I am celebrating my tenth year of training and, at 17 years old, I am a black belt. Jiu-jitsu has taught me discipline, resilience, and the art of strategy. I have participated in approximately 40 championships, each one an opportunity to learn and improve.",
+      "image-1": "Competing in the Gracie Barra Compnet in 2023",
+      "image-2": "Receiving the black belt from the master",
+      "image-3": "Receiving the gold medal after two finals in the Compnet 2023."
+    },
+    "books": {
+      "title": "Books I Recommend",
+      "description": "- Books I have read and recommend to enrich your studies."
+    },
+    "musics": {
+      "title": "Favorite Songs of the Moment",
+      "description": "- Check out some songs I like."
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "- Here are some of the projects I created; you can find more on my"
+  },
+  "technologies": {
+    "title": "My Projects",
+    "description": "- Here are some of the projects I created; you can find more on my",
+    "1": "Frontend",
+    "2": "Backend",
+    "3": "Database",
+    "4": "Infrastructure",
+    "5": "Apps",
+    "6": "Others"
+  },
+  "messages": {
+    "title": "Messages",
+    "description": "- Why not leave your mark here? From a warm message to a joke that makes us laugh, I am eager for your surprise 🤩",
+    "label": "Message",
+    "placeholder": "Leave your message here...",
+    "send": "Send message",
+    "auth": "You need to log in before sending a message",
+    "success-updated": "Message updated successfully.",
+    "success-send": "Message sent successfully.",
+    "dialog": {
+      "title": "Are you sure?",
+      "description": "This will permanently delete your message and remove your data from our servers.",
+      "cancel": "Cancel",
+      "continue": "Continue",
+      "success": "Message deleted successfully."
     }
   }
 }

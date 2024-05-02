@@ -7,17 +7,19 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { useTranslations } from 'next-intl';
 
 const FavoriteSongsCarousel = async () => {
+  const t = useTranslations('about.musics');
   const favoriteSongs = (await GetFavoriteSongs()) as SongModel[];
   if (!favoriteSongs || favoriteSongs?.length === 0) return null;
 
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="text-lg font-medium">Músicas favoritas do momento</h2>
+        <h2 className="text-lg font-medium">{t('title')}</h2>
         <p className="pl-1 text-xs font-light text-muted-foreground">
-          - Confira algumas músicas que eu gosto.
+          {t('description')}
         </p>
       </div>
 

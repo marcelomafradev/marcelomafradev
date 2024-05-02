@@ -16,13 +16,20 @@ import {
 } from '../ui/card';
 import ImageBannerDialog from './image-banner-dialog';
 
+interface ProjectCardHorizontalProps extends ProjectProps {
+  ctaTranslation: string;
+  sourceCodeTranslation: string;
+}
+
 const ProjectCardHorizontal = ({
   description,
   github,
   href,
   image,
   title,
-}: ProjectProps) => {
+  sourceCodeTranslation,
+  ctaTranslation,
+}: ProjectCardHorizontalProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -45,7 +52,7 @@ const ProjectCardHorizontal = ({
           <CardFooter className="flex gap-3 pb-0">
             <Button className="w-full gap-2 bg-primary/90" size="sm" asChild>
               <Link href={href} type="external">
-                <ArrowUpRight size={18} /> Visitar
+                <ArrowUpRight size={18} /> {ctaTranslation}
               </Link>
             </Button>
 
@@ -57,7 +64,7 @@ const ProjectCardHorizontal = ({
             >
               <Link href={github} type="external">
                 <Github size={18} />
-                Código-fonte
+                {sourceCodeTranslation}
               </Link>
             </Button>
           </CardFooter>

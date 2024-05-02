@@ -26,6 +26,13 @@ interface MessageCardProps extends Message {
     name: string | null;
     image: string | null;
   };
+  t: {
+    title: string;
+    description: string;
+    cancel: string;
+    continue: string;
+    success: string;
+  };
 }
 
 const MessageCard = ({
@@ -34,6 +41,7 @@ const MessageCard = ({
   message,
   userId,
   user: { image, name },
+  t,
 }: MessageCardProps) => {
   const router = useRouter();
 
@@ -48,7 +56,7 @@ const MessageCard = ({
       if (!isMessageCreatedByCurrentUser) return;
 
       await DeleteMessageById({ id, userId });
-      toast.success('Mensagem excluída com sucesso.');
+      toast.success(t.success);
       return router.refresh();
     } catch (error) {
       console.error(error);
@@ -89,16 +97,15 @@ const MessageCard = ({
 
                 <AlertDialogContent>
                   <AlertDialogHeader>
-                    <AlertDialogTitle>Você tem certeza?</AlertDialogTitle>
+                    <AlertDialogTitle>{t.title}</AlertDialogTitle>
                     <AlertDialogDescription>
-                      Isso excluirá permanentemente sua mensagem irá remover
-                      seus dados de nossos servidores.
+                      {t.description}
                     </AlertDialogDescription>
                   </AlertDialogHeader>
                   <AlertDialogFooter>
-                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogCancel>{t.cancel}</AlertDialogCancel>
                     <AlertDialogAction onClick={handleDeleteMessage}>
-                      Continue
+                      {t.continue}
                     </AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>

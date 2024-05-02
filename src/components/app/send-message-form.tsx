@@ -25,8 +25,17 @@ const formSchema = z.object({
 
 const SendMessageForm = ({
   initialMessage,
+  t,
 }: {
   initialMessage: string | undefined;
+  t: {
+    label: string;
+    placeholder: string;
+    auth: string;
+    send: string;
+    'success-updated': string;
+    'success-send': string;
+  };
 }) => {
   const router = useRouter();
   const session = useCurrentUser();
@@ -46,11 +55,11 @@ const SendMessageForm = ({
 
       if (initialMessage) {
         await UpdateMessage({ message, userId: session.id });
-        toast.success('Mensagem atualizada com sucesso.');
+        toast.success(t['success-updated']);
         return router.refresh();
       } else {
         await CreateNewMessage({ message, userId: session.id });
-        toast.success('Mensagem enviada com sucesso.');
+        toast.success(t['success-send']);
         return router.refresh();
       }
     } catch (error) {
@@ -66,11 +75,11 @@ const SendMessageForm = ({
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Mensagem</FormLabel>
+              <FormLabel>{t.label}</FormLabel>
               <FormControl>
                 <Textarea
                   className="h-[90px] max-h-[130px]"
-                  placeholder="Deixe sua mensagem aqui.."
+                  placeholder={t.placeholder}
                   {...field}
                 />
               </FormControl>
@@ -86,7 +95,7 @@ const SendMessageForm = ({
             className="gap-2 text-secondary-foreground/80"
             type="submit"
           >
-            <Send size={15} /> Enviar mensagem
+            <Send size={15} /> {t.send}
           </Button>
         ) : (
           <Button
@@ -96,7 +105,7 @@ const SendMessageForm = ({
             type="button"
           >
             <LockKeyhole size={15} />
-            Voce precisa fazer o login antes de enviar uma mensagem
+            {t.auth}
           </Button>
         )}
       </form>

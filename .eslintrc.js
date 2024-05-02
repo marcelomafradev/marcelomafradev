@@ -32,6 +32,7 @@ module.exports = {
     'object-shorthand': 'warn',
     'quote-props': ['warn', 'as-needed'],
     // TypeScript rules
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/array-type': [
       'warn',
       {

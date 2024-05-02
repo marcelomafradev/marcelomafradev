@@ -1,26 +1,26 @@
 import { FadeInMotion, TechButton, TypingText } from '@/components/app';
 import { STACK } from '@/helpers/constants';
+import { useTranslations } from 'next-intl';
 
 export default function Technologies() {
+  const t = useTranslations('technologies');
+
   return (
     <div className="align-page">
       <div className="space-y-1">
-        <TypingText title="Tecnologias e Ferramentas" />
+        <TypingText title={t('title')} />
 
         <FadeInMotion>
           <p className="text-pretty pl-1 text-sm font-light text-muted-foreground">
-            - Exploro tecnologias e ferramentas avançadas que aprimoram minha
-            jornada de desenvolvimento. Escolho e aplico essas ferramentas com
-            precisão para desenvolver soluções poderosas e eficazes, com foco
-            constante na experiência do usuário.
+            {t('description')}
           </p>
         </FadeInMotion>
 
         <div className="space-y-4 pt-6">
-          {STACK.map(({ title, items }, index) => (
+          {STACK.map(({ items }, index) => (
             <section key={index} className="flex flex-col gap-2">
               <TypingText
-                title={title}
+                title={t(`${index + 1}`)}
                 className="pl-4 text-lg font-medium capitalize"
               />
 

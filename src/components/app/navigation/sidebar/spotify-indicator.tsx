@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import ProgressBar from './progress-bar';
 import SongDialog from './song-dialog';
 import { Image } from '@/components/app';
+import { useMessages } from 'next-intl';
 
 const SpotifyIndicator = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -16,6 +17,11 @@ const SpotifyIndicator = () => {
   const [songData, setSongData] = useState<SongModel | undefined>();
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const messages = useMessages();
+  const { navigation } = messages as {
+    navigation: { 'nothing-playing': string };
+  };
 
   useEffect(() => {
     async function getSongData() {
@@ -85,7 +91,7 @@ const SpotifyIndicator = () => {
       ) : (
         <div className="flex items-center justify-start gap-2 pl-3 hover:bg-transparent">
           <Icon.spotify className="h-6 w-6" />
-          <p className="text-xs font-medium">Nada tocando agora</p>
+          <p className="text-xs font-medium">{navigation['nothing-playing']}</p>
         </div>
       )}
 

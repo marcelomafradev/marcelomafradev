@@ -4,10 +4,20 @@ import { Image, Link } from '@/components/app';
 import { Button } from '@/components/ui/button';
 import { Telescope } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { useTranslations } from 'next-intl';
 
-const Experiences = () => {
-  const t = useTranslations('homepage.experiences');
+import { getLocale, getTranslations } from 'next-intl/server';
+
+const Experiences = async () => {
+  const t = await getTranslations('homepage.experiences');
+  const locale = await getLocale();
+
+  const getResumeLink = () => {
+    if (locale === 'pt-br') {
+      return '/documents/marcelomafra-br.pdf';
+    } else {
+      return '/documents/marcelomafra-en.pdf';
+    }
+  };
 
   return (
     <section>
@@ -53,7 +63,7 @@ const Experiences = () => {
             size={'sm'}
             asChild
           >
-            <Link href={'/documents/marcelomafra-br.pdf'}>
+            <Link href={getResumeLink()} type="external">
               {t('view-resume')} <Telescope size={18} />
             </Link>
           </Button>

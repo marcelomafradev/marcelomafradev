@@ -22,6 +22,7 @@ import { useRouter } from 'next/navigation';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { SearchSongVideo } from '@/actions/youtube';
 import { Image } from '@/components/app';
+import { useMessages } from 'next-intl';
 
 interface SongDialogProps {
   open: boolean;
@@ -42,6 +43,9 @@ const SongDialog = ({
   const [lastFetchedSongTitle, setLastFetchedSongTitle] = useState('');
   const [isSongDataFetched, setIsSongDataFetched] = useState(false);
   const router = useRouter();
+
+  const messages = useMessages();
+  const t = messages.navigation['song-dialog'];
 
   const fetchAndUpdateSongVideo = async (title: string) => {
     const songVideoUrl = await SearchSongVideo(title);
@@ -115,7 +119,7 @@ const SongDialog = ({
             onClick={() => router.push(songData?.song_url)}
             className="w-fit"
           >
-            Ver no spotify
+            {t.cta}
           </Button>
 
           <TooltipProvider>
@@ -125,7 +129,7 @@ const SongDialog = ({
               </TooltipTrigger>
 
               <TooltipContent>
-                <p>Popularidade da música</p>
+                <p> {t.popularity}</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -133,7 +137,7 @@ const SongDialog = ({
 
         <div className="flex items-center justify-center gap-2">
           <p className="text-center text-xs text-muted-foreground">
-            <i>Marcelo Mafra</i> está escutando essa música agora.{' '}
+            {t.message}
           </p>
 
           <AudioLines

@@ -8,14 +8,17 @@ import {
 import { BOOKS } from '@/helpers/constants';
 import Image from './image';
 import Link from './link';
+import { useTranslations } from 'next-intl';
 
 const FavoriteBooksCarousel = async () => {
+  const t = useTranslations('about.books');
+
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="text-lg font-medium">Livros que indico</h2>
+        <h2 className="text-lg font-medium">{t('title')}</h2>
         <p className="pl-1 text-xs font-light text-muted-foreground">
-          - Livros que li e recomendo para enriquecer seus estudos.
+          {t('description')}
         </p>
       </div>
 
