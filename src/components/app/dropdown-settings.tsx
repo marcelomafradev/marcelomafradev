@@ -12,6 +12,7 @@ import { useMessages } from 'next-intl';
 
 const DropdownSettings = () => {
   const messages = useMessages();
+  // @ts-expect-error because 'personal-info' is a dynamic key in the messages object
   const { language } = messages.navigation.settings;
 
   return (

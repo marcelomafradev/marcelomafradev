@@ -45,6 +45,7 @@ const SongDialog = ({
   const router = useRouter();
 
   const messages = useMessages();
+  // @ts-expect-error because 'personal-info' is a dynamic key in the messages object
   const t = messages.navigation['song-dialog'];
 
   const fetchAndUpdateSongVideo = async (title: string) => {
