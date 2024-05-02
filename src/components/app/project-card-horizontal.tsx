@@ -49,15 +49,21 @@ const ProjectCardHorizontal = ({
         </CardHeader>
 
         <CardContent>
-          <CardFooter className="flex gap-3 pb-0">
-            <Button className="w-full gap-2 bg-primary/90" size="sm" asChild>
-              <Link href={href} type="external">
-                <ArrowUpRight size={18} /> {ctaTranslation}
-              </Link>
-            </Button>
+          <CardFooter className="flex gap-3 px-0 pb-0 md:px-4">
+            {href && (
+              <Button
+                className="w-full gap-2 bg-primary/90 text-xs md:text-sm"
+                size="sm"
+                asChild
+              >
+                <Link href={href} type="external">
+                  <ArrowUpRight size={18} /> {ctaTranslation}
+                </Link>
+              </Button>
+            )}
 
             <Button
-              className="w-full gap-2 bg-transparent text-secondary-foreground"
+              className="w-full gap-2 bg-transparent text-xs text-secondary-foreground md:text-sm"
               variant="outline"
               size="sm"
               asChild

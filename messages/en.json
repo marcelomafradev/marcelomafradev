@@ -86,6 +86,15 @@
       },
       "2": {
         "description": "Specialists in remodeling, transforming architectural visions into reality for homes and businesses."
+      },
+      "3": {
+        "description": "Online platform for analysis and insights of Brazilian Jiu-Jitsu"
+      },
+      "4": {
+        "description": "Task management application with statistics aiming for productivity"
+      },
+      "5": {
+        "description": "Recreation of the social media platform 'Twitter'"
       }
     }
   },
@@ -132,7 +141,7 @@
     "label": "Message",
     "placeholder": "Leave your message here...",
     "send": "Send message",
-    "auth": "You need to log in before sending a message",
+    "auth": "Log in before sending a message",
     "success-updated": "Message updated successfully.",
     "success-send": "Message sent successfully.",
     "dialog": {

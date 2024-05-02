@@ -42,7 +42,7 @@ export default function Projects() {
                 description={projectsTranslation(
                   `${index + 1}.description` as '1.description',
                 )}
-                ctaTranslation={projectsTranslation('cta')}
+                ctaTranslation={projectsTranslation('link')}
                 sourceCodeTranslation={projectsTranslation('source-code')}
               />
             </FadeInMotion>

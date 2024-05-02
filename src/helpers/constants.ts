@@ -155,7 +155,7 @@ export interface ProjectProps {
   title: string;
   description: string;
   image: string;
-  href: string;
+  href?: string;
   github: string;
   side: 'left' | 'right';
 }
@@ -178,6 +178,30 @@ export const PROJECTS: ProjectProps[] = [
     href: 'https://www.grieblerremodeling.com/',
     github: 'https://github.com/marcelomafradev/griebler-remodeling',
     side: 'right',
+  },
+  {
+    title: 'BJJ Insights',
+    description:
+      'Plataforma online para análises e insights de Jiu-Jitsu Brasileiro',
+    image: '/projects/bjj-insights.png',
+    href: 'https://bjjinsights.vercel.app/',
+    github: 'https://github.com/marcelomafradev/bjjinsights',
+    side: 'left',
+  },
+  {
+    title: 'Todo Pro',
+    description:
+      'Aplicativo de gerenciamento de tarefas com estatísticas visando a produtividade',
+    image: '/projects/todo-pro.png',
+    github: 'https://github.com/marcelomafradev/to-do-pro',
+    side: 'right',
+  },
+  {
+    title: 'Twitter Clone',
+    description: 'Recriação da plataforma de mídia social "Twitter"',
+    image: '/projects/twitter.png',
+    github: 'https://github.com/marcelomafradev/Twitter_Clone',
+    side: 'left',
   },
 ];
 

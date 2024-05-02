@@ -86,6 +86,15 @@
       },
       "2": {
         "description": "Especialistas en remodelación, transformando visiones arquitectónicas en realidad para residencias y empresas."
+      },
+      "3": {
+        "description": "Plataforma en línea para análisis e ideas del Jiu-Jitsu brasileño"
+      },
+      "4": {
+        "description": "Aplicación de gestión de tareas con estadísticas orientadas a la productividad"
+      },
+      "5": {
+        "description": "Recreación de la plataforma de redes sociales 'Twitter'"
       }
     }
   },
@@ -132,7 +141,7 @@
     "label": "Mensaje",
     "placeholder": "Déjame tu mensaje aquí...",
     "send": "Enviar mensaje",
-    "auth": "Necesitas iniciar sesión antes de enviar un mensaje",
+    "auth": "Inicia sesión antes de enviar un mensaje",
     "success-updated": "Mensaje actualizado con éxito.",
     "success-send": "Mensaje enviado con éxito.",
     "dialog": {

@@ -60,15 +60,21 @@ const ProjectCardVertical = ({
             {description}
           </p>
 
-          <div className="space-x-3">
-            <Button className="gap-2 bg-primary/90" size="sm" asChild>
-              <Link href={href} type="external">
-                <ArrowUpRight size={18} /> {ctaTranslation}
-              </Link>
-            </Button>
+          <div className="flex flex-row gap-2">
+            {href && (
+              <Button
+                className="gap-2 bg-primary/90 text-xs md:text-sm"
+                size="sm"
+                asChild
+              >
+                <Link href={href} type="external">
+                  <ArrowUpRight size={18} /> {ctaTranslation}
+                </Link>
+              </Button>
+            )}
 
             <Button
-              className="gap-2 bg-transparent text-secondary-foreground"
+              className="gap-2 bg-transparent text-xs text-secondary-foreground md:text-sm"
               variant="outline"
               size="sm"
               asChild

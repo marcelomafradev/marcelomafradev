@@ -17,7 +17,7 @@ const LastPosts = () => {
             sizes="100vw"
             className="h-20 w-20 cursor-pointer rounded-full bg-muted p-1"
           />
-          <p>{t('not-found')}</p>
+          <p className="text-center">{t('not-found')}</p>
         </div>
       </CustomCard>
     </section>

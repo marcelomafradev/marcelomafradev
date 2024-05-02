@@ -11,13 +11,13 @@ const Projects = () => {
     <section>
       <CustomCard title={t('title')} href="/projects" linkTitle={t('cta')}>
         <div className="space-y-4">
-          {PROJECTS.map((project, index) => (
+          {PROJECTS.slice(0, 3).map((project, index) => (
             <div key={index} className="space-y-4">
               <ProjectCardVertical
                 key={index}
                 {...project}
                 description={t(`${index + 1}.description` as '1.description')}
-                ctaTranslation={t('cta')}
+                ctaTranslation={t('link')}
                 sourceCodeTranslation={t('source-code')}
               />
 
