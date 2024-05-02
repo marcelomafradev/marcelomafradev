@@ -142,5 +142,10 @@
       "continue": "Continuar",
       "success": "Mensagem excluída com sucesso."
     }
+  },
+  "auth": {
+    "title": "Entre com a sua conta!",
+    "subtitle": "Faça o login ou registre-se.",
+    "cta": "entrar"
   }
 }

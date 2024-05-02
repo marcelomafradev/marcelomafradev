@@ -32,7 +32,7 @@ export const matchesPublicRoute = (pathname: string) => {
 const intlMiddleware = createMiddleware({
   locales,
   localePrefix,
-  defaultLocale: 'en',
+  defaultLocale: 'pt-br',
 });
 
 export default AuthMiddleware((req) => {

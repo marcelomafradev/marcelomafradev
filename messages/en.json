@@ -142,5 +142,10 @@
       "continue": "Continue",
       "success": "Message deleted successfully."
     }
+  },
+  "auth": {
+    "title": "Sign in to your account!",
+    "subtitle": "Log in or register.",
+    "cta": "sign in"
   }
 }

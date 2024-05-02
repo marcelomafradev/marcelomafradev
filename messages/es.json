@@ -142,5 +142,10 @@
       "continue": "Continuar",
       "success": "Mensaje eliminado con éxito."
     }
+  },
+  "auth": {
+    "title": "¡Inicia sesión en tu cuenta!",
+    "subtitle": "Inicia sesión o regístrate.",
+    "cta": "iniciar sesión"
   }
 }
