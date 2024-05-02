@@ -7,14 +7,12 @@ export default function Technologies() {
 
   return (
     <div className="align-page">
-      <div className="space-y-1">
+      <FadeInMotion className="space-y-1">
         <TypingText title={t('title')} />
 
-        <FadeInMotion>
-          <p className="text-pretty pl-1 text-sm font-light text-muted-foreground">
-            {t('description')}
-          </p>
-        </FadeInMotion>
+        <p className="text-pretty pl-1 text-sm font-light text-muted-foreground">
+          {t('description')}
+        </p>
 
         <div className="space-y-4 pt-6">
           {STACK.map(({ items }, index) => (
@@ -24,19 +22,15 @@ export default function Technologies() {
                 className="pl-4 text-lg font-medium capitalize"
               />
 
-              <FadeInMotion
-                delay={0.1}
-                direction="up"
-                className="grid grid-cols-2 gap-x-2 gap-y-2 md:grid-cols-3 lg:grid-cols-4"
-              >
+              <div className="grid grid-cols-2 gap-x-2 gap-y-2 md:grid-cols-3 lg:grid-cols-4">
                 {items.map((item) => (
                   <TechButton key={item.name} {...item} />
                 ))}
-              </FadeInMotion>
+              </div>
             </section>
           ))}
         </div>
-      </div>
+      </FadeInMotion>
     </div>
   );
 }
