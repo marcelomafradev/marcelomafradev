@@ -23,10 +23,7 @@ const formSchema = z.object({
   message: z.string().min(2).max(50),
 });
 
-const SendMessageForm = ({
-  initialMessage,
-  t,
-}: {
+interface SendMessageFormProps {
   initialMessage: string | undefined;
   t: {
     label: string;
@@ -36,7 +33,9 @@ const SendMessageForm = ({
     'success-updated': string;
     'success-send': string;
   };
-}) => {
+}
+
+const SendMessageForm = ({ initialMessage, t }: SendMessageFormProps) => {
   const router = useRouter();
   const session = useCurrentUser();
 

@@ -90,6 +90,7 @@ const SongDialog = ({
       <DialogContent
         onMouseEnter={songVideoUrl ? () => {} : playPreview}
         onMouseLeave={stopPreview}
+        className="select-none"
       >
         <DialogHeader>
           <DialogTitle>{songData?.title}</DialogTitle>
@@ -125,7 +126,9 @@ const SongDialog = ({
 
           <TooltipProvider>
             <Tooltip defaultOpen={false}>
-              <TooltipTrigger className={`font-semibold ${popularityColor}`}>
+              <TooltipTrigger
+                className={`font-semibold ${popularityColor} select-none`}
+              >
                 {songData?.popularity}
               </TooltipTrigger>
 
