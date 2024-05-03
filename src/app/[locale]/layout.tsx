@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   icons: {
     icon: '/marcelomafra.jpg',
   },
+  robots: { index: false, follow: false },
+  other: {
+    'google-site-verification': 't3YbALBw3rJ5Q8eg0K_mkrOzVe8RLRj9HQ1miLKfQvQ',
+  },
 };
 
 export default async function RootLayout({
