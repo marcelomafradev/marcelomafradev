@@ -16,7 +16,7 @@ const DEFAULT_USER_LOGIN_REDIRECT = '/messages';
 const ADMIN_ROUTES = ['/admin', ...USER_ROUTES];
 const DEFAULT_ADMIN_LOGIN_REDIRECT = '/admin';
 
-const API_ROUTES = ['/api/auth'];
+const API_AUTH_PREFIX = ['/api/auth'];
 
 const ADMIN_EMAILS = ['marcelomafradev@gmail.com'];
 
@@ -25,7 +25,7 @@ export {
   DEFAULT_USER_LOGIN_REDIRECT,
   ADMIN_ROUTES,
   DEFAULT_ADMIN_LOGIN_REDIRECT,
-  API_ROUTES,
+  API_AUTH_PREFIX,
   PUBLIC_ROUTES,
   ADMIN_EMAILS,
 };

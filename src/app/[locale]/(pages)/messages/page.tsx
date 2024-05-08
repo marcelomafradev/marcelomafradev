@@ -42,7 +42,7 @@ export default async function Messages() {
               <MessageCard
                 {...message}
                 t={{
-                  cancel: t('dialog.title'),
+                  cancel: t('dialog.cancel'),
                   continue: t('dialog.continue'),
                   description: t('dialog.description'),
                   success: t('dialog.success'),

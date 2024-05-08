@@ -3,7 +3,7 @@ import { auth as AuthMiddleware } from './lib/auth';
 import {
   ADMIN_EMAILS,
   ADMIN_ROUTES,
-  API_ROUTES,
+  API_AUTH_PREFIX,
   DEFAULT_ADMIN_LOGIN_REDIRECT,
   DEFAULT_USER_LOGIN_REDIRECT,
   PUBLIC_ROUTES,
@@ -14,9 +14,6 @@ import { locales } from './i18n';
 import { localePrefix } from './lib/navigation';
 
 const isUserAdmin = (email: string) => ADMIN_EMAILS.includes(email);
-
-const matchesApiRoute = (pathname: string) =>
-  API_ROUTES.some((prefix) => pathname.startsWith(prefix));
 
 export const matchesPublicRoute = (pathname: string) => {
   return PUBLIC_ROUTES.some((route) => {
@@ -47,6 +44,14 @@ export default AuthMiddleware((req) => {
     return pathname === destinationPath;
   };
 
+  const isApiAuthRoute = API_AUTH_PREFIX.some((route) => {
+    return nextUrl.pathname.startsWith(route);
+  });
+
+  if (isApiAuthRoute) {
+    return undefined;
+  }
+
   if (pathname === '/auth' && isLoggedIn) {
     if (!isRedirectingToSamePath(DEFAULT_ADMIN_LOGIN_REDIRECT)) {
       return NextResponse.redirect(
@@ -55,7 +60,7 @@ export default AuthMiddleware((req) => {
     }
   }
 
-  if (matchesPublicRoute(pathname) || matchesApiRoute(pathname)) {
+  if (matchesPublicRoute(pathname)) {
     return intlMiddleware(req);
   }
 

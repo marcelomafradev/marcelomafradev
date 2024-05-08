@@ -31,7 +31,9 @@ export default async function Auth() {
             action={async () => {
               'use server';
 
-              await signIn('google');
+              await signIn('google', {
+                callbackUrl: 'http://localhost:3000/api/auth/callback/google',
+              });
             }}
           >
             <Button
