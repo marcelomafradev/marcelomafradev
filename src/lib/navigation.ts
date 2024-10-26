@@ -13,7 +13,6 @@ export type HrefValue =
   | '/about'
   | '/projects'
   | '/technologies'
-  | '/messages'
   | '/admin/';
 
 export const pathnames = {
@@ -22,7 +21,6 @@ export const pathnames = {
   '/about': '/about',
   '/projects': '/projects',
   '/technologies': '/technologies',
-  '/messages': '/messages',
 
   '/admin/': '/admin/',
 } satisfies Pathnames<typeof locales>;

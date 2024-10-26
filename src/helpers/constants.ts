@@ -69,12 +69,6 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
         href: '/blog',
         isInactive: true,
       },
-      {
-        id: 5,
-        name: 'Mensagens',
-        icon: Book,
-        href: '/messages',
-      },
     ],
   },
   {
@@ -113,18 +107,7 @@ export const PERSONAL_INFO = {
   title: 'Fullstack Developer',
   name: 'Marcelo Mafra',
   image: '/marcelomafra.jpg',
-  stack: ['TypeScript', 'JavaScript', 'ReactJs', 'NextJs', 'NodeJs'],
-  paragraphs: [
-    'Olá, eu sou Marcelo Mafra, um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras. Com proficiência em TS, JS, ReactJS e NodeJS, minha jornada tecnológica me levou a dominar tanto o front-end quanto o back-end do desenvolvimento web.',
-    'Do design da interface do usuário à arquitetura de sistemas complexos, estou sempre em busca de excelência técnica e inovação. Sou motivado pela oportunidade de enfrentar novos desafios e aprender constantemente, buscando maneiras de aprimorar minhas habilidades e contribuir para o sucesso dos projetos em que estou envolvido.',
-    'Estou ansioso para colaborar em projetos empolgantes.',
-  ],
-  resumeParagraph: [
-    'Residindo em Florianópolis - SC, Brasil. Com 17 anos de idade, sou um desenvolvedor Fullstack.',
-    'Tenho habilidades intermediárias em inglês, e meu idioma nativo é o português. Além do desenvolvimento de software, meus interesses incluem ouvir música, praticar exercícios, jogar xadrez e ler um bom livro.',
-  ],
-  interests:
-    'Sou um apaixonado por neurociência, filosofia e auto-ajuda. Adoro mergulhar em livros que expandem minha compreensão do cérebro humano, da existência e do crescimento pessoal. A música é uma grande parte da minha vida. Ela me inspira, me acalma e me energiza. Estou sempre à procura de novas músicas para adicionar à minha playlist. Além disso, sou um entusiasta do jiu-jitsu. Este ano, estou comemorando meu décimo ano de treinamento e, aos 17 anos, já sou faixa roxa. O jiu-jitsu me ensinou disciplina, resiliência e a arte da estratégia. Participei de aproximadamente 40 campeonatos, cada um deles uma oportunidade de aprender e melhorar.',
+  stack: ['TypeScript', 'NodeJs', 'NextJs', 'React Native'],
 };
 
 export const EXPERIENCES = [
@@ -184,7 +167,6 @@ export const PROJECTS: ProjectProps[] = [
     description:
       'Plataforma online para análises e insights de Jiu-Jitsu Brasileiro',
     image: '/projects/bjj-insights.png',
-    href: 'https://bjjinsights.vercel.app/',
     github: 'https://github.com/marcelomafradev/bjjinsights',
     side: 'left',
   },

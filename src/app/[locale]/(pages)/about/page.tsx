@@ -1,12 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
-import {
   FadeInMotion,
   FavoriteBooksCarousel,
   FavoriteSongsCarousel,
@@ -33,16 +27,6 @@ export default function About() {
         <div className="space-y-1 text-pretty text-sm text-muted-foreground md:text-base">
           <p>{t('description')}</p>
         </div>
-
-        <Accordion type="single" collapsible>
-          <AccordionItem value="about">
-            <AccordionTrigger>{t('more.title')}</AccordionTrigger>
-
-            <AccordionContent className="text-pretty text-xs text-muted-foreground md:text-sm">
-              <p>{t('more.description')}</p>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
       </FadeInMotion>
 
       <FadeInMotion className="space-y-4">

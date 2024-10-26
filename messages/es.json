@@ -7,15 +7,14 @@
     },
     "items": {
       "0": "inicio",
-      "1": "Acerca",
+      "1": "Sobre",
       "2": "Proyectos",
-      "3": "Tecnologias",
-      "4": "Blog",
-      "5": "Mensajes"
+      "3": "Tecnologías",
+      "4": "Blog"
     },
-    "nothing-playing": "Nada jugando ahora",
+    "nothing-playing": "Nada sonando ahora",
     "song-dialog": {
-      "cta": "Ver en spotify",
+      "cta": "Ver en Spotify",
       "message": "Marcelo Mafra está escuchando esta canción ahora.",
       "popularity": "Popularidad de la canción"
     },
@@ -35,46 +34,31 @@
   },
   "homepage": {
     "personal-info": {
-      "title": "Desarrollador Fullstack",
-      "paragraphs": {
-        "first": "Hola, soy Marcelo Mafra, un desarrollador full-stack apasionado por crear soluciones digitales innovadoras. Con competencia en TS, JS, ReactJS y NodeJS, mi viaje tecnológico me llevó a dominar tanto el front-end como el back-end del desarrollo web.",
-        "second": "Del diseño de la interfaz de usuario hasta la arquitectura de sistemas complejos, siempre busco excelencia técnica e innovación. Estoy motivado por la oportunidad de enfrentar nuevos desafíos y aprender constantemente, buscando formas de mejorar mis habilidades y contribuir al éxito de los proyectos en los que estoy involucrado.",
-        "third": "Estoy ansioso por colaborar en proyectos emocionantes."
-      },
-      "resumeParagraph": {
-        "first": "Residiendo en Florianópolis - SC, Brasil. Con 17 años de edad, soy un desarrollador Fullstack.",
-        "second": "Tengo habilidades intermedias en inglés, y mi idioma nativo es el portugués. Además del desarrollo de software, mis intereses incluyen escuchar música, hacer ejercicios, jugar ajedrez y leer un buen libro."
-      },
-      "interests": "Soy un apasionado por la neurociencia, la filosofía y la autoayuda. Adoro sumergirme en libros que amplían mi comprensión del cerebro humano, de la existencia y del crecimiento personal. La música es una gran parte de mi vida. Me inspira, me calma y me energiza. Siempre estoy buscando nuevas canciones para agregar a mi lista de reproducción. Además, soy un entusiasta del jiu-jitsu. Este año, estoy celebrando mi décimo año de entrenamiento y, a los 17 años, ya soy cinturón negro. El jiu-jitsu me enseñó disciplina, resistencia y el arte de la estrategia. He participado en aproximadamente 40 campeonatos, cada uno de ellos una oportunidad de aprender y mejorar."
+      "title": "Desarrollador Full-stack"
     },
     "resume-about-me": {
       "title": "📖 Acerca de mí",
-      "description": "Hola, soy Marcelo Mafra, un desarrollador full-stack apasionado por crear soluciones digitales innovadoras. Con competencia en TS, JS, ReactJS y NodeJS, mi viaje tecnológico me llevó a dominar tanto el front-end como el back-end del desarrollo web."
+      "description": "Desarrollador full-stack con experiencia en TypeScript, aplicándolo tanto en el desarrollo nativo con React Native y Next.js para el front-end, como en arquitecturas de back-end con Node.js y NestJS. Conocimientos en microservicios y mensajería con RabbitMQ, enfocado en soluciones escalables y de alto rendimiento."
     },
     "experiences": {
       "title": "💼 Experiencias",
-      "cta": "Contrate-me",
+      "cta": "Contrátame",
       "view-resume": "Ver currículum",
       "1": {
         "title": "Postpay",
-        "description": "Desarrollador Fullstack",
+        "description": "Desarrollador Full-stack",
         "workingTime": "2024 - Presente"
       },
       "2": {
-        "title": "Mince Joyas",
-        "description": "Desarrollador Fullstack - Mantenimiento",
+        "title": "Mince Joias",
+        "description": "Desarrollador Full-stack - Mantenimiento",
         "workingTime": "2023 - 2024 • Freelancer"
       },
       "3": {
         "title": "Griebler Remodeling",
-        "description": "Desarrollador Fullstack - Mantenimiento",
+        "description": "Desarrollador Full-stack - Mantenimiento",
         "workingTime": "2022 - 2024 • Freelancer"
       }
-    },
-    "posts": {
-      "title": "📰 Publicaciones",
-      "cta": "Ver todos",
-      "not-found": "No he escrito ninguna publicación todavía.. ;/"
     },
     "projects": {
       "title": "📁 Mis Proyectos",
@@ -82,79 +66,53 @@
       "link": "Visitar",
       "source-code": "Código fuente",
       "1": {
-        "description": "Una tienda online de joyas finas, ofreciendo una colección elegante y moderna para todas las ocasiones."
+        "description": "Una tienda en línea de joyas finas, ofreciendo una colección elegante y moderna para todas las ocasiones."
       },
       "2": {
-        "description": "Especialistas en remodelación, transformando visiones arquitectónicas en realidad para residencias y empresas."
+        "description": "Especialistas en remodelación, convirtiendo visiones arquitectónicas en realidad para hogares y empresas."
       },
       "3": {
-        "description": "Plataforma online dedicada al análisis y conocimiento del Jiu-Jitsu brasileño, creada con fines educativos y sin fines publicitarios."
+        "description": "Una plataforma en línea dedicada al análisis y perspectivas del Jiu-Jitsu Brasileño, creada con fines educativos y sin propósito de publicidad."
       },
       "4": {
-        "description": "Aplicación de gestión de tareas con estadísticas orientadas a la productividad"
+        "description": "Aplicación de gestión de tareas con estadísticas enfocadas en la productividad."
       },
       "5": {
-        "description": "Recreación de la plataforma de redes sociales 'Twitter'"
+        "description": "Recreación de la plataforma de redes sociales 'Twitter'."
       }
     }
   },
   "about": {
     "title": "Acerca de mí",
-    "description": "Residiendo en Florianópolis - SC, Brasil. Con 17 años de edad, soy un desarrollador Fullstack. Tengo habilidades intermedias en inglés, y mi idioma nativo es el portugués. Además del desarrollo de software, mis intereses incluyen escuchar música, hacer ejercicios, jugar ajedrez y leer un buen libro.",
-    "more": {
-      "title": "Más..",
-      "description": "Hola, soy Marcelo Mafra, un desarrollador full-stack apasionado por crear soluciones digitales innovadoras. Con competencia en TS, JS, ReactJS y NodeJS, mi viaje tecnológico me llevó a dominar tanto el front-end como el back-end del desarrollo web. Del diseño de la interfaz de usuario hasta la arquitectura de sistemas complejos, siempre busco excelencia técnica e innovación. Estoy motivado por la oportunidad de enfrentar nuevos desafíos y aprender constantemente, buscando formas de mejorar mis habilidades y contribuir al éxito de los proyectos en los que estoy involucrado."
-    },
+    "description": "Residiendo en Florianópolis - SC, Brasil. Además del desarrollo de software, mis intereses incluyen escuchar música, hacer ejercicio, jugar al ajedrez y leer un buen libro.",
     "personal-interests": {
       "title": "Intereses Personales",
-      "description": "Soy un apasionado por la neurociencia, la filosofía y la autoayuda. Adoro sumergirme en libros que amplían mi comprensión del cerebro humano, de la existencia y del crecimiento personal. La música es una gran parte de mi vida. Me inspira, me calma y me energiza. Siempre estoy buscando nuevas canciones para agregar a mi lista de reproducción. Además, soy un entusiasta del jiu-jitsu. Este año, estoy celebrando mi décimo año de entrenamiento y, a los 17 años, ya soy cinturón negro. El jiu-jitsu me enseñó disciplina, resistencia y el arte de la estrategia. He participado en aproximadamente 40 campeonatos, cada uno de ellos una oportunidad de aprender y mejorar.",
-      "image-1": "Luchando en el Compnet de Gracie Barra en 2023",
-      "image-2": "Recibiendo el cinturón negro del maestro",
-      "image-3": "Recibiendo la medalla de oro después de dos finalizaciones en el Compnet 2023."
+      "description": "Soy un apasionado de la neurociencia, la filosofía y la 'autoayuda'. Me encanta sumergirme en libros que expanden mi comprensión del cerebro humano, de la existencia y del crecimiento personal. La música es una gran parte de mi vida. Además, soy un entusiasta del jiu-jitsu. Este año (2024), estoy celebrando mi décimo año de entrenamiento, y a los 17 años, ya soy cinturón púrpura. El jiu-jitsu me ha enseñado disciplina, resiliencia y a pensar estratégicamente. He participado en aproximadamente 40 campeonatos.",
+      "image-1": "Compitiendo en el Compnet de Gracie Barra en 2023",
+      "image-2": "Recibiendo el cinturón púrpura del maestro",
+      "image-3": "Recibiendo la medalla de oro tras dos finalizaciones en Compnet 2023."
     },
     "books": {
-      "title": "Libros que recomiendo",
-      "description": "- Libros que leí y recomiendo para enriquecer sus estudios."
+      "title": "Libros que Recomiendo",
+      "description": "- Libros que he leído y recomiendo para enriquecer tus estudios."
     },
     "musics": {
-      "title": "Músicas favoritas del momento",
-      "description": "- Confira algunas músicas que me gustan."
+      "title": "Canciones Favoritas del Momento",
+      "description": "- Revisa algunas canciones que me gustan."
     }
   },
   "projects": {
-    "title": "Mis proyectos",
-    "description": "- Aquí están algunos de los proyectos que creé; puedes encontrar más en mi"
+    "title": "Mis Proyectos",
+    "description": "- Aquí hay algunos de los proyectos que he creado; puedes encontrar más en mi"
   },
   "technologies": {
-    "title": "Mis proyectos",
-    "description": "- Aquí están algunos de los proyectos que creé; puedes encontrar más en mi",
+    "title": "Mis Tecnologías",
+    "description": "- Aquí hay algunas de las tecnologías con las que trabajo:",
     "1": "Frontend",
     "2": "Backend",
     "3": "Base de datos",
     "4": "Infraestructura",
     "5": "Aplicaciones",
     "6": "Otros"
-  },
-  "messages": {
-    "title": "Mensajes",
-    "description": "- ¿Por qué no dejar tu marca aquí? Desde un cálido mensaje hasta una broma que nos haga reír, estoy ansioso por tu sorpresa 🤩",
-    "label": "Mensaje",
-    "placeholder": "Déjame tu mensaje aquí...",
-    "send": "Enviar mensaje",
-    "auth": "Inicia sesión antes de enviar un mensaje",
-    "success-updated": "Mensaje actualizado con éxito.",
-    "success-send": "Mensaje enviado con éxito.",
-    "dialog": {
-      "title": "¿Estás seguro?",
-      "description": "Esto eliminará permanentemente tu mensaje y eliminará tus datos de nuestros servidores.",
-      "cancel": "Cancelar",
-      "continue": "Continuar",
-      "success": "Mensaje eliminado con éxito."
-    }
-  },
-  "auth": {
-    "title": "¡Inicia sesión en tu cuenta!",
-    "subtitle": "Inicia sesión o regístrate.",
-    "cta": "iniciar sesión"
   }
 }

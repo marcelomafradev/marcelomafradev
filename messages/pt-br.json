@@ -10,8 +10,7 @@
       "1": "Sobre",
       "2": "Projetos",
       "3": "Tecnologias",
-      "4": "Blog",
-      "5": "Mensagens"
+      "4": "Blog"
     },
     "nothing-playing": "Nada tocando agora",
     "song-dialog": {
@@ -35,21 +34,11 @@
   },
   "homepage": {
     "personal-info": {
-      "title": "Desenvolvedor Fullstack",
-      "paragraphs": {
-        "first": "Olá, eu sou Marcelo Mafra, um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras. Com proficiência em TS, JS, ReactJS e NodeJS, minha jornada tecnológica me levou a dominar tanto o front-end quanto o back-end do desenvolvimento web.",
-        "second": "Do design da interface do usuário à arquitetura de sistemas complexos, estou sempre em busca de excelência técnica e inovação. Sou motivado pela oportunidade de enfrentar novos desafios e aprender constantemente, buscando maneiras de aprimorar minhas habilidades e contribuir para o sucesso dos projetos em que estou envolvido.",
-        "third": "Estou ansioso para colaborar em projetos empolgantes."
-      },
-      "resumeParagraph": {
-        "first": "Residindo em Florianópolis - SC, Brasil. Com 17 anos de idade, sou um desenvolvedor Fullstack.",
-        "second": "Tenho habilidades intermediárias em inglês, e meu idioma nativo é o português. Além do desenvolvimento de software, meus interesses incluem ouvir música, praticar exercícios, jogar xadrez e ler um bom livro."
-      },
-      "interests": "Sou um apaixonado por neurociência, filosofia e auto-ajuda. Adoro mergulhar em livros que expandem minha compreensão do cérebro humano, da existência e do crescimento pessoal. A música é uma grande parte da minha vida. Ela me inspira, me acalma e me energiza. Estou sempre à procura de novas músicas para adicionar à minha playlist. Além disso, sou um entusiasta do jiu-jitsu. Este ano, estou comemorando meu décimo ano de treinamento e, aos 17 anos, já sou faixa roxa. O jiu-jitsu me ensinou disciplina, resiliência e a arte da estratégia. Participei de aproximadamente 40 campeonatos, cada um deles uma oportunidade de aprender e melhorar."
+      "title": "Desenvolvedor Full-stack"
     },
     "resume-about-me": {
       "title": "📖 Sobre mim",
-      "description": "Olá, eu sou Marcelo Mafra, um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras. Com proficiência em TS, JS, ReactJS e NodeJS, minha jornada tecnológica me levou a dominar tanto o front-end quanto o back-end do desenvolvimento web."
+      "description": "Desenvolvedor full-stack com experiência em TypeScript, aplicando-o tanto no desenvolvimento nativo com React Native e Next.js para o front-end quanto em arquiteturas de back-end com Node.js e NestJS. Conhecimento em microsserviços e mensageria com RabbitMQ, focado em soluções escaláveis e de alta performance."
     },
     "experiences": {
       "title": "💼 Experiências",
@@ -57,24 +46,19 @@
       "view-resume": "Visualizar currículo",
       "1": {
         "title": "Postpay",
-        "description": "Fullstack Developer",
+        "description": "Full-stack Developer",
         "workingTime": "2024 - Present"
       },
       "2": {
         "title": "Mince Joias",
-        "description": "Fullstack Developer - Manutenção",
+        "description": "Full-stack Developer - Manutenção",
         "workingTime": "2023 - 2024 • Freelancer"
       },
       "3": {
         "title": "Griebler Remodeling",
-        "description": "Fullstack Developer - Manutenção",
+        "description": "Full-stack Developer - Manutenção",
         "workingTime": "2022 - 2024 • Freelancer"
       }
-    },
-    "posts": {
-      "title": "📰 Posts",
-      "cta": "Ver todos",
-      "not-found": "Eu não escrevi nenhum post ainda.. ;/"
     },
     "projects": {
       "title": "📁 Meus Projetos",
@@ -100,14 +84,10 @@
   },
   "about": {
     "title": "Sobre mim",
-    "description": "Residindo em Florianópolis - SC, Brasil. Com 17 anos de idade, sou um desenvolvedor Fullstack. Tenho habilidades intermediárias em inglês, e meu idioma nativo é o português. Além do desenvolvimento de software, meus interesses incluem ouvir música, praticar exercícios, jogar xadrez e ler um bom livro.",
-    "more": {
-      "title": "Mais..",
-      "description": "Olá, eu sou Marcelo Mafra, um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras. Com proficiência em TS, JS, ReactJS e NodeJS, minha jornada tecnológica me levou a dominar tanto o front-end quanto o back-end do desenvolvimento web. Do design da interface do usuário à arquitetura de sistemas complexos, estou sempre em busca de excelência técnica e inovação. Sou motivado pela oportunidade de enfrentar novos desafios e aprender constantemente, buscando maneiras de aprimorar minhas habilidades e contribuir para o sucesso dos projetos em que estou envolvido."
-    },
+    "description": "Residindo em Florianópolis - SC, Brasil. Além do desenvolvimento de software, meus interesses incluem ouvir música, praticar exercícios, jogar xadrez e ler um bom livro.",
     "personal-interests": {
       "title": "Interesses Pessoais",
-      "description": "Sou um apaixonado por neurociência, filosofia e auto-ajuda. Adoro mergulhar em livros que expandem minha compreensão do cérebro humano, da existência e do crescimento pessoal. A música é uma grande parte da minha vida. Ela me inspira, me acalma e me energiza. Estou sempre à procura de novas músicas para adicionar à minha playlist. Além disso, sou um entusiasta do jiu-jitsu. Este ano, estou comemorando meu décimo ano de treinamento e, aos 17 anos, já sou faixa roxa. O jiu-jitsu me ensinou disciplina, resiliência e a arte da estratégia. Participei de aproximadamente 40 campeonatos, cada um deles uma oportunidade de aprender e melhorar.",
+      "description": "Sou um apaixonado por neurociência, filosofia e 'auto-ajuda'. Adoro mergulhar em livros que expandem minha compreensão do cérebro humano, da existência e do crescimento pessoal. A música é uma grande parte da minha vida. Além disso, sou um entusiasta do jiu-jitsu. Este ano (2024), estou comemorando meu décimo ano de treinamento e, aos 17 anos, já sou faixa roxa. O jiu-jitsu me ensinou disciplina, resiliência e pensar estrategicamente. Participei de aproximadamente 40 campeonatos.",
       "image-1": "Lutando o Compnet da Gracie Barra em 2023",
       "image-2": "Recebendo a faixa roxa do mestre",
       "image-3": "Recebendo a medalha de ouro após duas finalizações no Compnet 2023."
@@ -126,35 +106,13 @@
     "description": "- Aqui estão alguns dos projetos que criei; você pode encontrar mais no meu"
   },
   "technologies": {
-    "title": "Meus projetos",
+    "title": "Minhas tecnologias",
     "description": "- Aqui estão alguns dos projetos que criei; você pode encontrar mais no meu",
     "1": "Frontend",
     "2": "Backend",
-    "3": "Database",
-    "4": "Infrastructure",
+    "3": "Banco de dados",
+    "4": "Infraestrutura",
     "5": "Apps",
     "6": "Outros"
-  },
-  "messages": {
-    "title": "Mensagens",
-    "description": "- Por que não deixar sua marca aqui? Desde uma calorosa mensagem ou até uma piada que nos faça rir, estou ansioso por sua surpresa! 🤩",
-    "label": "Mensagem",
-    "placeholder": "Deixe sua mensagem aqui...",
-    "send": "Enviar mensagem",
-    "auth": "Faça o login antes de enviar uma mensagem",
-    "success-updated": "Mensagem atualizada com sucesso.",
-    "success-send": "Mensagem enviada com sucesso.",
-    "dialog": {
-      "title": "Você tem certeza?",
-      "description": "Isso excluirá permanentemente sua mensagem irá remover seus dados de nossos servidores.",
-      "cancel": "Cancelar",
-      "continue": "Continuar",
-      "success": "Mensagem excluída com sucesso."
-    }
-  },
-  "auth": {
-    "title": "Entre com a sua conta!",
-    "subtitle": "Faça o login ou registre-se.",
-    "cta": "entrar"
   }
 }

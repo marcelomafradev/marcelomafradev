@@ -8,8 +8,9 @@ import {
   SpotifyIndicator,
   Image,
 } from '@/components/app';
-import NavigationButton from '../navigation-button';
+
 import { useMessages } from 'next-intl';
+import NavigationButton from '../navigation-button';
 
 const Sidebar = () => {
   const router = useRouter();
