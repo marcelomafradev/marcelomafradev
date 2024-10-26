@@ -9,7 +9,6 @@ export const localePrefix = 'never';
 
 export type HrefValue =
   | '/'
-  | '/auth'
   | '/about'
   | '/projects'
   | '/technologies'
@@ -17,7 +16,6 @@ export type HrefValue =
 
 export const pathnames = {
   '/': '/',
-  '/auth': '/auth',
   '/about': '/about',
   '/projects': '/projects',
   '/technologies': '/technologies',
