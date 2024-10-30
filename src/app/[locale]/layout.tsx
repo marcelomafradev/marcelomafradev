@@ -5,6 +5,7 @@ import { Sora } from 'next/font/google';
 import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/sonner';
 import NextIntlProvider from '@/providers/next-intl-provider';
+import { Analytics } from '@vercel/analytics/react';
 
 const sora = Sora({ subsets: ['latin'] });
 
@@ -29,6 +30,8 @@ export default async function RootLayout({
 }) {
   return (
     <NextIntlProvider>
+      <Analytics />
+
       <html lang={locale} translate="no">
         <body className={sora.className}>
           <Navigation>{children}</Navigation>
