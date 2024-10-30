@@ -119,7 +119,7 @@ export const EXPERIENCES = [
     workingTime: '2024 - Atualmente',
   },
   {
-    href: 'https://www.mincejoias.com/',
+    href: 'https://www.mincejoias.com.br/',
     logo: '/companies/mince-joias.png',
     title: 'Mince Joias',
     description: 'Desenvolvedor Fullstack - Manutenção',
