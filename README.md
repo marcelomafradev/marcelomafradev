@@ -24,10 +24,6 @@ SPOTIFY_FAVORITE_SONGS_LIMIT=
 
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
-
-DB_PASSWORD=
-DATABASE_URL=
-AUTH_SECRET=
 ```
 
 ### Start the app
@@ -35,4 +31,3 @@ AUTH_SECRET=
 ```shell
 npm run dev
 ```
-

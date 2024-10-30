@@ -4,5 +4,8 @@ declare namespace NodeJS {
     SPOTIFY_CLIENT_SECRET: string;
     SPOTIFY_REFRESH_TOKEN: string;
     SPOTIFY_FAVORITE_SONGS_LIMIT: string;
+
+    GOOGLE_CLIENT_ID: string;
+    GOOGLE_CLIENT_SECRET: string;
   }
 }

@@ -1,4 +1,4 @@
-import type { Config } from './public/node_modules/.pnpm/tailwindcss@3.4.3/node_modules/tailwindcss/types';
+import type { Config } from 'tailwindcss/types';
 
 const config = {
   darkMode: ['class'],
