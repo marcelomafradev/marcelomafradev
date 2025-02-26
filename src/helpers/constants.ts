@@ -106,7 +106,7 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
 export const PERSONAL_INFO = {
   title: 'Fullstack Developer',
   name: 'Marcelo Mafra',
-  image: '/marcelomafra.jpg',
+  image: '/me.jpg',
   stack: ['TypeScript', 'NodeJs', 'NextJs', 'React Native'],
 };
 

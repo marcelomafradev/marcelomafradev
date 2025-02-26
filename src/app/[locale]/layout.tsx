@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Marcelo Mafra - Fullstack Developer',
   description: 'Developed by @marcelomafradev',
   icons: {
-    icon: '/marcelomafra.jpg',
+    icon: '/me.jpg',
   },
   robots: { index: false, follow: false },
   other: {
