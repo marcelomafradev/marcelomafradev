@@ -4,4 +4,4 @@ import Projects from './projects';
 import ResumeAboutMe from './resume-about-me';
 import Education from './education';
 
-export { PersonalInfo, ResumeAboutMe, Experiences, Projects, Education};
+export { PersonalInfo, ResumeAboutMe, Experiences, Projects, Education };

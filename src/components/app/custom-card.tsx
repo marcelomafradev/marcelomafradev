@@ -28,9 +28,12 @@ const CustomCard = ({
             {title}
           </CardTitle>
 
-
           {href && linkTitle && (
-            <Button variant={'link'} className="group gap-1 p-0 text-xs" asChild>
+            <Button
+              variant={'link'}
+              className="group gap-1 p-0 text-xs"
+              asChild
+            >
               <Link href={href} type="external">
                 {linkTitle}
                 <ArrowUpRight
@@ -38,7 +41,8 @@ const CustomCard = ({
                   className="transition-all group-hover:rotate-45"
                 />
               </Link>
-            </Button>)}
+            </Button>
+          )}
         </CardHeader>
 
         <CardContent className="text-pretty font-light text-muted-foreground">

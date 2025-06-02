@@ -12,7 +12,7 @@ const Education = () => {
         return <GraduationCap className="h-4 w-4 text-primary md:h-5 md:w-5" />;
       case 2:
         return <Rocket className="h-4 w-4 text-primary md:h-5 md:w-5" />;
-      case 4:
+      case 3:
         return <Code className="h-4 w-4 text-primary md:h-5 md:w-5" />;
       case 4:
         return <School className="h-4 w-4 text-primary md:h-5 md:w-5" />;

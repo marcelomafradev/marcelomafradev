@@ -3,7 +3,7 @@ import CustomCard from '../custom-card';
 import { Image, Link } from '@/components/app';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { cn } from '@/lib/utils';
 import {
   Popover,
