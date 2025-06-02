@@ -7,8 +7,8 @@ import Link from './link';
 
 interface CustomCardProps {
   delay?: number;
-  href: string;
-  linkTitle: string;
+  href?: string;
+  linkTitle?: string;
   title: string;
   children: ReactNode;
 }
@@ -28,15 +28,17 @@ const CustomCard = ({
             {title}
           </CardTitle>
 
-          <Button variant={'link'} className="group gap-1 p-0 text-xs" asChild>
-            <Link href={href} type="external">
-              {linkTitle}
-              <ArrowUpRight
-                size={15}
-                className="transition-all group-hover:rotate-45"
-              />
-            </Link>
-          </Button>
+
+          {href && linkTitle && (
+            <Button variant={'link'} className="group gap-1 p-0 text-xs" asChild>
+              <Link href={href} type="external">
+                {linkTitle}
+                <ArrowUpRight
+                  size={15}
+                  className="transition-all group-hover:rotate-45"
+                />
+              </Link>
+            </Button>)}
         </CardHeader>
 
         <CardContent className="text-pretty font-light text-muted-foreground">

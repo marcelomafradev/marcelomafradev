@@ -34,30 +34,54 @@
   },
   "homepage": {
     "personal-info": {
-      "title": "Desenvolvedor Full-stack"
+      "title": "Desenvolvedor Full-stack | Especialista em TypeScript"
     },
     "resume-about-me": {
       "title": "📖 Sobre mim",
-      "description": "Desenvolvedor full-stack com experiência em TypeScript, aplicando-o tanto no desenvolvimento nativo com React Native e Next.js para o front-end quanto em arquiteturas de back-end com Node.js e NestJS. Conhecimento em microsserviços e mensageria com RabbitMQ, focado em soluções escaláveis e de alta performance."
+      "description": "Desenvolvedor full-stack com expertise em arquitetura de sistemas escaláveis e microsserviços. Especialista em TypeScript, aplicando-o tanto no front-end (React, Next.js, React Native) quanto no back-end (Node.js, NestJS). Experiência em mensageria com RabbitMQ, comunicação gRPC, otimização de performance com Redis e conteinerização com Docker. Apaixonado por criar soluções robustas com código limpo e boas práticas de UI/UX."
     },
     "experiences": {
       "title": "💼 Experiências",
       "cta": "Contrate-me",
-      "view-resume": "Visualizar currículo",
+      "view-resume": "📄 Ver Currículo Completo",
       "1": {
         "title": "Postpay",
-        "description": "Full-stack Developer",
-        "workingTime": "2024 - Present"
+        "description": "Desenvolvedor Full Stack",
+        "workingTime": "Dez 2023 - Atual",
+        "details": {
+          "1": "🚀 Arquitetura de microsserviços escaláveis com Node.js e NestJS",
+          "2": "🔌 Comunicação entre serviços com RabbitMQ (mensageria) e gRPC (RPC de alta performance)",
+          "3": "💻 Front-end: Desenvolvimento de dashboards administrativos com React/Next.js + Tailwind CSS & Shadcn UI",
+          "4": "📱 Mobile: Aplicativo nativo para operações financeiras com React Native",
+          "5": "💳 Sistemas de pagamento: Integração com múltiplos gateways e lógica de fallback automático",
+          "6": "📊 CRM: Desenvolvimento de módulos para gestão de clientes e transações",
+          "7": "⚡ Otimizações: Cache com Redis e conteinerização com Docker",
+          "8": "🤖 Automação: Sistema inteligente de retentativas com troca de provedores"
+        }
       },
       "2": {
         "title": "Mince Joias",
-        "description": "Full-stack Developer - Manutenção",
-        "workingTime": "2023 - 2024 • Freelancer"
+        "description": "Desenvolvedor Full Stack - Freelancer",
+        "workingTime": "Ago 2023 - Dez 2023",
+        "details": {
+          "1": "🛒 Plataforma completa de e-commerce com Next.js 14",
+          "2": "🔐 Sistema de autenticação seguro com NextAuth + Prisma",
+          "3": "💎 Integração com gateways de pagamento (Mercado Pago e Stripe)",
+          "4": "📦 Gestão de produtos com upload de imagens para AWS S3",
+          "5": "📊 Dashboard administrativo com tabelas avançadas (TanStack Table)",
+          "6": "🚀 CI/CD: Pipeline de deploy automatizado com padrões ESLint/Prettier"
+        }
       },
       "3": {
         "title": "Griebler Remodeling",
-        "description": "Full-stack Developer - Manutenção",
-        "workingTime": "2022 - 2024 • Freelancer"
+        "description": "Desenvolvedor Full Stack - Freelancer",
+        "workingTime": "2022 - 2024",
+        "details": {
+          "1": "🏗️ Desenvolvimento do site institucional responsivo",
+          "2": "📝 Implementação de formulários dinâmicos com validação",
+          "3": "⚡ Otimização de performance e SEO (90+ no Lighthouse)",
+          "4": "🔄 Integração com sistemas de terceiros"
+        }
       }
     },
     "projects": {
@@ -66,19 +90,75 @@
       "link": "Visitar",
       "source-code": "Código-fonte",
       "1": {
-        "description": "Uma loja online de joias finas, oferecendo uma coleção elegante e moderna para todas as ocasiões."
+        "description": "Plataforma completa de e-commerce para joias finas com catálogo, carrinho, checkout e painel administrativo."
       },
       "2": {
-        "description": "Especialistas em remodelação, transformando visões arquitetônicas em realidade para residências e empresas."
+        "description": "Especialistas em remodelação, com site institucional desenvolvido com foco em performance e usabilidade."
       },
       "3": {
-        "description": "Plataforma online dedicada à análise e insights do Jiu-Jitsu Brasileiro, criada para fins educacionais e sem propósito de divulgação."
+        "description": "Plataforma educacional para análise e insights de Jiu-Jitsu Brasileiro (projeto pessoal)."
       },
       "4": {
-        "description": "Aplicativo de gerenciamento de tarefas com estatísticas visando a produtividade"
+        "description": "Aplicativo de produtividade com gerenciamento de tarefas e métricas de performance."
       },
       "5": {
-        "description": "Recriação da plataforma de mídia social 'Twitter'"
+        "description": "Recriação funcional da plataforma Twitter com feed, posts e interações."
+      }
+    },
+    "education": {
+      "title": "🎓 Formação & Cursos",
+      "description": "Minha jornada de aprendizado contínuo em tecnologia",
+      "items": {
+        "1": {
+          "title": "UNIVALI",
+          "description": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+          "time": "Jan 2025 - Cursando",
+          "details": {
+            "1": "🎯 Grade curricular com ênfase em arquitetura de software",
+            "2": "📊 Disciplinas avançadas em banco de dados e cloud",
+            "3": "🤝 Metodologias ágeis e projetos colaborativos"
+          }
+        },
+        "2": {
+          "title": "Rocketseat",
+          "description": "Especialização Full Stack",
+          "time": "2023",
+          "details": {
+            "1": "🚀 Domínio de Node.js, React e TypeScript avançado",
+            "2": "🔗 Construção de APIs RESTful e microsserviços",
+            "3": "⚡ Técnicas de otimização e deploy em nuvem"
+          }
+        },
+        "3": {
+          "title": "OneBitCode",
+          "description": "Formação Full Stack JavaScript",
+          "time": "2022",
+          "details": {
+            "1": "💻 JavaScript moderno (ES6+) e padrões de projeto",
+            "2": "🛠️ Desenvolvimento de aplicações full-stack",
+            "3": "🧠 Clean Code e princípios SOLID"
+          }
+        },
+        "4": {
+          "title": "Harvard CS50",
+          "description": "Ciência da Computação",
+          "time": "2021",
+          "details": {
+            "1": "📚 Algoritmos e estruturas de dados fundamentais",
+            "2": "🖥️ Linguagens C, Python e conceitos de IA",
+            "3": "🧠 Desenvolvimento do raciocínio lógico e resolução de problemas complexos"
+          }
+        },
+        "5": {
+          "title": "UDEMY",
+          "description": "Cursos Complementares",
+          "time": "Variados",
+          "details": {
+            "1": "🎨 UI/UX Design com Figma e prototipação",
+            "2": "📱 React Native e desenvolvimento mobile",
+            "3": "☁️ Fundamentos de AWS e cloud computing"
+          }
+        }
       }
     }
   },
@@ -110,9 +190,10 @@
     "description": "- Aqui estão alguns dos projetos que criei; você pode encontrar mais no meu",
     "1": "Frontend",
     "2": "Backend",
-    "3": "Banco de dados",
-    "4": "Infraestrutura",
-    "5": "Apps",
-    "6": "Outros"
+    "3": "Mobile",
+    "4": "Banco de dados",
+    "5": "Infraestrutura",
+    "6": "Apps",
+    "7": "Outros"
   }
 }

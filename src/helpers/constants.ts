@@ -79,7 +79,7 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
         id: 6,
         name: 'Email',
         icon: Mail,
-        href: 'https://www.instagram.com/marcelomafradev',
+        href: 'mailto:marcelomafradev@gmail.com',
       },
       {
         id: 7,
@@ -104,10 +104,21 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
 ];
 
 export const PERSONAL_INFO = {
-  title: 'Fullstack Developer',
+  title: 'Fullstack Developer | Microservices Expert',
   name: 'Marcelo Mafra',
   image: '/me.jpg',
-  stack: ['TypeScript', 'NodeJs', 'NextJs', 'React Native'],
+  stack: [
+    'TypeScript',
+    'React',
+    'NextJs',
+    'NodeJs',
+    'NestJS',
+    'React Native',
+    'gRPC',
+    'RabbitMQ',
+    'Docker',
+    'GraphQL',
+  ],
 };
 
 export const EXPERIENCES = [
@@ -117,6 +128,7 @@ export const EXPERIENCES = [
     title: 'Postpay',
     description: 'Desenvolvedor Fullstack',
     workingTime: '2024 - Atualmente',
+    detailsCount: 6,
   },
   {
     href: 'https://www.mincejoias.com.br/',
@@ -124,6 +136,7 @@ export const EXPERIENCES = [
     title: 'Mince Joias',
     description: 'Desenvolvedor Fullstack - Manutenção',
     workingTime: '2023 - 2024 • Freelancer',
+    detailsCount: 6,
   },
   {
     href: 'https://www.grieblerremodeling.com/',
@@ -131,6 +144,7 @@ export const EXPERIENCES = [
     title: 'Griebler Remodeling',
     description: 'Desenvolvedor Fullstack - Manutenção',
     workingTime: '2022 - 2024 • Freelancer',
+    detailsCount: 3,
   },
 ];
 
@@ -347,6 +361,46 @@ export const STACK = [
         icon: '/techs/graphql.svg',
         link: 'https://graphql.org/',
       },
+      {
+        name: 'RabbitMQ',
+        icon: '/techs/rabbitmq.svg',
+        link: 'https://www.rabbitmq.com',
+      },
+      {
+        name: 'gRPC',
+        icon: '/techs/grpc.svg',
+        link: 'https://grpc.io',
+      },
+      {
+        name: 'Redis',
+        icon: '/techs/redis.svg',
+        link: 'https://redis.io',
+      },
+    ],
+  },
+  {
+    title: 'mobile',
+    items: [
+      {
+        name: 'React Native',
+        icon: '/techs/react.svg',
+        link: 'https://reactnative.dev',
+      },
+      {
+        name: 'Expo',
+        icon: '/techs/expo.svg',
+        link: 'https://expo.dev',
+      },
+      {
+        name: 'EAS',
+        icon: '/techs/expo.svg',
+        link: 'https://expo.dev/eas',
+      },
+      {
+        name: 'NativeWind',
+        icon: '/techs/tailwindcss.svg',
+        link: 'https://nativewind.dev',
+      },
     ],
   },
   {
@@ -366,6 +420,11 @@ export const STACK = [
         name: 'MySQL',
         icon: '/techs/mysql.svg',
         link: 'https://www.mysql.com',
+      },
+      {
+        name: 'Redis',
+        icon: '/techs/redis.svg',
+        link: 'https://redis.io',
       },
     ],
   },
@@ -393,9 +452,23 @@ export const STACK = [
         icon: '/techs/docker.svg',
         link: 'https://www.docker.com',
       },
+      {
+        name: 'AWS',
+        icon: '/techs/aws.svg',
+        link: 'https://aws.amazon.com',
+      },
+      {
+        name: 'Kubernetes',
+        icon: '/techs/kubernetes.svg',
+        link: 'https://kubernetes.io',
+      },
+      {
+        name: 'PM2',
+        icon: '/techs/pm2.svg',
+        link: 'https://pm2.keymetrics.io',
+      },
     ],
   },
-
   {
     title: 'apps',
     items: [
@@ -462,7 +535,6 @@ export const STACK = [
         icon: '/techs/google-analytics.svg',
         link: 'https://marketingplatform.google.com/about/analytics',
       },
-
       {
         name: 'Jest',
         icon: '/techs/jest.svg',

@@ -19,7 +19,7 @@ const PersonalInfo = () => {
         />
       </FadeInMotion>
 
-      <div className="flex flex-col items-start justify-center gap-2">
+      <div className="flex flex-1 flex-col items-start justify-center gap-2 overflow-hidden">
         <FadeInMotion delay={0.3}>
           <TypingText title={PERSONAL_INFO.name} className="italic" />
           <TypingText
@@ -28,18 +28,20 @@ const PersonalInfo = () => {
           />
         </FadeInMotion>
 
-        <ScrollArea className="max-w-[75%] md:max-w-full">
-          <ScrollBar orientation="horizontal" />
-
+        <ScrollArea className="w-full">
           <div className="flex w-max space-x-2 pb-3">
             {PERSONAL_INFO.stack.map((stack, index) => (
               <FadeInMotion key={stack} delay={0.3 + 0.15 * index}>
-                <Badge variant="secondary" className="font-medium">
+                <Badge
+                  variant="secondary"
+                  className="whitespace-nowrap font-medium"
+                >
                   {stack}
                 </Badge>
               </FadeInMotion>
             ))}
           </div>
+          <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </div>
     </section>

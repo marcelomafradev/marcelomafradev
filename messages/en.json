@@ -12,10 +12,10 @@
       "3": "Technologies",
       "4": "Blog"
     },
-    "nothing-playing": "Nothing playing right now",
+    "nothing-playing": "Nothing playing now",
     "song-dialog": {
       "cta": "View on Spotify",
-      "message": "Marcelo Mafra is listening to this song right now.",
+      "message": "Marcelo Mafra is currently listening to this song.",
       "popularity": "Song popularity"
     },
     "settings": {
@@ -34,85 +34,166 @@
   },
   "homepage": {
     "personal-info": {
-      "title": "Full-stack Developer"
+      "title": "Full-stack Developer | TypeScript Specialist"
     },
     "resume-about-me": {
-      "title": "📖 About Me",
-      "description": "Full-stack developer with experience in TypeScript, applying it in both native development with React Native and Next.js for front-end, as well as in back-end architectures with Node.js and NestJS. Knowledgeable in microservices and messaging with RabbitMQ, focused on scalable and high-performance solutions."
+      "title": "📖 About me",
+      "description": "Full-stack developer with expertise in scalable system architecture and microservices. TypeScript specialist, applying it to both front-end (React, Next.js, React Native) and back-end (Node.js, NestJS). Experience with RabbitMQ messaging, gRPC communication, performance optimization with Redis, and containerization with Docker. Passionate about creating robust solutions with clean code and good UI/UX practices."
     },
     "experiences": {
       "title": "💼 Experiences",
-      "cta": "Hire Me",
-      "view-resume": "View Resume",
+      "cta": "Hire me",
+      "view-resume": "📄 View Full Resume",
       "1": {
         "title": "Postpay",
-        "description": "Full-stack Developer",
-        "workingTime": "2024 - Present"
+        "description": "Full Stack Developer",
+        "workingTime": "Dec 2023 - Present",
+        "details": {
+          "1": "🚀 Scalable microservices architecture with Node.js and NestJS",
+          "2": "🔌 Inter-service communication with RabbitMQ (messaging) and gRPC (high-performance RPC)",
+          "3": "💻 Front-end: Development of administrative dashboards with React/Next.js + Tailwind CSS & Shadcn UI",
+          "4": "📱 Mobile: Native app for financial operations with React Native",
+          "5": "💳 Payment systems: Integration with multiple gateways and automatic fallback logic",
+          "6": "📊 CRM: Development of modules for customer and transaction management",
+          "7": "⚡ Optimizations: Redis caching and Docker containerization",
+          "8": "🤖 Automation: Intelligent retry system with provider switching"
+        }
       },
       "2": {
         "title": "Mince Joias",
-        "description": "Full-stack Developer - Maintenance",
-        "workingTime": "2023 - 2024 • Freelancer"
+        "description": "Full Stack Developer - Freelancer",
+        "workingTime": "Aug 2023 - Dec 2023",
+        "details": {
+          "1": "🛒 Complete e-commerce platform with Next.js 14",
+          "2": "🔐 Secure authentication system with NextAuth + Prisma",
+          "3": "💎 Integration with payment gateways (Mercado Pago and Stripe)",
+          "4": "📦 Product management with image upload to AWS S3",
+          "5": "📊 Administrative dashboard with advanced tables (TanStack Table)",
+          "6": "🚀 CI/CD: Automated deployment pipeline with ESLint/Prettier standards"
+        }
       },
       "3": {
         "title": "Griebler Remodeling",
-        "description": "Full-stack Developer - Maintenance",
-        "workingTime": "2022 - 2024 • Freelancer"
+        "description": "Full Stack Developer - Freelancer",
+        "workingTime": "2022 - 2024",
+        "details": {
+          "1": "🏗️ Development of responsive institutional website",
+          "2": "📝 Implementation of dynamic forms with validation",
+          "3": "⚡ Performance and SEO optimization (90+ on Lighthouse)",
+          "4": "🔄 Integration with third-party systems"
+        }
       }
     },
     "projects": {
       "title": "📁 My Projects",
-      "cta": "View All",
+      "cta": "View all",
       "link": "Visit",
-      "source-code": "Source Code",
+      "source-code": "Source code",
       "1": {
-        "description": "An online store for fine jewelry, offering a stylish and modern collection for all occasions."
+        "description": "Complete e-commerce platform for fine jewelry with catalog, cart, checkout and administrative panel."
       },
       "2": {
-        "description": "Remodeling specialists, turning architectural visions into reality for homes and businesses."
+        "description": "Remodeling experts, with institutional website developed focusing on performance and usability."
       },
       "3": {
-        "description": "An online platform dedicated to the analysis and insights of Brazilian Jiu-Jitsu, created for educational purposes and not for publicity."
+        "description": "Educational platform for Brazilian Jiu-Jitsu analysis and insights (personal project)."
       },
       "4": {
-        "description": "Task management app with statistics aimed at productivity."
+        "description": "Productivity app with task management and performance metrics."
       },
       "5": {
-        "description": "Recreation of the social media platform 'Twitter'."
+        "description": "Functional recreation of Twitter platform with feed, posts and interactions."
+      }
+    },
+    "education": {
+      "title": "🎓 Education & Courses",
+      "description": "My continuous learning journey in technology",
+      "items": {
+        "1": {
+          "title": "UNIVALI",
+          "description": "Technologist in Systems Analysis and Development",
+          "time": "Jan 2025 - In progress",
+          "details": {
+            "1": "🎯 Curriculum with emphasis on software architecture",
+            "2": "📊 Advanced subjects in databases and cloud",
+            "3": "🤝 Agile methodologies and collaborative projects"
+          }
+        },
+        "2": {
+          "title": "Rocketseat",
+          "description": "Full Stack Specialization",
+          "time": "2023",
+          "details": {
+            "1": "🚀 Mastery of Node.js, React and advanced TypeScript",
+            "2": "🔗 Building RESTful APIs and microservices",
+            "3": "⚡ Optimization techniques and cloud deployment"
+          }
+        },
+        "3": {
+          "title": "OneBitCode",
+          "description": "Full Stack JavaScript Training",
+          "time": "2022",
+          "details": {
+            "1": "💻 Modern JavaScript (ES6+) and design patterns",
+            "2": "🛠️ Full-stack application development",
+            "3": "🧠 Clean Code and SOLID principles"
+          }
+        },
+        "4": {
+          "title": "Harvard CS50",
+          "description": "Computer Science",
+          "time": "2021",
+          "details": {
+            "1": "📚 Fundamental algorithms and data structures",
+            "2": "🖥️ C, Python languages and AI concepts",
+            "3": "🧠 Development of logical reasoning and complex problem solving"
+          }
+        },
+        "5": {
+          "title": "UDEMY",
+          "description": "Complementary Courses",
+          "time": "Various",
+          "details": {
+            "1": "🎨 UI/UX Design with Figma and prototyping",
+            "2": "📱 React Native and mobile development",
+            "3": "☁️ AWS fundamentals and cloud computing"
+          }
+        }
       }
     }
   },
   "about": {
-    "title": "About Me",
-    "description": "Residing in Florianópolis - SC, Brazil. Besides software development, my interests include listening to music, exercising, playing chess, and reading a good book.",
+    "title": "About me",
+    "description": "Living in Florianópolis - SC, Brazil. Besides software development, my interests include listening to music, exercising, playing chess and reading a good book.",
     "personal-interests": {
       "title": "Personal Interests",
-      "description": "I am passionate about neuroscience, philosophy, and 'self-help'. I love diving into books that expand my understanding of the human brain, existence, and personal growth. Music is a big part of my life. Additionally, I am a jiu-jitsu enthusiast. This year (2024), I am celebrating my tenth year of training, and at 17, I am already a purple belt. Jiu-jitsu has taught me discipline, resilience, and strategic thinking. I have participated in approximately 40 championships.",
-      "image-1": "Competing at the Compnet of Gracie Barra in 2023",
+      "description": "I'm passionate about neuroscience, philosophy and 'self-help'. I love diving into books that expand my understanding of the human brain, existence and personal growth. Music is a big part of my life. Additionally, I'm a jiu-jitsu enthusiast. This year (2024), I'm celebrating my tenth year of training and at 17 years old, I'm already a purple belt. Jiu-jitsu has taught me discipline, resilience and strategic thinking. I've participated in approximately 40 championships.",
+      "image-1": "Fighting at Gracie Barra's Compnet in 2023",
       "image-2": "Receiving the purple belt from the master",
       "image-3": "Receiving the gold medal after two submissions at Compnet 2023."
     },
     "books": {
-      "title": "Books I Recommend",
-      "description": "- Books I have read and recommend to enrich your studies."
+      "title": "Books I recommend",
+      "description": "- Books I've read and recommend to enrich your studies."
     },
     "musics": {
-      "title": "Favorite Songs of the Moment",
-      "description": "- Check out some songs that I like."
+      "title": "Current favorite songs",
+      "description": "- Check out some songs I like."
     }
   },
   "projects": {
-    "title": "My Projects",
-    "description": "- Here are some of the projects I created; you can find more on my"
+    "title": "My projects",
+    "description": "- Here are some of the projects I've created; you can find more on my"
   },
   "technologies": {
-    "title": "My Technologies",
-    "description": "- Here are some of the technologies I work with:",
+    "title": "My technologies",
+    "description": "- Here are some of the projects I've created; you can find more on my",
     "1": "Frontend",
     "2": "Backend",
-    "3": "Database",
-    "4": "Infrastructure",
-    "5": "Apps",
-    "6": "Others"
+    "3": "Mobile",
+    "4": "Database",
+    "5": "Infrastructure",
+    "6": "Apps",
+    "7": "Others"
   }
 }
