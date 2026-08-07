@@ -1,0 +1,21 @@
+{
+  "username": "marcelomafradev",
+  "profileUrl": "https://www.chess.com/member/marcelomafradev",
+  "avatarUrl": null,
+  "league": "Silver",
+  "rapidRating": 1250,
+  "rapidBest": 1320,
+  "rapidRecord": {
+    "win": 42,
+    "loss": 18,
+    "draw": 7
+  },
+  "blitzRating": 1180,
+  "blitzRecord": {
+    "win": 30,
+    "loss": 22,
+    "draw": 4
+  },
+  "streakDays": 7,
+  "streakUpdatedToday": true
+}
