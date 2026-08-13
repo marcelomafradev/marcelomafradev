@@ -1,0 +1,69 @@
+# Marcelo Mafra
+
+> Tech Lead e engenheiro full stack em Florianópolis, Brasil. Projeto e construo plataformas inteiras — microserviços em NestJS e Java, apps em React Native nas lojas, painéis em Next.js e a infraestrutura que sustenta tudo isso. Trabalho sobretudo com sistemas multi-tenant e produtos white-label.
+
+English summary: Tech Lead and full stack engineer based in Florianópolis, Brazil. Four years across fintech, SaaS and edtech, owning architecture from the first sketch to the app in the store. Multi-tenant platforms, white-label products, microservices and micro-frontends. This site is available in Portuguese (default), English and Spanish.
+
+Este arquivo existe para agentes e modelos de linguagem que precisam de um resumo fiel do site, sem precisar renderizar as páginas. O conteúdo canônico está em https://www.marcelomafradev.com.br.
+
+## Páginas
+
+- [Início](https://www.marcelomafradev.com.br): apresentação, métricas de entrega, case studies de engenharia, projetos, experiência e formação.
+- [Sobre](https://www.marcelomafradev.com.br/about): trajetória, interesses fora do código, livros e música.
+- [Projetos](https://www.marcelomafradev.com.br/projects): produtos entregues para clientes e projetos próprios de código aberto.
+- [Tecnologias](https://www.marcelomafradev.com.br/technologies): stack do dia a dia, do frontend à infraestrutura.
+- [Contato](https://www.marcelomafradev.com.br/contact): formulário e canais diretos. Resposta em até um dia útil.
+
+Versões em inglês e espanhol usam o mesmo caminho com prefixo de idioma: `/en/...` e `/es/...`.
+
+## Currículo
+
+- [Currículo em português (PDF)](https://www.marcelomafradev.com.br/documents/marcelo-mafra-cv-br.pdf)
+- [Currículo em inglês (PDF)](https://www.marcelomafradev.com.br/documents/marcelo-mafra-cv-en.pdf)
+
+## Como trabalho com IA
+
+Trabalho IA-first, e isso aqui não significa autocomplete mais rápido. Significa que o processo de engenharia foi redesenhado em torno de agentes, com o mesmo rigor que se exige de qualquer sistema em produção: contrato explícito, execução isolada, verificação objetiva e responsabilidade humana no fim da linha.
+
+**Spec-driven development.** Nenhuma mudança relevante começa pelo código. Começa por uma spec que fixa o problema, as restrições e o critério de aceite, e por um plano quebrado em tarefas verificáveis, cada uma com o seu próprio teste. O plano é um documento vivo: tarefa concluída é marcada na hora, porque o próximo agente lê o estado do plano, não a minha memória. Spec ambígua é bug de requisito — sai mais barato consertar ali do que trinta arquivos depois.
+
+**Orquestração entre modelos.** Planejar, implementar, depurar e revisar são trabalhos diferentes, e os modelos não são igualmente bons nos quatro. Cada fase é roteada para o modelo que rende melhor nela, e o orquestrador que escreve o plano não é o que implementa — quem projeta não deveria ser o único a auditar o próprio resultado. Execução é sequencial e isolada: uma tarefa por vez, em branch e worktree próprias. Paralelismo entra dentro da tarefa, em leitura e investigação; não em escrita concorrente no mesmo código.
+
+**Contexto versionado no repositório.** As convenções do projeto — layout de módulo, padrão de log, regra de teste, o que nunca pode acontecer — vivem no repositório como instrução executável, versionadas junto com o código e revisadas em PR como qualquer outra coisa. Agente novo herda a regra em vez de adivinhar; quando a regra muda, muda para todo mundo no mesmo commit. É a diferença entre um time com padrão e uma coleção de prompts pessoais.
+
+**MCP e ferramentas.** O agente conversa com o resto do ecossistema por protocolo — quadro de tarefas, banco, navegador, design, CI — em vez de depender de contexto colado à mão. Isso troca "o que eu lembro do sistema" por "o que o sistema respondeu agora", que é a única forma de um agente trabalhar sobre estado real sem alucinar o ambiente.
+
+**Verificação antes de afirmar.** Teste falhando antes da implementação; lint, typecheck, cobertura, unitário e end-to-end no CI como portão objetivo. "Está pronto" só é dito com a saída do comando na mão. Teste ruim — dependente de tempo, que afirma no meio da transição, que testa implementação em vez de comportamento — é refeito ou descartado, nunca marcado como instável e ignorado.
+
+**A revisão humana é a porta do merge.** Leio o que volta. Agente acelera a produção de código e, com isso, acelera também a produção de código errado — o ganho real está em ter portões que pegam isso cedo, não em confiar mais. A responsabilidade pelo que entra em produção continua sendo de quem assina o PR.
+
+Aplico isso em produto real, não em demonstração: foi assim que levei um squad de seis pessoas para um fluxo spec-driven em edtech, e é assim que construo hoje uma plataforma SaaS de microserviços para o setor imobiliário.
+
+## Stack
+
+- Linguagens: TypeScript, JavaScript, Java, SQL
+- Back-end: NestJS, Node.js, Spring Boot, gRPC, RabbitMQ, BullMQ, REST, OpenAPI
+- Front-end: Next.js, React, Tailwind CSS, shadcn/ui, Storybook, Zustand, React Query
+- Mobile: React Native, Expo e EAS, NativeWind, Ionic
+- Dados: PostgreSQL, MySQL, MongoDB, Redis, TypeORM, Prisma, JPA, Row-Level Security
+- Infraestrutura: Docker, Kubernetes, AWS, DigitalOcean, GitHub Actions, Turborepo
+- Observabilidade: Prometheus, Grafana, Loki, OpenTelemetry Collector
+- Arquitetura: microserviços, micro-frontends, multi-tenancy, white-label, workflows duráveis com Temporal
+
+## Experiência em uma linha
+
+- Plataforma de pagamentos com mais de vinte serviços em Node e Java, integração bancária direta, app e console sobre a mesma base.
+- Apps white-label para instituições de ensino: um código-fonte gera aplicativos independentes por instituição, com marca e release próprios.
+- SaaS científico de identificação por espectroscopia, com a mesma interface no navegador e no desktop e dado isolado por instituição.
+- SaaS imobiliário em microserviços, com micro-frontends por domínio e portal para o cliente final.
+
+## Contato
+
+- E-mail: marcelomafradev@gmail.com
+- LinkedIn: https://www.linkedin.com/in/marcelomafradev/
+- GitHub: https://github.com/marcelomafradev
+- Localização: Florianópolis, Santa Catarina, Brasil. Trabalho remoto.
+
+## Sobre este site
+
+Next.js 16, React 19, TypeScript, Tailwind CSS 4, Base UI e next-intl em três idiomas. Testado com Vitest, Testing Library e Playwright, com portão de cobertura em 90%. Código aberto em https://github.com/marcelomafradev/marcelomafradev.

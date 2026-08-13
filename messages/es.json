@@ -1,0 +1,517 @@
+{
+  "navigation": {
+    "items": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "technologies": "Tecnologías",
+      "contact": "Contacto",
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "nothing-playing": "Nada reproduciéndose ahora",
+    "song-dialog": {
+      "cta": "Ver en Spotify",
+      "message": "Marcelo Mafra está escuchando esta canción ahora.",
+      "popularity": "Popularidad de la canción"
+    },
+    "settings": {
+      "theme": {
+        "title": "Tema",
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema"
+      },
+      "language": {
+        "title": "Idioma",
+        "english": "Inglés",
+        "portuguese": "Portugués",
+        "spanish": "Español"
+      }
+    },
+    "menu-description": "Navega entre las páginas, cambia el tema y el idioma.",
+    "groups": {
+      "profile": "Perfil",
+      "social": "Redes"
+    },
+    "chess": {
+      "streak": "Racha",
+      "rapid": "Rapid",
+      "open": "Ver perfil en Chess.com"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "availability": "Disponible para nuevos proyectos",
+      "role": "Tech Lead · Full Stack · Arquitectura",
+      "headline": "Construyo plataformas completas,",
+      "headline-highlight": "no solo pantallas.",
+      "description": "Trabajo desde el diseño de la arquitectura hasta la app en la tienda: servicios en NestJS y Java, apps en React Native, paneles en Next.js y la infraestructura que sostiene todo eso.",
+      "cta-primary": "Ver case studies",
+      "cta-secondary": "Hablemos",
+      "location": "Florianópolis, Brasil · Remoto"
+    },
+    "metrics": {
+      "title": "La escala de lo que ya entregué",
+      "description": "Números de sistemas reales en producción, no de proyectos de estudio.",
+      "items": {
+        "services": {
+          "label": "servicios en producción",
+          "description": "Microservicios Node/NestJS y Java/Spring, con gateways separados por audiencia."
+        },
+        "apps": {
+          "label": "apps móviles entregadas",
+          "description": "Android e iOS, incluida una línea white-label multi-tenant con actualizaciones OTA."
+        },
+        "monorepos": {
+          "label": "monorepos Turborepo",
+          "description": "Con design system, contratos compartidos y pipelines de calidad."
+        },
+        "sectors": {
+          "label": "sectores atendidos",
+          "description": "Fintech de pagos, edtech y SaaS B2B."
+        }
+      }
+    },
+    "case-studies": {
+      "title": "Case studies de ingeniería",
+      "description": "Sistemas que diseñé y construí. Los clientes no se identifican; la arquitectura y las decisiones son reales.",
+      "stack": "Stack",
+      "sector": "Sector",
+      "items": {
+        "payments": {
+          "sector": "Fintech de pagos",
+          "title": "Plataforma de pagos con 21 servicios",
+          "summary": "Sistema de pagos dividido en servicios en Node y Java, con integración directa con los bancos socios y productos web y móviles sobre esos mismos servicios.",
+          "highlights": {
+            "1": "Dominio dividido en servicios independientes (IAM, billetera, pedidos, pagos, cobros, fiscal, notificaciones) con gateways distintos para el panel administrativo y el cliente final.",
+            "2": "Servicios en Java/Spring dedicados a Pix, boletos, cobros y emisión de facturas, aislando cada integración bancaria del núcleo del producto.",
+            "3": "Panel en Next.js y app en React Native sobre los mismos servicios, con CI/CD en Docker, PM2 y GitHub Actions."
+          }
+        },
+        "edtech": {
+          "sector": "Edtech",
+          "title": "Apps white-label para instituciones de enseñanza",
+          "summary": "Un único código fuente genera aplicaciones independientes por institución: identidad visual, bundle, integraciones y funcionalidades definidos por configuración de tenant.",
+          "highlights": {
+            "1": "Registry de tenants que controla el build (bundle ID, ícono, splash) y el runtime (tema, URL del LMS, features) desde una base única.",
+            "2": "Publicación continua para Android e iOS con Expo/EAS y actualizaciones OTA disparadas por push en la rama principal.",
+            "3": "Backends NestJS con autenticación, archivos en la nube, push y correo, además de paneles administrativos en Next.js y el LMS móvil en Ionic/Angular."
+          }
+        },
+        "spectroscopy": {
+          "sector": "SaaS científico",
+          "title": "SaaS de identificación botánica por espectroscopía",
+          "summary": "Plataforma que conecta un escáner de infrarrojo cercano con modelos estadísticos de identificación, con la misma interfaz corriendo en el navegador y en el escritorio.",
+          "highlights": {
+            "1": "PWA en Next.js como fuente única de la interfaz, empaquetada también en una cáscara de escritorio Tauri/Rust que hace de puente con el hardware.",
+            "2": "Microservicios NestJS detrás de un gateway único, con aislamiento de datos por institución vía row level security en PostgreSQL.",
+            "3": "Monorepo con design system propio, contratos HTTP tipados y Storybook como referencia viva de interfaz."
+          }
+        },
+        "realestate": {
+          "sector": "SaaS inmobiliario",
+          "title": "Plataforma SaaS para el sector inmobiliario",
+          "summary": "CRM, operaciones, catálogo de inmuebles y portal del cliente sobre una arquitectura de microservicios multi-tenant.",
+          "highlights": {
+            "1": "Servicios NestJS comunicándose por gRPC detrás de un API Gateway, con contratos versionados en un paquete compartido.",
+            "2": "Modelado de dominio para inmuebles, negociaciones y corredores, con autorización y aislamiento de datos por tenant.",
+            "3": "Monorepo pnpm + Turborepo con paquetes de dominio, UI y configuración reutilizados entre backend y frontend."
+          }
+        }
+      }
+    },
+    "ai-workflow": {
+      "title": "IA en el flujo de ingeniería",
+      "description": "Trabajo AI-first. No es autocompletado más rápido: es el proceso de ingeniería rediseñado en torno a agentes, con el mismo rigor que se exige a cualquier sistema en producción.",
+      "items": {
+        "spec-driven": {
+          "title": "Spec y plan antes del código",
+          "description": "Todo cambio relevante empieza por una spec que fija el problema, las restricciones y el criterio de aceptación, y por un plan dividido en tareas verificables, cada una con su prueba. Una spec ambigua es un bug de requisitos: sale más barato arreglarlo ahí que treinta archivos después.",
+          "tag": "Spec-driven development"
+        },
+        "orchestration": {
+          "title": "Cada fase en el modelo adecuado",
+          "description": "Planificar, implementar, depurar y revisar son trabajos distintos, y los modelos no son igual de buenos en los cuatro. Cada fase va al que mejor rinde en ella, y quien escribe el plan no es quien implementa. La ejecución es secuencial y aislada: una tarea a la vez, en su propia rama.",
+          "tag": "Orquestación entre modelos"
+        },
+        "context": {
+          "title": "Estándar del proyecto versionado",
+          "description": "Las convenciones de módulo, log y prueba viven en el repositorio como instrucción ejecutable, revisadas en PR como cualquier otra cosa. Un agente nuevo hereda la regla en vez de adivinar; cuando cambia, cambia para todos en el mismo commit.",
+          "tag": "Contexto en el repositorio"
+        },
+        "tooling": {
+          "title": "Herramientas por protocolo",
+          "description": "El agente lee el tablero de tareas, la base de datos, el navegador y el CI por MCP, en lugar de depender de contexto pegado a mano. Cambia “lo que recuerdo del sistema” por “lo que el sistema acaba de responder”.",
+          "tag": "MCP"
+        },
+        "verification": {
+          "title": "Evidencia antes de afirmar",
+          "description": "Prueba que falla antes de la implementación; lint, typecheck, cobertura y end-to-end en CI como puerta objetiva. Una prueba que depende del tiempo o que verifica implementación en vez de comportamiento se rehace, nunca se marca como inestable y se ignora.",
+          "tag": "TDD y CI"
+        },
+        "review": {
+          "title": "Revisión humana en el merge",
+          "description": "Leo todo lo que vuelve antes de abrir el PR. El agente acelera la producción de código y, con ella, la de código equivocado: la ganancia está en las puertas que lo detectan temprano, no en confiar más.",
+          "tag": "Puerta del merge"
+        }
+      },
+      "footnote": "Aplicado a producto real, no a demostraciones: así llevé a un squad de seis personas a un flujo spec-driven en edtech, y así construyo hoy una plataforma SaaS de microservicios para el sector inmobiliario."
+    },
+    "personal-info": {
+      "title": "Tech Lead / Desarrollador Full Stack | TypeScript"
+    },
+    "resume-about-me": {
+      "title": "Sobre mí",
+      "description": "Tech Lead y desarrollador full stack, con trabajo en edtech, SaaS y fintech. Lidero las decisiones de arquitectura y acompaño el producto hasta que está publicado, con TypeScript, NestJS, Next.js y React Native. Me gustan los sistemas multi-tenant, el código que el equipo puede mantener y hablar con quien cuida del negocio — siempre con cuidado con la información confidencial del cliente.",
+      "cta": "Ver más"
+    },
+    "experiences": {
+      "title": "Experiencia",
+      "cta": "Contrátame",
+      "view-resume": "Ver currículum completo",
+      "1": {
+        "title": "Onilearning",
+        "description": "Tech Lead / Desarrollador Full Stack · Autónomo",
+        "workingTime": "Ene 2026 – Actualidad · Remoto",
+        "details": {
+          "1": "Liderazgo técnico de squads: arquitectura, estándares de ingeniería, code review y mentoría.",
+          "2": "Dirección técnica de los productos de edtech: AVA/LMS, portal del alumno, apps y backends.",
+          "3": "Arquitectura y evolución de un portal del alumno white-label multi-tenant con React Native y Expo.",
+          "4": "Desarrollo y publicación del AVA móvil (Ionic, Angular y Cordova) para Android e iOS.",
+          "5": "APIs REST con NestJS y TypeScript usando MySQL, autenticación JWT, archivos en la nube, push y correo.",
+          "6": "Pipelines de CI/CD y entrega continua con Docker, GitHub Actions y Expo Application Services (EAS).",
+          "7": "Prácticas de calidad en monorepo: pruebas automatizadas, linting, hooks de pre-commit y estandarización."
+        }
+      },
+      "2": {
+        "title": "Comvanilla",
+        "description": "Desarrollador Full Stack · Autónomo",
+        "workingTime": "Oct 2025 – Actualidad · Remoto",
+        "details": {
+          "1": "Desarrollo full stack de una plataforma SaaS inmobiliaria (CRM, operaciones, catálogo y portal del cliente).",
+          "2": "Arquitectura de microservicios con NestJS, comunicación gRPC y API Gateway.",
+          "3": "Interfaces web con Next.js (App Router), React y Tailwind CSS.",
+          "4": "Modelado de dominio y datos para CRM, inmuebles, negociaciones y corredores.",
+          "5": "Autenticación, autorización y aislamiento de datos en entorno multi-tenant.",
+          "6": "PostgreSQL con TypeORM, Redis para caché e integraciones con servicios externos.",
+          "7": "Calidad y DX en monorepo (pnpm y Turborepo): pruebas, code review y estandarización."
+        }
+      },
+      "3": {
+        "title": "Postpay",
+        "description": "Desarrollador Full Stack · Autónomo",
+        "workingTime": "Dic 2022 – Oct 2025 · Remoto",
+        "details": {
+          "1": "Evolución de productos de fintech de pagos: panel administrativo, app móvil y microservicios.",
+          "2": "Microservicios NestJS/Node.js con gRPC, mensajería, PostgreSQL, Redis y TypeORM.",
+          "3": "Microservicios financieros en Java/Spring Boot (Pix, boletos, cobros y NFSe) con integraciones a instituciones socias.",
+          "4": "Panel administrativo con Next.js, React, TypeScript y Tailwind CSS.",
+          "5": "App móvil con React Native y Expo (Android e iOS), APIs REST, autenticación y push.",
+          "6": "Protección de datos sensibles, almacenamiento en la nube y gestión de claves.",
+          "7": "CI/CD y operación con Docker, PM2, GitHub Actions y EAS; revisiones y pruebas en monorepo."
+        }
+      },
+      "4": {
+        "title": "Griebler Remodeling",
+        "description": "Desarrollador Full Stack · Freelance",
+        "workingTime": "Ene 2024 – Feb 2024 · Remoto (EE. UU.)",
+        "details": {
+          "1": "Sitio institucional responsive para constructora en Massachusetts.",
+          "2": "Dashboard administrativo para gestión de contenido y proyectos.",
+          "3": "TypeScript, Next.js, Tailwind CSS, MongoDB y hosting en AWS.",
+          "4": "Internacionalización (i18n) y autenticación con Google para el flujo de reseñas."
+        }
+      },
+      "5": {
+        "title": "Mince Joias",
+        "description": "Desarrollador Full Stack · Freelance",
+        "workingTime": "Ago 2023 – Sep 2023 · Remoto",
+        "details": {
+          "1": "E-commerce de joyas con Next.js: catálogo, carrito y flujo de compra.",
+          "2": "Estado del cliente con Zustand e interfaz con Tailwind CSS.",
+          "3": "Persistencia con MongoDB y hosting en AWS.",
+          "4": "Enfoque en rendimiento de vitrina y conversión.",
+          "5": "Entrega end-to-end freelance de la tienda digital."
+        }
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "cta": "Ver galería",
+      "visit": "Visitar",
+      "details": "Detalles",
+      "stack": "Tecnologías",
+      "role": "Mi rol",
+      "confidential": "Cliente bajo NDA",
+      "source": "Ver código",
+      "items": {
+        "oniapp": {
+          "description": "App de estudios para instituciones que usan Moodle. Cada institución recibe su propia app en las tiendas, con su marca y sus colores, pero todas salen del mismo código. El alumno entra con la cuenta de su institución y accede a cursos, materiales y avisos desde el celular.",
+          "role": "Tech Lead y desarrollador full stack. Diseñé el sistema que genera una app por institución, escribí la app en React Native con Expo y me encargo de las publicaciones en la App Store y en Google Play con EAS."
+        },
+        "oniapp-api": {
+          "description": "La API detrás de la app del alumno. Se encarga del login, de la conversación con el Moodle de cada institución, de la configuración de cada cliente y del registro de todo lo que cambia en el sistema.",
+          "role": "Tech Lead y desarrollador full stack. Escribí los módulos en NestJS, modelé la base MySQL con TypeORM y dejé documentación y logs listos para el uso diario del equipo."
+        },
+        "oniapp-admin": {
+          "description": "Panel donde el equipo de Onilearning y cada institución socia configuran su propia app: logo, colores, qué funcionalidades quedan activas, quién tiene acceso y el historial de cambios.",
+          "role": "Tech Lead y desarrollador full stack. Hice el panel en Next.js con shadcn/ui sobre la misma API de la app, con permisos separados para el equipo interno y para los clientes."
+        },
+        "seja": {
+          "description": "App de bienestar publicada en la App Store y en Google Play. Reúne rutinas, hábitos y contenido en un solo lugar, con login social y notificaciones que recuerdan volver.",
+          "role": "Tech Lead y desarrollador full stack. Hice la app en React Native con Expo: navegación, manejo offline y las entregas en las dos tiendas con EAS."
+        },
+        "seja-api": {
+          "description": "La API detrás de la app de bienestar: cuentas y login social, rutas de contenido, progreso del usuario, envío de push y archivos en la nube.",
+          "role": "Tech Lead y desarrollador full stack. Escribí la API en NestJS sobre MySQL, el login social con Firebase, el almacenamiento en S3 y las pruebas de punta a punta con Testcontainers."
+        },
+        "comvanilla": {
+          "description": "Plataforma para inmobiliarias: catálogo de propiedades, embudo de negociación, rutina de los corredores y el portal que navega el cliente final. Cada inmobiliaria trabaja con sus datos aislados de las demás dentro de la misma plataforma.",
+          "role": "Desarrollador full stack. Reparto el tiempo entre los servicios en NestJS que se comunican por gRPC, el modelado de datos y las pantallas en Next.js."
+        },
+        "postpay-platform": {
+          "description": "Los servicios que corren detrás de una fintech de pagos: cuentas e identidad, billetera, pedidos, cobros, liquidaciones y documentos fiscales, conectados directo con los bancos socios.",
+          "role": "Desarrollador full stack, en el backend. Escribí servicios en NestJS y en Java con Spring Boot, me ocupé de la comunicación entre ellos con gRPC y RabbitMQ y de la operación en Docker."
+        },
+        "postpay-admin": {
+          "description": "El panel que el equipo de operación abre todos los días para seguir clientes, cobros, conciliación y el cierre financiero.",
+          "role": "Desarrollador full stack, en el frontend. Construí las pantallas en Next.js reutilizando el design system compartido del monorepo."
+        },
+        "postpay-app": {
+          "description": "App del cliente final para pagar cobros, seguir la billetera y recibir avisos, publicada para Android e iOS.",
+          "role": "Desarrollador full stack, en mobile. Hice la app en React Native con Expo, el login, las notificaciones y las entregas con EAS."
+        },
+        "mince": {
+          "description": "Tienda de joyas online: catálogo, carrito, checkout y un panel donde la propia dueña actualiza productos y sigue los pedidos.",
+          "role": "Desarrollador full stack, freelance. Entregué la tienda y el panel solo, desde el primer layout hasta el deploy en AWS."
+        },
+        "griebler": {
+          "description": "Sitio de una empresa de remodelación en Massachusetts, con vitrina de obras, contenido que el propio equipo actualiza y páginas en inglés y portugués.",
+          "role": "Desarrollador full stack, freelance. Hice el sitio, el panel de contenido y la traducción de las páginas."
+        },
+        "bjjinsights": {
+          "description": "Blog sobre jiu-jitsu que escribo y mantengo, con área de publicación, login y base de posts.",
+          "role": "Proyecto personal. Next.js con Prisma y MongoDB."
+        },
+        "todo-pro": {
+          "description": "Gestor de tareas con listas, login e interfaz montada sobre shadcn/ui. Nació para organizar mis propios estudios.",
+          "role": "Proyecto personal. Next.js y Clerk."
+        },
+        "saas-translation": {
+          "description": "Chat que traduce los mensajes al momento, con planes pagos y límite de uso por suscripción.",
+          "role": "Proyecto personal. Firebase para el tiempo real y Stripe para el cobro."
+        },
+        "properties": {
+          "description": "Portal de inmuebles con búsqueda, favoritos y área para quien publica.",
+          "role": "Proyecto personal. Next.js 14, Prisma y MongoDB."
+        },
+        "edu-sponsor": {
+          "description": "MVP que conecta a estudiantes que no pueden pagar un curso con quien quiere financiar esa vacante.",
+          "role": "Proyecto personal, con foco en impacto social."
+        }
+      },
+      "download": "Descargar"
+    },
+    "education": {
+      "title": "Formación y cursos",
+      "description": "Formación académica y aprendizaje continuo en tecnología",
+      "items": {
+        "1": {
+          "title": "UNIVALI",
+          "description": "Tecnólogo en Análisis y Desarrollo de Sistemas",
+          "time": "Mar 2025 – Jun 2027 (en curso)",
+          "details": {
+            "1": "Formación con énfasis en ingeniería de software, arquitectura e integración de sistemas.",
+            "2": "Conciliación entre práctica profesional full stack y profundidad académica.",
+            "3": "Enfoque en microservicios, bases de datos y desarrollo web/mobile."
+          }
+        },
+        "2": {
+          "title": "Rocketseat",
+          "description": "Especialización Full Stack",
+          "time": "2023",
+          "details": {
+            "1": "Dominio de Node.js, React y TypeScript avanzado",
+            "2": "Construcción de APIs RESTful y microservicios",
+            "3": "Técnicas de optimización y despliegue en la nube"
+          }
+        },
+        "3": {
+          "title": "OneBitCode",
+          "description": "Formación Full Stack JavaScript",
+          "time": "2022",
+          "details": {
+            "1": "JavaScript moderno (ES6+) y patrones de diseño",
+            "2": "Desarrollo de aplicaciones full-stack",
+            "3": "Clean Code y principios SOLID"
+          }
+        },
+        "4": {
+          "title": "Harvard CS50",
+          "description": "Ciencias de la Computación",
+          "time": "2021",
+          "details": {
+            "1": "Algoritmos y estructuras de datos fundamentales",
+            "2": "Lenguajes C, Python y conceptos de IA",
+            "3": "Desarrollo del razonamiento lógico y resolución de problemas complejos"
+          }
+        },
+        "5": {
+          "title": "UDEMY",
+          "description": "Cursos Complementarios",
+          "time": "Variados",
+          "details": {
+            "1": "UI/UX Design con Figma y prototipado",
+            "2": "React Native y desarrollo móvil",
+            "3": "Fundamentos de AWS y cloud computing"
+          }
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Tech Lead e ingeniero full stack en Florianópolis. Fuera del código vivo de música, entrenamiento, ajedrez y lectura.",
+    "highlights": {
+      "location": "Florianópolis, Brasil",
+      "train": "Jiu-jitsu · cinturón marrón",
+      "music": "Música a diario",
+      "books": "Siempre leyendo"
+    },
+    "personal-interests": {
+      "title": "Fuera del teclado",
+      "description": "Me interesan la neurociencia, la filosofía y el desarrollo personal — libros que amplían cómo pienso sobre el cerebro, la existencia y el crecimiento. La música acompaña el ritmo del trabajo y del descanso. Ajedrez todos los días en Chess.com — hábito diario de cálculo y paciencia. En el tatami, el jiu-jitsu suma más de una década de entrenamiento y me llevó al cinturón marrón: disciplina, resiliencia y juego estratégico que también llevo a la ingeniería. Ya participé en cerca de 40 campeonatos.",
+      "image-1": "Compitiendo en el Compnet de Gracie Barra (2023)",
+      "image-2": "Recibiendo el cinturón morado del maestro <master>Andre \"Deco\" Rachadel</master>",
+      "image-2-alt": "Recibiendo el cinturón morado del maestro Andre Deco Rachadel",
+      "image-3": "Oro en Compnet 2023 tras dos finalizaciones"
+    },
+    "chess": {
+      "title": "Ajedrez todos los días",
+      "description": "Stats en vivo de Chess.com — rating rapid, marca y la racha de días.",
+      "streak": "Racha",
+      "rapid": "Rapid",
+      "record": "Marca en rapid",
+      "open-profile": "Ver perfil en Chess.com",
+      "unavailable": "Las stats de Chess.com no están disponibles ahora.",
+      "days": "días",
+      "blitz": "Blitz",
+      "best": "Mejor {rating}",
+      "games": "{count} partidas",
+      "win-rate": "{value}% de victorias",
+      "wins": "Victorias",
+      "losses": "Derrotas",
+      "draws": "Tablas"
+    },
+    "books": {
+      "title": "Libros que recomiendo",
+      "description": "Lecturas que valen el tiempo — para estudiar, pensar y crecer.",
+      "cover-alt": "Portada del libro recomendado"
+    },
+    "musics": {
+      "title": "Canciones favoritas del momento",
+      "description": "Lo que suena en repeat, directo de Spotify."
+    }
+  },
+  "projects": {
+    "title": "Galería de proyectos",
+    "description": "Productos que construí para clientes y proyectos propios con código abierto. Foco en producto, arquitectura y resultado.",
+    "empty": "Ningún proyecto en este filtro.",
+    "work": {
+      "title": "Trabajo para clientes",
+      "description": "Sistemas en producción. El código y los detalles internos quedan fuera por acuerdos de confidencialidad."
+    },
+    "lab": {
+      "title": "Laboratorio y open source",
+      "description": "Productos propios y experimentos con código público en GitHub."
+    },
+    "filters": {
+      "all": "Todos",
+      "platform": "Plataformas",
+      "backend": "Backend",
+      "web": "Web",
+      "mobile": "Mobile"
+    }
+  },
+  "technologies": {
+    "title": "Mis tecnologías",
+    "description": "Stack que uso en el día a día — del frontend al mobile, backend, datos, infra y herramientas de entrega.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "mobile": "Mobile",
+    "database": "Bases de datos",
+    "infrastructure": "Infraestructura",
+    "apps": "Apps",
+    "others": "Otros"
+  },
+  "meta": {
+    "home": {
+      "title": "Marcelo Mafra — Tech Lead / Full Stack",
+      "description": "Portfolio de Marcelo Mafra, Tech Lead e ingeniero full stack. Experiencia en edtech, SaaS y fintech con TypeScript, NestJS, Next.js y React Native."
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Sobre Marcelo Mafra: trayectoria, intereses personales, música y libros favoritos."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "description": "Proyectos seleccionados de Marcelo Mafra — productos web y mobile con TypeScript."
+    },
+    "technologies": {
+      "title": "Tecnologías",
+      "description": "Stack y herramientas que usa Marcelo Mafra en el día a día de la ingeniería de software."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Habla con Marcelo Mafra sobre arquitectura, plataformas y desarrollo de productos web y móviles."
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "description": "Cuéntame qué necesitas construir. Respondo en un día hábil con una lectura honesta del problema, incluso cuando la respuesta es que no soy la persona indicada.",
+    "availability": "Disponible para nuevos proyectos",
+    "response-time": "Respuesta en 1 día hábil",
+    "form": {
+      "title": "Enviar mensaje",
+      "description": "Se envía directo a mi correo. Respondo a la dirección que indiques.",
+      "name": "Nombre",
+      "name-placeholder": "Cómo debo llamarte",
+      "email": "Correo",
+      "email-placeholder": "tu@empresa.com",
+      "subject": "Asunto",
+      "subject-placeholder": "De qué quieres hablar",
+      "message": "Mensaje",
+      "message-placeholder": "Contexto del proyecto, plazo y qué esperas de la entrega",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando…",
+      "success": "Mensaje enviado. Te respondo pronto.",
+      "error": "No pude enviarlo ahora. Inténtalo de nuevo o usa el correo directo.",
+      "rate-limited": "Demasiados mensajes en poco tiempo. Inténtalo más tarde.",
+      "opened": "El envío no está disponible: abrí tu cliente de correo con el mensaje listo.",
+      "errors": {
+        "name": "Indica tu nombre.",
+        "email": "Escribe un correo válido.",
+        "subject": "Indica el asunto.",
+        "message": "Escribe al menos 20 caracteres."
+      }
+    },
+    "channels": {
+      "title": "Canales directos",
+      "email": "Correo",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "location": "Ubicación",
+      "copy": "Copiar correo",
+      "copied": "Correo copiado."
+    }
+  },
+  "footer": {
+    "tagline": "Arquitectura, producto y entrega.",
+    "cta": "Hablemos",
+    "rights": "Todos los derechos reservados.",
+    "built-with": "Construido con Next.js, Tailwind CSS y Base UI."
+  }
+}
