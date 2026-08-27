@@ -10,6 +10,7 @@ import {
   Send,
 } from 'lucide-react';
 import type { ComponentType } from 'react';
+import { isExternalHref } from '@/lib/utils';
 import { CONTACT_EMAIL, SOCIAL_LINKS } from './personal';
 
 export interface SidebarItem {
@@ -89,6 +90,10 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
     ],
   },
 ];
+
+export const BOTTOM_TAB_ITEMS: SidebarItem[] = SIDEBAR_ITEMS.flatMap(
+  (group) => group.items,
+).filter((item) => !isExternalHref(item.href));
 
 export interface SocialChannel {
   id: string;

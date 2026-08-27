@@ -90,6 +90,9 @@ describe('Navigation', () => {
       screen.getByRole('heading', { name: 'Page content' }),
     ).toBeInTheDocument();
     expect(screen.getByRole('contentinfo')).toBeInTheDocument();
-    expect(screen.getByText('Início')).toBeInTheDocument();
+    expect(screen.getAllByText('Início')).toHaveLength(2);
+    expect(
+      screen.getByRole('navigation', { name: 'Navegação principal' }),
+    ).toBeInTheDocument();
   });
 });

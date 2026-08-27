@@ -1,3 +1,4 @@
+export * from './bottom-tabs';
 export * from './chess-indicator';
 export * from './menu';
 export * from './navigation';

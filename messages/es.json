@@ -32,6 +32,7 @@
       }
     },
     "menu-description": "Navega entre las páginas, cambia el tema y el idioma.",
+    "tabs-label": "Navegación principal",
     "groups": {
       "profile": "Perfil",
       "social": "Redes"
