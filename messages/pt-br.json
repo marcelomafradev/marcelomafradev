@@ -121,6 +121,16 @@
             "2": "Modelagem de domínio para imóveis, negociações e corretores, com autorização e isolamento de dados por tenant.",
             "3": "Monorepo pnpm + Turborepo com pacotes de domínio, UI e configuração reaproveitados entre backend e frontend."
           }
+        },
+        "ritmar": {
+          "sector": "SaaS para escolas de dança",
+          "title": "Ritmar — gestão multi-tenant para academias",
+          "summary": "Produto próprio, do zero à produção: matrículas, turmas, formaturas, cobrança recorrente e PDV, com um site público por escola.",
+          "highlights": {
+            "1": "Cobrança recorrente por Pix e cartão com um gateway por escola, webhooks idempotentes, conciliação e trilha de auditoria.",
+            "2": "Isolamento por tenant no PostgreSQL e site público por subdomínio ou domínio próprio, com indexação controlada pelo status do tenant (robots, noindex e sitemap).",
+            "3": "Operação completa: fluxo comercial de implantação, provisionamento por escola e deploy em Docker com backups criptografados e rotinas de faturamento agendadas."
+          }
         }
       }
     },
@@ -272,6 +282,10 @@
         "comvanilla": {
           "description": "Plataforma para imobiliárias: cadastro de imóveis, funil de negociação, rotina dos corretores e o portal que o cliente final navega. Cada imobiliária trabalha com os dados isoladas das outras dentro da mesma plataforma.",
           "role": "Desenvolvedor full stack. Divido o tempo entre os serviços em NestJS que conversam por gRPC, a modelagem do banco e as telas em Next.js."
+        },
+        "ritmar": {
+          "description": "Meu produto próprio, em produção: plataforma de gestão para academias e escolas de dança — matrículas, turmas, formaturas, cobrança recorrente, PDV da noite de formatura e um site público para cada escola, em subdomínio ou domínio próprio.",
+          "role": "Fundador e engenheiro. Do modelo de cobrança ao deploy: API em NestJS, três aplicações Next.js, PostgreSQL multi-tenant e a operação em produção."
         },
         "postpay-platform": {
           "description": "Serviços que rodam por trás de uma fintech de pagamentos: cadastro e identidade, carteira, pedidos, cobranças, recebimentos e emissão fiscal, com integração direta com os bancos parceiros.",

@@ -1,5 +1,11 @@
 import { IconType } from '@/components/ui/icon';
-import { Building2, CreditCard, GraduationCap, ScanLine } from 'lucide-react';
+import {
+  AudioLines,
+  Building2,
+  CreditCard,
+  GraduationCap,
+  ScanLine,
+} from 'lucide-react';
 
 export interface CaseStudy {
   id: string;
@@ -62,6 +68,19 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Redis',
       'Next.js',
       'Turborepo',
+    ],
+    highlightsCount: 3,
+  },
+  {
+    id: 'ritmar',
+    icon: AudioLines,
+    stack: [
+      'NestJS',
+      'Next.js',
+      'PostgreSQL',
+      'Mercado Pago / Asaas',
+      'Turborepo',
+      'Docker',
     ],
     highlightsCount: 3,
   },

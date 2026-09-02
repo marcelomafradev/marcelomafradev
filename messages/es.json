@@ -121,6 +121,16 @@
             "2": "Modelado de dominio para inmuebles, negociaciones y corredores, con autorización y aislamiento de datos por tenant.",
             "3": "Monorepo pnpm + Turborepo con paquetes de dominio, UI y configuración reutilizados entre backend y frontend."
           }
+        },
+        "ritmar": {
+          "sector": "SaaS para escuelas de danza",
+          "title": "Ritmar — gestión multi-tenant para academias",
+          "summary": "Producto propio, de cero a producción: matrículas, clases, graduaciones, cobro recurrente y punto de venta, con un sitio público por escuela.",
+          "highlights": {
+            "1": "Cobro recurrente por Pix y tarjeta con un gateway por escuela, webhooks idempotentes, conciliación y registro de auditoría.",
+            "2": "Aislamiento por tenant en PostgreSQL y sitio público por subdominio o dominio propio, con indexación controlada por el estado del tenant (robots, noindex y sitemap).",
+            "3": "Operación completa: flujo comercial de implantación, aprovisionamiento por escuela y despliegue en Docker con backups cifrados y rutinas de facturación programadas."
+          }
         }
       }
     },
@@ -272,6 +282,10 @@
         "comvanilla": {
           "description": "Plataforma para inmobiliarias: catálogo de propiedades, embudo de negociación, rutina de los corredores y el portal que navega el cliente final. Cada inmobiliaria trabaja con sus datos aislados de las demás dentro de la misma plataforma.",
           "role": "Desarrollador full stack. Reparto el tiempo entre los servicios en NestJS que se comunican por gRPC, el modelado de datos y las pantallas en Next.js."
+        },
+        "ritmar": {
+          "description": "Mi producto propio, en producción: plataforma de gestión para academias y escuelas de danza — matrículas, clases, graduaciones, cobro recurrente, punto de venta de la noche de graduación y un sitio público por escuela, en subdominio o dominio propio.",
+          "role": "Fundador e ingeniero. Del modelo de cobro al despliegue: API en NestJS, tres aplicaciones Next.js, PostgreSQL multi-tenant y la operación en producción."
         },
         "postpay-platform": {
           "description": "Los servicios que corren detrás de una fintech de pagos: cuentas e identidad, billetera, pedidos, cobros, liquidaciones y documentos fiscales, conectados directo con los bancos socios.",

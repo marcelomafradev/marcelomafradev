@@ -121,6 +121,16 @@
             "2": "Domain modeling for properties, deals, and brokers, with per-tenant authorization and data isolation.",
             "3": "A pnpm + Turborepo monorepo whose domain, UI, and config packages are reused across backend and frontend."
           }
+        },
+        "ritmar": {
+          "sector": "SaaS for dance schools",
+          "title": "Ritmar — multi-tenant management for academies",
+          "summary": "My own product, from zero to production: enrollments, classes, graduations, recurring billing and POS, with a public website per school.",
+          "highlights": {
+            "1": "Recurring billing via Pix and card with one gateway per school, idempotent webhooks, reconciliation and an audit trail.",
+            "2": "Per-tenant isolation in PostgreSQL and a public website per subdomain or custom domain, with indexing controlled by tenant status (robots, noindex and sitemap).",
+            "3": "Full operation: implantation sales flow, per-school provisioning and Docker delivery with encrypted backups and scheduled billing routines."
+          }
         }
       }
     },
@@ -272,6 +282,10 @@
         "comvanilla": {
           "description": "Platform for real estate agencies: property listings, deal pipeline, agent routines, and the portal the end client browses. Each agency works with its own data, isolated from the others inside the same platform.",
           "role": "Full stack developer. I split my time between the NestJS services that talk over gRPC, the data modeling, and the Next.js screens."
+        },
+        "ritmar": {
+          "description": "My own product, in production: a management platform for gyms and dance schools — enrollments, classes, graduation events, recurring billing, a graduation-night POS and a public website per school, on a subdomain or custom domain.",
+          "role": "Founder and engineer. From the billing model to deployment: a NestJS API, three Next.js applications, multi-tenant PostgreSQL and the production operation."
         },
         "postpay-platform": {
           "description": "The services running behind a payments fintech: accounts and identity, wallet, orders, charges, settlements, and tax documents, wired straight into partner banks.",

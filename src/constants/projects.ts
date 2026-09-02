@@ -28,6 +28,24 @@ export interface ProjectProps {
 
 export const PROJECTS: ProjectProps[] = [
   {
+    id: 'ritmar',
+    i18nKey: 'ritmar',
+    title: 'Ritmar',
+    logo: '/companies/ritmar.svg',
+    href: 'https://ritmar.com.br/',
+    technologies: [
+      'NestJS',
+      'Next.js',
+      'PostgreSQL',
+      'TypeORM',
+      'Turborepo',
+      'TypeScript',
+      'Docker',
+    ],
+    categories: ['platform', 'web', 'backend'],
+    featured: true,
+  },
+  {
     id: 'oniapp',
     i18nKey: 'oniapp',
     title: 'Oniapp · Portal do aluno',
