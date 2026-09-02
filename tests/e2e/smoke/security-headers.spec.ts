@@ -25,7 +25,7 @@ test.describe('security headers', () => {
   });
 
   test('static documents carry the headers too', async ({ request }) => {
-    const response = await request.get('/documents/marcelo-mafra-cv-en.pdf');
+    const response = await request.get('/documents/marcelomafradev-cv-en.pdf');
     const headers = response.headers();
 
     expect(response.ok()).toBeTruthy();

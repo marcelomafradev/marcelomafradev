@@ -120,6 +120,6 @@ export const LANGUAGE_OPTIONS: LanguageOption[] = [
 ];
 
 export const RESUME_LINKS = {
-  'pt-br': '/documents/marcelo-mafra-cv-br.pdf',
-  en: '/documents/marcelo-mafra-cv-en.pdf',
+  'pt-br': '/documents/marcelomafradev-cv-br.pdf',
+  en: '/documents/marcelomafradev-cv-en.pdf',
 } as const;
