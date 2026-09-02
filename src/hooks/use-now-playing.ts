@@ -3,7 +3,7 @@
 import { useSyncExternalStore } from 'react';
 import { NowPlayingResult } from '@/types';
 
-const POLL_MS = 30_000;
+const POLL_MS = 10_000;
 
 let snapshot: NowPlayingResult | undefined;
 let intervalId: number | undefined;

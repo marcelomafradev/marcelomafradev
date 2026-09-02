@@ -82,7 +82,7 @@ describe('GET /api/spotify/now-playing', () => {
     expect(response.status).toBe(200);
     expect(await response.json()).toEqual(data);
     expect(response.headers.get('Cache-Control')).toBe(
-      'public, s-maxage=15, stale-while-revalidate=15',
+      'public, s-maxage=5, stale-while-revalidate=10',
     );
     expect(fetchNowPlayingMock).toHaveBeenCalledOnce();
   });

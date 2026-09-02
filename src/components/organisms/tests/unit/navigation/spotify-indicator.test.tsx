@@ -112,7 +112,7 @@ describe('SpotifyIndicator', () => {
     const { unmount } = renderWithProviders(<SpotifyIndicator />);
 
     expect(
-      screen.getByText('Marcelo está escutando neste momento'),
+      screen.getByText('Escutando agora'),
     ).toBeInTheDocument();
 
     unmount();
@@ -121,7 +121,7 @@ describe('SpotifyIndicator', () => {
     renderWithProviders(<SpotifyIndicator />);
 
     expect(
-      screen.queryByText('Marcelo está escutando neste momento'),
+      screen.queryByText('Escutando agora'),
     ).not.toBeInTheDocument();
   });
 
