@@ -12,6 +12,7 @@
       "instagram": "Instagram"
     },
     "nothing-playing": "Nothing playing now",
+    "listening-now": "Marcelo is listening right now",
     "song-dialog": {
       "cta": "View on Spotify",
       "message": "Marcelo Mafra is currently listening to this song.",
@@ -212,6 +213,17 @@
         }
       },
       "3": {
+        "title": "Ritmar",
+        "description": "Founder & Software Engineer · Own product",
+        "workingTime": "Apr 2026 – Present · Remote",
+        "details": {
+          "1": "Multi-tenant management SaaS for gyms and dance schools: enrollments, classes, graduations, recurring billing and POS.",
+          "2": "Pix and card billing with one gateway per school, idempotent webhooks, reconciliation and an audit trail.",
+          "3": "A public website per school, on a subdomain or custom domain, with indexing controlled by tenant status.",
+          "4": "Monorepo with a NestJS API and three Next.js applications; Docker delivery with unit and end-to-end tests in CI."
+        }
+      },
+      "4": {
         "title": "Postpay",
         "description": "Full Stack Engineer · Independent contractor",
         "workingTime": "Dec 2022 – Oct 2025 · Remote",
@@ -225,7 +237,7 @@
           "7": "CI/CD and operations with Docker, PM2, GitHub Actions, and EAS; reviews and tests in monorepos."
         }
       },
-      "4": {
+      "5": {
         "title": "Griebler Remodeling",
         "description": "Full Stack Engineer · Freelance",
         "workingTime": "Jan 2024 – Feb 2024 · Remote (USA)",
@@ -236,7 +248,7 @@
           "4": "i18n support and Google sign-in for the reviews acquisition flow."
         }
       },
-      "5": {
+      "6": {
         "title": "Mince Joias",
         "description": "Full Stack Engineer · Freelance",
         "workingTime": "Aug 2023 – Sep 2023 · Remote",

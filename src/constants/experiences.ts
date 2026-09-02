@@ -12,6 +12,12 @@ export const EXPERIENCES = [
     detailsCount: 7,
   },
   {
+    href: 'https://ritmar.com.br/',
+    logo: '/companies/ritmar.svg',
+    title: 'Ritmar',
+    detailsCount: 4,
+  },
+  {
     href: 'https://postpay.com.br/',
     logo: '/companies/postpay.svg',
     title: 'Postpay',

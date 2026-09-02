@@ -16,6 +16,7 @@
       "instagram": "Instagram"
     },
     "nothing-playing": "Nada tocando agora",
+    "listening-now": "Marcelo está escutando neste momento",
     "song-dialog": {
       "cta": "Ver no spotify",
       "message": "Marcelo Mafra está escutando essa música agora.",
@@ -212,6 +213,17 @@
         }
       },
       "3": {
+        "title": "Ritmar",
+        "description": "Fundador e Engenheiro de Software · Projeto próprio",
+        "workingTime": "Abr 2026 – Atual · Remoto",
+        "details": {
+          "1": "SaaS multi-tenant de gestão para academias e escolas de dança: matrículas, turmas, formaturas, cobrança recorrente e PDV.",
+          "2": "Cobrança por Pix e cartão com um gateway por escola, webhooks idempotentes, conciliação e trilha de auditoria.",
+          "3": "Site público por escola, em subdomínio ou domínio próprio, com indexação controlada pelo status do tenant.",
+          "4": "Monorepo com API em NestJS e três aplicações Next.js; deploy em Docker com testes unitários e end-to-end no CI."
+        }
+      },
+      "4": {
         "title": "Postpay",
         "description": "Desenvolvedor Full Stack · Autônomo",
         "workingTime": "Dez 2022 – Out 2025 · Remoto",
@@ -225,7 +237,7 @@
           "7": "CI/CD e operação com Docker, PM2, GitHub Actions e EAS; code review e testes em monorepo."
         }
       },
-      "4": {
+      "5": {
         "title": "Griebler Remodeling",
         "description": "Desenvolvedor Full Stack · Freelance",
         "workingTime": "Jan 2024 – Fev 2024 · Remoto (EUA)",
@@ -236,7 +248,7 @@
           "4": "Internacionalização (i18n) e autenticação com Google para fluxo de avaliações."
         }
       },
-      "5": {
+      "6": {
         "title": "Mince Joias",
         "description": "Desenvolvedor Full Stack · Freelance",
         "workingTime": "Ago 2023 – Set 2023 · Remoto",
