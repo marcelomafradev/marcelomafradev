@@ -33,7 +33,7 @@ export const SpotifyIndicator = () => {
 
   const messages = useMessages();
   const { navigation } = messages as {
-    navigation: { 'nothing-playing': string };
+    navigation: { 'nothing-playing': string; 'listening-now': string };
   };
 
   const stopPreview = useCallback(() => {
@@ -74,48 +74,53 @@ export const SpotifyIndicator = () => {
   return (
     <>
       {playing ? (
-        <Button
-          onClick={() => setOpen(true)}
-          key={songData.title}
-          onMouseEnter={playPreview}
-          onMouseLeave={stopPreview}
-          variant={'ghost'}
-          className="relative h-auto w-full min-w-0 max-w-full items-center justify-start gap-2 overflow-hidden px-3 text-start hover:bg-transparent"
-        >
-          {songData.album_image_url ? (
-            <Image
-              src={songData.album_image_url}
-              alt={albumCoverAlt}
-              width={40}
-              height={40}
-              className="size-10 shrink-0 rounded-md object-cover"
+        <div className="w-full min-w-0">
+          <p className="text-muted-foreground truncate px-3 pb-1 text-[11px] font-medium">
+            {navigation['listening-now']}
+          </p>
+          <Button
+            onClick={() => setOpen(true)}
+            key={songData.title}
+            onMouseEnter={playPreview}
+            onMouseLeave={stopPreview}
+            variant={'ghost'}
+            className="relative h-auto w-full min-w-0 max-w-full items-center justify-start gap-2 overflow-hidden px-3 text-start hover:bg-transparent"
+          >
+            {songData.album_image_url ? (
+              <Image
+                src={songData.album_image_url}
+                alt={albumCoverAlt}
+                width={40}
+                height={40}
+                className="size-10 shrink-0 rounded-md object-cover"
+              />
+            ) : (
+              <Skeleton className="size-10 shrink-0 rounded-md" />
+            )}
+
+            <div className="flex min-w-0 flex-1 flex-col justify-center gap-0.5">
+              <p className="truncate text-xs font-semibold">{songData.title}</p>
+              <p className="text-muted-foreground truncate text-xs">
+                {songData.artist}
+              </p>
+            </div>
+
+            <ProgressBar progress={audioDuration} isActive={isPlayingAudio} />
+
+            <audio
+              ref={audioRef}
+              className="hidden"
+              src={previewSource}
+              onLoadedMetadata={(event) =>
+                setAudioDuration(event.currentTarget.duration)
+              }
+              onDurationChange={(event) =>
+                setAudioDuration(event.currentTarget.duration)
+              }
+              onEnded={() => setIsPlayingAudio(false)}
             />
-          ) : (
-            <Skeleton className="size-10 shrink-0 rounded-md" />
-          )}
-
-          <div className="flex min-w-0 flex-1 flex-col justify-center gap-0.5">
-            <p className="truncate text-xs font-semibold">{songData.title}</p>
-            <p className="text-muted-foreground truncate text-xs">
-              {songData.artist}
-            </p>
-          </div>
-
-          <ProgressBar progress={audioDuration} isActive={isPlayingAudio} />
-
-          <audio
-            ref={audioRef}
-            className="hidden"
-            src={previewSource}
-            onLoadedMetadata={(event) =>
-              setAudioDuration(event.currentTarget.duration)
-            }
-            onDurationChange={(event) =>
-              setAudioDuration(event.currentTarget.duration)
-            }
-            onEnded={() => setIsPlayingAudio(false)}
-          />
-        </Button>
+          </Button>
+        </div>
       ) : (
         <div className="flex min-w-0 items-center justify-start gap-2 px-3 hover:bg-transparent">
           <Icon.spotify className="size-6 shrink-0" />

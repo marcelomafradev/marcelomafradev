@@ -106,6 +106,25 @@ describe('SpotifyIndicator', () => {
     ).toBeInTheDocument();
   });
 
+  it('shows the listening-now label only while a track is playing', () => {
+    useNowPlayingMock.mockReturnValue(playingTrack);
+
+    const { unmount } = renderWithProviders(<SpotifyIndicator />);
+
+    expect(
+      screen.getByText('Marcelo está escutando neste momento'),
+    ).toBeInTheDocument();
+
+    unmount();
+    useNowPlayingMock.mockReturnValue({ is_playing: false });
+
+    renderWithProviders(<SpotifyIndicator />);
+
+    expect(
+      screen.queryByText('Marcelo está escutando neste momento'),
+    ).not.toBeInTheDocument();
+  });
+
   it('falls back to a skeleton when the album cover is missing', () => {
     useNowPlayingMock.mockReturnValue({
       ...playingTrack,
