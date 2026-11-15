@@ -2,7 +2,7 @@ import './globals.css';
 
 import { Navigation } from '@/components/organisms';
 import { JetBrains_Mono, Sora } from 'next/font/google';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Toaster } from '@/components/ui/sonner';
 import NextIntlProvider from '@/providers/next-intl-provider';
 import ThemeProvider from '@/providers/theme-provider';
@@ -34,6 +34,14 @@ const jetBrainsMono = JetBrains_Mono({
   display: 'swap',
   variable: '--font-mono-numeric',
 });
+
+export const viewport: Viewport = {
+  viewportFit: 'cover',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f6f0e9' },
+    { media: '(prefers-color-scheme: dark)', color: '#2d2621' },
+  ],
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
