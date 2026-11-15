@@ -32,6 +32,7 @@ describe('navigation routing constants', () => {
       '/about': '/about',
       '/projects': '/projects',
       '/technologies': '/technologies',
+      '/services': '/services',
       '/contact': '/contact',
     });
 
@@ -41,6 +42,7 @@ describe('navigation routing constants', () => {
         '/about',
         '/projects',
         '/technologies',
+        '/services',
         '/contact',
       ]),
     );

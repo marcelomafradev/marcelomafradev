@@ -33,6 +33,7 @@ describe('BottomTabs', () => {
       '/about',
       '/projects',
       '/technologies',
+      '/services',
       '/contact',
     ]);
     expect(links.map((link) => link.textContent)).toEqual([
@@ -40,6 +41,7 @@ describe('BottomTabs', () => {
       'Sobre',
       'Projetos',
       'Tecnologias',
+      'Serviços',
       'Contato',
     ]);
   });

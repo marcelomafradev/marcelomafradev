@@ -3,13 +3,15 @@ import { getTranslations } from 'next-intl/server';
 import { routing } from '@/lib/navigation';
 import { OG_IMAGE_URL, localizedPath, localizedUrl } from '@/lib/site';
 
-type MetaPage = 'home' | 'about' | 'projects' | 'technologies' | 'contact';
+type MetaPage =
+  'home' | 'about' | 'projects' | 'technologies' | 'services' | 'contact';
 
 const pathByPage: Record<MetaPage, string> = {
   home: '/',
   about: '/about',
   projects: '/projects',
   technologies: '/technologies',
+  services: '/services',
   contact: '/contact',
 };
 

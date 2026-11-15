@@ -2,6 +2,7 @@ import { Icon, IconType } from '@/components/ui/icon';
 import type { Locale } from '@/lib/navigation';
 import {
   Book,
+  Briefcase,
   FolderCheck,
   Home,
   LaptopMinimal,
@@ -54,6 +55,11 @@ export const SIDEBAR_ITEMS: SidebarGroup[] = [
         id: 'technologies',
         icon: LaptopMinimal,
         href: '/technologies',
+      },
+      {
+        id: 'services',
+        icon: Briefcase,
+        href: '/services',
       },
       {
         id: 'contact',

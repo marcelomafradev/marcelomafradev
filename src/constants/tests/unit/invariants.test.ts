@@ -71,6 +71,16 @@ describe('constants invariants', () => {
         }
       }
     });
+
+    it('exposes the services page in the profile group', () => {
+      const items = SIDEBAR_ITEMS.flatMap((group) => group.items);
+
+      expect(
+        items.some(
+          (item) => item.id === 'services' && item.href === '/services',
+        ),
+      ).toBe(true);
+    });
   });
 
   describe('COMPANY', () => {

@@ -14,10 +14,10 @@ const { default: sitemap } = await import('@/app/sitemap');
 const ROOT_URLS = new Set([SITE_URL, `${SITE_URL}/en`, `${SITE_URL}/es`]);
 
 describe('sitemap', () => {
-  it('returns 15 entries (5 paths × 3 locales)', () => {
+  it('returns 18 entries (6 paths × 3 locales)', () => {
     const entries = sitemap();
 
-    expect(entries).toHaveLength(15);
+    expect(entries).toHaveLength(18);
   });
 
   it("includes alternates.languages['x-default'] on every entry", () => {

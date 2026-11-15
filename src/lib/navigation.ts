@@ -6,13 +6,14 @@ export type Locale = 'en' | 'pt-br' | 'es';
 export const localePrefix = 'as-needed';
 
 export type HrefValue =
-  '/' | '/about' | '/projects' | '/technologies' | '/contact';
+  '/' | '/about' | '/projects' | '/technologies' | '/services' | '/contact';
 
 export const pathnames = {
   '/': '/',
   '/about': '/about',
   '/projects': '/projects',
   '/technologies': '/technologies',
+  '/services': '/services',
   '/contact': '/contact',
 } satisfies Pathnames<typeof locales>;
 
