@@ -8,5 +8,6 @@ export * from './forms';
 export * from './navigation';
 export * from './personal';
 export * from './projects';
+export * from './services';
 export * from './stack';
 export * from './theme';
