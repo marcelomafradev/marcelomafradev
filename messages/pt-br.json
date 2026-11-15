@@ -48,10 +48,10 @@
   "homepage": {
     "hero": {
       "availability": "Aberto a contratos e posições de liderança",
-      "role": "Tech Lead · Arquitetura e IA aplicada",
-      "headline": "Construo o sistema inteiro,",
-      "headline-highlight": "do desenho ao app na loja.",
-      "description": "Sou Tech Lead em Florianópolis e construo serviços em NestJS e Java, apps em React Native e painéis em Next.js.",
+      "role": "Tech Lead · Florianópolis, SC",
+      "headline": "Tech Lead em arquitetura de sistemas e",
+      "headline-highlight": "IA aplicada.",
+      "description": "Construo sistemas de pagamento, crédito, educação e gestão: serviços em NestJS e Java, apps em React Native e painéis em Next.js. Uso IA para desenvolver e dentro dos produtos.",
       "cta-primary": "Ver case studies",
       "cta-secondary": "Falar comigo",
       "location": "Florianópolis, SC · Remoto"
@@ -84,6 +84,16 @@
       "stack": "Stack",
       "sector": "Setor",
       "items": {
+        "credit-ai": {
+          "sector": "Mercado de capitais",
+          "title": "Análise de crédito e automação com IA",
+          "summary": "Módulo de análise de crédito de uma securitizadora de FIDC, com motores que consultam bureaus e leem documentos, e um robô que captura comprovantes de entrega e os valida com IA antes de dar baixa no ERP.",
+          "highlights": {
+            "1": "Motores de análise executados em rodadas que o analista dispara, continua ou interrompe pela interface, com falhas registradas e cobertura por motor.",
+            "2": "Validação de comprovantes por IA com fallback de modelo e esforço configuráveis: o que o modelo recusa vai para revisão humana e o aprovado dá baixa no ERP.",
+            "3": "Scraper em TypeScript com fila e worker, atualização paga de bureau com trava de concorrência e testes de ponta a ponta com simuladores da IA e do ERP."
+          }
+        },
         "payments": {
           "sector": "Fintech de pagamentos",
           "title": "Plataforma de pagamentos com 21 serviços",
@@ -142,32 +152,32 @@
       "items": {
         "spec-driven": {
           "title": "Spec e plano antes do código",
-          "description": "Mudança relevante começa por uma spec com problema, restrições e critério de aceite, e por um plano em tarefas verificáveis, cada uma com seu teste. Corrigir uma spec ambígua custa menos que corrigir trinta arquivos depois.",
+          "description": "Mudança relevante começa por uma spec com problema, restrições e critério de aceite, e por um plano em tarefas verificáveis. Corrigir uma spec ambígua custa menos que corrigir trinta arquivos depois.",
           "tag": "Spec-driven development"
         },
         "orchestration": {
           "title": "Cada fase no modelo certo",
-          "description": "Planejar, implementar, depurar e revisar pedem modelos diferentes. Cada fase vai para o modelo que rende mais nela, e quem escreve o plano não implementa. A execução é sequencial: uma tarefa por vez, em branch própria.",
+          "description": "Planejar, implementar, depurar e revisar pedem modelos diferentes. Cada fase vai para o que rende mais nela, e quem escreve o plano não implementa.",
           "tag": "Orquestração entre modelos"
         },
         "context": {
           "title": "Padrão do projeto versionado",
-          "description": "As convenções de módulo, log e teste ficam no repositório como instrução executável e passam por PR como qualquer código. Um agente novo herda a regra em vez de adivinhar, e quando ela muda, muda para todos no mesmo commit.",
+          "description": "As convenções de módulo, log e teste ficam no repositório e passam por PR como qualquer código. Um agente novo herda a regra em vez de adivinhar.",
           "tag": "Contexto no repositório"
         },
         "tooling": {
           "title": "Ferramentas por protocolo",
-          "description": "O agente consulta quadro de tarefas, banco, navegador e CI por MCP, sem depender de contexto colado à mão. Em vez de “o que eu lembro do sistema”, usa “o que o sistema respondeu agora”.",
+          "description": "O agente consulta tarefas, banco, navegador e CI por MCP, sem depender de contexto colado à mão.",
           "tag": "MCP"
         },
         "verification": {
           "title": "Evidência antes de afirmar",
-          "description": "O teste falha antes da implementação, e lint, typecheck, cobertura e end-to-end no CI servem de portão. Teste que depende de tempo ou verifica implementação em vez de comportamento é refeito, nunca marcado como instável.",
+          "description": "O teste falha antes da implementação, e lint, typecheck, cobertura e end-to-end no CI servem de portão. Teste instável é refeito, nunca ignorado.",
           "tag": "TDD e CI"
         },
         "review": {
           "title": "Revisão humana no merge",
-          "description": "Leio tudo o que o agente devolve antes de abrir o PR. O agente acelera a produção de código e também a de código errado. O ganho está nos portões que pegam isso cedo.",
+          "description": "Leio tudo o que o agente devolve antes de abrir o PR. Ele acelera o código certo e o errado, e o ganho está nos portões que pegam isso cedo.",
           "tag": "Porta do merge"
         }
       },
@@ -178,7 +188,7 @@
     },
     "resume-about-me": {
       "title": "Sobre mim",
-      "description": "Tech Lead e desenvolvedor full stack, com trabalho em edtech, SaaS e fintech. Puxo as decisões de arquitetura e acompanho o produto até estar publicado, usando TypeScript, NestJS, Next.js e React Native. Gosto de sistemas multi-tenant, de código que o time consegue manter e de conversar com quem cuida do negócio, sempre com cuidado com informação confidencial de cliente.",
+      "description": "Tech Lead com trabalho em edtech, SaaS, fintech e mercado de capitais. Decido a arquitetura e acompanho o produto até estar publicado, com TypeScript, NestJS, Next.js, React Native e IA aplicada. Gosto de sistemas multi-tenant, de código que o time consegue manter e de conversar com quem cuida do negócio, sempre com cuidado com informação confidencial de cliente.",
       "cta": "Ver mais"
     },
     "experiences": {

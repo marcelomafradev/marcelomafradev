@@ -48,10 +48,10 @@
   "homepage": {
     "hero": {
       "availability": "Open to contracts and leadership roles",
-      "role": "Tech Lead · Architecture and applied AI",
-      "headline": "I build the whole system,",
-      "headline-highlight": "from the sketch to the app in the store.",
-      "description": "I am a Tech Lead in Florianópolis and I build NestJS and Java services, React Native apps and Next.js consoles.",
+      "role": "Tech Lead · Florianópolis, Brazil",
+      "headline": "Tech Lead in systems architecture and",
+      "headline-highlight": "applied AI.",
+      "description": "I build payments, credit, education and management systems: NestJS and Java services, React Native apps and Next.js consoles. I use AI to develop them and inside the products.",
       "cta-primary": "See case studies",
       "cta-secondary": "Get in touch",
       "location": "Florianópolis, Brazil · Remote"
@@ -84,6 +84,16 @@
       "stack": "Stack",
       "sector": "Industry",
       "items": {
+        "credit-ai": {
+          "sector": "Capital markets",
+          "title": "Credit analysis and AI automation",
+          "summary": "A credit analysis module for an FIDC securitization company, with engines that query bureaus and read documents, and a robot that captures delivery receipts and validates them with AI before writing them off in the ERP.",
+          "highlights": {
+            "1": "Analysis engines run in rounds that the analyst starts, continues or stops from the interface, with failures logged and coverage per engine.",
+            "2": "AI validation of receipts with configurable model fallback and effort: what the model refuses goes to human review and what it approves is written off in the ERP.",
+            "3": "A TypeScript scraper with a queue and worker, a paid bureau refresh with a concurrency lock, and end-to-end tests with simulators for the AI and the ERP."
+          }
+        },
         "payments": {
           "sector": "Payments fintech",
           "title": "A payments platform with 21 services",
@@ -142,32 +152,32 @@
       "items": {
         "spec-driven": {
           "title": "Spec and plan before code",
-          "description": "Any change of substance starts from a spec with the problem, constraints and acceptance criteria, and from a plan broken into verifiable tasks, each with its own test. Fixing an ambiguous spec costs less than fixing thirty files later.",
+          "description": "Any change of substance starts from a spec with the problem, constraints and acceptance criteria, and from a plan in verifiable tasks. Fixing an ambiguous spec costs less than fixing thirty files later.",
           "tag": "Spec-driven development"
         },
         "orchestration": {
           "title": "Each phase on the right model",
-          "description": "Planning, implementing, debugging and reviewing call for different models. Each phase goes to the model that performs best on it, and whoever writes the plan does not implement it. Execution is sequential: one task at a time, on its own branch.",
+          "description": "Planning, implementing, debugging and reviewing call for different models. Each phase goes to the one that performs best on it, and whoever writes the plan does not implement it.",
           "tag": "Orchestration across models"
         },
         "context": {
           "title": "Project standards, versioned",
-          "description": "Module layout, logging and testing conventions live in the repository as executable instructions and go through PRs like any code. A new agent inherits the rule instead of guessing, and when the rule changes it changes for everyone in the same commit.",
+          "description": "Module layout, logging and testing conventions live in the repository and go through PRs like any code. A new agent inherits the rule instead of guessing.",
           "tag": "Context in the repo"
         },
         "tooling": {
           "title": "Tooling over a protocol",
-          "description": "The agent reads the task board, the database, the browser and CI over MCP, instead of relying on context pasted by hand. It trades “what I remember about the system” for “what the system just answered”.",
+          "description": "The agent reads tasks, the database, the browser and CI over MCP, without relying on context pasted by hand.",
           "tag": "MCP"
         },
         "verification": {
           "title": "Evidence before claims",
-          "description": "The test fails before the implementation, and lint, typecheck, coverage and end-to-end runs in CI act as the gate. A test that depends on timing or checks implementation instead of behavior gets rewritten, never labeled flaky.",
+          "description": "The test fails before the implementation, and lint, typecheck, coverage and end-to-end runs in CI act as the gate. A flaky test gets rewritten, never ignored.",
           "tag": "TDD and CI"
         },
         "review": {
           "title": "Human review at the merge",
-          "description": "I read everything the agent returns before opening the PR. The agent speeds up producing code and also producing wrong code. The gain is in the gates that catch it early.",
+          "description": "I read everything the agent returns before opening the PR. It speeds up the right code and the wrong code, and the gain is in the gates that catch it early.",
           "tag": "The merge gate"
         }
       },
@@ -178,7 +188,7 @@
     },
     "resume-about-me": {
       "title": "About me",
-      "description": "Tech Lead and full stack developer, with work in edtech, SaaS, and fintech. I drive architecture decisions and stay with the product until it ships, using TypeScript, NestJS, Next.js, and React Native. I like multi-tenant systems, code the team can maintain, and talking to the people who run the business, always careful with client confidentiality.",
+      "description": "Tech Lead with work in edtech, SaaS, fintech and capital markets. I make the architecture decisions and stay with the product until it ships, using TypeScript, NestJS, Next.js, React Native and applied AI. I like multi-tenant systems, code the team can maintain, and talking to the people who run the business, always careful with confidential client information.",
       "cta": "Read more"
     },
     "experiences": {

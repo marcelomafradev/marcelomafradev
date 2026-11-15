@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { isValidCnpj } from '@/lib/cnpj';
 import {
+  CASE_STUDIES,
   COMPANY,
   CONTACT_EMAIL,
   CONTACT_EMAIL_MAX_LENGTH,
@@ -25,7 +26,32 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const offeringKeys = (offerings: Record<string, unknown>) =>
   Object.keys(offerings).filter((key) => key !== 'title');
 
+const caseStudyItems = (locale: typeof ptBr | typeof en | typeof es) =>
+  locale.homepage['case-studies'].items as Record<
+    string,
+    { highlights: Record<string, string> }
+  >;
+
 describe('constants invariants', () => {
+  describe('CASE_STUDIES', () => {
+    it('keeps every id and highlight present under the case study messages in all locales', () => {
+      for (const locale of [ptBr, en, es]) {
+        const items = caseStudyItems(locale);
+
+        for (const caseStudy of CASE_STUDIES) {
+          expect(items).toHaveProperty(caseStudy.id);
+          expect(caseStudy.highlightsCount).toBeGreaterThan(0);
+
+          for (let index = 1; index <= caseStudy.highlightsCount; index += 1) {
+            expect(items[caseStudy.id].highlights).toHaveProperty(
+              String(index),
+            );
+          }
+        }
+      }
+    });
+  });
+
   describe('PROJECTS', () => {
     it('has unique ids', () => {
       const ids = PROJECTS.map((project) => project.id);

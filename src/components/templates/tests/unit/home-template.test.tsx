@@ -91,13 +91,15 @@ describe('HomeTemplate', () => {
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'Escala do que já entreguei' }),
+      screen.getByRole('heading', { name: ptBr.homepage.metrics.title }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'Case studies de engenharia' }),
+      screen.getByRole('heading', {
+        name: ptBr.homepage['case-studies'].title,
+      }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'Projetos' }),
+      screen.getByRole('heading', { name: ptBr.homepage.projects.title }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: ptBr.homepage.services.title }),
@@ -106,10 +108,12 @@ describe('HomeTemplate', () => {
       screen.getByRole('heading', { name: 'Experiências' }),
     ).toBeInTheDocument();
     expect(
-      screen.queryByRole('heading', { name: 'Formação e cursos' }),
+      screen.queryByRole('heading', { name: ptBr.homepage.education.title }),
     ).not.toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'Sobre mim' }),
+      screen.getByRole('heading', {
+        name: ptBr.homepage['resume-about-me'].title,
+      }),
     ).toBeInTheDocument();
   });
 

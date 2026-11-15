@@ -1,6 +1,7 @@
 import { IconType } from '@/components/ui/icon';
 import {
   AudioLines,
+  BrainCircuit,
   Building2,
   CreditCard,
   GraduationCap,
@@ -15,6 +16,20 @@ export interface CaseStudy {
 }
 
 export const CASE_STUDIES: CaseStudy[] = [
+  {
+    id: 'credit-ai',
+    icon: BrainCircuit,
+    stack: [
+      'React',
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'Playwright',
+      'Claude API',
+      'SQL Server',
+    ],
+    highlightsCount: 3,
+  },
   {
     id: 'payments',
     icon: CreditCard,

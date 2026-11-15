@@ -3,6 +3,9 @@ import { describe, expect, it, vi } from 'vitest';
 import { AiWorkflow } from '@/components/organisms/sections/ai-workflow';
 import { AI_WORKFLOW_PILLARS } from '@/constants';
 import { renderWithProviders } from '@/tests/utils/render';
+import ptBr from '../../../../../../messages/pt-br.json';
+
+const aiWorkflow = ptBr.homepage['ai-workflow'];
 
 vi.mock('@/lib/navigation', () => ({
   Link: ({
@@ -25,31 +28,33 @@ describe('AiWorkflow', () => {
     renderWithProviders(<AiWorkflow />);
 
     expect(
-      screen.getByRole('heading', { name: 'IA no fluxo de engenharia' }),
+      screen.getByRole('heading', { name: aiWorkflow.title }),
     ).toBeInTheDocument();
     expect(document.getElementById('ai-workflow')).toBeTruthy();
   });
 
-  it('renders one card per pillar with title, description and tag', () => {
+  it('renders one card per pillar with the title, description and tag from translations', () => {
     renderWithProviders(<AiWorkflow />);
 
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(
       AI_WORKFLOW_PILLARS.length,
     );
 
-    expect(
-      screen.getByRole('heading', { name: 'Spec e plano antes do código' }),
-    ).toBeInTheDocument();
-    expect(screen.getByText('Spec-driven development')).toBeInTheDocument();
-    expect(screen.getByText(/spec ambígua custa menos/)).toBeInTheDocument();
+    for (const { id } of AI_WORKFLOW_PILLARS) {
+      const item = aiWorkflow.items[id as keyof typeof aiWorkflow.items];
+
+      expect(
+        screen.getByRole('heading', { name: item.title }),
+      ).toBeInTheDocument();
+      expect(screen.getByText(item.description)).toBeInTheDocument();
+      expect(screen.getByText(item.tag)).toBeInTheDocument();
+    }
   });
 
   it('renders the closing note about applying the workflow on real products', () => {
     renderWithProviders(<AiWorkflow />);
 
-    expect(
-      screen.getByText(/Apliquei isso em produto real/),
-    ).toBeInTheDocument();
+    expect(screen.getByText(aiWorkflow.footnote)).toBeInTheDocument();
   });
 
   it('numbers the pillars from 01 to 06 in order', () => {

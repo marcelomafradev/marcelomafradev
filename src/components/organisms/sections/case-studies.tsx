@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 
 export const CaseStudies = () => {
   const t = useTranslations('homepage.case-studies');
+  const lastSpansRow = (CASE_STUDIES.length - 1) % 2 === 1;
 
   return (
     <section id="case-studies" className="scroll-mt-24 space-y-5">
@@ -18,14 +19,17 @@ export const CaseStudies = () => {
         {CASE_STUDIES.map(
           ({ id, icon: Icon, stack, highlightsCount }, index) => {
             const featured = index === 0;
+            const wide =
+              !featured && lastSpansRow && index === CASE_STUDIES.length - 1;
 
             return (
               <Card
                 key={id}
                 data-featured={featured ? 'true' : undefined}
+                data-wide={wide ? 'true' : undefined}
                 className={cn(
                   'border-border/60 bg-card/60 hover:border-primary/40 group flex flex-col transition-colors duration-200',
-                  featured && 'xl:col-span-2',
+                  (featured || wide) && 'xl:col-span-2',
                 )}
               >
                 <CardHeader className="space-y-3">
@@ -61,7 +65,7 @@ export const CaseStudies = () => {
                   <ul
                     className={cn(
                       'space-y-2.5',
-                      featured &&
+                      (featured || wide) &&
                         'xl:grid xl:grid-cols-3 xl:gap-5 xl:space-y-0',
                     )}
                   >

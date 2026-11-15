@@ -73,13 +73,17 @@ describe('Hero', () => {
   it('renders exactly two calls to action', () => {
     renderWithProviders(<Hero />);
 
-    const contactCta = screen.getByRole('link', { name: /Falar comigo/i });
+    const contactCta = screen.getByRole('link', {
+      name: new RegExp(escapeRegExp(ptBr.homepage.hero['cta-secondary']), 'i'),
+    });
     const ctaRow = contactCta.parentElement as HTMLElement;
 
     expect(contactCta).toHaveAttribute('href', '/contact');
     expect(within(ctaRow).getAllByRole('link')).toHaveLength(2);
     expect(
-      within(ctaRow).getByRole('link', { name: /Ver case studies/i }),
+      within(ctaRow).getByRole('link', {
+        name: new RegExp(escapeRegExp(ptBr.homepage.hero['cta-primary']), 'i'),
+      }),
     ).toHaveAttribute('href', '#case-studies');
   });
 

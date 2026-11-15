@@ -48,10 +48,10 @@
   "homepage": {
     "hero": {
       "availability": "Abierto a contratos y puestos de liderazgo",
-      "role": "Tech Lead · Arquitectura e IA aplicada",
-      "headline": "Construyo el sistema completo,",
-      "headline-highlight": "del diseño a la app en la tienda.",
-      "description": "Soy Tech Lead en Florianópolis y construyo servicios en NestJS y Java, apps en React Native y paneles en Next.js.",
+      "role": "Tech Lead · Florianópolis, Brasil",
+      "headline": "Tech Lead en arquitectura de sistemas e",
+      "headline-highlight": "IA aplicada.",
+      "description": "Construyo sistemas de pagos, crédito, educación y gestión: servicios en NestJS y Java, apps en React Native y paneles en Next.js. Uso IA para desarrollarlos y dentro de los productos.",
       "cta-primary": "Ver case studies",
       "cta-secondary": "Hablemos",
       "location": "Florianópolis, Brasil · Remoto"
@@ -84,6 +84,16 @@
       "stack": "Stack",
       "sector": "Sector",
       "items": {
+        "credit-ai": {
+          "sector": "Mercado de capitales",
+          "title": "Análisis de crédito y automatización con IA",
+          "summary": "Módulo de análisis de crédito de una securitizadora de FIDC, con motores que consultan burós y leen documentos, y un robot que captura comprobantes de entrega y los valida con IA antes de dar de baja en el ERP.",
+          "highlights": {
+            "1": "Motores de análisis ejecutados en rondas que el analista inicia, continúa o detiene desde la interfaz, con fallas registradas y cobertura por motor.",
+            "2": "Validación de comprobantes con IA con fallback de modelo y esfuerzo configurables: lo que el modelo rechaza va a revisión humana y lo aprobado se da de baja en el ERP.",
+            "3": "Scraper en TypeScript con cola y worker, actualización paga de buró con bloqueo de concurrencia y pruebas de extremo a extremo con simuladores de la IA y del ERP."
+          }
+        },
         "payments": {
           "sector": "Fintech de pagos",
           "title": "Plataforma de pagos con 21 servicios",
@@ -142,32 +152,32 @@
       "items": {
         "spec-driven": {
           "title": "Spec y plan antes del código",
-          "description": "Todo cambio relevante empieza por una spec con el problema, las restricciones y el criterio de aceptación, y por un plan dividido en tareas verificables, cada una con su prueba. Arreglar una spec ambigua cuesta menos que arreglar treinta archivos después.",
+          "description": "Todo cambio relevante empieza por una spec con el problema, las restricciones y el criterio de aceptación, y por un plan en tareas verificables. Arreglar una spec ambigua cuesta menos que arreglar treinta archivos después.",
           "tag": "Spec-driven development"
         },
         "orchestration": {
           "title": "Cada fase en el modelo adecuado",
-          "description": "Planificar, implementar, depurar y revisar piden modelos distintos. Cada fase va al modelo que mejor rinde en ella, y quien escribe el plan no implementa. La ejecución es secuencial: una tarea a la vez, en su propia rama.",
+          "description": "Planificar, implementar, depurar y revisar piden modelos distintos. Cada fase va al que mejor rinde en ella, y quien escribe el plan no implementa.",
           "tag": "Orquestación entre modelos"
         },
         "context": {
           "title": "Estándar del proyecto versionado",
-          "description": "Las convenciones de módulo, log y prueba viven en el repositorio como instrucción ejecutable y pasan por PR como cualquier código. Un agente nuevo hereda la regla en vez de adivinar, y cuando cambia, cambia para todos en el mismo commit.",
+          "description": "Las convenciones de módulo, log y prueba viven en el repositorio y pasan por PR como cualquier código. Un agente nuevo hereda la regla en vez de adivinar.",
           "tag": "Contexto en el repositorio"
         },
         "tooling": {
           "title": "Herramientas por protocolo",
-          "description": "El agente lee el tablero de tareas, la base de datos, el navegador y el CI por MCP, en lugar de depender de contexto pegado a mano. Cambia “lo que recuerdo del sistema” por “lo que el sistema acaba de responder”.",
+          "description": "El agente consulta tareas, base de datos, navegador y CI por MCP, sin depender de contexto pegado a mano.",
           "tag": "MCP"
         },
         "verification": {
           "title": "Evidencia antes de afirmar",
-          "description": "La prueba falla antes de la implementación, y lint, typecheck, cobertura y end-to-end en CI hacen de puerta. Una prueba que depende del tiempo o verifica implementación en vez de comportamiento se rehace, nunca se marca como inestable.",
+          "description": "La prueba falla antes de la implementación, y lint, typecheck, cobertura y end-to-end en CI hacen de puerta. Una prueba inestable se rehace, nunca se ignora.",
           "tag": "TDD y CI"
         },
         "review": {
           "title": "Revisión humana en el merge",
-          "description": "Leo todo lo que el agente devuelve antes de abrir el PR. El agente acelera la producción de código y también la de código equivocado. La ganancia está en las puertas que lo detectan temprano.",
+          "description": "Leo todo lo que el agente devuelve antes de abrir el PR. Acelera el código correcto y el equivocado, y la ganancia está en las puertas que lo detectan temprano.",
           "tag": "Puerta del merge"
         }
       },
@@ -178,7 +188,7 @@
     },
     "resume-about-me": {
       "title": "Sobre mí",
-      "description": "Tech Lead y desarrollador full stack, con trabajo en edtech, SaaS y fintech. Lidero las decisiones de arquitectura y acompaño el producto hasta que está publicado, con TypeScript, NestJS, Next.js y React Native. Me gustan los sistemas multi-tenant, el código que el equipo puede mantener y hablar con quien cuida del negocio, siempre con cuidado con la información confidencial del cliente.",
+      "description": "Tech Lead con trabajo en edtech, SaaS, fintech y mercado de capitales. Defino la arquitectura y acompaño el producto hasta que está publicado, con TypeScript, NestJS, Next.js, React Native e IA aplicada. Me gustan los sistemas multi-tenant, el código que el equipo puede mantener y conversar con quienes llevan el negocio, siempre con cuidado con la información confidencial de clientes.",
       "cta": "Ver más"
     },
     "experiences": {
