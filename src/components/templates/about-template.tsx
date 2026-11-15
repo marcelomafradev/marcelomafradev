@@ -4,6 +4,7 @@ import { Image, Link, PageHeading } from '@/components/atoms';
 import { ImageWithDescription } from '@/components/molecules';
 import {
   ChessComCard,
+  Education,
   FavoriteBooksCarousel,
   FavoriteSongsCarousel,
 } from '@/components/organisms';
@@ -130,6 +131,8 @@ export const AboutTemplate = async () => {
         <FavoriteBooksCarousel />
         <FavoriteSongsCarousel />
       </section>
+
+      <Education />
     </div>
   );
 };

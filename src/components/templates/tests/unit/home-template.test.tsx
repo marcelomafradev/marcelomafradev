@@ -93,8 +93,8 @@ describe('HomeTemplate', () => {
       screen.getByRole('heading', { name: 'Experiências' }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: 'Formação e cursos' }),
-    ).toBeInTheDocument();
+      screen.queryByRole('heading', { name: 'Formação e cursos' }),
+    ).not.toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: 'Sobre mim' }),
     ).toBeInTheDocument();

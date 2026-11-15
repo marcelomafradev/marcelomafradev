@@ -130,4 +130,32 @@ describe('Experiences', () => {
       'https://ritmar.com.br/',
     );
   });
+
+  it('collapses the older experiences behind a details toggle', async () => {
+    const { Experiences } =
+      await import('@/components/organisms/sections/experiences');
+
+    const ui = await Experiences();
+    render(ui);
+
+    const detailsElement = document.querySelector('details');
+
+    expect(detailsElement).not.toBeNull();
+
+    const collapsible = within(detailsElement as HTMLElement);
+
+    expect(collapsible.getByText('Ver mais experiências')).toBeInTheDocument();
+
+    for (const title of ['Postpay', 'Griebler Remodeling', 'Mince Joias']) {
+      expect(
+        collapsible.getByRole('heading', { name: title }),
+      ).toBeInTheDocument();
+    }
+
+    for (const title of ['Onilearning', 'SP Capital', 'Comvanilla', 'Ritmar']) {
+      expect(
+        collapsible.queryByRole('heading', { name: title }),
+      ).not.toBeInTheDocument();
+    }
+  });
 });

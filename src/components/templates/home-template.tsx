@@ -4,7 +4,6 @@ import {
   ServicesPreview,
   Experiences,
   Projects,
-  Education,
   Hero,
   ProofMetrics,
   CaseStudies,
@@ -22,7 +21,6 @@ export const HomeTemplate = () => {
       <Separator className="bg-border/50" />
       <Experiences />
       <Projects />
-      <Education />
       <ResumeAboutMe />
     </div>
   );

@@ -13,6 +13,11 @@ vi.mock('next-intl/server', () => ({
 
 vi.mock('@/components/organisms', () => ({
   ChessComCard: () => <div data-testid="chess-com-card" />,
+  Education: () => (
+    <section>
+      <h2>Formação e cursos</h2>
+    </section>
+  ),
   FavoriteBooksCarousel: () => (
     <section>
       <h2>Livros que indico</h2>
@@ -89,5 +94,24 @@ describe('AboutTemplate', () => {
     expect(
       screen.getByRole('heading', { name: 'Livros que indico' }),
     ).toBeInTheDocument();
+  });
+
+  it('renders the education section last', async () => {
+    const { AboutTemplate } =
+      await import('@/components/templates/about-template');
+
+    const ui = await AboutTemplate();
+    render(ui);
+
+    const education = screen.getByRole('heading', {
+      name: 'Formação e cursos',
+    });
+    const songs = screen.getByRole('heading', {
+      name: 'Músicas favoritas do momento',
+    });
+
+    expect(songs.compareDocumentPosition(education)).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING,
+    );
   });
 });
