@@ -127,10 +127,6 @@ describe('FavoriteBooksCarousel', () => {
     expect(
       screen.getByRole('heading', { name: 'Livros que indico' }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        'Leituras que valem o tempo — para estudar, pensar e crescer.',
-      ),
-    ).toBeInTheDocument();
+    expect(screen.getByText(ptBr.about.books.description)).toBeInTheDocument();
   });
 });

@@ -128,7 +128,7 @@ describe('ContactForm', () => {
     expect(mailto.startsWith(`mailto:${CONTACT_EMAIL}?`)).toBe(true);
     expect(mailto).toContain(encodeURIComponent(validValues.subject));
     expect(toastInfo).toHaveBeenCalledWith(
-      'Envio indisponível — abri seu cliente de e-mail com a mensagem pronta.',
+      'Envio indisponível. Abri seu cliente de e-mail com a mensagem pronta.',
     );
   });
 
