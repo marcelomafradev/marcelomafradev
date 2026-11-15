@@ -3,7 +3,7 @@
 import { usePathname, HrefValue } from '@/lib/navigation';
 import { PERSONAL_INFO, SIDEBAR_ITEMS } from '@/constants';
 import { DropdownSettings } from '@/components/molecules';
-import { Link, NavItemContent } from '@/components/atoms';
+import { BrandMark, Link, NavItemContent } from '@/components/atoms';
 import {
   Sidebar as ShadcnSidebar,
   SidebarContent,
@@ -16,8 +16,6 @@ import {
   SidebarMenuItem,
   SidebarSeparator,
 } from '@/components/ui/sidebar';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Image } from '@/components/atoms';
 import { ChessIndicator } from './chess-indicator';
 import { SpotifyIndicator } from './spotify-indicator';
 import { useTranslations } from 'next-intl';
@@ -40,24 +38,7 @@ export const Sidebar = () => {
           href="/"
           className="hover:bg-sidebar-accent/60 flex items-center gap-3 rounded-lg p-1 transition-colors"
         >
-          <Avatar className="size-11 rounded-xl">
-            <AvatarImage
-              src={PERSONAL_INFO.image}
-              alt={PERSONAL_INFO.name}
-              className="object-cover"
-              render={
-                <Image
-                  src={PERSONAL_INFO.image}
-                  alt={PERSONAL_INFO.name}
-                  width={44}
-                  height={44}
-                  sizes="44px"
-                  className="aspect-square size-full object-cover"
-                />
-              }
-            />
-            <AvatarFallback className="rounded-xl">MM</AvatarFallback>
-          </Avatar>
+          <BrandMark className="size-11" />
 
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold tracking-tight">

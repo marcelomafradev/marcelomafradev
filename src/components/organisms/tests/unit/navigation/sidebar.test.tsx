@@ -22,12 +22,6 @@ vi.mock('next-themes', () => ({
   useTheme: () => ({ theme: 'system', setTheme: vi.fn() }),
 }));
 
-vi.mock('next/image', () => ({
-  default: ({ alt, src, ...rest }: { alt: string; src: string }) => (
-    <img alt={alt} src={src} {...rest} />
-  ),
-}));
-
 vi.mock('next/link', () => ({
   default: ({
     href,
@@ -86,6 +80,9 @@ describe('Sidebar', () => {
       </SidebarProvider>,
     );
 
+    expect(
+      screen.getByRole('img', { name: 'marcelomafradev' }),
+    ).toBeInTheDocument();
     expect(screen.getByText(PERSONAL_INFO.name)).toBeInTheDocument();
     expect(screen.getByText('Início')).toBeInTheDocument();
     expect(screen.getByText('Sobre')).toBeInTheDocument();
