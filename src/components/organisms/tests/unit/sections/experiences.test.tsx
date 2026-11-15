@@ -131,6 +131,42 @@ describe('Experiences', () => {
     );
   });
 
+  it('gives every company logo a surface that stays legible in both themes', async () => {
+    const { Experiences } =
+      await import('@/components/organisms/sections/experiences');
+
+    const ui = await Experiences();
+    render(ui);
+
+    const getLogoContainer = (title: string) => {
+      const logo = screen.getByAltText(`${title} logo`);
+
+      return logo.closest('div.relative')?.parentElement as HTMLElement;
+    };
+
+    for (const title of ['Griebler Remodeling', 'Mince Joias']) {
+      const container = getLogoContainer(title);
+
+      expect(container).toHaveClass('bg-neutral-900');
+      expect(container).not.toHaveClass('bg-background');
+      expect(container).toHaveClass('border-border/70', 'rounded-xl', 'border');
+    }
+
+    for (const title of [
+      'Onilearning',
+      'SP Capital',
+      'Comvanilla',
+      'Ritmar',
+      'Postpay',
+    ]) {
+      const container = getLogoContainer(title);
+
+      expect(container).toHaveClass('bg-white');
+      expect(container).not.toHaveClass('bg-background');
+      expect(container).toHaveClass('border-border/70', 'rounded-xl', 'border');
+    }
+  });
+
   it('collapses the older experiences behind a details toggle', async () => {
     const { Experiences } =
       await import('@/components/organisms/sections/experiences');

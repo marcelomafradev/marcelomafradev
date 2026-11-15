@@ -12,6 +12,7 @@ import {
 import { FileDown } from 'lucide-react';
 import { Icon } from '@/components/ui/icon';
 import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 const VISIBLE_EXPERIENCES = 4;
 
@@ -23,13 +24,21 @@ export const Experiences = async () => {
   const older = EXPERIENCES.slice(VISIBLE_EXPERIENCES);
 
   const renderExperience = (
-    { logo, title, href, detailsCount }: (typeof EXPERIENCES)[number],
+    {
+      logo,
+      logoOnDark,
+      title,
+      href,
+      detailsCount,
+    }: (typeof EXPERIENCES)[number],
     position: number,
   ) => {
     const workingTime = t(`${position}.workingTime`);
     const titleClassName = 'hover:text-primary transition-colors';
-    const logoClassName =
-      'border-border/70 bg-background block overflow-hidden rounded-xl border p-1.5 shadow-sm';
+    const logoClassName = cn(
+      'border-border/70 block overflow-hidden rounded-xl border p-1.5 shadow-sm',
+      logoOnDark ? 'bg-neutral-900' : 'bg-white',
+    );
 
     const logoBlock = (
       <div className="relative size-10">

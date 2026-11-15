@@ -1,6 +1,7 @@
 interface Experience {
   href?: string;
   logo: string;
+  logoOnDark?: boolean;
   title: string;
   detailsCount: number;
 }
@@ -38,12 +39,14 @@ export const EXPERIENCES: Experience[] = [
   {
     href: 'https://www.grieblerremodeling.com/',
     logo: '/companies/griebler-remodeling.svg',
+    logoOnDark: true,
     title: 'Griebler Remodeling',
     detailsCount: 4,
   },
   {
     href: 'https://www.mincejoias.com.br/',
     logo: '/companies/mince-joias.png',
+    logoOnDark: true,
     title: 'Mince Joias',
     detailsCount: 5,
   },
