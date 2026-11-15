@@ -1,4 +1,5 @@
 export * from './availability-badge';
+export * from './brand-mark';
 export * from './image';
 export * from './link';
 export * from './nav-item-content';
