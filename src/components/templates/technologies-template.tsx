@@ -3,6 +3,8 @@ import { AI_PRACTICES, AI_STACK, STACK } from '@/constants';
 import { useTranslations } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 
+const GRID = 'grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4';
+
 export const TechnologiesTemplate = () => {
   const t = useTranslations('technologies');
 
@@ -14,35 +16,31 @@ export const TechnologiesTemplate = () => {
         <section className="space-y-3">
           <SectionTitle>{t('ai.title')}</SectionTitle>
 
-          <Card className="border-primary/40 bg-linear-to-br from-primary/10 via-card/40 to-card/40 shadow-sm">
-            <CardContent className="space-y-5 p-3 sm:p-4">
-              <p className="text-muted-foreground max-w-2xl text-sm leading-relaxed">
-                {t('ai.description')}
-              </p>
-
-              <div className="space-y-2">
-                <p className="eyebrow">{t('ai.tools-label')}</p>
-
-                <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-                  {AI_STACK.map((item) => (
-                    <TechButton key={item.name} {...item} />
-                  ))}
-                </div>
+          <Card className="border-border/60 bg-card/40 shadow-sm">
+            <CardContent className="p-3 sm:p-4">
+              <div className={GRID}>
+                {AI_STACK.map((item) => (
+                  <TechButton key={item.name} {...item} />
+                ))}
               </div>
+            </CardContent>
+          </Card>
+        </section>
 
-              <div className="space-y-2">
-                <p className="eyebrow">{t('ai.practices-label')}</p>
+        <section className="space-y-3">
+          <SectionTitle>{t('ai.practices-title')}</SectionTitle>
 
-                <div className="flex flex-wrap gap-2">
-                  {AI_PRACTICES.map((practice) => (
-                    <span
-                      key={practice}
-                      className="border-border/70 bg-background/60 rounded-full border px-3 py-1 text-xs"
-                    >
-                      {t(`ai.practices.${practice}`)}
-                    </span>
-                  ))}
-                </div>
+          <Card className="border-border/60 bg-card/40 shadow-sm">
+            <CardContent className="p-3 sm:p-4">
+              <div className={GRID}>
+                {AI_PRACTICES.map((practice) => (
+                  <div
+                    key={practice}
+                    className="border-border/60 text-card-foreground flex min-h-14 items-center rounded-xl border p-3 text-xs font-medium md:text-sm"
+                  >
+                    {t(`ai.practices.${practice}`)}
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
@@ -54,7 +52,7 @@ export const TechnologiesTemplate = () => {
 
             <Card className="border-border/60 bg-card/40 shadow-sm">
               <CardContent className="p-3 sm:p-4">
-                <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+                <div className={GRID}>
                   {section.items.map((item) => (
                     <TechButton
                       key={`${section.title}-${item.name}`}

@@ -49,9 +49,9 @@
     "hero": {
       "availability": "Abierto a contratos y puestos de liderazgo",
       "role": "Tech Lead · Arquitectura e IA aplicada",
-      "headline": "Construyo plataformas completas,",
-      "headline-highlight": "no solo pantallas.",
-      "description": "Trabajo desde el diseño de la arquitectura hasta la app en la tienda: servicios en NestJS y Java, apps en React Native, paneles en Next.js y la infraestructura que sostiene todo eso.",
+      "headline": "Construyo el sistema completo,",
+      "headline-highlight": "del diseño a la app en la tienda.",
+      "description": "Soy Tech Lead en Florianópolis. Escribo servicios en NestJS y Java, apps en React Native y paneles en Next.js, y me encargo de la infraestructura donde todo corre.",
       "cta-primary": "Ver case studies",
       "cta-secondary": "Hablemos",
       "location": "Florianópolis, Brasil · Remoto",
@@ -508,9 +508,7 @@
     "others": "Otros",
     "ai": {
       "title": "IA y agentes",
-      "description": "Uso IA en dos lugares: en el desarrollo, con agentes de código y flujo spec-driven, y dentro de productos en producción, donde los modelos leen documentos y validan comprobantes con revisión humana.",
-      "tools-label": "Herramientas y modelos",
-      "practices-label": "Cómo la aplico",
+      "practices-title": "Cómo uso la IA",
       "practices": {
         "spec-driven": "Spec-driven development",
         "orchestration": "Enrutamiento entre modelos",
@@ -589,7 +587,7 @@
     }
   },
   "footer": {
-    "tagline": "Arquitectura, producto y entrega.",
+    "tagline": "Software a medida, de la arquitectura a producción.",
     "cta": "Hablemos",
     "rights": "Todos los derechos reservados.",
     "built-with": "Construido con Next.js, Tailwind CSS y Base UI.",
@@ -602,42 +600,42 @@
       "title": "Qué desarrollo",
       "web": {
         "title": "Sistemas y aplicaciones web",
-        "description": "Paneles administrativos, portales, plataformas SaaS y sitios con Next.js, React y TypeScript, del prototipo a producción."
+        "description": "Paneles administrativos, portales y plataformas SaaS multi-tenant en Next.js, React y TypeScript. Entregué un panel de fintech, un CRM inmobiliario y un sitio por escuela con dominio propio."
       },
       "mobile": {
         "title": "Aplicaciones móviles",
-        "description": "Apps para Android e iOS con React Native y Expo, publicación en las tiendas y actualizaciones sin nueva versión (OTA)."
+        "description": "Apps Android e iOS en React Native y Expo, con publicación en las tiendas y actualización OTA. Publiqué una línea de apps white-label generada desde un único código para varias instituciones."
       },
       "desktop": {
         "title": "Aplicaciones de escritorio",
-        "description": "Programas para Windows, macOS y Linux con Tauri, reutilizando la misma base de código de la versión web."
+        "description": "Programas para Windows, macOS y Linux con Tauri y Rust, compartiendo la interfaz con la versión web, como en un SaaS científico que habla con un escáner."
       },
       "backend": {
         "title": "APIs, integraciones y microservicios",
-        "description": "Back ends en NestJS y Java/Spring, integraciones con bancos y medios de pago (Pix, boletos, tarjeta) y mensajería entre servicios."
+        "description": "APIs en NestJS y Java/Spring, con gRPC y RabbitMQ entre servicios e integraciones bancarias: Pix, boletos, tarjeta y emisión de factura."
       },
       "automation": {
         "title": "Automatización e IA",
-        "description": "Robots que capturan datos de portales, rutinas que reemplazan trabajo manual y lectura de documentos con IA, conectados al sistema que ya usas."
+        "description": "Robots que leen portales de terceros, modelos de IA que leen y validan documentos con revisión humana y colas que dan de baja en el ERP. Lo hice en producción en el mercado financiero."
       },
       "architecture": {
         "title": "Arquitectura y liderazgo técnico",
-        "description": "Revisión de arquitectura, definición de estándares y acompañamiento de equipos para que el sistema escale sin volverse deuda técnica."
+        "description": "Revisión de arquitectura, estándares de código y de pruebas y acompañamiento de equipos. Llevé a un squad de seis personas a un flujo spec-driven."
       }
     },
     "process": {
       "title": "Cómo funciona",
       "discover": {
         "title": "Primera conversación",
-        "description": "Entiendo el problema, el plazo y las restricciones y devuelvo un alcance y los riesgos claros."
+        "description": "Una conversación sobre el problema, el plazo y lo que no puede fallar. Recibes el alcance y los riesgos por escrito."
       },
       "design": {
         "title": "Propuesta técnica",
-        "description": "Arquitectura, entregas por etapas y criterios de aceptación acordados antes de empezar."
+        "description": "Una propuesta con la arquitectura, las entregas por etapa y el criterio de aceptación de cada una, acordados antes de escribir código."
       },
       "deliver": {
         "title": "Entrega continua",
-        "description": "Código probado, despliegue automatizado y seguimiento cercano hasta llegar a producción."
+        "description": "Entregas cortas, con pruebas y despliegue automatizado, y acompaño la llegada a producción."
       }
     },
     "company": {

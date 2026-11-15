@@ -8,6 +8,16 @@ const { getTranslationsMock } = vi.hoisted(() => ({
   getTranslationsMock: vi.fn(),
 }));
 
+const escapeRegExp = (value: string) =>
+  value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const headlinePattern = new RegExp(
+  `${escapeRegExp(ptBr.homepage.hero.headline)}.*${escapeRegExp(
+    ptBr.homepage.hero['headline-highlight'],
+  )}`,
+  'i',
+);
+
 vi.mock('next-intl/server', () => ({
   getTranslations: getTranslationsMock,
 }));
@@ -77,7 +87,7 @@ describe('HomeTemplate', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: /Construo plataformas inteiras, não só telas\./i,
+        name: headlinePattern,
       }),
     ).toBeInTheDocument();
     expect(

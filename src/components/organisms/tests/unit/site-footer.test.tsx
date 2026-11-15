@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { SiteFooter } from '@/components/organisms/site-footer';
 import { PERSONAL_INFO } from '@/constants';
 import { renderWithProviders } from '@/tests/utils/render';
+import ptBr from '../../../../../messages/pt-br.json';
 
 vi.mock('next/image', () => ({
   default: ({ alt, src, ...rest }: { alt: string; src: string }) => (
@@ -47,9 +48,7 @@ describe('SiteFooter', () => {
 
     expect(screen.getByRole('contentinfo')).toBeInTheDocument();
     expect(screen.getByText(PERSONAL_INFO.name)).toBeInTheDocument();
-    expect(
-      screen.getByText('Arquitetura, produto e entrega.'),
-    ).toBeInTheDocument();
+    expect(screen.getByText(ptBr.footer.tagline)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Falar comigo' })).toHaveAttribute(
       'href',
       '/contact',

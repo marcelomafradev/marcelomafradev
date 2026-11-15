@@ -3,6 +3,17 @@ import { describe, expect, it, vi } from 'vitest';
 import { Hero } from '@/components/organisms/sections/hero';
 import { HERO_STACK, PERSONAL_INFO } from '@/constants';
 import { renderWithProviders } from '@/tests/utils/render';
+import ptBr from '../../../../../../messages/pt-br.json';
+
+const escapeRegExp = (value: string) =>
+  value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const headlinePattern = new RegExp(
+  `${escapeRegExp(ptBr.homepage.hero.headline)}.*${escapeRegExp(
+    ptBr.homepage.hero['headline-highlight'],
+  )}`,
+  'i',
+);
 
 vi.mock('next/image', () => ({
   default: ({ alt, src, ...rest }: { alt: string; src: string }) => (
@@ -46,7 +57,7 @@ describe('Hero', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: /Construo plataformas inteiras, não só telas\./i,
+        name: headlinePattern,
       }),
     ).toBeInTheDocument();
     expect(screen.getByText(PERSONAL_INFO.name)).toBeInTheDocument();

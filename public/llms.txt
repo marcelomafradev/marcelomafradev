@@ -1,6 +1,6 @@
 # Marcelo Mafra
 
-> Tech Lead e engenheiro full stack em Florianópolis, Brasil. Projeto e construo plataformas inteiras — microserviços em NestJS e Java, apps em React Native nas lojas, painéis em Next.js e a infraestrutura que sustenta tudo isso. Trabalho sobretudo com sistemas multi-tenant e produtos white-label.
+> Tech Lead e engenheiro full stack em Florianópolis, Brasil. Projeto e construo sistemas completos: microsserviços em NestJS e Java, apps em React Native nas lojas, painéis em Next.js e a infraestrutura em que rodam. Trabalho sobretudo com sistemas multi-tenant e produtos white-label.
 
 English summary: Tech Lead and full stack engineer based in Florianópolis, Brazil. Four years across fintech, SaaS and edtech, owning architecture from the first sketch to the app in the store. Multi-tenant platforms, white-label products, microservices and micro-frontends. This site is available in Portuguese (default), English and Spanish.
 

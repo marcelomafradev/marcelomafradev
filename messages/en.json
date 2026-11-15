@@ -49,9 +49,9 @@
     "hero": {
       "availability": "Open to contracts and leadership roles",
       "role": "Tech Lead · Architecture and applied AI",
-      "headline": "I build entire platforms,",
-      "headline-highlight": "not just screens.",
-      "description": "I work from the architecture sketch to the app in the store: NestJS and Java services, React Native apps, Next.js consoles, and the infrastructure that keeps all of it standing.",
+      "headline": "I build the whole system,",
+      "headline-highlight": "from the sketch to the app in the store.",
+      "description": "I am a Tech Lead in Florianópolis. I write NestJS and Java services, React Native apps and Next.js consoles, and I look after the infrastructure they run on.",
       "cta-primary": "See case studies",
       "cta-secondary": "Get in touch",
       "location": "Florianópolis, Brazil · Remote",
@@ -508,9 +508,7 @@
     "others": "Other",
     "ai": {
       "title": "AI and agents",
-      "description": "I use AI in two places: in development, with coding agents and a spec-driven flow, and inside production products, where models read documents and validate receipts with human review.",
-      "tools-label": "Tools and models",
-      "practices-label": "How I apply it",
+      "practices-title": "How I use AI",
       "practices": {
         "spec-driven": "Spec-driven development",
         "orchestration": "Routing across models",
@@ -589,7 +587,7 @@
     }
   },
   "footer": {
-    "tagline": "Architecture, product, and delivery.",
+    "tagline": "Custom software, from architecture to production.",
     "cta": "Get in touch",
     "rights": "All rights reserved.",
     "built-with": "Built with Next.js, Tailwind CSS, and Base UI.",
@@ -602,42 +600,42 @@
       "title": "What I build",
       "web": {
         "title": "Web systems and applications",
-        "description": "Admin panels, portals, SaaS platforms and websites with Next.js, React and TypeScript, from prototype to production."
+        "description": "Admin panels, portals and multi-tenant SaaS platforms in Next.js, React and TypeScript. I have shipped a fintech console, a real estate CRM and a per-school site on its own domain."
       },
       "mobile": {
         "title": "Mobile applications",
-        "description": "Android and iOS apps with React Native and Expo, store publishing, and over-the-air updates without a new release."
+        "description": "Android and iOS apps in React Native and Expo, with store publishing and OTA updates. I have published a white-label app line built from a single codebase for several institutions."
       },
       "desktop": {
         "title": "Desktop applications",
-        "description": "Programs for Windows, macOS and Linux with Tauri, reusing the same codebase as the web version."
+        "description": "Programs for Windows, macOS and Linux with Tauri and Rust, sharing the interface with the web version, as in a scientific SaaS that talks to a scanner."
       },
       "backend": {
         "title": "APIs, integrations and microservices",
-        "description": "Back ends in NestJS and Java/Spring, integrations with banks and payment methods (Pix, bank slips, cards) and messaging between services."
+        "description": "APIs in NestJS and Java/Spring, with gRPC and RabbitMQ between services and banking integrations: Pix, bank slips, cards and tax invoice issuing."
       },
       "automation": {
         "title": "Automation and AI",
-        "description": "Robots that capture data from portals, routines that replace manual work, and document reading with AI, wired to the system you already use."
+        "description": "Robots that read third-party portals, AI models that read and validate documents with human review, and queues that write off in the ERP. I have done this in production in the financial market."
       },
       "architecture": {
         "title": "Architecture and technical leadership",
-        "description": "Architecture review, standards and team guidance so the system scales without turning into technical debt."
+        "description": "Architecture review, code and testing standards, and team guidance. I moved a six-person squad to a spec-driven flow."
       }
     },
     "process": {
       "title": "How it works",
       "discover": {
         "title": "First conversation",
-        "description": "I learn the problem, the deadline and the constraints, and send back a clear scope and the risks."
+        "description": "A conversation about the problem, the deadline and what cannot go wrong. You get the scope and the risks in writing."
       },
       "design": {
         "title": "Technical proposal",
-        "description": "Architecture, staged deliveries and acceptance criteria agreed before we start."
+        "description": "A proposal with the architecture, the deliveries per stage and the acceptance criteria for each, agreed before I write code."
       },
       "deliver": {
         "title": "Continuous delivery",
-        "description": "Tested code, automated deploys and close follow-up until it reaches production."
+        "description": "Short deliveries with tests and automated deploys, and I stay with it until it reaches production."
       }
     },
     "company": {
