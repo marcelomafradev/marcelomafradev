@@ -30,9 +30,18 @@ test.describe('bottom tabs', () => {
       const footer = page.locator('footer');
       await expect(footer).toBeAttached();
 
-      await page.locator('main').evaluate((el) => {
-        el.scrollTop = el.scrollHeight;
+      await page.evaluate(() => {
+        window.scrollTo(0, document.documentElement.scrollHeight);
       });
+      await expect
+        .poll(() =>
+          page.evaluate(
+            () =>
+              Math.ceil(window.scrollY + window.innerHeight) >=
+              document.documentElement.scrollHeight,
+          ),
+        )
+        .toBe(true);
 
       const footerBox = await footer.boundingBox();
       const tabsBox = await page.locator(TABS_SELECTOR).boundingBox();
