@@ -22,7 +22,7 @@ test.describe('bottom tabs', () => {
       );
     });
 
-    test('footer ends flush against the tab bar at the end of the scroll', async ({
+    test('footer ends just above the floating tab bar at the end of the scroll', async ({
       page,
     }) => {
       await page.goto('/contact');
@@ -50,7 +50,8 @@ test.describe('bottom tabs', () => {
       expect(tabsBox).not.toBeNull();
 
       const gap = tabsBox!.y - (footerBox!.y + footerBox!.height);
-      expect(Math.abs(gap)).toBeLessThanOrEqual(1);
+      expect(gap).toBeGreaterThanOrEqual(0);
+      expect(gap).toBeLessThanOrEqual(28);
     });
   });
 

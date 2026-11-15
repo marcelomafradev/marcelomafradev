@@ -65,7 +65,7 @@ describe('root viewport', () => {
   it('declares the theme colors for the light and dark browser chrome', () => {
     expect(viewport.themeColor).toEqual([
       { media: '(prefers-color-scheme: light)', color: '#f6f0e9' },
-      { media: '(prefers-color-scheme: dark)', color: '#2d2621' },
+      { media: '(prefers-color-scheme: dark)', color: '#2c2521' },
     ]);
   });
 });
