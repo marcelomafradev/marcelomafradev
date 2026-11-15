@@ -504,18 +504,7 @@
     "apps": "Apps",
     "others": "Other",
     "ai": {
-      "title": "AI and agents",
-      "practices-title": "How I use AI",
-      "practices": {
-        "spec-driven": "Spec-driven development",
-        "orchestration": "Routing across models",
-        "context": "Versioned context in the repository",
-        "mcp": "Tooling over MCP",
-        "documents": "Reading documents with AI",
-        "validation": "AI validation with human review",
-        "review": "Human review at the merge",
-        "scraping": "Scrapers and portal automation"
-      }
+      "title": "AI and agents"
     }
   },
   "meta": {

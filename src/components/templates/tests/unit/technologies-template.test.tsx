@@ -1,5 +1,6 @@
 import { screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
+import { STACK } from '@/constants';
 import { TechnologiesTemplate } from '@/components/templates/technologies-template';
 import { renderWithProviders } from '@/tests/utils/render';
 import ptBr from '../../../../../messages/pt-br.json';
@@ -85,43 +86,24 @@ describe('TechnologiesTemplate', () => {
     }
   });
 
-  it('places the AI practices heading between the AI tools and the frontend section', () => {
+  it('does not render the AI practices section', () => {
     renderWithProviders(<TechnologiesTemplate />);
 
-    const ai = screen.getByRole('heading', {
-      name: ptBr.technologies.ai.title,
-    });
-    const practices = screen.getByRole('heading', {
-      name: ptBr.technologies.ai['practices-title'],
-    });
-    const frontend = screen.getByRole('heading', {
-      name: ptBr.technologies.frontend,
-    });
+    expect(
+      screen.queryByRole('heading', { name: 'Como uso IA' }),
+    ).not.toBeInTheDocument();
 
-    expect(ai.compareDocumentPosition(practices)).toBe(
-      Node.DOCUMENT_POSITION_FOLLOWING,
-    );
-    expect(practices.compareDocumentPosition(frontend)).toBe(
-      Node.DOCUMENT_POSITION_FOLLOWING,
-    );
-  });
-
-  it('renders every AI practice from the translations as plain text', () => {
-    renderWithProviders(<TechnologiesTemplate />);
-
-    const practices = Object.values(ptBr.technologies.ai.practices);
-
-    expect(practices).toHaveLength(8);
-
-    for (const practice of practices) {
-      const label = screen.getByText(practice);
-
-      expect(label).toBeInTheDocument();
-      expect(label.closest('a')).toBeNull();
-      expect(
-        screen.queryByRole('link', { name: practice }),
-      ).not.toBeInTheDocument();
+    for (const label of [
+      'Spec-driven development',
+      'Roteamento entre modelos',
+      'Scrapers e automação de portais',
+    ]) {
+      expect(screen.queryByText(label)).not.toBeInTheDocument();
     }
+
+    expect(screen.getAllByRole('heading', { level: 2 })).toHaveLength(
+      STACK.length + 1,
+    );
   });
 
   it('gives the AI card the same surface as the other stack cards', () => {

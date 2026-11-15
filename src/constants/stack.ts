@@ -487,14 +487,3 @@ export const AI_STACK: StackItemProps[] = [
     link: 'https://hermes-agent.nousresearch.com',
   },
 ];
-
-export const AI_PRACTICES = [
-  'spec-driven',
-  'orchestration',
-  'context',
-  'mcp',
-  'documents',
-  'validation',
-  'review',
-  'scraping',
-] as const;

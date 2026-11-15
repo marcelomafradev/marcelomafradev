@@ -504,18 +504,7 @@
     "apps": "Apps",
     "others": "Otros",
     "ai": {
-      "title": "IA y agentes",
-      "practices-title": "Cómo uso la IA",
-      "practices": {
-        "spec-driven": "Spec-driven development",
-        "orchestration": "Enrutamiento entre modelos",
-        "context": "Contexto versionado en el repositorio",
-        "mcp": "Herramientas por MCP",
-        "documents": "Lectura de documentos con IA",
-        "validation": "Validación con IA y revisión humana",
-        "review": "Revisión humana en el merge",
-        "scraping": "Scrapers y automatización de portales"
-      }
+      "title": "IA y agentes"
     }
   },
   "meta": {

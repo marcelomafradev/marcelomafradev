@@ -1,5 +1,5 @@
 import { PageHeading, SectionTitle, TechButton } from '@/components/atoms';
-import { AI_PRACTICES, AI_STACK, STACK } from '@/constants';
+import { AI_STACK, STACK } from '@/constants';
 import { useTranslations } from 'next-intl';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -21,25 +21,6 @@ export const TechnologiesTemplate = () => {
               <div className={GRID}>
                 {AI_STACK.map((item) => (
                   <TechButton key={item.name} {...item} />
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        <section className="space-y-3">
-          <SectionTitle>{t('ai.practices-title')}</SectionTitle>
-
-          <Card className="border-border/60 bg-card/40 shadow-sm">
-            <CardContent className="p-3 sm:p-4">
-              <div className={GRID}>
-                {AI_PRACTICES.map((practice) => (
-                  <div
-                    key={practice}
-                    className="border-border/60 text-card-foreground flex min-h-14 items-center rounded-xl border p-3 text-xs font-medium md:text-sm"
-                  >
-                    {t(`ai.practices.${practice}`)}
-                  </div>
                 ))}
               </div>
             </CardContent>
