@@ -203,13 +203,13 @@
         "description": "Engenheiro de Software · FIDC e securitização",
         "workingTime": "",
         "details": {
-          "1": "Módulo de análise de crédito na plataforma interna (React e NestJS): painel por pilares de risco, score geral com pré-visualização e mapa de grupo econômico com detalhe por nó.",
-          "2": "Views, procedures de leitura e endpoints para os critérios da análise de crédito, com scripts de banco aprovados antes da aplicação em desenvolvimento.",
-          "3": "Atualização paga de consulta a bureau de crédito sob demanda: trava de concorrência por empresa, recusa imediata de pedidos simultâneos e registro de quem solicitou e foi cobrado.",
-          "4": "Trilha de auditoria da análise em um único log, do mais recente ao mais antigo, com consultas repetidas agrupadas e correção de fuso horário nos registros.",
-          "5": "Componentes do design system v2 (estado vazio ilustrado, drawers e diálogos de confirmação) reutilizados pelas telas de crédito.",
-          "6": "Serviço de captura de comprovantes de entrega em portal de terceiros, reescrito em TypeScript com camadas de domínio e infraestrutura, autenticação por token, endpoint de saúde e rotação de logs em Docker.",
-          "7": "Testes com relógio simulado cobrindo timeout e erro do polling da atualização de consulta, além de testes de contrato do serviço de captura."
+          "1": "Módulo de análise de crédito de ponta a ponta na plataforma interna (React e NestJS): painel por pilares de risco, score geral, parecer, ata de comitê e relatórios em PDF, mapa de grupo econômico com detalhe por nó e trilha de auditoria.",
+          "2": "Motores de análise de crédito executados em rodadas que o analista dispara, continua ou interrompe pela interface: consultas a bureaus, indicadores financeiros extraídos de demonstrativos, mapa de relacionamentos e relatório de visita, com parte dos motores lendo documentos com IA.",
+          "3": "Atualização paga de consulta a bureau de crédito sob demanda, com trava de concorrência por empresa, recusa imediata de pedidos simultâneos e registro de quem solicitou e foi cobrado.",
+          "4": "Robô de captura de comprovantes de entrega em portal de terceiros: scraper em TypeScript com camadas de domínio e infraestrutura, autenticação por token e endpoint de saúde, mais fila e worker na plataforma.",
+          "5": "Validação dos comprovantes por IA: modelo com fallback e esforço configuráveis, imagens redimensionadas antes do envio, recusas encaminhadas para revisão humana e baixa automática no ERP quando o comprovante é aprovado.",
+          "6": "Camada de acesso ao ERP financeiro em SQL Server, com cache e leitura degradada quando o banco não responde.",
+          "7": "Testes de ponta a ponta com Playwright, simuladores do scraper, da IA e do ERP e stack local em Docker, para rodar o fluxo completo sem depender de produção."
         }
       },
       "3": {
@@ -277,7 +277,8 @@
       "cta": "Contrate-me",
       "title": "Experiências",
       "view-resume": "Ver currículo completo",
-      "show-more": "Ver mais experiências"
+      "show-more": "Ver mais experiências",
+      "show-details": "Ver todos os detalhes"
     },
     "projects": {
       "title": "Projetos",

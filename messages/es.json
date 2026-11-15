@@ -203,13 +203,13 @@
         "description": "Ingeniero de Software · FIDC y titulización",
         "workingTime": "",
         "details": {
-          "1": "Módulo de análisis de crédito en la plataforma interna (React y NestJS): panel por pilares de riesgo, score general con vista previa y mapa de grupo económico con detalle por nodo.",
-          "2": "Vistas, procedimientos de lectura y endpoints para los criterios del análisis de crédito, con scripts de base de datos aprobados antes de aplicarlos en desarrollo.",
-          "3": "Actualización paga de consulta a buró de crédito bajo demanda: bloqueo de concurrencia por empresa, rechazo inmediato de pedidos simultáneos y registro de quién lo solicitó y a quién se cobra.",
-          "4": "Pista de auditoría del análisis en un único registro, del más reciente al más antiguo, con consultas repetidas agrupadas y corrección de zona horaria en los registros.",
-          "5": "Componentes del design system v2 (estado vacío ilustrado, drawers y diálogos de confirmación) reutilizados por las pantallas de crédito.",
-          "6": "Servicio de captura de comprobantes de entrega en un portal de terceros, reescrito en TypeScript con capas de dominio e infraestructura, autenticación por token, endpoint de salud y rotación de logs en Docker.",
-          "7": "Pruebas con reloj simulado que cubren timeout y error del polling de la actualización, además de pruebas de contrato del servicio de captura."
+          "1": "Módulo de análisis de crédito de punta a punta en la plataforma interna (React y NestJS): panel por pilares de riesgo, score general, dictamen, acta de comité e informes en PDF, mapa de grupo económico con detalle por nodo y pista de auditoría.",
+          "2": "Motores de análisis de crédito ejecutados en rondas que el analista inicia, continúa o detiene desde la interfaz: consultas a burós, indicadores financieros extraídos de estados contables, mapa de relaciones e informe de visita, con parte de los motores leyendo documentos con IA.",
+          "3": "Actualización paga de consulta a buró de crédito bajo demanda, con bloqueo de concurrencia por empresa, rechazo inmediato de pedidos simultáneos y registro de quién lo solicitó y a quién se cobra.",
+          "4": "Robot de captura de comprobantes de entrega en un portal de terceros: scraper en TypeScript con capas de dominio e infraestructura, autenticación por token y endpoint de salud, más cola y worker en la plataforma.",
+          "5": "Validación de los comprobantes con IA: modelo con fallback y esfuerzo configurables, imágenes redimensionadas antes del envío, rechazos derivados a revisión humana y baja automática en el ERP cuando el comprobante se aprueba.",
+          "6": "Capa de acceso al ERP financiero en SQL Server, con caché y lectura degradada cuando la base de datos no responde.",
+          "7": "Pruebas de extremo a extremo con Playwright, simuladores del scraper, de la IA y del ERP y stack local en Docker, para ejecutar el flujo completo sin depender de producción."
         }
       },
       "3": {
@@ -277,7 +277,8 @@
       "cta": "Contrátame",
       "title": "Experiencia",
       "view-resume": "Ver currículum completo",
-      "show-more": "Ver más experiencia"
+      "show-more": "Ver más experiencia",
+      "show-details": "Ver todos los detalles"
     },
     "projects": {
       "title": "Proyectos",

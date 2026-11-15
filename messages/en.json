@@ -203,13 +203,13 @@
         "description": "Software Engineer · FIDC and securitization",
         "workingTime": "",
         "details": {
-          "1": "Credit analysis module on the internal platform (React and NestJS): a dashboard by risk pillars, an overall score with preview, and an economic group map with per-node detail.",
-          "2": "Views, read procedures and endpoints for the credit analysis criteria, with database scripts approved before being applied in development.",
-          "3": "On-demand paid credit bureau refresh: a per-company concurrency lock, immediate refusal of simultaneous requests, and a record of who asked and who is billed.",
-          "4": "The analysis audit trail as a single log, newest first, with repeated queries grouped and a time zone fix in the records.",
-          "5": "Design system v2 components (illustrated empty state, drawers and confirmation dialogs) reused across the credit screens.",
-          "6": "A service that captures delivery receipts from a third-party portal, rewritten in TypeScript with domain and infrastructure layers, token authentication, a health endpoint and log rotation in Docker.",
-          "7": "Tests with a fake clock covering timeout and error paths of the refresh polling, plus contract tests for the capture service."
+          "1": "End-to-end credit analysis module on the internal platform (React and NestJS): a dashboard by risk pillars, overall score, opinion, committee minutes and PDF reports, an economic group map with per-node detail, and an audit trail.",
+          "2": "Credit analysis engines run in rounds that the analyst starts, continues or stops from the interface: bureau queries, financial indicators extracted from statements, a relationship map and a visit report, with some engines reading documents with AI.",
+          "3": "On-demand paid credit bureau refresh, with a per-company concurrency lock, immediate refusal of simultaneous requests, and a record of who asked and who is billed.",
+          "4": "A robot that captures delivery receipts from a third-party portal: a TypeScript scraper with domain and infrastructure layers, token authentication and a health endpoint, plus a queue and worker on the platform.",
+          "5": "AI validation of the receipts: a model with configurable fallback and effort, images resized before sending, refusals routed to human review, and automatic write-off in the ERP when a receipt is approved.",
+          "6": "An access layer for the financial ERP on SQL Server, with caching and degraded reads when the database does not respond.",
+          "7": "End-to-end tests with Playwright, simulators for the scraper, the AI and the ERP, and a local Docker stack, to run the full flow without depending on production."
         }
       },
       "3": {
@@ -277,7 +277,8 @@
       "cta": "Hire me",
       "title": "Experience",
       "view-resume": "View full resume",
-      "show-more": "Show more experience"
+      "show-more": "Show more experience",
+      "show-details": "Show all details"
     },
     "projects": {
       "title": "Projects",
