@@ -1,7 +1,7 @@
 import { Link } from '@/components/atoms';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { PERSONAL_INFO, SOCIAL_CHANNELS } from '@/constants';
+import { COMPANY, PERSONAL_INFO, SOCIAL_CHANNELS } from '@/constants';
 import { useTranslations } from 'next-intl';
 import { Send } from 'lucide-react';
 
@@ -45,6 +45,9 @@ export const SiteFooter = () => {
           </ul>
 
           <div className="text-muted-foreground space-y-1 text-xs sm:text-right">
+            <p>
+              {COMPANY.legalName} · {t('tax-id')} {COMPANY.cnpj}
+            </p>
             <p>
               © {new Date().getFullYear()} {PERSONAL_INFO.name}. {t('rights')}
             </p>

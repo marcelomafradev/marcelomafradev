@@ -58,4 +58,13 @@ describe('SiteFooter', () => {
       screen.getByText(/Todos os direitos reservados/),
     ).toBeInTheDocument();
   });
+
+  it('shows the company legal line with the CNPJ', () => {
+    renderWithProviders(<SiteFooter />);
+
+    expect(
+      screen.getByText(/Mafradev Desenvolvimento de Software LTDA/),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/CNPJ 69\.635\.734\/0001-43/)).toBeInTheDocument();
+  });
 });
