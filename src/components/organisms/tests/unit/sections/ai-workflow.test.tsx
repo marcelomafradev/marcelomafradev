@@ -41,14 +41,14 @@ describe('AiWorkflow', () => {
       screen.getByRole('heading', { name: 'Spec e plano antes do código' }),
     ).toBeInTheDocument();
     expect(screen.getByText('Spec-driven development')).toBeInTheDocument();
-    expect(
-      screen.getByText(/Spec ambígua é bug de requisito/),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/spec ambígua custa menos/)).toBeInTheDocument();
   });
 
   it('renders the closing note about applying the workflow on real products', () => {
     renderWithProviders(<AiWorkflow />);
 
-    expect(screen.getByText(/Aplicado em produto real/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Apliquei isso em produto real/),
+    ).toBeInTheDocument();
   });
 });

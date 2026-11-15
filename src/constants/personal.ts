@@ -40,5 +40,5 @@ export const METRICS = [
   { id: 'services', value: '21', accent: '+' },
   { id: 'apps', value: '6' },
   { id: 'monorepos', value: '4' },
-  { id: 'sectors', value: '3' },
+  { id: 'sectors', value: '4' },
 ] as const;

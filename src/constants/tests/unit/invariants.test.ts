@@ -8,6 +8,8 @@ import {
   CONTACT_MESSAGE_MIN_LENGTH,
   CONTACT_NAME_MAX_LENGTH,
   CONTACT_SUBJECT_MAX_LENGTH,
+  EXPERIENCES,
+  METRICS,
   PERSONAL_INFO,
   PROJECTS,
   SIDEBAR_ITEMS,
@@ -50,6 +52,23 @@ describe('constants invariants', () => {
           expect(item.link.startsWith('http')).toBe(true);
         }
       }
+    });
+  });
+
+  describe('EXPERIENCES', () => {
+    it('requires non-empty titles and positive detail counts', () => {
+      for (const experience of EXPERIENCES) {
+        expect(experience.title.trim().length).toBeGreaterThan(0);
+        expect(experience.detailsCount).toBeGreaterThan(0);
+      }
+    });
+  });
+
+  describe('METRICS', () => {
+    it('counts four sectors', () => {
+      const sectors = METRICS.find((metric) => metric.id === 'sectors');
+
+      expect(sectors?.value).toBe('4');
     });
   });
 

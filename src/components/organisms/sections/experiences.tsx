@@ -28,39 +28,55 @@ export const Experiences = async () => {
           <div className="space-y-3">
             {EXPERIENCES.map(({ logo, title, href, detailsCount }, index) => {
               const position = index + 1;
+              const workingTime = t(`${position}.workingTime`);
+              const titleClassName = 'hover:text-primary transition-colors';
+              const logoClassName =
+                'border-border/70 bg-background block overflow-hidden rounded-xl border p-1.5 shadow-sm';
+
+              const logoBlock = (
+                <div className="relative size-10">
+                  <Image
+                    src={logo}
+                    alt={`${title} logo`}
+                    width={40}
+                    height={40}
+                    className="size-full object-contain"
+                    sizes="40px"
+                  />
+                </div>
+              );
 
               return (
                 <TimelineEntry
                   key={title}
                   title={
-                    <Link
-                      href={href}
-                      type="external"
-                      className="hover:text-primary transition-colors"
-                    >
-                      {t(`${position}.title`)}
-                    </Link>
+                    href ? (
+                      <Link
+                        href={href}
+                        type="external"
+                        className={titleClassName}
+                      >
+                        {t(`${position}.title`)}
+                      </Link>
+                    ) : (
+                      t(`${position}.title`)
+                    )
                   }
                   subtitle={t(`${position}.description`)}
-                  meta={t(`${position}.workingTime`)}
+                  meta={workingTime || undefined}
                   details={getExperienceDetails(t, position, detailsCount)}
                   leading={
-                    <Link
-                      href={href}
-                      type="external"
-                      className="border-border/70 bg-background block overflow-hidden rounded-xl border p-1.5 shadow-sm"
-                    >
-                      <div className="relative size-10">
-                        <Image
-                          src={logo}
-                          alt={`${title} logo`}
-                          width={40}
-                          height={40}
-                          className="size-full object-contain"
-                          sizes="40px"
-                        />
-                      </div>
-                    </Link>
+                    href ? (
+                      <Link
+                        href={href}
+                        type="external"
+                        className={logoClassName}
+                      >
+                        {logoBlock}
+                      </Link>
+                    ) : (
+                      <div className={logoClassName}>{logoBlock}</div>
+                    )
                   }
                 />
               );

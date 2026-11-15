@@ -1,8 +1,20 @@
-export const EXPERIENCES = [
+interface Experience {
+  href?: string;
+  logo: string;
+  title: string;
+  detailsCount: number;
+}
+
+export const EXPERIENCES: Experience[] = [
   {
     href: 'https://onilearning.com.br/',
     logo: '/companies/onilearning.svg',
     title: 'Onilearning',
+    detailsCount: 7,
+  },
+  {
+    logo: '/companies/spcapital.svg',
+    title: 'SP Capital',
     detailsCount: 7,
   },
   {

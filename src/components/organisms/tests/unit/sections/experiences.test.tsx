@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { createTranslator } from 'next-intl';
 import ptBr from '../../../../../../messages/pt-br.json';
@@ -72,5 +72,62 @@ describe('Experiences', () => {
     expect(
       screen.getByRole('button', { name: /Ver currículo completo/i }),
     ).toBeInTheDocument();
+  });
+
+  it('renders SP Capital as the second experience without a link or dates', async () => {
+    const { Experiences } =
+      await import('@/components/organisms/sections/experiences');
+
+    const ui = await Experiences();
+    render(ui);
+
+    const experienceTitles = screen
+      .getAllByRole('heading', { level: 3 })
+      .slice(1);
+
+    expect(experienceTitles[1]).toHaveTextContent('SP Capital');
+
+    const spCapitalLogo = screen.getByAltText('SP Capital logo');
+
+    expect(spCapitalLogo.closest('a')).toBeNull();
+    expect(
+      screen.queryByRole('link', { name: /SP Capital/ }),
+    ).not.toBeInTheDocument();
+
+    const entriesContainer = experienceTitles[1].closest('div.space-y-3');
+    const spCapitalCard = Array.from(entriesContainer?.children ?? []).find(
+      (child) => child.textContent?.includes('SP Capital'),
+    ) as HTMLElement;
+
+    expect(spCapitalCard).toBeDefined();
+    expect(spCapitalCard).toHaveTextContent(
+      'Engenheiro de Software · FIDC e securitização',
+    );
+
+    for (const workingTime of [
+      'Jan 2026 – Atual · Remoto',
+      'Out 2025 – Atual · Remoto',
+      'Abr 2026 – Atual · Remoto',
+      'Dez 2022 – Out 2025 · Remoto',
+      'Jan 2024 – Fev 2024 · Remoto (EUA)',
+      'Ago 2023 – Set 2023 · Remoto',
+    ]) {
+      expect(
+        within(spCapitalCard).queryByText(workingTime),
+      ).not.toBeInTheDocument();
+    }
+
+    expect(screen.getByRole('link', { name: 'Onilearning' })).toHaveAttribute(
+      'href',
+      'https://onilearning.com.br/',
+    );
+    expect(screen.getByRole('link', { name: 'Comvanilla' })).toHaveAttribute(
+      'href',
+      'https://comvanilla.com.br/',
+    );
+    expect(screen.getByRole('link', { name: 'Ritmar' })).toHaveAttribute(
+      'href',
+      'https://ritmar.com.br/',
+    );
   });
 });
