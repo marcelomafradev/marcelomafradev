@@ -42,10 +42,9 @@ describe('BrandMark', () => {
     const dot = svg?.querySelector('g > rect');
 
     expect(tile).toHaveClass('fill-primary');
-    expect(strokes).toHaveLength(2);
-    strokes?.forEach((stroke) => {
-      expect(stroke).toHaveClass('stroke-primary-foreground');
-    });
-    expect(dot).toHaveClass('fill-primary-foreground');
+    expect(strokes).toHaveLength(1);
+    expect(strokes?.[0]).toHaveClass('stroke-primary-foreground');
+    expect(strokes?.[0]).toHaveAttribute('stroke-width', '6');
+    expect(dot).toBeNull();
   });
 });

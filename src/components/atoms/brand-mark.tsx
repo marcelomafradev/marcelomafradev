@@ -18,30 +18,14 @@ export const BrandMark = ({
     >
       <title>{title}</title>
       <rect width="48" height="48" rx="11" className="fill-primary" />
-      <g transform="translate(-0.75 -1.25)">
+      <g transform="translate(0 -0.5)">
         <path
-          d="M10 36V14L21 28"
+          d="M12 36V13M36 36V13M12 13L24 27L36 13"
           fill="none"
-          strokeWidth="5"
+          strokeWidth="6"
           strokeLinecap="round"
           strokeLinejoin="round"
           className="stroke-primary-foreground"
-        />
-        <path
-          d="M21 28L32 14V36"
-          fill="none"
-          strokeWidth="5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="stroke-primary-foreground"
-        />
-        <rect
-          x="36.5"
-          y="33.5"
-          width="5"
-          height="5"
-          rx="1.6"
-          className="fill-primary-foreground"
         />
       </g>
     </svg>
