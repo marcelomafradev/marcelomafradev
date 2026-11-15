@@ -2,7 +2,7 @@ import { AvailabilityBadge, Image, Link } from '@/components/atoms';
 import { StackTagList } from '@/components/molecules';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { PERSONAL_INFO } from '@/constants';
+import { HERO_STACK, PERSONAL_INFO } from '@/constants';
 import { useTranslations } from 'next-intl';
 import { ArrowRight, MapPin, Send } from 'lucide-react';
 
@@ -11,7 +11,7 @@ export const Hero = () => {
 
   return (
     <section className="border-border/60 bg-card relative overflow-hidden rounded-2xl border p-6 sm:p-8 md:p-10">
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] lg:items-center">
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-center">
         <div className="min-w-0 space-y-6">
           <div className="flex flex-wrap items-center gap-3">
             <AvailabilityBadge label={t('availability')} />
@@ -40,23 +40,41 @@ export const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              render={<Link href="/projects" />}
+              render={<a href="#case-studies" />}
             >
               {t('cta-primary')}
               <ArrowRight className="size-4" />
             </Button>
+
+            <Button
+              size="lg"
+              variant="ghost"
+              render={<Link href="/services" />}
+            >
+              {t('cta-services')}
+            </Button>
+          </div>
+
+          <div className="space-y-3">
+            <StackTagList items={HERO_STACK} />
+
+            <Link
+              href="/technologies"
+              className="text-muted-foreground hover:text-foreground inline-flex items-center gap-1 text-xs transition-colors"
+            >
+              {t('stack-link')}
+              <ArrowRight className="size-3.5" />
+            </Link>
           </div>
 
           <p className="text-muted-foreground flex items-center gap-1.5 text-xs">
             <MapPin className="size-3.5" />
             {t('location')}
           </p>
-
-          <StackTagList items={PERSONAL_INFO.stack} />
         </div>
 
         <div className="flex flex-col items-center gap-4 lg:items-end">
-          <Avatar className="ring-border/70 size-32 rounded-2xl ring-1 sm:size-40 lg:size-44">
+          <Avatar className="ring-border/70 size-44 rounded-3xl ring-1 sm:size-56 lg:size-72">
             <AvatarImage
               src={PERSONAL_INFO.image}
               alt={PERSONAL_INFO.name}
@@ -65,15 +83,15 @@ export const Hero = () => {
                 <Image
                   src={PERSONAL_INFO.image}
                   alt={PERSONAL_INFO.name}
-                  width={176}
-                  height={176}
-                  sizes="(min-width: 1024px) 176px, (min-width: 640px) 160px, 128px"
+                  width={288}
+                  height={288}
+                  sizes="(min-width: 1024px) 288px, (min-width: 640px) 224px, 176px"
                   className="aspect-square size-full object-cover"
                   priority
                 />
               }
             />
-            <AvatarFallback className="rounded-2xl text-3xl">MM</AvatarFallback>
+            <AvatarFallback className="rounded-3xl text-3xl">MM</AvatarFallback>
           </Avatar>
 
           <div className="text-center lg:text-right">

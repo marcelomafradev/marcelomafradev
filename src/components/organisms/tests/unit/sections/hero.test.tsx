@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { Hero } from '@/components/organisms/sections/hero';
-import { PERSONAL_INFO } from '@/constants';
+import { HERO_STACK, PERSONAL_INFO } from '@/constants';
 import { renderWithProviders } from '@/tests/utils/render';
 
 vi.mock('next/image', () => ({
@@ -50,12 +50,44 @@ describe('Hero', () => {
       }),
     ).toBeInTheDocument();
     expect(screen.getByText(PERSONAL_INFO.name)).toBeInTheDocument();
-    expect(
-      screen.getByRole('link', { name: /Ver case studies/i }),
-    ).toHaveAttribute('href', '/projects');
     expect(screen.getByRole('link', { name: /Falar comigo/i })).toHaveAttribute(
       'href',
       '/contact',
     );
+  });
+
+  it('renders only the focused stack items', () => {
+    renderWithProviders(<Hero />);
+
+    for (const item of HERO_STACK) {
+      expect(screen.getByText(item)).toBeInTheDocument();
+    }
+
+    expect(screen.queryByText('Docker')).not.toBeInTheDocument();
+    expect(screen.queryByText('AWS')).not.toBeInTheDocument();
+  });
+
+  it('links the stack summary to the technologies page', () => {
+    renderWithProviders(<Hero />);
+
+    expect(
+      screen.getByRole('link', { name: /Ver stack completa/i }),
+    ).toHaveAttribute('href', '/technologies');
+  });
+
+  it('points the case studies call to action at the in-page anchor', () => {
+    renderWithProviders(<Hero />);
+
+    expect(
+      screen.getByRole('link', { name: /Ver case studies/i }),
+    ).toHaveAttribute('href', '#case-studies');
+  });
+
+  it('renders the services call to action', () => {
+    renderWithProviders(<Hero />);
+
+    expect(
+      screen.getByRole('link', { name: /Trabalhe comigo/i }),
+    ).toHaveAttribute('href', '/services');
   });
 });

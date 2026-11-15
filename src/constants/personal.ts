@@ -36,6 +36,15 @@ export const PERSONAL_INFO = {
   ],
 };
 
+export const HERO_STACK = [
+  'TypeScript',
+  'NestJS',
+  'Java / Spring',
+  'Next.js',
+  'React Native',
+  'PostgreSQL',
+] as const;
+
 export const METRICS = [
   { id: 'services', value: '21', accent: '+' },
   { id: 'apps', value: '6' },
