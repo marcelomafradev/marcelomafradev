@@ -39,12 +39,16 @@ describe('BrandMark', () => {
     const svg = container.querySelector('svg');
     const tile = svg?.querySelector(':scope > rect');
     const strokes = svg?.querySelectorAll('g path');
-    const dot = svg?.querySelector('g > rect');
+    const foreground = svg?.querySelectorAll(
+      'g > rect.fill-primary-foreground',
+    );
+    const stripes = svg?.querySelectorAll('g > rect.fill-primary');
 
     expect(tile).toHaveClass('fill-primary');
     expect(strokes).toHaveLength(1);
     expect(strokes?.[0]).toHaveClass('stroke-primary-foreground');
-    expect(strokes?.[0]).toHaveAttribute('stroke-width', '6');
-    expect(dot).toBeNull();
+    expect(strokes?.[0]).toHaveAttribute('stroke-width', '5.5');
+    expect(foreground).toHaveLength(2);
+    expect(stripes).toHaveLength(3);
   });
 });
