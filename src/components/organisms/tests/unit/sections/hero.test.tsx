@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react';
+import { screen, within } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { Hero } from '@/components/organisms/sections/hero';
 import { HERO_STACK, PERSONAL_INFO } from '@/constants';
@@ -83,11 +83,32 @@ describe('Hero', () => {
     ).toHaveAttribute('href', '#case-studies');
   });
 
-  it('renders the services call to action', () => {
+  it('renders the services call to action as a text link with an arrow', () => {
     renderWithProviders(<Hero />);
 
+    const servicesLink = screen.getByRole('link', { name: /Trabalhe comigo/i });
+
+    expect(servicesLink).toHaveAttribute('href', '/services');
+    expect(servicesLink.querySelector('svg')).not.toBeNull();
+  });
+
+  it('keeps the location beside the name in the photo column', () => {
+    renderWithProviders(<Hero />);
+
+    const nameElement = screen.getByText(PERSONAL_INFO.name);
+    const identityContainer = nameElement.closest('div') as HTMLElement;
+
     expect(
-      screen.getByRole('link', { name: /Trabalhe comigo/i }),
-    ).toHaveAttribute('href', '/services');
+      within(identityContainer).getByText('Florianópolis, SC · Remoto'),
+    ).toBeInTheDocument();
+  });
+
+  it('keeps the headline at the wide-screen size that fits three lines', () => {
+    renderWithProviders(<Hero />);
+
+    const headline = screen.getByRole('heading', { level: 1 });
+
+    expect(headline).toHaveClass('xl:text-[3.5rem]');
+    expect(headline).not.toHaveClass('lg:text-6xl');
   });
 });

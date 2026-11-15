@@ -11,7 +11,7 @@ export const Hero = () => {
 
   return (
     <section className="border-border/60 bg-card relative overflow-hidden rounded-2xl border p-6 sm:p-8 md:p-10">
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-center">
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] lg:items-center">
         <div className="min-w-0 space-y-6">
           <div className="flex flex-wrap items-center gap-3">
             <AvailabilityBadge label={t('availability')} />
@@ -21,7 +21,7 @@ export const Hero = () => {
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl xl:text-[3.5rem]">
               {t('headline')}{' '}
               <span className="text-primary">{t('headline-highlight')}</span>
             </h1>
@@ -48,10 +48,12 @@ export const Hero = () => {
 
             <Button
               size="lg"
-              variant="ghost"
+              variant="link"
+              className="text-muted-foreground hover:text-foreground px-1"
               render={<Link href="/services" />}
             >
               {t('cta-services')}
+              <ArrowRight className="size-4" />
             </Button>
           </div>
 
@@ -66,15 +68,10 @@ export const Hero = () => {
               <ArrowRight className="size-3.5" />
             </Link>
           </div>
-
-          <p className="text-muted-foreground flex items-center gap-1.5 text-xs">
-            <MapPin className="size-3.5" />
-            {t('location')}
-          </p>
         </div>
 
         <div className="flex flex-col items-center gap-4 lg:items-end">
-          <Avatar className="ring-border/70 size-44 rounded-3xl ring-1 sm:size-56 lg:size-72">
+          <Avatar className="ring-border/70 size-44 rounded-3xl ring-1 sm:size-56 lg:size-64">
             <AvatarImage
               src={PERSONAL_INFO.image}
               alt={PERSONAL_INFO.name}
@@ -83,9 +80,9 @@ export const Hero = () => {
                 <Image
                   src={PERSONAL_INFO.image}
                   alt={PERSONAL_INFO.name}
-                  width={288}
-                  height={288}
-                  sizes="(min-width: 1024px) 288px, (min-width: 640px) 224px, 176px"
+                  width={256}
+                  height={256}
+                  sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 176px"
                   className="aspect-square size-full object-cover"
                   priority
                 />
@@ -100,6 +97,10 @@ export const Hero = () => {
             </p>
             <p className="numeric text-muted-foreground text-xs">
               {PERSONAL_INFO.title}
+            </p>
+            <p className="text-muted-foreground mt-2 flex items-center justify-center gap-1.5 text-xs lg:justify-end">
+              <MapPin className="size-3.5" />
+              {t('location')}
             </p>
           </div>
         </div>
