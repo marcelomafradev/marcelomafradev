@@ -115,5 +115,9 @@ describe('Navigation', () => {
 
     expect(wrapper).toHaveClass('min-h-[calc(100svh-4rem)]');
     expect(wrapper).toHaveClass('lg:min-h-full');
+    expect(wrapper).toHaveClass(
+      'pb-[calc(5.5rem+env(safe-area-inset-bottom))]',
+      'lg:pb-0',
+    );
   });
 });

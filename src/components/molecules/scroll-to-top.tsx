@@ -16,7 +16,7 @@ export const ScrollToTop = ({
 
   return (
     <Button
-      className={`bg-secondary hover:bg-secondary/80 fixed bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-6 h-fit rounded-full p-2 transition-opacity duration-200 lg:bottom-8 lg:right-8
+      className={`bg-secondary hover:bg-secondary/80 fixed bottom-[calc(6.25rem+env(safe-area-inset-bottom))] right-6 h-fit rounded-full p-2 transition-opacity duration-200 lg:bottom-8 lg:right-8
       ${isVisible ? 'opacity-100' : 'opacity-0'}
       `}
       variant={'ghost'}

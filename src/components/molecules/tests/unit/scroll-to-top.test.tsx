@@ -38,6 +38,12 @@ describe('ScrollToTop', () => {
 
     const button = screen.getByRole('button');
     expect(button.className).toContain('opacity-0');
+    expect(button.className).toContain(
+      'bottom-[calc(6.25rem+env(safe-area-inset-bottom))]',
+    );
+    expect(button.className).not.toContain(
+      'bottom-[calc(4.5rem+env(safe-area-inset-bottom))]',
+    );
 
     act(() => {
       node.scrollTop = 350;
