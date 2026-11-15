@@ -144,7 +144,7 @@ describe('Experiences', () => {
       return logo.closest('div.relative')?.parentElement as HTMLElement;
     };
 
-    for (const title of ['Griebler Remodeling', 'Mince Joias']) {
+    for (const title of ['SP Capital', 'Griebler Remodeling', 'Mince Joias']) {
       const container = getLogoContainer(title);
 
       expect(container).toHaveClass('bg-neutral-900');
@@ -152,13 +152,7 @@ describe('Experiences', () => {
       expect(container).toHaveClass('border-border/70', 'rounded-xl', 'border');
     }
 
-    for (const title of [
-      'Onilearning',
-      'SP Capital',
-      'Comvanilla',
-      'Ritmar',
-      'Postpay',
-    ]) {
+    for (const title of ['Onilearning', 'Comvanilla', 'Ritmar', 'Postpay']) {
       const container = getLogoContainer(title);
 
       expect(container).toHaveClass('bg-white');

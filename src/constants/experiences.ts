@@ -15,6 +15,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     logo: '/companies/spcapital.svg',
+    logoOnDark: true,
     title: 'SP Capital',
     detailsCount: 7,
   },
