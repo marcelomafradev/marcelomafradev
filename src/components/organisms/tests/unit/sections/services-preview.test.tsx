@@ -25,7 +25,7 @@ describe('ServicesPreview', () => {
     renderWithProviders(<ServicesPreview />);
 
     expect(
-      screen.getByRole('heading', { name: 'Como posso ajudar' }),
+      screen.getByRole('heading', { name: 'O que eu desenvolvo' }),
     ).toBeInTheDocument();
     expect(document.getElementById('services')).toBeTruthy();
   });
@@ -36,18 +36,21 @@ describe('ServicesPreview', () => {
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(
       SERVICE_OFFERINGS.length,
     );
-    expect(
-      screen.getByRole('heading', { name: 'Arquitetura e liderança técnica' }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: 'Produtos sob encomenda' }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: 'Modernização e plataformas' }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: 'Engenharia com IA' }),
-    ).toBeInTheDocument();
+
+    const offeringTitles = [
+      'Sistemas e aplicativos web',
+      'Aplicativos mobile',
+      'Aplicativos desktop',
+      'APIs, integrações e microsserviços',
+      'Automação e IA',
+      'Arquitetura e liderança técnica',
+    ];
+
+    for (const title of offeringTitles) {
+      expect(
+        screen.getByRole('heading', { level: 3, name: title }),
+      ).toBeInTheDocument();
+    }
   });
 
   it('links to the services page with the call to action', () => {

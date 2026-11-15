@@ -23,7 +23,7 @@ export const ServicesPreview = () => {
         }
       />
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-[minmax(0,1fr)] gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {SERVICE_OFFERINGS.map(({ id, icon: OfferingIcon }) => (
           <Card
             key={id}

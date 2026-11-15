@@ -56,7 +56,7 @@
       "cta-secondary": "Get in touch",
       "location": "Florianópolis, Brazil · Remote",
       "stack-link": "See the full stack",
-      "cta-services": "Work with me"
+      "cta-services": "View services"
     },
     "metrics": {
       "title": "The scale of what I have shipped",
@@ -418,8 +418,8 @@
       }
     },
     "services": {
-      "title": "How I can help",
-      "description": "Four ways to work with me, through Mafradev, my software company.",
+      "title": "What I build",
+      "description": "Web, mobile and desktop applications, APIs and automations, through Mafradev, my software company.",
       "cta": "View services"
     }
   },
@@ -521,7 +521,7 @@
     },
     "services": {
       "title": "Services",
-      "description": "Hire Marcelo Mafra through Mafradev: architecture and technical leadership, custom product development, platform modernization and AI-assisted engineering."
+      "description": "Web, mobile and desktop application development, APIs and AI automations through Mafradev, by Marcelo Mafra."
     }
   },
   "contact": {
@@ -571,36 +571,44 @@
     "tax-id": "CNPJ"
   },
   "services": {
-    "title": "Work with me",
-    "description": "I work through Mafradev, my software development company. Fixed-scope projects, technical consulting and engineering leadership, under contract with invoicing.",
+    "title": "Custom software for your business",
+    "description": "I build web, mobile and desktop applications, APIs and automations through Mafradev, my software company. Fixed-scope projects or ongoing support, under contract with invoicing.",
     "offerings": {
-      "title": "What I do",
+      "title": "What I build",
+      "web": {
+        "title": "Web systems and applications",
+        "description": "Admin panels, portals, SaaS platforms and websites with Next.js, React and TypeScript, from prototype to production."
+      },
+      "mobile": {
+        "title": "Mobile applications",
+        "description": "Android and iOS apps with React Native and Expo, store publishing, and over-the-air updates without a new release."
+      },
+      "desktop": {
+        "title": "Desktop applications",
+        "description": "Programs for Windows, macOS and Linux with Tauri, reusing the same codebase as the web version."
+      },
+      "backend": {
+        "title": "APIs, integrations and microservices",
+        "description": "Back ends in NestJS and Java/Spring, integrations with banks and payment methods (Pix, bank slips, cards) and messaging between services."
+      },
+      "automation": {
+        "title": "Automation and AI",
+        "description": "Robots that capture data from portals, routines that replace manual work, and document reading with AI, wired to the system you already use."
+      },
       "architecture": {
         "title": "Architecture and technical leadership",
-        "description": "Architecture design, standards and team guidance for systems that must scale without turning into technical debt."
-      },
-      "product": {
-        "title": "Custom product development",
-        "description": "From the sketch to the app in the store: NestJS and Java back ends, Next.js consoles and React Native apps."
-      },
-      "platform": {
-        "title": "Modernization and platforms",
-        "description": "Splitting monoliths into services, banking integrations and multi-tenant architecture, with typed contracts and CI/CD."
-      },
-      "ai": {
-        "title": "AI-assisted engineering",
-        "description": "Bringing AI workflows into the team: assisted specification, TDD and review, applied to real products."
+        "description": "Architecture review, standards and team guidance so the system scales without turning into technical debt."
       }
     },
     "process": {
-      "title": "How we work",
+      "title": "How it works",
       "discover": {
-        "title": "Discovery",
-        "description": "A conversation about the problem, the deadline and the constraints. I leave with clear scope and risks."
+        "title": "First conversation",
+        "description": "I learn the problem, the deadline and the constraints, and send back a clear scope and the risks."
       },
       "design": {
-        "title": "Architecture and plan",
-        "description": "A technical proposal with justified decisions, staged deliveries and acceptance criteria."
+        "title": "Technical proposal",
+        "description": "Architecture, staged deliveries and acceptance criteria agreed before we start."
       },
       "deliver": {
         "title": "Continuous delivery",
@@ -615,7 +623,7 @@
       "activities": "Custom software development, customizable software development and licensing, information technology consulting, technical support and maintenance."
     },
     "cta": {
-      "title": "Shall we talk?",
+      "title": "Have a project in mind?",
       "description": "Tell me what needs to be built. I reply within one business day with next steps.",
       "contact": "Get in touch",
       "resume": "Download resume"

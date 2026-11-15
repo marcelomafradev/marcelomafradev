@@ -70,7 +70,10 @@ describe('ServicesTemplate', () => {
     );
 
     expect(
-      screen.getByRole('heading', { level: 1, name: 'Trabalhe comigo' }),
+      screen.getByRole('heading', {
+        level: 1,
+        name: 'Software sob medida para o seu negócio',
+      }),
     ).toBeInTheDocument();
   });
 
@@ -89,27 +92,20 @@ describe('ServicesTemplate', () => {
       </NextIntlClientProvider>,
     );
 
-    expect(
-      screen.getByRole('heading', {
-        level: 3,
-        name: 'Arquitetura e liderança técnica',
-      }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', {
-        level: 3,
-        name: 'Produtos sob encomenda',
-      }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', {
-        level: 3,
-        name: 'Modernização e plataformas',
-      }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { level: 3, name: 'Engenharia com IA' }),
-    ).toBeInTheDocument();
+    const offeringTitles = [
+      'Sistemas e aplicativos web',
+      'Aplicativos mobile',
+      'Aplicativos desktop',
+      'APIs, integrações e microsserviços',
+      'Automação e IA',
+      'Arquitetura e liderança técnica',
+    ];
+
+    for (const title of offeringTitles) {
+      expect(
+        screen.getByRole('heading', { level: 3, name: title }),
+      ).toBeInTheDocument();
+    }
   });
 
   it('renders every process step title', async () => {
@@ -128,13 +124,22 @@ describe('ServicesTemplate', () => {
     );
 
     expect(
-      screen.getByRole('heading', { level: 3, name: 'Entendimento' }),
+      screen.getByRole('heading', {
+        level: 3,
+        name: ptBr.services.process.discover.title,
+      }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { level: 3, name: 'Arquitetura e plano' }),
+      screen.getByRole('heading', {
+        level: 3,
+        name: ptBr.services.process.design.title,
+      }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { level: 3, name: 'Entrega contínua' }),
+      screen.getByRole('heading', {
+        level: 3,
+        name: ptBr.services.process.deliver.title,
+      }),
     ).toBeInTheDocument();
   });
 

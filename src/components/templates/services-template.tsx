@@ -20,7 +20,7 @@ export const ServicesTemplate = async () => {
       <section className="space-y-5">
         <PageHeading as="h2" title={t('offerings.title')} />
 
-        <div className="grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-2 xl:grid-cols-3">
           {SERVICE_OFFERINGS.map(({ id, icon: OfferingIcon }) => (
             <Card
               key={id}

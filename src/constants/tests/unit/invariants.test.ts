@@ -12,11 +12,18 @@ import {
   METRICS,
   PERSONAL_INFO,
   PROJECTS,
+  SERVICE_OFFERINGS,
   SIDEBAR_ITEMS,
   STACK,
 } from '@/constants';
+import en from '../../../../messages/en.json';
+import es from '../../../../messages/es.json';
+import ptBr from '../../../../messages/pt-br.json';
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const offeringKeys = (offerings: Record<string, unknown>) =>
+  Object.keys(offerings).filter((key) => key !== 'title');
 
 describe('constants invariants', () => {
   describe('PROJECTS', () => {
@@ -99,6 +106,29 @@ describe('constants invariants', () => {
           (item) => item.id === 'services' && item.href === '/services',
         ),
       ).toBe(true);
+    });
+  });
+
+  describe('SERVICE_OFFERINGS', () => {
+    it('has six unique ids matching the offering keys, in order', () => {
+      const ids = SERVICE_OFFERINGS.map((offering) => offering.id);
+
+      expect(ids).toHaveLength(6);
+      expect(new Set(ids).size).toBe(ids.length);
+      expect(ids).toEqual(offeringKeys(ptBr.services.offerings));
+    });
+
+    it('keeps the offering keys identical across locales', () => {
+      const reference = offeringKeys(ptBr.services.offerings);
+
+      expect(offeringKeys(en.services.offerings)).toEqual(reference);
+      expect(offeringKeys(es.services.offerings)).toEqual(reference);
+    });
+
+    it('gives every offering a distinct icon', () => {
+      const icons = SERVICE_OFFERINGS.map((offering) => offering.icon);
+
+      expect(new Set(icons).size).toBe(icons.length);
     });
   });
 

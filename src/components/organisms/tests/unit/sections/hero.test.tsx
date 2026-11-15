@@ -86,7 +86,7 @@ describe('Hero', () => {
   it('renders the services call to action as a text link with an arrow', () => {
     renderWithProviders(<Hero />);
 
-    const servicesLink = screen.getByRole('link', { name: /Trabalhe comigo/i });
+    const servicesLink = screen.getByRole('link', { name: /Ver serviços/i });
 
     expect(servicesLink).toHaveAttribute('href', '/services');
     expect(servicesLink.querySelector('svg')).not.toBeNull();

@@ -90,6 +90,9 @@ describe('HomeTemplate', () => {
       screen.getByRole('heading', { name: 'Projetos' }),
     ).toBeInTheDocument();
     expect(
+      screen.getByRole('heading', { name: ptBr.homepage.services.title }),
+    ).toBeInTheDocument();
+    expect(
       screen.getByRole('heading', { name: 'Experiências' }),
     ).toBeInTheDocument();
     expect(

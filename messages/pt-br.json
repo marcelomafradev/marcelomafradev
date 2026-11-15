@@ -56,7 +56,7 @@
       "cta-secondary": "Falar comigo",
       "location": "Florianópolis, SC · Remoto",
       "stack-link": "Ver stack completa",
-      "cta-services": "Trabalhe comigo"
+      "cta-services": "Ver serviços"
     },
     "metrics": {
       "title": "Escala do que já entreguei",
@@ -418,8 +418,8 @@
       }
     },
     "services": {
-      "title": "Como posso ajudar",
-      "description": "Quatro formas de trabalhar comigo, por meio da Mafradev, minha empresa de software.",
+      "title": "O que eu desenvolvo",
+      "description": "Aplicativos web, mobile e desktop, APIs e automações, pela Mafradev, minha empresa de software.",
       "cta": "Ver serviços"
     }
   },
@@ -567,40 +567,48 @@
     },
     "services": {
       "title": "Serviços",
-      "description": "Contrate Marcelo Mafra pela Mafradev: arquitetura e liderança técnica, desenvolvimento de produtos sob encomenda, modernização de plataformas e engenharia com IA."
+      "description": "Desenvolvimento de aplicativos web, mobile e desktop, APIs e automações com IA pela Mafradev, de Marcelo Mafra."
     }
   },
   "services": {
-    "title": "Trabalhe comigo",
-    "description": "Atuo por meio da Mafradev, minha empresa de desenvolvimento de software. Projetos fechados, consultoria técnica e liderança de engenharia, com contrato e nota fiscal.",
+    "title": "Software sob medida para o seu negócio",
+    "description": "Desenvolvo aplicativos web, mobile e desktop, APIs e automações pela Mafradev, minha empresa de software. Projetos de escopo fechado ou acompanhamento contínuo, com contrato e nota fiscal.",
     "offerings": {
-      "title": "O que eu faço",
+      "title": "O que eu desenvolvo",
+      "web": {
+        "title": "Sistemas e aplicativos web",
+        "description": "Painéis administrativos, portais, plataformas SaaS e sites com Next.js, React e TypeScript, do protótipo à produção."
+      },
+      "mobile": {
+        "title": "Aplicativos mobile",
+        "description": "Apps para Android e iOS com React Native e Expo, com publicação nas lojas e atualizações sem nova versão (OTA)."
+      },
+      "desktop": {
+        "title": "Aplicativos desktop",
+        "description": "Programas para Windows, macOS e Linux com Tauri, reaproveitando a mesma base de código da versão web."
+      },
+      "backend": {
+        "title": "APIs, integrações e microsserviços",
+        "description": "Back-ends em NestJS e Java/Spring, integrações com bancos e meios de pagamento (Pix, boletos, cartão) e mensageria entre serviços."
+      },
+      "automation": {
+        "title": "Automação e IA",
+        "description": "Robôs que capturam dados de portais, rotinas que substituem trabalho manual e leitura de documentos com IA, ligados ao sistema que você já usa."
+      },
       "architecture": {
         "title": "Arquitetura e liderança técnica",
-        "description": "Desenho de arquitetura, definição de padrões e acompanhamento de times para sistemas que precisam escalar sem virar dívida técnica."
-      },
-      "product": {
-        "title": "Produtos sob encomenda",
-        "description": "Do desenho ao app na loja: back-end em NestJS e Java, painéis em Next.js e apps em React Native."
-      },
-      "platform": {
-        "title": "Modernização e plataformas",
-        "description": "Divisão de monólitos em serviços, integrações bancárias e arquitetura multi-tenant, com contratos tipados e CI/CD."
-      },
-      "ai": {
-        "title": "Engenharia com IA",
-        "description": "Adoção de fluxos com IA no time: especificação, TDD e revisão assistidos, aplicados em produtos reais."
+        "description": "Revisão de arquitetura, definição de padrões e acompanhamento de times para o sistema escalar sem virar dívida técnica."
       }
     },
     "process": {
-      "title": "Como trabalhamos",
+      "title": "Como funciona",
       "discover": {
-        "title": "Entendimento",
-        "description": "Conversa sobre o problema, o prazo e as restrições. Saio com o escopo e os riscos claros."
+        "title": "Conversa inicial",
+        "description": "Entendo o problema, o prazo e as restrições e devolvo escopo e riscos claros."
       },
       "design": {
-        "title": "Arquitetura e plano",
-        "description": "Proposta técnica com decisões justificadas, entregas em etapas e critérios de aceite."
+        "title": "Proposta técnica",
+        "description": "Arquitetura, entregas em etapas e critérios de aceite combinados antes de começar."
       },
       "deliver": {
         "title": "Entrega contínua",
@@ -615,7 +623,7 @@
       "activities": "Desenvolvimento de software sob encomenda, desenvolvimento e licenciamento de software customizável, consultoria em tecnologia da informação, suporte técnico e manutenção."
     },
     "cta": {
-      "title": "Vamos conversar?",
+      "title": "Tem um projeto em mente?",
       "description": "Conte o que precisa ser construído. Respondo em até um dia útil com os próximos passos.",
       "contact": "Falar comigo",
       "resume": "Baixar currículo"

@@ -1,7 +1,15 @@
 import { IconType } from '@/components/ui/icon';
-import { Compass, Layers, Sparkles, Workflow } from 'lucide-react';
+import {
+  Bot,
+  Compass,
+  Globe,
+  Monitor,
+  Network,
+  Smartphone,
+} from 'lucide-react';
 
-export type ServiceOfferingId = 'architecture' | 'product' | 'platform' | 'ai';
+export type ServiceOfferingId =
+  'web' | 'mobile' | 'desktop' | 'backend' | 'automation' | 'architecture';
 
 export interface ServiceOffering {
   id: ServiceOfferingId;
@@ -9,10 +17,12 @@ export interface ServiceOffering {
 }
 
 export const SERVICE_OFFERINGS: ServiceOffering[] = [
+  { id: 'web', icon: Globe },
+  { id: 'mobile', icon: Smartphone },
+  { id: 'desktop', icon: Monitor },
+  { id: 'backend', icon: Network },
+  { id: 'automation', icon: Bot },
   { id: 'architecture', icon: Compass },
-  { id: 'product', icon: Layers },
-  { id: 'platform', icon: Workflow },
-  { id: 'ai', icon: Sparkles },
 ];
 
 export type ServiceProcessStepId = 'discover' | 'design' | 'deliver';
