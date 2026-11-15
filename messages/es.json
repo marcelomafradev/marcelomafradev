@@ -203,13 +203,13 @@
         "description": "Ingeniero de Software · FIDC y titulización",
         "workingTime": "",
         "details": {
-          "1": "Evolución de una plataforma web interna en monorepo (TypeScript, React, NestJS, Prisma y PostgreSQL), con migración gradual del backend legado en Express a NestJS.",
-          "2": "Automatización de procesos con n8n: workflows versionados en un repositorio y promovidos entre entornos de desarrollo y producción.",
-          "3": "Robots de RPA que consolidan datos operativos en hojas de cálculo e informes, incluida la generación semanal de una presentación gerencial con validación automática.",
-          "4": "Migración de un ERP de terceros para el mercado financiero, de un SQL Server alojado fuera a infraestructura interna, con optimización de índices y vistas de integración sin tocar el esquema del proveedor.",
-          "5": "Gobernanza en Jira: proyecto maestro que unifica tarjetas de varios proyectos, con automatizaciones, informes y trazabilidad de la tarjeta al PR.",
-          "6": "Pruebas de extremo a extremo con Playwright, ejecutadas por entorno (local, desarrollo, homologación y producción).",
-          "7": "Flujo de ingeniería con agentes de IA: política compartida para Claude y Codex, revisión independiente del diff y hooks que bloquean la fuga de secretos."
+          "1": "Módulo de análisis de crédito en la plataforma interna (React y NestJS): panel por pilares de riesgo, score general con vista previa y mapa de grupo económico con detalle por nodo.",
+          "2": "Vistas, procedimientos de lectura y endpoints para los criterios del análisis de crédito, con scripts de base de datos aprobados antes de aplicarlos en desarrollo.",
+          "3": "Actualización paga de consulta a buró de crédito bajo demanda: bloqueo de concurrencia por empresa, rechazo inmediato de pedidos simultáneos y registro de quién lo solicitó y a quién se cobra.",
+          "4": "Pista de auditoría del análisis en un único registro, del más reciente al más antiguo, con consultas repetidas agrupadas y corrección de zona horaria en los registros.",
+          "5": "Componentes del design system v2 (estado vacío ilustrado, drawers y diálogos de confirmación) reutilizados por las pantallas de crédito.",
+          "6": "Servicio de captura de comprobantes de entrega en un portal de terceros, reescrito en TypeScript con capas de dominio e infraestructura, autenticación por token, endpoint de salud y rotación de logs en Docker.",
+          "7": "Pruebas con reloj simulado que cubren timeout y error del polling de la actualización, además de pruebas de contrato del servicio de captura."
         }
       },
       "3": {
