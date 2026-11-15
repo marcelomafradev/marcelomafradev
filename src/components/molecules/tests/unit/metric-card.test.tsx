@@ -46,4 +46,19 @@ describe('MetricCard', () => {
     expect(screen.getByText('99')).toBeInTheDocument();
     expect(screen.getByText('%')).toBeInTheDocument();
   });
+
+  it('marks the card with a decorative accent line', () => {
+    const { container } = render(
+      <MetricCard
+        value="21"
+        accent="+"
+        label="Projects"
+        description="Shipped this year"
+      />,
+    );
+
+    expect(container.querySelector('[aria-hidden="true"]')).toHaveClass(
+      'bg-primary/70',
+    );
+  });
 });

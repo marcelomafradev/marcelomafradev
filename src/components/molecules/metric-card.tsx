@@ -24,7 +24,11 @@ export const MetricCard = ({
         className,
       )}
     >
-      <CardContent className="space-y-2 p-5">
+      <span
+        aria-hidden
+        className="bg-primary/70 absolute inset-x-5 top-0 h-px"
+      />
+      <CardContent className="space-y-2.5 p-5 pt-6">
         <StatValue value={value} accent={accent} />
         <p className="text-foreground text-sm font-medium">{label}</p>
         <p className="text-muted-foreground text-xs leading-relaxed">

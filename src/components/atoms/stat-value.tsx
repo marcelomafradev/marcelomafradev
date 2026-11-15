@@ -16,7 +16,7 @@ export const StatValue = ({ value, accent, className }: StatValueProps) => {
     >
       {value}
       {accent ? (
-        <span className="text-primary align-super text-2xl md:text-3xl">
+        <span className="text-primary ml-0.5 align-baseline text-3xl md:text-4xl">
           {accent}
         </span>
       ) : null}

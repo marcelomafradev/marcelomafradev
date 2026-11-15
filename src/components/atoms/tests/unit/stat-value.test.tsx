@@ -16,6 +16,15 @@ describe('StatValue', () => {
     expect(screen.getByText('%')).toBeInTheDocument();
   });
 
+  it('aligns the accent suffix on the number baseline', () => {
+    render(<StatValue value="21" accent="+" />);
+
+    const accent = screen.getByText('+');
+
+    expect(accent).toHaveClass('align-baseline');
+    expect(accent).not.toHaveClass('align-super');
+  });
+
   it('omits the accent when not provided', () => {
     const { container } = render(<StatValue value="10" />);
 
