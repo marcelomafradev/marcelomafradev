@@ -56,8 +56,17 @@ vi.mock('@/lib/navigation', () => ({
   usePathname: () => '/',
 }));
 
+function setWindowScrollY(value: number) {
+  Object.defineProperty(window, 'scrollY', {
+    configurable: true,
+    writable: true,
+    value,
+  });
+}
+
 describe('Menu', () => {
   beforeEach(() => {
+    setWindowScrollY(0);
     Object.defineProperty(window, 'matchMedia', {
       writable: true,
       configurable: true,
@@ -126,6 +135,30 @@ describe('Menu', () => {
     act(() => {
       node.scrollTop = 900;
       fireEvent.scroll(node);
+    });
+
+    expect(topBar?.className).toContain('hidden');
+  });
+
+  it('hides the fixed trigger bar after deep scroll of the document on mobile', () => {
+    const node = document.createElement('div');
+    Object.defineProperty(node, 'scrollTop', {
+      configurable: true,
+      writable: true,
+      value: 0,
+    });
+    const scrollableDivRef = { current: node };
+
+    const { container } = renderWithProviders(
+      <Menu scrollableDivRef={scrollableDivRef} />,
+    );
+
+    const topBar = container.querySelector('.fixed.inset-x-0.top-0');
+    expect(topBar?.className).not.toContain('hidden');
+
+    act(() => {
+      setWindowScrollY(900);
+      window.dispatchEvent(new Event('scroll'));
     });
 
     expect(topBar?.className).toContain('hidden');

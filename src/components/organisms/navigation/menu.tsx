@@ -18,11 +18,13 @@ import { ChessIndicator } from './chess-indicator';
 import { SpotifyIndicator } from './spotify-indicator';
 import { usePathname, HrefValue } from '@/lib/navigation';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { useEffect, useState } from 'react';
+import { useScrollOffset } from '@/hooks/use-scroll-offset';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import { Separator } from '@/components/ui/separator';
 import { cn, isExternalHref } from '@/lib/utils';
+
+const HIDE_TRIGGER_AFTER = 800;
 
 export const Menu = ({
   scrollableDivRef,
@@ -32,20 +34,8 @@ export const Menu = ({
   const pathname = usePathname();
   const t = useTranslations('navigation');
 
-  const [hideTrigger, setHideTrigger] = useState(false);
-
-  useEffect(() => {
-    const el = scrollableDivRef.current;
-
-    const handleScroll = () => {
-      if (el) {
-        setHideTrigger(el.scrollTop > 800);
-      }
-    };
-
-    el?.addEventListener('scroll', handleScroll);
-    return () => el?.removeEventListener('scroll', handleScroll);
-  }, [scrollableDivRef]);
+  const offset = useScrollOffset(scrollableDivRef);
+  const hideTrigger = offset > HIDE_TRIGGER_AFTER;
 
   return (
     <Sheet>

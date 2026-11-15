@@ -95,4 +95,25 @@ describe('Navigation', () => {
       screen.getByRole('navigation', { name: 'Navegação principal' }),
     ).toBeInTheDocument();
   });
+
+  it('lets the document scroll on mobile and keeps the inner scroller on desktop', () => {
+    const { container } = renderWithProviders(
+      <Navigation>
+        <p>Page content</p>
+      </Navigation>,
+    );
+
+    const scroller = container.querySelector('main');
+
+    expect(scroller).not.toBeNull();
+    expect(scroller).toHaveClass('lg:overflow-y-auto');
+    expect(scroller).toHaveClass('lg:max-h-svh');
+    expect(scroller?.className).not.toMatch(/(^|\s)overflow-y-auto($|\s)/);
+    expect(scroller?.className).not.toMatch(/(^|\s)max-h-svh($|\s)/);
+
+    const wrapper = scroller?.firstElementChild;
+
+    expect(wrapper).toHaveClass('min-h-[calc(100svh-4rem)]');
+    expect(wrapper).toHaveClass('lg:min-h-full');
+  });
 });

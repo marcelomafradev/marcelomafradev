@@ -1,46 +1,18 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import { ChevronUp } from 'lucide-react';
+import { scrollToTop, useScrollOffset } from '@/hooks/use-scroll-offset';
 import { Button } from '../ui/button';
+
+const VISIBLE_AFTER = 300;
 
 export const ScrollToTop = ({
   scrollableDivRef,
 }: {
   scrollableDivRef: React.RefObject<HTMLDivElement | null>;
 }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (scrollableDivRef.current) {
-        scrollableDivRef.current.scrollTop > 300
-          ? setIsVisible(true)
-          : setIsVisible(false);
-      }
-    };
-
-    const currentScrollableDiv = scrollableDivRef.current;
-
-    if (currentScrollableDiv) {
-      currentScrollableDiv.addEventListener('scroll', toggleVisibility);
-    }
-
-    return () => {
-      if (currentScrollableDiv) {
-        currentScrollableDiv.removeEventListener('scroll', toggleVisibility);
-      }
-    };
-  }, [scrollableDivRef]);
-
-  const scrollToTop = () => {
-    if (scrollableDivRef.current) {
-      scrollableDivRef.current.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    }
-  };
+  const offset = useScrollOffset(scrollableDivRef);
+  const isVisible = offset > VISIBLE_AFTER;
 
   return (
     <Button
@@ -48,7 +20,7 @@ export const ScrollToTop = ({
       ${isVisible ? 'opacity-100' : 'opacity-0'}
       `}
       variant={'ghost'}
-      onClick={scrollToTop}
+      onClick={() => scrollToTop(scrollableDivRef)}
     >
       <ChevronUp size={18} />
     </Button>
