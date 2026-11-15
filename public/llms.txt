@@ -12,7 +12,7 @@ Este arquivo existe para agentes e modelos de linguagem que precisam de um resum
 - [Sobre](https://www.marcelomafradev.com.br/about): trajetória, interesses fora do código, livros e música.
 - [Projetos](https://www.marcelomafradev.com.br/projects): produtos entregues para clientes e projetos próprios de código aberto.
 - [Tecnologias](https://www.marcelomafradev.com.br/technologies): stack do dia a dia, do frontend à infraestrutura.
-- [Serviços](https://www.marcelomafradev.com.br/services): contratação pela Mafradev (Mafradev Desenvolvimento de Software LTDA): arquitetura e liderança técnica, produtos sob encomenda, modernização de plataformas e engenharia com IA.
+- [Serviços](https://www.marcelomafradev.com.br/services): desenvolvimento de aplicativos web, mobile e desktop, APIs, automações e IA, e arquitetura e liderança técnica, pela Mafradev (Mafradev Desenvolvimento de Software LTDA).
 - [Contato](https://www.marcelomafradev.com.br/contact): formulário e canais diretos. Resposta em até um dia útil.
 
 Versões em inglês e espanhol usam o mesmo caminho com prefixo de idioma: `/en/...` e `/es/...`.
