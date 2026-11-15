@@ -1,4 +1,20 @@
-export const STACK = [
+import type { LucideIcon } from 'lucide-react';
+import { Bot, Database, Sparkles, Terminal, Theater } from 'lucide-react';
+
+export interface StackItemProps {
+  name: string;
+  link: string;
+  icon?: string;
+  symbol?: LucideIcon;
+  invert?: boolean;
+}
+
+export interface StackSectionProps {
+  title: string;
+  items: StackItemProps[];
+}
+
+export const STACK: StackSectionProps[] = [
   {
     title: 'frontend',
     items: [
@@ -166,6 +182,11 @@ export const STACK = [
         icon: '/techs/swagger.svg',
         link: 'https://swagger.io',
       },
+      {
+        name: 'Socket.IO',
+        icon: '/techs/socketio.svg',
+        link: 'https://socket.io',
+      },
     ],
   },
   {
@@ -206,6 +227,16 @@ export const STACK = [
         icon: '/techs/cordova.svg',
         link: 'https://cordova.apache.org',
       },
+      {
+        name: 'Tauri',
+        icon: '/techs/tauri.svg',
+        link: 'https://tauri.app',
+      },
+      {
+        name: 'Rust',
+        icon: '/techs/rust.svg',
+        link: 'https://www.rust-lang.org',
+      },
     ],
   },
   {
@@ -240,6 +271,11 @@ export const STACK = [
         name: 'Firebase',
         icon: '/techs/firebase.svg',
         link: 'https://firebase.google.com',
+      },
+      {
+        name: 'SQL Server',
+        symbol: Database,
+        link: 'https://www.microsoft.com/sql-server',
       },
     ],
   },
@@ -297,6 +333,21 @@ export const STACK = [
         name: 'pnpm',
         icon: '/techs/pnpm.svg',
         link: 'https://pnpm.io',
+      },
+      {
+        name: 'Prometheus',
+        icon: '/techs/prometheus.svg',
+        link: 'https://prometheus.io',
+      },
+      {
+        name: 'Grafana',
+        icon: '/techs/grafana.svg',
+        link: 'https://grafana.com',
+      },
+      {
+        name: 'OpenTelemetry',
+        icon: '/techs/opentelemetry.svg',
+        link: 'https://opentelemetry.io',
       },
     ],
   },
@@ -390,6 +441,60 @@ export const STACK = [
         icon: '/techs/google-analytics.svg',
         link: 'https://marketingplatform.google.com/about/analytics',
       },
+      {
+        name: 'Playwright',
+        symbol: Theater,
+        link: 'https://playwright.dev',
+      },
     ],
   },
+];
+
+export const AI_STACK: StackItemProps[] = [
+  {
+    name: 'Claude Code',
+    symbol: Terminal,
+    link: 'https://www.anthropic.com/claude-code',
+  },
+  {
+    name: 'Claude',
+    icon: '/techs/claude.svg',
+    link: 'https://claude.ai',
+  },
+  {
+    name: 'Anthropic API',
+    icon: '/techs/anthropic.svg',
+    link: 'https://docs.anthropic.com',
+  },
+  {
+    name: 'OpenAI Codex',
+    symbol: Bot,
+    link: 'https://developers.openai.com/codex',
+  },
+  {
+    name: 'MCP',
+    icon: '/techs/mcp.svg',
+    link: 'https://modelcontextprotocol.io',
+  },
+  {
+    name: 'DeepSeek',
+    icon: '/techs/deepseek.svg',
+    link: 'https://www.deepseek.com',
+  },
+  {
+    name: 'Hermes Agent',
+    symbol: Sparkles,
+    link: 'https://hermes-agent.nousresearch.com',
+  },
+];
+
+export const AI_PRACTICES = [
+  'spec-driven',
+  'orchestration',
+  'context',
+  'mcp',
+  'documents',
+  'validation',
+  'review',
+  'scraping',
 ] as const;

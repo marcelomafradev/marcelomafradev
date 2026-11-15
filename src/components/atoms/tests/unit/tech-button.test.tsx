@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { Sparkles } from 'lucide-react';
 import { describe, expect, it, vi } from 'vitest';
 import { TechButton } from '@/components/atoms/tech-button';
 
@@ -82,5 +83,18 @@ describe('TechButton', () => {
     const images = container.querySelectorAll('img');
     expect(images).toHaveLength(2);
     expect(images[0]?.className).toContain('invert');
+  });
+
+  it('renders a lucide symbol and no images when only a symbol is given', () => {
+    const { container } = render(
+      <TechButton
+        name="Hermes Agent"
+        link="https://hermes-agent.nousresearch.com"
+        symbol={Sparkles}
+      />,
+    );
+
+    expect(container.querySelector('svg')).toBeInTheDocument();
+    expect(container.querySelector('img')).not.toBeInTheDocument();
   });
 });

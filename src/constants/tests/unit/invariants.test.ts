@@ -71,13 +71,13 @@ describe('constants invariants', () => {
       expect(new Set(titles).size).toBe(titles.length);
     });
 
-    it('requires name, icon, and http(s) link on every item', () => {
+    it('requires name, an icon or symbol, and http(s) link on every item', () => {
       for (const group of STACK) {
         expect(group.items.length).toBeGreaterThan(0);
 
         for (const item of group.items) {
           expect(item.name).toBeTruthy();
-          expect(item.icon).toBeTruthy();
+          expect(Boolean(item.icon ?? item.symbol)).toBe(true);
           expect(item.link.startsWith('http')).toBe(true);
         }
       }
