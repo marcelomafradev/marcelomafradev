@@ -12,14 +12,15 @@ Este arquivo existe para agentes e modelos de linguagem que precisam de um resum
 - [Sobre](https://www.marcelomafradev.com.br/about): trajetória, interesses fora do código, livros e música.
 - [Projetos](https://www.marcelomafradev.com.br/projects): produtos entregues para clientes e projetos próprios de código aberto.
 - [Tecnologias](https://www.marcelomafradev.com.br/technologies): stack do dia a dia, do frontend à infraestrutura.
+- [Serviços](https://www.marcelomafradev.com.br/services): contratação pela Mafradev (Mafradev Desenvolvimento de Software LTDA): arquitetura e liderança técnica, produtos sob encomenda, modernização de plataformas e engenharia com IA.
 - [Contato](https://www.marcelomafradev.com.br/contact): formulário e canais diretos. Resposta em até um dia útil.
 
 Versões em inglês e espanhol usam o mesmo caminho com prefixo de idioma: `/en/...` e `/es/...`.
 
 ## Currículo
 
-- [Currículo em português (PDF)](https://www.marcelomafradev.com.br/documents/marcelo-mafra-cv-br.pdf)
-- [Currículo em inglês (PDF)](https://www.marcelomafradev.com.br/documents/marcelo-mafra-cv-en.pdf)
+- [Currículo em português (PDF)](https://www.marcelomafradev.com.br/documents/marcelomafradev-cv-br.pdf)
+- [Currículo em inglês (PDF)](https://www.marcelomafradev.com.br/documents/marcelomafradev-cv-en.pdf)
 
 ## Como trabalho com IA
 
