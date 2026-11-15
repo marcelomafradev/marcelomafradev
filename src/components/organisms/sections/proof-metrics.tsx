@@ -10,7 +10,7 @@ export const ProofMetrics = () => {
     <section className="space-y-5">
       <PageHeading as="h2" title={t('title')} description={t('description')} />
 
-      <div className="grid grid-cols-[minmax(0,1fr)] gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
         {METRICS.map(({ id, value, ...metric }) => (
           <MetricCard
             key={id}

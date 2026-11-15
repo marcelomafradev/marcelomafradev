@@ -52,6 +52,17 @@ describe('ProofMetrics', () => {
     expect(screen.getByText(metricItems.services.label)).toBeInTheDocument();
   });
 
+  it('lays the metrics out in two columns on small screens', () => {
+    const { container } = renderWithProviders(<ProofMetrics />);
+
+    const grid = container.querySelector('section .grid');
+
+    expect(grid).not.toBeNull();
+    expect(grid).toHaveClass('grid-cols-2');
+    expect(grid).toHaveClass('xl:grid-cols-4');
+    expect(grid).not.toHaveClass('sm:grid-cols-2');
+  });
+
   it('renders the label and description of every metrics item', () => {
     renderWithProviders(<ProofMetrics />);
 

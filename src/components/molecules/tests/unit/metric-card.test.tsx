@@ -47,6 +47,46 @@ describe('MetricCard', () => {
     expect(screen.getByText('%')).toBeInTheDocument();
   });
 
+  it('keeps the card compact on small screens', () => {
+    render(
+      <MetricCard
+        value="21"
+        label="Projects"
+        description="Shipped this year"
+      />,
+    );
+
+    const content = screen.getByText('Projects').parentElement;
+
+    expect(content).toHaveClass('space-y-2');
+    expect(content).toHaveClass('p-4');
+    expect(content).toHaveClass('pt-5');
+    expect(content).toHaveClass('sm:space-y-2.5');
+    expect(content).toHaveClass('sm:p-5');
+    expect(content).toHaveClass('sm:pt-6');
+  });
+
+  it('uses tighter text rhythm for the label and description', () => {
+    render(
+      <MetricCard
+        value="21"
+        label="Projects"
+        description="Shipped this year"
+      />,
+    );
+
+    expect(screen.getByText('Projects')).toHaveClass(
+      'text-sm',
+      'font-medium',
+      'leading-snug',
+    );
+    expect(screen.getByText('Shipped this year')).toHaveClass(
+      'text-xs',
+      'leading-snug',
+      'sm:leading-relaxed',
+    );
+  });
+
   it('marks the card with a decorative accent line', () => {
     const { container } = render(
       <MetricCard
