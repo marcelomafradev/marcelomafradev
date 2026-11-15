@@ -51,13 +51,10 @@
       "role": "Tech Lead · Arquitetura e IA aplicada",
       "headline": "Construo o sistema inteiro,",
       "headline-highlight": "do desenho ao app na loja.",
-      "description": "Sou Tech Lead em Florianópolis. Escrevo serviços em NestJS e Java, apps em React Native e painéis em Next.js, e cuido da infraestrutura em que tudo roda.",
+      "description": "Sou Tech Lead em Florianópolis e construo serviços em NestJS e Java, apps em React Native e painéis em Next.js.",
       "cta-primary": "Ver case studies",
       "cta-secondary": "Falar comigo",
-      "location": "Florianópolis, SC · Remoto",
-      "stack-link": "Ver stack completa",
-      "cta-services": "Ver serviços",
-      "companies-label": "Atuação recente"
+      "location": "Florianópolis, SC · Remoto"
     },
     "metrics": {
       "title": "Escala do que já entreguei",

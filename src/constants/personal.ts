@@ -1,5 +1,3 @@
-import { EXPERIENCES } from './experiences';
-
 export const CONTACT_EMAIL = 'marcelomafradev@gmail.com';
 
 export const CHESS_COM_USERNAME = 'marcelomafradev';
@@ -37,17 +35,6 @@ export const PERSONAL_INFO = {
     'Java / Spring',
   ],
 };
-
-export const HERO_STACK = [
-  'TypeScript',
-  'NestJS',
-  'Java / Spring',
-  'Next.js',
-  'React Native',
-  'PostgreSQL',
-] as const;
-
-export const HERO_COMPANIES = EXPERIENCES.slice(0, 5);
 
 export const METRICS = [
   { id: 'services', value: '21', accent: '+' },

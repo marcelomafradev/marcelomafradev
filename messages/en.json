@@ -51,13 +51,10 @@
       "role": "Tech Lead · Architecture and applied AI",
       "headline": "I build the whole system,",
       "headline-highlight": "from the sketch to the app in the store.",
-      "description": "I am a Tech Lead in Florianópolis. I write NestJS and Java services, React Native apps and Next.js consoles, and I look after the infrastructure they run on.",
+      "description": "I am a Tech Lead in Florianópolis and I build NestJS and Java services, React Native apps and Next.js consoles.",
       "cta-primary": "See case studies",
       "cta-secondary": "Get in touch",
-      "location": "Florianópolis, Brazil · Remote",
-      "stack-link": "See the full stack",
-      "cta-services": "View services",
-      "companies-label": "Recent work"
+      "location": "Florianópolis, Brazil · Remote"
     },
     "metrics": {
       "title": "The scale of what I have shipped",
