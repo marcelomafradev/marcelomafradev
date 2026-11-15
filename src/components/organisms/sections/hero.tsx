@@ -22,7 +22,7 @@ export const Hero = () => {
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl xl:text-[3.5rem]">
+            <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl xl:text-5xl">
               {t('headline')}{' '}
               <span className="text-primary">{t('headline-highlight')}</span>
             </h1>

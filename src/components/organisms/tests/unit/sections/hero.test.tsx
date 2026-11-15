@@ -103,12 +103,13 @@ describe('Hero', () => {
     ).toBeInTheDocument();
   });
 
-  it('keeps the headline at the wide-screen size that fits three lines', () => {
+  it('keeps the headline at the wide-screen size that fits two lines', () => {
     renderWithProviders(<Hero />);
 
     const headline = screen.getByRole('heading', { level: 1 });
 
-    expect(headline).toHaveClass('xl:text-[3.5rem]');
+    expect(headline).toHaveClass('xl:text-5xl');
+    expect(headline).not.toHaveClass('xl:text-[3.5rem]');
     expect(headline).not.toHaveClass('lg:text-6xl');
   });
 
