@@ -56,7 +56,8 @@
       "cta-secondary": "Falar comigo",
       "location": "Florianópolis, SC · Remoto",
       "stack-link": "Ver stack completa",
-      "cta-services": "Ver serviços"
+      "cta-services": "Ver serviços",
+      "companies-label": "Atuação recente"
     },
     "metrics": {
       "title": "Escala do que já entreguei",
@@ -318,6 +319,14 @@
           "description": "Meu produto próprio, em produção. Plataforma de gestão para academias e escolas de dança com matrículas, turmas, formaturas, cobrança recorrente, PDV da noite de formatura e um site público para cada escola, em subdomínio ou domínio próprio.",
           "role": "Fundador e engenheiro. Do modelo de cobrança ao deploy: API em NestJS, três aplicações Next.js, PostgreSQL multi-tenant e a operação em produção."
         },
+        "spcapital-credit": {
+          "description": "Módulo de análise de crédito de uma securitizadora de FIDC: score por pilares de risco, motores de análise que consultam bureaus e leem documentos, mapa de grupo econômico, parecer e ata de comitê em PDF.",
+          "role": "Engenheiro de Software. Desenvolvi o módulo ponta a ponta em React e NestJS: as rodadas de motores que o analista dispara e interrompe, a atualização paga de consulta, a trilha de auditoria e os relatórios do comitê."
+        },
+        "spcapital-receipts": {
+          "description": "Automação que captura comprovantes de entrega em um portal de terceiros, valida cada um com IA e dá baixa no ERP financeiro, enviando para revisão humana o que o modelo recusa.",
+          "role": "Engenheiro de Software. Escrevi o scraper em TypeScript, a fila e o worker na plataforma, a validação por IA com fallback de modelo, a camada de acesso ao ERP e os simuladores usados nos testes de ponta a ponta."
+        },
         "postpay-platform": {
           "description": "Serviços que rodam por trás de uma fintech de pagamentos: cadastro e identidade, carteira, pedidos, cobranças, recebimentos e emissão fiscal, com integração direta com os bancos parceiros.",
           "role": "Desenvolvedor full stack, atuando no backend. Escrevi serviços em NestJS e em Java com Spring Boot, cuidei da comunicação entre eles com gRPC e RabbitMQ e da operação em Docker."
@@ -489,14 +498,30 @@
   },
   "technologies": {
     "title": "Minhas tecnologias",
-    "description": "Stack que uso no dia a dia, do frontend ao mobile, backend, dados, infra e ferramentas de entrega.",
+    "description": "Stack que uso no dia a dia, com foco em IA aplicada, do frontend ao mobile, backend, dados, infra e ferramentas de entrega.",
     "frontend": "Frontend",
     "backend": "Backend",
-    "mobile": "Mobile",
+    "mobile": "Mobile e desktop",
     "database": "Banco de dados",
     "infrastructure": "Infraestrutura",
     "apps": "Apps",
-    "others": "Outros"
+    "others": "Outros",
+    "ai": {
+      "title": "IA e agentes",
+      "description": "Uso IA em dois lugares: no desenvolvimento, com agentes de código e fluxo spec-driven, e dentro de produtos em produção, onde modelos leem documentos e validam comprovantes com revisão humana.",
+      "tools-label": "Ferramentas e modelos",
+      "practices-label": "Como aplico",
+      "practices": {
+        "spec-driven": "Spec-driven development",
+        "orchestration": "Roteamento entre modelos",
+        "context": "Contexto versionado no repositório",
+        "mcp": "Ferramentas por MCP",
+        "documents": "Leitura de documentos com IA",
+        "validation": "Validação por IA com revisão humana",
+        "review": "Revisão humana no merge",
+        "scraping": "Scrapers e automação de portais"
+      }
+    }
   },
   "contact": {
     "title": "Vamos conversar",
@@ -559,7 +584,7 @@
     },
     "technologies": {
       "title": "Tecnologias",
-      "description": "Stack e ferramentas usadas por Marcelo Mafra no dia a dia de engenharia de software."
+      "description": "Stack de Marcelo Mafra com foco em IA aplicada e agentes, TypeScript, NestJS, Java, Next.js, React Native e infraestrutura."
     },
     "contact": {
       "title": "Contato",

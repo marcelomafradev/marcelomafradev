@@ -41,6 +41,28 @@ describe('constants invariants', () => {
         expect(project.i18nKey).toBeTruthy();
       }
     });
+
+    it('keeps every project i18n key present in the pt-br messages', () => {
+      const items = ptBr.homepage.projects.items;
+
+      for (const project of PROJECTS) {
+        expect(items).toHaveProperty(project.i18nKey);
+      }
+    });
+
+    it('marks the SP Capital projects as confidential and logo-less in links', () => {
+      const spCapitalProjects = ['spcapital-credit', 'spcapital-receipts'].map(
+        (id) => PROJECTS.find((project) => project.id === id),
+      );
+
+      for (const project of spCapitalProjects) {
+        expect(project).toBeDefined();
+        expect(project?.confidential).toBe(true);
+        expect(project?.logo).toBe('/companies/spcapital.svg');
+        expect(project?.logoOnDark).toBe(true);
+        expect(project?.href).toBeUndefined();
+      }
+    });
   });
 
   describe('STACK', () => {

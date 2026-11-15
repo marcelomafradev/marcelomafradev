@@ -56,7 +56,8 @@
       "cta-secondary": "Hablemos",
       "location": "Florianópolis, Brasil · Remoto",
       "stack-link": "Ver el stack completo",
-      "cta-services": "Ver servicios"
+      "cta-services": "Ver servicios",
+      "companies-label": "Actividad reciente"
     },
     "metrics": {
       "title": "La escala de lo que ya entregué",
@@ -318,6 +319,14 @@
           "description": "Mi producto propio, en producción. Plataforma de gestión para academias y escuelas de danza con matrículas, clases, graduaciones, cobro recurrente, punto de venta de la noche de graduación y un sitio público por escuela, en subdominio o dominio propio.",
           "role": "Fundador e ingeniero. Del modelo de cobro al despliegue: API en NestJS, tres aplicaciones Next.js, PostgreSQL multi-tenant y la operación en producción."
         },
+        "spcapital-credit": {
+          "description": "Módulo de análisis de crédito de una securitizadora de FIDC: score por pilares de riesgo, motores de análisis que consultan burós y leen documentos, mapa de grupo económico, dictamen y acta de comité en PDF.",
+          "role": "Ingeniero de Software. Desarrollé el módulo de punta a punta en React y NestJS: las rondas de motores que el analista inicia y detiene, la actualización paga de consulta, la pista de auditoría y los informes del comité."
+        },
+        "spcapital-receipts": {
+          "description": "Automatización que captura comprobantes de entrega en un portal de terceros, valida cada uno con IA y da de baja en el ERP financiero, derivando a revisión humana lo que el modelo rechaza.",
+          "role": "Ingeniero de Software. Escribí el scraper en TypeScript, la cola y el worker en la plataforma, la validación con IA con fallback de modelo, la capa de acceso al ERP y los simuladores usados en las pruebas de extremo a extremo."
+        },
         "postpay-platform": {
           "description": "Los servicios que corren detrás de una fintech de pagos: cuentas e identidad, billetera, pedidos, cobros, liquidaciones y documentos fiscales, conectados directo con los bancos socios.",
           "role": "Desarrollador full stack, en el backend. Escribí servicios en NestJS y en Java con Spring Boot, me ocupé de la comunicación entre ellos con gRPC y RabbitMQ y de la operación en Docker."
@@ -489,14 +498,30 @@
   },
   "technologies": {
     "title": "Mis tecnologías",
-    "description": "Stack que uso en el día a día, del frontend al mobile, backend, datos, infra y herramientas de entrega.",
+    "description": "Stack que uso en el día a día, con foco en IA aplicada, del frontend al mobile, backend, datos, infra y herramientas de entrega.",
     "frontend": "Frontend",
     "backend": "Backend",
-    "mobile": "Mobile",
+    "mobile": "Mobile y escritorio",
     "database": "Bases de datos",
     "infrastructure": "Infraestructura",
     "apps": "Apps",
-    "others": "Otros"
+    "others": "Otros",
+    "ai": {
+      "title": "IA y agentes",
+      "description": "Uso IA en dos lugares: en el desarrollo, con agentes de código y flujo spec-driven, y dentro de productos en producción, donde los modelos leen documentos y validan comprobantes con revisión humana.",
+      "tools-label": "Herramientas y modelos",
+      "practices-label": "Cómo la aplico",
+      "practices": {
+        "spec-driven": "Spec-driven development",
+        "orchestration": "Enrutamiento entre modelos",
+        "context": "Contexto versionado en el repositorio",
+        "mcp": "Herramientas por MCP",
+        "documents": "Lectura de documentos con IA",
+        "validation": "Validación con IA y revisión humana",
+        "review": "Revisión humana en el merge",
+        "scraping": "Scrapers y automatización de portales"
+      }
+    }
   },
   "meta": {
     "home": {
@@ -513,7 +538,7 @@
     },
     "technologies": {
       "title": "Tecnologías",
-      "description": "Stack y herramientas que usa Marcelo Mafra en el día a día de la ingeniería de software."
+      "description": "Stack de Marcelo Mafra con foco en IA aplicada y agentes, TypeScript, NestJS, Java, Next.js, React Native e infraestructura."
     },
     "contact": {
       "title": "Contacto",

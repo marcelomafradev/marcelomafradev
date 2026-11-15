@@ -56,7 +56,8 @@
       "cta-secondary": "Get in touch",
       "location": "Florianópolis, Brazil · Remote",
       "stack-link": "See the full stack",
-      "cta-services": "View services"
+      "cta-services": "View services",
+      "companies-label": "Recent work"
     },
     "metrics": {
       "title": "The scale of what I have shipped",
@@ -318,6 +319,14 @@
           "description": "My own product, in production. A management platform for gyms and dance schools with enrollments, classes, graduation events, recurring billing, a graduation-night POS and a public website per school, on a subdomain or custom domain.",
           "role": "Founder and engineer. From the billing model to deployment: a NestJS API, three Next.js applications, multi-tenant PostgreSQL and the production operation."
         },
+        "spcapital-credit": {
+          "description": "Credit analysis module for an FIDC securitization company: a score by risk pillars, analysis engines that query bureaus and read documents, an economic group map, and committee opinions and minutes as PDFs.",
+          "role": "Software Engineer. I built the module end to end in React and NestJS: the engine rounds the analyst starts and stops, the paid bureau refresh, the audit trail and the committee reports."
+        },
+        "spcapital-receipts": {
+          "description": "Automation that captures delivery receipts from a third-party portal, validates each one with AI and writes it off in the financial ERP, sending to human review whatever the model refuses.",
+          "role": "Software Engineer. I wrote the TypeScript scraper, the queue and worker on the platform, the AI validation with model fallback, the ERP access layer and the simulators used in the end-to-end tests."
+        },
         "postpay-platform": {
           "description": "The services running behind a payments fintech: accounts and identity, wallet, orders, charges, settlements, and tax documents, wired straight into partner banks.",
           "role": "Full stack developer working on the backend. I wrote services in NestJS and in Java with Spring Boot, handled how they talk to each other over gRPC and RabbitMQ, and ran them in Docker."
@@ -489,14 +498,30 @@
   },
   "technologies": {
     "title": "My technologies",
-    "description": "Stack I use day to day, from frontend to mobile, backend, data, infra, and delivery tooling.",
+    "description": "Stack I use day to day, with a focus on applied AI, from frontend to mobile, backend, data, infra, and delivery tooling.",
     "frontend": "Frontend",
     "backend": "Backend",
-    "mobile": "Mobile",
+    "mobile": "Mobile and desktop",
     "database": "Databases",
     "infrastructure": "Infrastructure",
     "apps": "Apps",
-    "others": "Other"
+    "others": "Other",
+    "ai": {
+      "title": "AI and agents",
+      "description": "I use AI in two places: in development, with coding agents and a spec-driven flow, and inside production products, where models read documents and validate receipts with human review.",
+      "tools-label": "Tools and models",
+      "practices-label": "How I apply it",
+      "practices": {
+        "spec-driven": "Spec-driven development",
+        "orchestration": "Routing across models",
+        "context": "Versioned context in the repository",
+        "mcp": "Tooling over MCP",
+        "documents": "Reading documents with AI",
+        "validation": "AI validation with human review",
+        "review": "Human review at the merge",
+        "scraping": "Scrapers and portal automation"
+      }
+    }
   },
   "meta": {
     "home": {
@@ -513,7 +538,7 @@
     },
     "technologies": {
       "title": "Technologies",
-      "description": "Tools and technologies Marcelo Mafra uses in day-to-day software engineering."
+      "description": "Marcelo Mafra's stack with a focus on applied AI and agents, TypeScript, NestJS, Java, Next.js, React Native and infrastructure."
     },
     "contact": {
       "title": "Contact",
