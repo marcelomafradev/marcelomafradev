@@ -13,9 +13,9 @@ export const BottomTabs = () => {
   return (
     <nav
       aria-label={t('tabs-label')}
-      className="border-border/70 bg-background/90 fixed inset-x-0 bottom-0 z-50 border-t pb-[env(safe-area-inset-bottom)] backdrop-blur-md"
+      className="border-border/60 bg-background/70 fixed inset-x-3 bottom-[max(0.75rem,env(safe-area-inset-bottom))] z-50 mx-auto max-w-md rounded-3xl border shadow-lg shadow-black/20 backdrop-blur-xl backdrop-saturate-150"
     >
-      <ul className="flex h-14 items-stretch">
+      <ul className="flex h-14 items-stretch px-1">
         {BOTTOM_TAB_ITEMS.map(({ id, icon: Icon, href }) => {
           const active = pathname === href;
 
@@ -25,7 +25,7 @@ export const BottomTabs = () => {
                 href={href as HrefValue}
                 aria-current={active ? 'page' : undefined}
                 className={cn(
-                  'flex h-full flex-col items-center justify-center gap-1 px-1 transition-colors',
+                  'flex h-full flex-col items-center justify-center gap-1 rounded-2xl px-1 transition-colors',
                   active
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground',
