@@ -99,4 +99,28 @@ describe('HomeTemplate', () => {
       screen.getByRole('heading', { name: 'Sobre mim' }),
     ).toBeInTheDocument();
   });
+
+  it('places the services heading before experiences and experiences before projects', async () => {
+    const { HomeTemplate } =
+      await import('@/components/templates/home-template');
+
+    renderWithProviders(<HomeTemplate />);
+
+    const services = screen.getByRole('heading', {
+      name: ptBr.homepage.services.title,
+    });
+    const experiences = screen.getByRole('heading', {
+      name: ptBr.homepage.experiences.title,
+    });
+    const projects = screen.getByRole('heading', {
+      name: ptBr.homepage.projects.title,
+    });
+
+    expect(services.compareDocumentPosition(experiences)).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING,
+    );
+    expect(experiences.compareDocumentPosition(projects)).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING,
+    );
+  });
 });

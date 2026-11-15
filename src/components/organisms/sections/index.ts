@@ -6,3 +6,4 @@ export * from './hero';
 export * from './projects';
 export * from './proof-metrics';
 export * from './resume-about-me';
+export * from './services-preview';

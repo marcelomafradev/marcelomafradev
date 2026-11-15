@@ -1,6 +1,7 @@
 import {
   ResumeAboutMe,
   AiWorkflow,
+  ServicesPreview,
   Experiences,
   Projects,
   Education,
@@ -17,9 +18,10 @@ export const HomeTemplate = () => {
       <ProofMetrics />
       <CaseStudies />
       <AiWorkflow />
+      <ServicesPreview />
       <Separator className="bg-border/50" />
-      <Projects />
       <Experiences />
+      <Projects />
       <Education />
       <ResumeAboutMe />
     </div>
