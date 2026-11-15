@@ -58,23 +58,23 @@
     },
     "metrics": {
       "title": "The scale of what I have shipped",
-      "description": "Numbers from systems in production.",
+      "description": "In numbers, what is already live.",
       "items": {
         "services": {
           "label": "services in production",
-          "description": "Node/NestJS and Java/Spring microservices, with separate gateways per audience."
+          "description": "Microservices in NestJS and Java/Spring, with a separate gateway for each audience."
         },
         "apps": {
           "label": "mobile apps shipped",
-          "description": "Android and iOS, including a white-label multi-tenant line with OTA updates."
+          "description": "Android and iOS in the stores, including a multi-tenant white-label line with OTA updates."
         },
         "monorepos": {
           "label": "Turborepo monorepos",
-          "description": "With a design system, shared contracts, and quality pipelines."
+          "description": "With a design system, shared contracts and CI running lint, typecheck and tests."
         },
         "sectors": {
           "label": "industries served",
-          "description": "Payments fintech, capital markets, edtech and B2B SaaS."
+          "description": "Payments, capital markets, education and B2B SaaS."
         }
       }
     },

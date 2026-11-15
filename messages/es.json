@@ -58,23 +58,23 @@
     },
     "metrics": {
       "title": "La escala de lo que ya entregué",
-      "description": "Números de sistemas reales en producción, no de proyectos de estudio.",
+      "description": "En números, lo que ya está en producción.",
       "items": {
         "services": {
           "label": "servicios en producción",
-          "description": "Microservicios Node/NestJS y Java/Spring, con gateways separados por audiencia."
+          "description": "Microservicios en NestJS y Java/Spring, con un gateway separado para cada público."
         },
         "apps": {
           "label": "apps móviles entregadas",
-          "description": "Android e iOS, incluida una línea white-label multi-tenant con actualizaciones OTA."
+          "description": "Android e iOS en las tiendas, incluida una línea white-label multi-tenant con actualización OTA."
         },
         "monorepos": {
           "label": "monorepos Turborepo",
-          "description": "Con design system, contratos compartidos y pipelines de calidad."
+          "description": "Con design system, contratos compartidos y CI con lint, typecheck y pruebas."
         },
         "sectors": {
           "label": "sectores atendidos",
-          "description": "Fintech de pagos, mercado de capitales, edtech y SaaS B2B."
+          "description": "Pagos, mercado de capitales, educación y SaaS B2B."
         }
       }
     },
