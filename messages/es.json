@@ -9,7 +9,8 @@
       "email": "Email",
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "instagram": "Instagram"
+      "instagram": "Instagram",
+      "services": "Servicios"
     },
     "nothing-playing": "Nada reproduciéndose ahora",
     "listening-now": "Escuchando ahora",
@@ -397,6 +398,11 @@
           }
         }
       }
+    },
+    "services": {
+      "title": "Cómo puedo ayudar",
+      "description": "Cuatro formas de trabajar conmigo, a través de Mafradev, mi empresa de software.",
+      "cta": "Ver servicios"
     }
   },
   "about": {
@@ -494,6 +500,10 @@
     "contact": {
       "title": "Contacto",
       "description": "Habla con Marcelo Mafra sobre arquitectura, plataformas y desarrollo de productos web y móviles."
+    },
+    "services": {
+      "title": "Servicios",
+      "description": "Contrata a Marcelo Mafra a través de Mafradev: arquitectura y liderazgo técnico, desarrollo de productos a medida, modernización de plataformas e ingeniería con IA."
     }
   },
   "contact": {
@@ -539,6 +549,58 @@
     "tagline": "Arquitectura, producto y entrega.",
     "cta": "Hablemos",
     "rights": "Todos los derechos reservados.",
-    "built-with": "Construido con Next.js, Tailwind CSS y Base UI."
+    "built-with": "Construido con Next.js, Tailwind CSS y Base UI.",
+    "tax-id": "CNPJ"
+  },
+  "services": {
+    "title": "Trabaja conmigo",
+    "description": "Trabajo a través de Mafradev, mi empresa de desarrollo de software. Proyectos cerrados, consultoría técnica y liderazgo de ingeniería, con contrato y factura.",
+    "offerings": {
+      "title": "Qué hago",
+      "architecture": {
+        "title": "Arquitectura y liderazgo técnico",
+        "description": "Diseño de arquitectura, definición de estándares y acompañamiento de equipos para sistemas que deben escalar sin convertirse en deuda técnica."
+      },
+      "product": {
+        "title": "Productos a medida",
+        "description": "Del diseño a la app en la tienda: back ends en NestJS y Java, paneles en Next.js y apps en React Native."
+      },
+      "platform": {
+        "title": "Modernización y plataformas",
+        "description": "División de monolitos en servicios, integraciones bancarias y arquitectura multi-tenant, con contratos tipados y CI/CD."
+      },
+      "ai": {
+        "title": "Ingeniería con IA",
+        "description": "Adopción de flujos con IA en el equipo: especificación, TDD y revisión asistidos, aplicados a productos reales."
+      }
+    },
+    "process": {
+      "title": "Cómo trabajamos",
+      "discover": {
+        "title": "Entendimiento",
+        "description": "Conversación sobre el problema, el plazo y las restricciones. Salgo con el alcance y los riesgos claros."
+      },
+      "design": {
+        "title": "Arquitectura y plan",
+        "description": "Propuesta técnica con decisiones justificadas, entregas por etapas y criterios de aceptación."
+      },
+      "deliver": {
+        "title": "Entrega continua",
+        "description": "Código probado, despliegue automatizado y seguimiento cercano hasta llegar a producción."
+      }
+    },
+    "company": {
+      "title": "Datos de la empresa",
+      "legal-name": "Razón social",
+      "tax-id": "CNPJ (identificación fiscal de Brasil)",
+      "activities-label": "Actividades",
+      "activities": "Desarrollo de software a medida, desarrollo y licenciamiento de software personalizable, consultoría en tecnología de la información, soporte técnico y mantenimiento."
+    },
+    "cta": {
+      "title": "¿Hablamos?",
+      "description": "Cuéntame qué hay que construir. Respondo en un día hábil con los próximos pasos.",
+      "contact": "Hablemos",
+      "resume": "Descargar currículum"
+    }
   }
 }

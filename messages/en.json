@@ -9,7 +9,8 @@
       "email": "Email",
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "instagram": "Instagram"
+      "instagram": "Instagram",
+      "services": "Services"
     },
     "nothing-playing": "Nothing playing now",
     "listening-now": "Listening now",
@@ -397,6 +398,11 @@
           }
         }
       }
+    },
+    "services": {
+      "title": "How I can help",
+      "description": "Four ways to work with me, through Mafradev, my software company.",
+      "cta": "View services"
     }
   },
   "about": {
@@ -494,6 +500,10 @@
     "contact": {
       "title": "Contact",
       "description": "Talk to Marcelo Mafra about architecture, platforms, and web and mobile product development."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Hire Marcelo Mafra through Mafradev: architecture and technical leadership, custom product development, platform modernization and AI-assisted engineering."
     }
   },
   "contact": {
@@ -539,6 +549,58 @@
     "tagline": "Architecture, product, and delivery.",
     "cta": "Get in touch",
     "rights": "All rights reserved.",
-    "built-with": "Built with Next.js, Tailwind CSS, and Base UI."
+    "built-with": "Built with Next.js, Tailwind CSS, and Base UI.",
+    "tax-id": "CNPJ"
+  },
+  "services": {
+    "title": "Work with me",
+    "description": "I work through Mafradev, my software development company. Fixed-scope projects, technical consulting and engineering leadership, under contract with invoicing.",
+    "offerings": {
+      "title": "What I do",
+      "architecture": {
+        "title": "Architecture and technical leadership",
+        "description": "Architecture design, standards and team guidance for systems that must scale without turning into technical debt."
+      },
+      "product": {
+        "title": "Custom product development",
+        "description": "From the sketch to the app in the store: NestJS and Java back ends, Next.js consoles and React Native apps."
+      },
+      "platform": {
+        "title": "Modernization and platforms",
+        "description": "Splitting monoliths into services, banking integrations and multi-tenant architecture, with typed contracts and CI/CD."
+      },
+      "ai": {
+        "title": "AI-assisted engineering",
+        "description": "Bringing AI workflows into the team: assisted specification, TDD and review, applied to real products."
+      }
+    },
+    "process": {
+      "title": "How we work",
+      "discover": {
+        "title": "Discovery",
+        "description": "A conversation about the problem, the deadline and the constraints. I leave with clear scope and risks."
+      },
+      "design": {
+        "title": "Architecture and plan",
+        "description": "A technical proposal with justified decisions, staged deliveries and acceptance criteria."
+      },
+      "deliver": {
+        "title": "Continuous delivery",
+        "description": "Tested code, automated deploys and close follow-up until it reaches production."
+      }
+    },
+    "company": {
+      "title": "Company details",
+      "legal-name": "Legal name",
+      "tax-id": "CNPJ (Brazilian tax ID)",
+      "activities-label": "Activities",
+      "activities": "Custom software development, customizable software development and licensing, information technology consulting, technical support and maintenance."
+    },
+    "cta": {
+      "title": "Shall we talk?",
+      "description": "Tell me what needs to be built. I reply within one business day with next steps.",
+      "contact": "Get in touch",
+      "resume": "Download resume"
+    }
   }
 }
