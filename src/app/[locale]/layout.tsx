@@ -19,6 +19,7 @@ import {
   localizedPath,
   localizedUrl,
 } from '@/lib/site';
+import { buildStructuredData } from '@/lib/structured-data';
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 
@@ -90,32 +91,12 @@ export async function generateMetadata({
 }
 
 function JsonLd() {
-  const data = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        name: 'Marcelo Mafra',
-        url: SITE_URL,
-      },
-      {
-        '@type': 'Person',
-        name: 'Marcelo Mafra',
-        url: SITE_URL,
-        jobTitle: 'Tech Lead / Full Stack Engineer',
-        image: `${SITE_URL}/me.webp`,
-        sameAs: [
-          'https://github.com/marcelomafradev',
-          'https://www.linkedin.com/in/marcelomafradev',
-        ],
-      },
-    ],
-  };
-
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(buildStructuredData()),
+      }}
     />
   );
 }
