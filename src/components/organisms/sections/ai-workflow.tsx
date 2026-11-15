@@ -12,15 +12,18 @@ export const AiWorkflow = () => {
       <PageHeading as="h2" title={t('title')} description={t('description')} />
 
       <div className="grid grid-cols-[minmax(0,1fr)] gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {AI_WORKFLOW_PILLARS.map(({ id, icon: Icon }) => (
+        {AI_WORKFLOW_PILLARS.map(({ id }, index) => (
           <Card
             key={id}
             className="border-border/60 bg-card/60 hover:border-primary/40 flex flex-col transition-colors duration-200"
           >
             <CardHeader className="space-y-3">
               <div className="flex items-center gap-3">
-                <span className="border-border/70 text-muted-foreground flex size-11 shrink-0 items-center justify-center rounded-xl border">
-                  <Icon className="size-5" />
+                <span
+                  aria-hidden
+                  className="numeric text-primary border-border/70 flex size-11 shrink-0 items-center justify-center rounded-xl border text-sm font-medium"
+                >
+                  {String(index + 1).padStart(2, '0')}
                 </span>
 
                 <h3 className="text-balance text-base font-semibold leading-snug tracking-tight">

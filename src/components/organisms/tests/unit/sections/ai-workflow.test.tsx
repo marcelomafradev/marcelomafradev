@@ -51,4 +51,32 @@ describe('AiWorkflow', () => {
       screen.getByText(/Apliquei isso em produto real/),
     ).toBeInTheDocument();
   });
+
+  it('numbers the pillars from 01 to 06 in order', () => {
+    const { container } = renderWithProviders(<AiWorkflow />);
+
+    const cards = Array.from(
+      (container.querySelector('.grid') as HTMLElement).children,
+    ) as HTMLElement[];
+
+    expect(cards).toHaveLength(6);
+
+    cards.forEach((card, index) => {
+      expect(card.firstElementChild).toHaveTextContent(
+        String(index + 1).padStart(2, '0'),
+      );
+    });
+  });
+
+  it('drops the icon toppers from the card headers', () => {
+    const { container } = renderWithProviders(<AiWorkflow />);
+
+    const cards = Array.from(
+      (container.querySelector('.grid') as HTMLElement).children,
+    ) as HTMLElement[];
+
+    for (const card of cards) {
+      expect(card.firstElementChild?.querySelector('svg')).toBeNull();
+    }
+  });
 });
