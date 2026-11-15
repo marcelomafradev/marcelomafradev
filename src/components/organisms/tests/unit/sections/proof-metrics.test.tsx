@@ -42,6 +42,16 @@ describe('ProofMetrics', () => {
     expect(screen.getByText(metricItems.monorepos.label)).toBeInTheDocument();
   });
 
+  it('renders fifty or more back-end services in the services metric', () => {
+    renderWithProviders(<ProofMetrics />);
+
+    const services = METRICS.find((metric) => metric.id === 'services');
+
+    expect(services?.value).toBe('50');
+    expect(screen.getByText('50')).toBeInTheDocument();
+    expect(screen.getByText(metricItems.services.label)).toBeInTheDocument();
+  });
+
   it('renders the label and description of every metrics item', () => {
     renderWithProviders(<ProofMetrics />);
 

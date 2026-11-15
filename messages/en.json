@@ -61,7 +61,7 @@
       "description": "In numbers, what is already live.",
       "items": {
         "services": {
-          "label": "services in production",
+          "label": "back-end services",
           "description": "Microservices in NestJS and Java/Spring, with a separate gateway for each audience."
         },
         "apps": {
@@ -96,7 +96,7 @@
         },
         "payments": {
           "sector": "Payments fintech",
-          "title": "A payments platform with 21 services",
+          "title": "A payments platform with 22 services",
           "summary": "A payments system split into Node and Java services, wired straight into partner banks, with web and mobile products running on top of those same services.",
           "highlights": {
             "1": "Domain split into independent services (IAM, wallet, orders, payments, receivables, tax, notifications) with distinct gateways for the admin console and the end customer.",

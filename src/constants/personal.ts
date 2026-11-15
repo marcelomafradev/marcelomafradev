@@ -37,7 +37,7 @@ export const PERSONAL_INFO = {
 };
 
 export const METRICS = [
-  { id: 'services', value: '21', accent: '+' },
+  { id: 'services', value: '50', accent: '+' },
   { id: 'apps', value: '6' },
   { id: 'monorepos', value: '8' },
   { id: 'sectors', value: '4' },

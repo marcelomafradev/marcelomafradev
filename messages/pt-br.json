@@ -61,7 +61,7 @@
       "description": "Em números, o que já está no ar.",
       "items": {
         "services": {
-          "label": "serviços em produção",
+          "label": "serviços de back-end",
           "description": "Microsserviços em NestJS e Java/Spring, com um gateway separado para cada público."
         },
         "apps": {
@@ -96,7 +96,7 @@
         },
         "payments": {
           "sector": "Fintech de pagamentos",
-          "title": "Plataforma de pagamentos com 21 serviços",
+          "title": "Plataforma de pagamentos com 22 serviços",
           "summary": "Sistema financeiro dividido em serviços em Node e Java, com integração direta nos bancos parceiros e produtos web e mobile rodando sobre os mesmos serviços.",
           "highlights": {
             "1": "Domínio quebrado em serviços independentes (IAM, carteira, pedidos, pagamentos, recebimentos, fiscal, notificações) com gateways distintos para o painel administrativo e para o cliente final.",

@@ -106,4 +106,14 @@ describe('CaseStudies', () => {
     expect(within(cards[0]).getByText('Claude API')).toBeInTheDocument();
     expect(within(cards[0]).getByText('SQL Server')).toBeInTheDocument();
   });
+
+  it('states the 22 services of the payments platform in its title', () => {
+    const { container } = renderWithProviders(<CaseStudies />);
+
+    const cards = cardsIn(container.querySelector('.grid') as HTMLElement);
+
+    expect(
+      within(cards[1]).getByRole('heading', { level: 3 }),
+    ).toHaveTextContent(/\b22\b/);
+  });
 });

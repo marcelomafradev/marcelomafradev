@@ -61,7 +61,7 @@
       "description": "En números, lo que ya está en producción.",
       "items": {
         "services": {
-          "label": "servicios en producción",
+          "label": "servicios de back-end",
           "description": "Microservicios en NestJS y Java/Spring, con un gateway separado para cada público."
         },
         "apps": {
@@ -96,7 +96,7 @@
         },
         "payments": {
           "sector": "Fintech de pagos",
-          "title": "Plataforma de pagos con 21 servicios",
+          "title": "Plataforma de pagos con 22 servicios",
           "summary": "Sistema de pagos dividido en servicios en Node y Java, con integración directa con los bancos socios y productos web y móviles sobre esos mismos servicios.",
           "highlights": {
             "1": "Dominio dividido en servicios independientes (IAM, billetera, pedidos, pagos, cobros, fiscal, notificaciones) con gateways distintos para el panel administrativo y el cliente final.",
