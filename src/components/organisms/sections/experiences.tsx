@@ -15,6 +15,7 @@ import { Separator } from '@/components/ui/separator';
 import { cn } from '@/lib/utils';
 
 const VISIBLE_EXPERIENCES = 4;
+const VISIBLE_DETAILS = 4;
 
 export const Experiences = async () => {
   const t = await getTranslations('homepage.experiences');
@@ -68,6 +69,8 @@ export const Experiences = async () => {
         subtitle={t(`${position}.description`)}
         meta={workingTime || undefined}
         details={getExperienceDetails(t, position, detailsCount)}
+        visibleDetails={VISIBLE_DETAILS}
+        moreDetailsLabel={t('show-details')}
         leading={
           href ? (
             <Link href={href} type="external" className={logoClassName}>

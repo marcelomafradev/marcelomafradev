@@ -14,6 +14,8 @@ interface TimelineEntryProps {
   subtitle?: string;
   meta?: string;
   details?: string[];
+  visibleDetails?: number;
+  moreDetailsLabel?: string;
   leading?: ReactNode;
   className?: string;
 }
@@ -23,6 +25,8 @@ export const TimelineEntry = ({
   subtitle,
   meta,
   details = [],
+  visibleDetails,
+  moreDetailsLabel,
   leading,
   className,
 }: TimelineEntryProps) => {
@@ -57,7 +61,11 @@ export const TimelineEntry = ({
       </CardHeader>
       {details.length > 0 ? (
         <CardContent className="pt-0">
-          <DetailList items={details} />
+          <DetailList
+            items={details}
+            visibleCount={visibleDetails}
+            moreLabel={moreDetailsLabel}
+          />
         </CardContent>
       ) : null}
     </Card>

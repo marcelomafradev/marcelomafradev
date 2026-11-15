@@ -168,7 +168,9 @@ describe('Experiences', () => {
     const ui = await Experiences();
     render(ui);
 
-    const detailsElement = document.querySelector('details');
+    const detailsElement = screen
+      .getByText('Ver mais experiências')
+      .closest('details');
 
     expect(detailsElement).not.toBeNull();
 
@@ -187,5 +189,57 @@ describe('Experiences', () => {
         collapsible.queryByRole('heading', { name: title }),
       ).not.toBeInTheDocument();
     }
+  });
+
+  it('collapses the details past the first four behind a per-entry toggle', async () => {
+    const { Experiences } =
+      await import('@/components/organisms/sections/experiences');
+
+    const ui = await Experiences();
+    render(ui);
+
+    const getEntryCard = (name: string) => {
+      const heading = screen.getByRole('heading', { name });
+      const entries = heading.closest('div.space-y-3') as HTMLElement;
+      let card: HTMLElement = heading;
+
+      while (card.parentElement !== entries) {
+        card = card.parentElement as HTMLElement;
+      }
+
+      return card;
+    };
+
+    const spCapitalCard = getEntryCard('SP Capital');
+    const spCapitalDetails = spCapitalCard.querySelector(
+      'details',
+    ) as HTMLElement;
+
+    expect(spCapitalDetails).not.toBeNull();
+    expect(spCapitalDetails.querySelector('summary')).toHaveTextContent(
+      'Ver todos os detalhes',
+    );
+    expect(within(spCapitalCard).getAllByRole('listitem')).toHaveLength(7);
+    expect(within(spCapitalDetails).getAllByRole('listitem')).toHaveLength(3);
+
+    const spCapitalTranslate = createTranslator({
+      locale: 'pt-br',
+      messages: ptBr,
+      namespace: 'homepage.experiences',
+    });
+
+    for (const idx of ['5', '6', '7'] as const) {
+      expect(spCapitalDetails).toHaveTextContent(
+        spCapitalTranslate(`2.details.${idx}`),
+      );
+    }
+
+    for (const idx of ['1', '2', '3', '4'] as const) {
+      expect(spCapitalDetails).not.toHaveTextContent(
+        spCapitalTranslate(`2.details.${idx}`),
+      );
+    }
+
+    expect(getEntryCard('Ritmar').querySelector('details')).toBeNull();
   });
 });
