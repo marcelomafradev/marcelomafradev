@@ -2,7 +2,8 @@ import { AvailabilityBadge, Image, Link } from '@/components/atoms';
 import { StackTagList } from '@/components/molecules';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { HERO_STACK, PERSONAL_INFO } from '@/constants';
+import { HERO_COMPANIES, HERO_STACK, PERSONAL_INFO } from '@/constants';
+import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { ArrowRight, MapPin, Send } from 'lucide-react';
 
@@ -11,7 +12,7 @@ export const Hero = () => {
 
   return (
     <section className="border-border/60 bg-card relative overflow-hidden rounded-2xl border p-6 sm:p-8 md:p-10">
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] lg:items-center">
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_15rem] lg:items-center lg:gap-10">
         <div className="min-w-0 space-y-6">
           <div className="flex flex-wrap items-center gap-3">
             <AvailabilityBadge label={t('availability')} />
@@ -71,7 +72,7 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-4 lg:items-end">
-          <Avatar className="ring-border/70 size-44 rounded-3xl ring-1 sm:size-56 lg:size-64">
+          <Avatar className="ring-border/70 size-44 rounded-3xl ring-1 sm:size-52 lg:size-60">
             <AvatarImage
               src={PERSONAL_INFO.image}
               alt={PERSONAL_INFO.name}
@@ -80,9 +81,9 @@ export const Hero = () => {
                 <Image
                   src={PERSONAL_INFO.image}
                   alt={PERSONAL_INFO.name}
-                  width={256}
-                  height={256}
-                  sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 176px"
+                  width={240}
+                  height={240}
+                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 208px, 176px"
                   className="aspect-square size-full object-cover"
                   priority
                 />
@@ -104,6 +105,55 @@ export const Hero = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="border-border/60 mt-8 flex flex-col gap-3 border-t pt-5 sm:flex-row sm:items-center sm:gap-5">
+        <p className="eyebrow">{t('companies-label')}</p>
+
+        <ul className="flex flex-wrap items-center gap-x-5 gap-y-3">
+          {HERO_COMPANIES.map(({ href, logo, logoOnDark, title }) => {
+            const logoTile = (
+              <div
+                className={cn(
+                  'border-border/60 relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-lg border p-1.5',
+                  logoOnDark ? 'bg-neutral-900' : 'bg-white',
+                )}
+              >
+                <Image
+                  src={logo}
+                  alt={`${title} logo`}
+                  width={24}
+                  height={24}
+                  className="size-full object-contain"
+                />
+              </div>
+            );
+
+            return (
+              <li key={title}>
+                {href ? (
+                  <Link
+                    type="external"
+                    href={href}
+                    className="hover:text-foreground flex items-center gap-2.5 transition-colors"
+                  >
+                    {logoTile}
+                    <span className="text-muted-foreground text-sm">
+                      {title}
+                    </span>
+                  </Link>
+                ) : (
+                  <div className="flex items-center gap-2.5">
+                    {logoTile}
+                    <span className="text-muted-foreground text-sm">
+                      {title}
+                    </span>
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );
