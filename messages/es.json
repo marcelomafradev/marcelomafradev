@@ -47,14 +47,16 @@
   },
   "homepage": {
     "hero": {
-      "availability": "Disponible para nuevos proyectos",
-      "role": "Tech Lead · Full Stack · Arquitectura",
+      "availability": "Abierto a contratos y puestos de liderazgo",
+      "role": "Tech Lead · Arquitectura e IA aplicada",
       "headline": "Construyo plataformas completas,",
       "headline-highlight": "no solo pantallas.",
       "description": "Trabajo desde el diseño de la arquitectura hasta la app en la tienda: servicios en NestJS y Java, apps en React Native, paneles en Next.js y la infraestructura que sostiene todo eso.",
       "cta-primary": "Ver case studies",
       "cta-secondary": "Hablemos",
-      "location": "Florianópolis, Brasil · Remoto"
+      "location": "Florianópolis, Brasil · Remoto",
+      "stack-link": "Ver el stack completo",
+      "cta-services": "Trabaja conmigo"
     },
     "metrics": {
       "title": "La escala de lo que ya entregué",
@@ -74,7 +76,7 @@
         },
         "sectors": {
           "label": "sectores atendidos",
-          "description": "Fintech de pagos, edtech y SaaS B2B."
+          "description": "Fintech de pagos, mercado de capitales, edtech y SaaS B2B."
         }
       }
     },
@@ -126,7 +128,7 @@
         },
         "ritmar": {
           "sector": "SaaS para escuelas de danza",
-          "title": "Ritmar — gestión multi-tenant para academias",
+          "title": "Ritmar: gestión multi-tenant para academias",
           "summary": "Producto propio, de cero a producción: matrículas, clases, graduaciones, cobro recurrente y punto de venta, con un sitio público por escuela.",
           "highlights": {
             "1": "Cobro recurrente por Pix y tarjeta con un gateway por escuela, webhooks idempotentes, conciliación y registro de auditoría.",
@@ -138,21 +140,21 @@
     },
     "ai-workflow": {
       "title": "IA en el flujo de ingeniería",
-      "description": "Trabajo AI-first. No es autocompletado más rápido: es el proceso de ingeniería rediseñado en torno a agentes, con el mismo rigor que se exige a cualquier sistema en producción.",
+      "description": "Trabajo con la IA en el centro del proceso. El flujo de ingeniería gira en torno a agentes y recibe el mismo rigor que cualquier sistema en producción.",
       "items": {
         "spec-driven": {
           "title": "Spec y plan antes del código",
-          "description": "Todo cambio relevante empieza por una spec que fija el problema, las restricciones y el criterio de aceptación, y por un plan dividido en tareas verificables, cada una con su prueba. Una spec ambigua es un bug de requisitos: sale más barato arreglarlo ahí que treinta archivos después.",
+          "description": "Todo cambio relevante empieza por una spec con el problema, las restricciones y el criterio de aceptación, y por un plan dividido en tareas verificables, cada una con su prueba. Arreglar una spec ambigua cuesta menos que arreglar treinta archivos después.",
           "tag": "Spec-driven development"
         },
         "orchestration": {
           "title": "Cada fase en el modelo adecuado",
-          "description": "Planificar, implementar, depurar y revisar son trabajos distintos, y los modelos no son igual de buenos en los cuatro. Cada fase va al que mejor rinde en ella, y quien escribe el plan no es quien implementa. La ejecución es secuencial y aislada: una tarea a la vez, en su propia rama.",
+          "description": "Planificar, implementar, depurar y revisar piden modelos distintos. Cada fase va al modelo que mejor rinde en ella, y quien escribe el plan no implementa. La ejecución es secuencial: una tarea a la vez, en su propia rama.",
           "tag": "Orquestación entre modelos"
         },
         "context": {
           "title": "Estándar del proyecto versionado",
-          "description": "Las convenciones de módulo, log y prueba viven en el repositorio como instrucción ejecutable, revisadas en PR como cualquier otra cosa. Un agente nuevo hereda la regla en vez de adivinar; cuando cambia, cambia para todos en el mismo commit.",
+          "description": "Las convenciones de módulo, log y prueba viven en el repositorio como instrucción ejecutable y pasan por PR como cualquier código. Un agente nuevo hereda la regla en vez de adivinar, y cuando cambia, cambia para todos en el mismo commit.",
           "tag": "Contexto en el repositorio"
         },
         "tooling": {
@@ -162,29 +164,26 @@
         },
         "verification": {
           "title": "Evidencia antes de afirmar",
-          "description": "Prueba que falla antes de la implementación; lint, typecheck, cobertura y end-to-end en CI como puerta objetiva. Una prueba que depende del tiempo o que verifica implementación en vez de comportamiento se rehace, nunca se marca como inestable y se ignora.",
+          "description": "La prueba falla antes de la implementación, y lint, typecheck, cobertura y end-to-end en CI hacen de puerta. Una prueba que depende del tiempo o verifica implementación en vez de comportamiento se rehace, nunca se marca como inestable.",
           "tag": "TDD y CI"
         },
         "review": {
           "title": "Revisión humana en el merge",
-          "description": "Leo todo lo que vuelve antes de abrir el PR. El agente acelera la producción de código y, con ella, la de código equivocado: la ganancia está en las puertas que lo detectan temprano, no en confiar más.",
+          "description": "Leo todo lo que el agente devuelve antes de abrir el PR. El agente acelera la producción de código y también la de código equivocado. La ganancia está en las puertas que lo detectan temprano.",
           "tag": "Puerta del merge"
         }
       },
-      "footnote": "Aplicado a producto real, no a demostraciones: así llevé a un squad de seis personas a un flujo spec-driven en edtech, y así construyo hoy una plataforma SaaS de microservicios para el sector inmobiliario."
+      "footnote": "Lo apliqué a producto real: llevé a un squad de seis personas a un flujo spec-driven en edtech y hoy construyo una plataforma SaaS de microservicios para el sector inmobiliario."
     },
     "personal-info": {
       "title": "Tech Lead / Desarrollador Full Stack | TypeScript"
     },
     "resume-about-me": {
       "title": "Sobre mí",
-      "description": "Tech Lead y desarrollador full stack, con trabajo en edtech, SaaS y fintech. Lidero las decisiones de arquitectura y acompaño el producto hasta que está publicado, con TypeScript, NestJS, Next.js y React Native. Me gustan los sistemas multi-tenant, el código que el equipo puede mantener y hablar con quien cuida del negocio — siempre con cuidado con la información confidencial del cliente.",
+      "description": "Tech Lead y desarrollador full stack, con trabajo en edtech, SaaS y fintech. Lidero las decisiones de arquitectura y acompaño el producto hasta que está publicado, con TypeScript, NestJS, Next.js y React Native. Me gustan los sistemas multi-tenant, el código que el equipo puede mantener y hablar con quien cuida del negocio, siempre con cuidado con la información confidencial del cliente.",
       "cta": "Ver más"
     },
     "experiences": {
-      "title": "Experiencia",
-      "cta": "Contrátame",
-      "view-resume": "Ver currículum completo",
       "1": {
         "title": "Onilearning",
         "description": "Tech Lead / Desarrollador Full Stack · Autónomo",
@@ -200,6 +199,20 @@
         }
       },
       "2": {
+        "title": "SP Capital",
+        "description": "Ingeniero de Software · FIDC y titulización",
+        "workingTime": "",
+        "details": {
+          "1": "Evolución de una plataforma web interna en monorepo (TypeScript, React, NestJS, Prisma y PostgreSQL), con migración gradual del backend legado en Express a NestJS.",
+          "2": "Automatización de procesos con n8n: workflows versionados en un repositorio y promovidos entre entornos de desarrollo y producción.",
+          "3": "Robots de RPA que consolidan datos operativos en hojas de cálculo e informes, incluida la generación semanal de una presentación gerencial con validación automática.",
+          "4": "Migración de un ERP de terceros para el mercado financiero, de un SQL Server alojado fuera a infraestructura interna, con optimización de índices y vistas de integración sin tocar el esquema del proveedor.",
+          "5": "Gobernanza en Jira: proyecto maestro que unifica tarjetas de varios proyectos, con automatizaciones, informes y trazabilidad de la tarjeta al PR.",
+          "6": "Pruebas de extremo a extremo con Playwright, ejecutadas por entorno (local, desarrollo, homologación y producción).",
+          "7": "Flujo de ingeniería con agentes de IA: política compartida para Claude y Codex, revisión independiente del diff y hooks que bloquean la fuga de secretos."
+        }
+      },
+      "3": {
         "title": "Comvanilla",
         "description": "Desarrollador Full Stack · Autónomo",
         "workingTime": "Oct 2025 – Actualidad · Remoto",
@@ -213,7 +226,7 @@
           "7": "Calidad y DX en monorepo (pnpm y Turborepo): pruebas, code review y estandarización."
         }
       },
-      "3": {
+      "4": {
         "title": "Ritmar",
         "description": "Fundador e Ingeniero de Software · Producto propio",
         "workingTime": "Abr 2026 – Actualidad · Remoto",
@@ -224,7 +237,7 @@
           "4": "Monorepo con API en NestJS y tres aplicaciones Next.js; despliegue en Docker con pruebas unitarias y end-to-end en CI."
         }
       },
-      "4": {
+      "5": {
         "title": "Postpay",
         "description": "Desarrollador Full Stack · Autónomo",
         "workingTime": "Dic 2022 – Oct 2025 · Remoto",
@@ -238,7 +251,7 @@
           "7": "CI/CD y operación con Docker, PM2, GitHub Actions y EAS; revisiones y pruebas en monorepo."
         }
       },
-      "5": {
+      "6": {
         "title": "Griebler Remodeling",
         "description": "Desarrollador Full Stack · Freelance",
         "workingTime": "Ene 2024 – Feb 2024 · Remoto (EE. UU.)",
@@ -249,7 +262,7 @@
           "4": "Internacionalización (i18n) y autenticación con Google para el flujo de reseñas."
         }
       },
-      "6": {
+      "7": {
         "title": "Mince Joias",
         "description": "Desarrollador Full Stack · Freelance",
         "workingTime": "Ago 2023 – Sep 2023 · Remoto",
@@ -260,7 +273,11 @@
           "4": "Enfoque en rendimiento de vitrina y conversión.",
           "5": "Entrega end-to-end freelance de la tienda digital."
         }
-      }
+      },
+      "cta": "Contrátame",
+      "title": "Experiencia",
+      "view-resume": "Ver currículum completo",
+      "show-more": "Ver más experiencia"
     },
     "projects": {
       "title": "Proyectos",
@@ -297,7 +314,7 @@
           "role": "Desarrollador full stack. Reparto el tiempo entre los servicios en NestJS que se comunican por gRPC, el modelado de datos y las pantallas en Next.js."
         },
         "ritmar": {
-          "description": "Mi producto propio, en producción: plataforma de gestión para academias y escuelas de danza — matrículas, clases, graduaciones, cobro recurrente, punto de venta de la noche de graduación y un sitio público por escuela, en subdominio o dominio propio.",
+          "description": "Mi producto propio, en producción. Plataforma de gestión para academias y escuelas de danza con matrículas, clases, graduaciones, cobro recurrente, punto de venta de la noche de graduación y un sitio público por escuela, en subdominio o dominio propio.",
           "role": "Fundador e ingeniero. Del modelo de cobro al despliegue: API en NestJS, tres aplicaciones Next.js, PostgreSQL multi-tenant y la operación en producción."
         },
         "postpay-platform": {
@@ -416,7 +433,7 @@
     },
     "personal-interests": {
       "title": "Fuera del teclado",
-      "description": "Me interesan la neurociencia, la filosofía y el desarrollo personal — libros que amplían cómo pienso sobre el cerebro, la existencia y el crecimiento. La música acompaña el ritmo del trabajo y del descanso. Ajedrez todos los días en Chess.com — hábito diario de cálculo y paciencia. En el tatami, el jiu-jitsu suma más de una década de entrenamiento y me llevó al cinturón marrón: disciplina, resiliencia y juego estratégico que también llevo a la ingeniería. Ya participé en cerca de 40 campeonatos.",
+      "description": "Me interesan la neurociencia, la filosofía y el desarrollo personal: libros que amplían cómo pienso sobre el cerebro, la existencia y el crecimiento. La música acompaña el ritmo del trabajo y del descanso. Ajedrez todos los días en Chess.com, hábito diario de cálculo y paciencia. En el tatami, el jiu-jitsu suma más de una década de entrenamiento y me llevó al cinturón marrón: disciplina, resiliencia y juego estratégico que también llevo a la ingeniería. Ya participé en cerca de 40 campeonatos.",
       "image-1": "Compitiendo en el Compnet de Gracie Barra (2023)",
       "image-2": "Recibiendo el cinturón morado del maestro <master>Andre \"Deco\" Rachadel</master>",
       "image-2-alt": "Recibiendo el cinturón morado del maestro Andre Deco Rachadel",
@@ -424,7 +441,7 @@
     },
     "chess": {
       "title": "Ajedrez todos los días",
-      "description": "Stats en vivo de Chess.com — rating rapid, marca y la racha de días.",
+      "description": "Stats en vivo de Chess.com: rating rapid, marca y la racha de días.",
       "streak": "Racha",
       "rapid": "Rapid",
       "record": "Marca en rapid",
@@ -441,7 +458,7 @@
     },
     "books": {
       "title": "Libros que recomiendo",
-      "description": "Lecturas que valen el tiempo — para estudiar, pensar y crecer.",
+      "description": "Lecturas que valen el tiempo, para estudiar, pensar y crecer.",
       "cover-alt": "Portada del libro recomendado"
     },
     "musics": {
@@ -471,7 +488,7 @@
   },
   "technologies": {
     "title": "Mis tecnologías",
-    "description": "Stack que uso en el día a día — del frontend al mobile, backend, datos, infra y herramientas de entrega.",
+    "description": "Stack que uso en el día a día, del frontend al mobile, backend, datos, infra y herramientas de entrega.",
     "frontend": "Frontend",
     "backend": "Backend",
     "mobile": "Mobile",
@@ -482,7 +499,7 @@
   },
   "meta": {
     "home": {
-      "title": "Marcelo Mafra — Tech Lead / Full Stack",
+      "title": "Marcelo Mafra | Tech Lead, Arquitectura e IA aplicada",
       "description": "Portfolio de Marcelo Mafra, Tech Lead e ingeniero full stack. Experiencia en edtech, SaaS y fintech con TypeScript, NestJS, Next.js y React Native."
     },
     "about": {
@@ -491,7 +508,7 @@
     },
     "projects": {
       "title": "Proyectos",
-      "description": "Proyectos seleccionados de Marcelo Mafra — productos web y mobile con TypeScript."
+      "description": "Proyectos seleccionados de Marcelo Mafra: productos web y mobile con TypeScript."
     },
     "technologies": {
       "title": "Tecnologías",
@@ -509,7 +526,7 @@
   "contact": {
     "title": "Hablemos",
     "description": "Cuéntame qué necesitas construir. Respondo en un día hábil con una lectura honesta del problema, incluso cuando la respuesta es que no soy la persona indicada.",
-    "availability": "Disponible para nuevos proyectos",
+    "availability": "Abierto a contratos y puestos de liderazgo",
     "response-time": "Respuesta en 1 día hábil",
     "form": {
       "title": "Enviar mensaje",
