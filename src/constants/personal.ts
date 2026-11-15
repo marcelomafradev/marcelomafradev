@@ -9,8 +9,14 @@ export const SOCIAL_LINKS = {
   instagram: 'https://www.instagram.com/marcelomafradev',
 } as const;
 
+export const COMPANY = {
+  legalName: 'Mafradev Desenvolvimento de Software LTDA',
+  tradeName: 'Mafradev',
+  cnpj: '69.635.734/0001-43',
+} as const;
+
 export const PERSONAL_INFO = {
-  title: 'Fullstack Developer | Microservices Expert',
+  title: 'Tech Lead · Software Engineer',
   name: 'Marcelo Mafra',
   image: '/me.webp',
   location: 'Florianópolis, SC · Remoto',

@@ -1,11 +1,14 @@
 import { describe, expect, it } from 'vitest';
+import { isValidCnpj } from '@/lib/cnpj';
 import {
+  COMPANY,
   CONTACT_EMAIL,
   CONTACT_EMAIL_MAX_LENGTH,
   CONTACT_MESSAGE_MAX_LENGTH,
   CONTACT_MESSAGE_MIN_LENGTH,
   CONTACT_NAME_MAX_LENGTH,
   CONTACT_SUBJECT_MAX_LENGTH,
+  PERSONAL_INFO,
   PROJECTS,
   SIDEBAR_ITEMS,
   STACK,
@@ -67,6 +70,23 @@ describe('constants invariants', () => {
           expect(item.icon).toBeTruthy();
         }
       }
+    });
+  });
+
+  describe('COMPANY', () => {
+    it('exposes a valid CNPJ', () => {
+      expect(isValidCnpj(COMPANY.cnpj)).toBe(true);
+    });
+
+    it('exposes non-empty legal and trade names', () => {
+      expect(COMPANY.legalName.trim().length).toBeGreaterThan(0);
+      expect(COMPANY.tradeName.trim().length).toBeGreaterThan(0);
+    });
+  });
+
+  describe('PERSONAL_INFO', () => {
+    it('does not carry a fullstack title', () => {
+      expect(PERSONAL_INFO.title).not.toContain('Fullstack');
     });
   });
 
