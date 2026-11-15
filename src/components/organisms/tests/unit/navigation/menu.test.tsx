@@ -1,5 +1,5 @@
 import { createRef } from 'react';
-import { act, fireEvent, screen } from '@testing-library/react';
+import { act, fireEvent, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { Menu } from '@/components/organisms/navigation/menu';
@@ -91,6 +91,19 @@ describe('Menu', () => {
     expect(screen.getByText('Contato')).toBeInTheDocument();
     expect(
       screen.getByText('Navegue entre as páginas, troque o tema e o idioma.'),
+    ).toBeInTheDocument();
+  });
+
+  it('renders a home link with the brand mark in the top bar', () => {
+    const scrollableDivRef = createRef<HTMLDivElement>();
+
+    renderWithProviders(<Menu scrollableDivRef={scrollableDivRef} />);
+
+    const homeLink = screen.getByRole('link', { name: 'Marcelo Mafra' });
+
+    expect(homeLink).toHaveAttribute('href', '/');
+    expect(
+      within(homeLink).getByRole('img', { name: 'marcelomafradev' }),
     ).toBeInTheDocument();
   });
 

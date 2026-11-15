@@ -13,7 +13,7 @@ import {
 import { MenuIcon } from 'lucide-react';
 import { DropdownSettings } from '@/components/molecules';
 import { SIDEBAR_ITEMS } from '@/constants';
-import { Link, NavItemContent } from '@/components/atoms';
+import { BrandMark, Link, NavItemContent } from '@/components/atoms';
 import { ChessIndicator } from './chess-indicator';
 import { SpotifyIndicator } from './spotify-indicator';
 import { usePathname, HrefValue } from '@/lib/navigation';
@@ -56,6 +56,10 @@ export const Menu = ({
         )}
       >
         <div className="container flex items-center justify-between gap-3 py-3">
+          <Link href="/" aria-label="Marcelo Mafra">
+            <BrandMark className="size-8 shrink-0" />
+          </Link>
+
           <div className="min-w-0 flex-1">
             <SpotifyIndicator />
           </div>
