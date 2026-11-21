@@ -541,6 +541,14 @@
     "services": {
       "title": "Servicios",
       "description": "Desarrollo de aplicaciones web, móviles y de escritorio, APIs y automatizaciones con IA a través de Mafradev, de Marcelo Mafra."
+    },
+    "terms": {
+      "title": "Términos de uso",
+      "description": "Términos de uso del sitio de Marcelo Mafra y de la herramienta personal de publicación Marcelo Mafra Publisher."
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "description": "Cómo el sitio de Marcelo Mafra y la herramienta personal Marcelo Mafra Publisher tratan los datos personales, según la LGPD de Brasil."
     }
   },
   "contact": {
@@ -647,5 +655,117 @@
       "contact": "Hablemos",
       "resume": "Descargar currículum"
     }
+  },
+  "terms": {
+    "title": "Términos de uso",
+    "updated": "Última actualización: 21 de noviembre de 2026",
+    "sections": [
+      {
+        "heading": "Alcance",
+        "paragraphs": [
+          "Estos términos rigen el uso de este sitio, operado por {legalName} (nombre comercial {tradeName}), y de la herramienta personal de publicación Marcelo Mafra Publisher.",
+          "La herramienta Marcelo Mafra Publisher no es un servicio público: la opera únicamente su dueño, para uso propio."
+        ]
+      },
+      {
+        "heading": "Uso aceptable del sitio",
+        "paragraphs": [
+          "Puedes navegar por el sitio y usar el formulario de contacto para hablar con el responsable. No uses el sitio para enviar contenido ilegal, ofensivo o malicioso, para intentar acceder a sistemas sin autorización, para sobrecargar el servicio ni para enviar mensajes automatizados masivos."
+        ]
+      },
+      {
+        "heading": "Propiedad intelectual",
+        "paragraphs": [
+          "Los textos, imágenes, proyectos y demás contenidos de este sitio pertenecen al responsable o se usan con autorización de sus titulares. Las marcas de terceros mencionadas pertenecen a sus respectivos dueños. No puedes copiar ni redistribuir el contenido del sitio sin autorización por escrito."
+        ]
+      },
+      {
+        "heading": "Sin garantía y limitación de responsabilidad",
+        "paragraphs": [
+          "El sitio y la información publicada en él se ofrecen tal como están, sin garantía de disponibilidad, exactitud ni idoneidad para un fin específico. En la medida permitida por la ley, el responsable no responde por daños derivados del uso del sitio ni de la imposibilidad de usarlo."
+        ]
+      },
+      {
+        "heading": "Enlaces a servicios de terceros",
+        "paragraphs": [
+          "El sitio contiene enlaces y contenidos de servicios de terceros, como Spotify, YouTube, Chess.com, GitHub y LinkedIn. Esos servicios tienen sus propios términos y políticas, y el responsable no los controla ni responde por ellos."
+        ]
+      },
+      {
+        "heading": "Ley aplicable",
+        "paragraphs": ["Estos términos se rigen por las leyes de Brasil."]
+      },
+      {
+        "heading": "Cambios y fecha de actualización",
+        "paragraphs": [
+          "Estos términos pueden actualizarse. La versión vigente es siempre la publicada en esta página, con la fecha de última actualización: 21 de noviembre de 2026."
+        ]
+      },
+      {
+        "heading": "Contacto",
+        "paragraphs": ["Dudas sobre estos términos: {email}."]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "updated": "Última actualización: 21 de noviembre de 2026",
+    "sections": [
+      {
+        "heading": "Quién es el responsable",
+        "paragraphs": [
+          "Este sitio es operado por {legalName}, nombre comercial {tradeName}, CNPJ {cnpj}.",
+          "Para cualquier asunto sobre esta política, escribe a {email}."
+        ]
+      },
+      {
+        "heading": "La herramienta Marcelo Mafra Publisher",
+        "paragraphs": [
+          "Marcelo Mafra Publisher es una herramienta personal de automatización, operada únicamente por su dueño, para publicar los videos del propio dueño en las cuentas del propio dueño de TikTok e Instagram. No se ofrece al público y no tiene otros usuarios.",
+          "La herramienta usa la autorización que el dueño concede en cada plataforma: video.upload en TikTok e instagram_business_content_publish en Instagram. Los tokens de acceso resultantes se almacenan únicamente en el computador del dueño, cifrados.",
+          "La herramienta no recopila, no almacena, no vende y no comparte datos personales de ninguna otra persona."
+        ]
+      },
+      {
+        "heading": "Qué recopila este sitio",
+        "paragraphs": [
+          "Formulario de contacto: si envías un mensaje, el sitio recibe el nombre, el correo, el asunto y el texto que escribas. Estos datos se envían por correo a {email} y se usan solo para responderte. El código del sitio no los guarda en una base de datos.",
+          "Límite de envíos: para frenar envíos repetidos, la dirección IP de quien usa el formulario se mantiene solo en la memoria del servidor, en una ventana de 10 minutos, y no se guarda en un archivo ni en una base de datos.",
+          "Medición de audiencia: el sitio usa Vercel Web Analytics para registrar vistas de página. El código del sitio no incluye publicidad ni otra herramienta de análisis o rastreo.",
+          "Preferencias en el navegador: el sitio guarda en tu navegador, en localStorage, tu elección de tema claro u oscuro, con la clave theme. También define la cookie sidebar_state, con duración de 7 días, que solo guarda si el menú lateral está abierto o contraído cuando cambias esa preferencia."
+        ]
+      },
+      {
+        "heading": "Compartición con terceros",
+        "paragraphs": [
+          "Los mensajes del formulario de contacto pasan por un servidor SMTP configurado por el responsable hasta llegar a la bandeja de entrada de {email}.",
+          "Vercel: trata las vistas de página registradas por Vercel Web Analytics, según la política de privacidad de Vercel.",
+          "Spotify: el servidor del sitio consulta la API de Spotify, con la cuenta del propio dueño, para mostrar la canción que está escuchando. Ningún dato de visitantes se envía a Spotify en esa consulta.",
+          "YouTube: al abrir los detalles de una canción, el servidor del sitio consulta la API de datos de YouTube con el título y el artista, sin datos del visitante, y tu navegador carga el reproductor incrustado de youtube.com, regido por las políticas de YouTube y Google.",
+          "Chess.com: el servidor del sitio consulta la API pública y la página de perfil de Chess.com del dueño para mostrar estadísticas. Ningún dato de visitantes se envía en esa consulta.",
+          "Fuera de esto, el sitio no vende ni comparte datos personales."
+        ]
+      },
+      {
+        "heading": "Retención y eliminación",
+        "paragraphs": [
+          "Los mensajes recibidos por el formulario permanecen en el buzón de correo del responsable el tiempo necesario para responder y registrar la conversación. Para pedir la eliminación de tu mensaje, escribe a {email}.",
+          "Los tokens de la herramienta Marcelo Mafra Publisher permanecen en el computador del dueño hasta que se borren. El dueño puede revocar el acceso de la herramienta en cualquier momento en la configuración de seguridad de TikTok e Instagram."
+        ]
+      },
+      {
+        "heading": "Tus derechos según la LGPD",
+        "paragraphs": [
+          "Según la Ley General de Protección de Datos de Brasil (Ley n.º 13.709/2018), puedes pedir la confirmación de que tratamos tus datos, el acceso a ellos, la corrección de datos incompletos o desactualizados, la anonimización, el bloqueo o la eliminación de datos innecesarios, la portabilidad, información sobre la compartición y la revocación del consentimiento. También puedes presentar una queja ante la Autoridad Nacional de Protección de Datos de Brasil (ANPD).",
+          "Para ejercer cualquiera de estos derechos, escribe a {email}."
+        ]
+      },
+      {
+        "heading": "Cambios en esta política",
+        "paragraphs": [
+          "Esta política puede actualizarse. La versión vigente es siempre la publicada en esta página, con la fecha de última actualización: 21 de noviembre de 2026."
+        ]
+      }
+    ]
   }
 }

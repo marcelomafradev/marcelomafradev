@@ -33,7 +33,59 @@ const caseStudyItems = (locale: typeof ptBr | typeof en | typeof es) =>
     { highlights: Record<string, string> }
   >;
 
+const structureOf = (value: unknown): unknown => {
+  if (Array.isArray(value)) {
+    return value.map(structureOf);
+  }
+
+  if (value !== null && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, child]) => [key, structureOf(child)]),
+    );
+  }
+
+  return typeof value;
+};
+
 describe('constants invariants', () => {
+  describe('legal messages', () => {
+    it.each(['terms', 'privacy'] as const)(
+      'keeps the %s namespace structure identical across locales',
+      (namespace) => {
+        const reference = structureOf(ptBr[namespace]);
+
+        expect(structureOf(en[namespace])).toEqual(reference);
+        expect(structureOf(es[namespace])).toEqual(reference);
+      },
+    );
+
+    it.each(['terms', 'privacy'] as const)(
+      'gives every %s section a heading and at least one paragraph in all locales',
+      (namespace) => {
+        for (const locale of [ptBr, en, es]) {
+          expect(locale[namespace].sections.length).toBeGreaterThan(0);
+
+          for (const { heading, paragraphs } of locale[namespace].sections) {
+            expect(heading.trim().length).toBeGreaterThan(0);
+            expect(paragraphs.length).toBeGreaterThan(0);
+          }
+        }
+      },
+    );
+
+    it.each(['terms', 'privacy'] as const)(
+      'exposes meta.%s with a title and a description in all locales',
+      (page) => {
+        for (const locale of [ptBr, en, es]) {
+          expect(locale.meta[page].title.trim().length).toBeGreaterThan(0);
+          expect(locale.meta[page].description.trim().length).toBeGreaterThan(
+            0,
+          );
+        }
+      },
+    );
+  });
+
   describe('CASE_STUDIES', () => {
     it('keeps every id and highlight present under the case study messages in all locales', () => {
       for (const locale of [ptBr, en, es]) {
