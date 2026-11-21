@@ -670,25 +670,25 @@
       {
         "heading": "Acceptable use of the site",
         "paragraphs": [
-          "You may browse the site and use the contact form to reach the owner. Do not use the site to send illegal, offensive or malicious content, to try to access systems without authorization, to overload the service or to send automated bulk messages."
+          "You may browse the site and use the contact form to reach the responsible party. Do not use the site to send illegal, offensive or malicious content, to try to access systems without authorization, to overload the service or to send automated bulk messages."
         ]
       },
       {
         "heading": "Intellectual property",
         "paragraphs": [
-          "The texts, images, projects and other content of this site belong to the owner or are used with the permission of their holders. Third-party trademarks mentioned belong to their respective owners. You may not copy or redistribute the site's content without written permission."
+          "The texts and materials created by the responsible party belong to the responsible party. Images, album and book covers, logos, trademarks and embedded content from third parties belong to their respective owners. You may not copy or redistribute the site's content without written permission."
         ]
       },
       {
         "heading": "No warranty and limitation of liability",
         "paragraphs": [
-          "The site and the information published on it are provided as is, with no warranty of availability, accuracy or fitness for a particular purpose. To the extent permitted by law, the owner is not liable for damages arising from the use of the site or from the inability to use it."
+          "The site and the information published on it are provided as is, with no warranty of availability, accuracy or fitness for a particular purpose. To the extent permitted by law, the responsible party is not liable for damages arising from the use of the site or from the inability to use it."
         ]
       },
       {
         "heading": "Links to third-party services",
         "paragraphs": [
-          "The site contains links and content from third-party services, such as Spotify, YouTube, Chess.com, GitHub and LinkedIn. These services have their own terms and policies, and the owner does not control or answer for them."
+          "The site contains links and content from third-party services, such as Spotify, YouTube, Chess.com, GitHub and LinkedIn. These services have their own terms and policies, and the responsible party does not control or answer for them."
         ]
       },
       {
@@ -722,7 +722,7 @@
         "heading": "The Marcelo Mafra Publisher tool",
         "paragraphs": [
           "Marcelo Mafra Publisher is a personal automation tool, operated only by its owner, to publish the owner's own videos to the owner's own TikTok and Instagram accounts. It is not offered to the public and has no other users.",
-          "The tool uses the authorization the owner grants on each platform: video.upload on TikTok and instagram_business_content_publish on Instagram. The resulting access tokens are kept in a local cache file on the owner's computer, which is not encrypted but is protected by restrictive file permissions (readable only by the owner's user account), and as an encrypted backup copy in the owner's personal encrypted credentials vault. They are not stored on any server operated for the tool and are not shared with anyone.",
+          "The tool uses the authorization the owner grants on each platform: video.upload on TikTok and instagram_business_content_publish on Instagram. The resulting access tokens are kept in a local cache file on the owner's computer, which is not encrypted but is protected by restrictive file permissions (readable only by the owner's user account), and as an encrypted backup copy in the owner's personal encrypted credentials vault. They are not stored on any service operated for the tool or shared with anyone; the encrypted backup may be synchronized to a private code repository of the owner.",
           "The tool does not collect, store, sell or share personal data of any other person."
         ]
       },
@@ -730,27 +730,27 @@
         "heading": "What this website collects",
         "paragraphs": [
           "Contact form: if you send a message, the site receives the name, email, subject and text you type. This data is sent by email to {email} and used only to reply to you. The site code does not write it to a database.",
-          "Submission limit: to block repeated submissions, the IP address of whoever uses the form is kept only in the server's memory, within a 10-minute window, and is not written to a file or a database.",
+          "Submission limit: the IP address of whoever uses the form is used only to count submissions in the last 10 minutes and is kept in the server's memory, without being written to a database.",
           "Audience measurement: the site uses Vercel Web Analytics to record page views. The site code includes no advertising and no other analytics or tracking tool.",
-          "Browser preferences: the site stores your choice of light or dark theme in your browser, in localStorage, under the key theme. It also sets the sidebar_state cookie, lasting 7 days, which only stores whether the side menu is open or collapsed when you change that preference."
+          "Browser preferences: the site stores your choice of light or dark theme in your browser, in localStorage, under the key theme. It also sets the sidebar_state cookie, saved when the side menu is opened or collapsed with the keyboard shortcut (Ctrl or Cmd + B), lasting 7 days, which only stores whether it is open or collapsed. The embedded Spotify and YouTube players may set their own cookies."
         ]
       },
       {
         "heading": "Sharing with third parties",
         "paragraphs": [
-          "Contact form messages go through an SMTP server configured by the owner until they reach the inbox of {email}.",
+          "Contact form messages go through an SMTP server configured by the responsible party until they reach the inbox of {email}.",
           "Vercel: processes the page views recorded by Vercel Web Analytics, under Vercel's privacy policy.",
-          "Spotify: the site's server queries the Spotify API, using the owner's own account, to show the song the owner is listening to. No visitor data is sent to Spotify in that request.",
+          "Spotify: the site's server queries the Spotify API using the owner's own account, to show the song the owner is listening to. These requests do not include visitor data.",
           "YouTube: when you open a song's details, the site's server queries the YouTube Data API with the title and artist, without visitor data, and your browser loads the embedded player from youtube.com, which is governed by the YouTube and Google policies.",
           "Chess.com: the site's server queries the owner's public Chess.com API and profile page to show statistics. No visitor data is sent in that request.",
-          "Apart from this, the site does not sell or share personal data."
+          "Embedded content: the About page embeds the Spotify player and, when a song is opened, the YouTube player. These embeds are loaded directly by your browser, which connects to the Spotify and YouTube servers. They therefore receive your IP address and may set their own cookies, under their own policies."
         ]
       },
       {
         "heading": "Retention and deletion",
         "paragraphs": [
-          "Messages received through the form stay in the owner's mailbox for as long as needed to reply and keep a record of the conversation. To request deletion of your message, write to {email}.",
-          "The Marcelo Mafra Publisher tool's tokens stay on the owner's computer until they are deleted. The owner can revoke the tool's access at any time in the TikTok and Instagram security settings."
+          "Messages received through the form stay in the responsible party's mailbox for as long as needed to reply and keep a record of the conversation. To request deletion of your message, write to {email}.",
+          "The Marcelo Mafra Publisher tool's tokens remain in the local cache file on the owner's computer and in the encrypted backup copy in the owner's personal credentials vault (which may be synchronized to a private code repository of the owner) until the owner deletes them or revokes the access. The owner can delete them at any time and can revoke the tool's access at any time in the TikTok and Instagram security settings."
         ]
       },
       {

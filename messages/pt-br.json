@@ -676,7 +676,7 @@
       {
         "heading": "Propriedade intelectual",
         "paragraphs": [
-          "Os textos, imagens, projetos e demais conteúdos deste site pertencem ao responsável ou são usados com autorização dos seus titulares. Marcas de terceiros citadas pertencem aos seus respectivos donos. Você não pode copiar ou redistribuir o conteúdo do site sem autorização por escrito."
+          "Os textos e materiais criados pelo responsável pertencem ao responsável. Imagens, capas de álbuns e de livros, logotipos, marcas e conteúdos incorporados de terceiros pertencem aos seus respectivos donos. Você não pode copiar ou redistribuir o conteúdo do site sem autorização por escrito."
         ]
       },
       {
@@ -722,7 +722,7 @@
         "heading": "A ferramenta Marcelo Mafra Publisher",
         "paragraphs": [
           "Marcelo Mafra Publisher é uma ferramenta pessoal de automação, operada somente pelo seu dono, para publicar os vídeos do próprio dono nas contas do próprio dono no TikTok e no Instagram. Ela não é oferecida ao público e não tem outros usuários.",
-          "A ferramenta usa a autorização que o dono concede em cada plataforma: video.upload no TikTok e instagram_business_content_publish no Instagram. Os tokens de acesso resultantes ficam em um arquivo de cache local no computador do dono, que não é criptografado, mas é protegido por permissões restritas de arquivo (legível somente pela conta de usuário do dono), e em uma cópia de segurança criptografada no cofre pessoal de credenciais do dono. Eles não ficam em nenhum servidor operado para a ferramenta e não são compartilhados com ninguém.",
+          "A ferramenta usa a autorização que o dono concede em cada plataforma: video.upload no TikTok e instagram_business_content_publish no Instagram. Os tokens de acesso resultantes ficam em um arquivo de cache local no computador do dono, que não é criptografado, mas é protegido por permissões restritas de arquivo (legível somente pela conta de usuário do dono), e em uma cópia de segurança criptografada no cofre pessoal de credenciais do dono. Eles não ficam armazenados em nenhum serviço operado para a ferramenta nem são compartilhados com ninguém; a cópia de segurança criptografada pode ser sincronizada com um repositório de código privado do dono.",
           "A ferramenta não coleta, não armazena, não vende e não compartilha dados pessoais de nenhuma outra pessoa."
         ]
       },
@@ -730,9 +730,9 @@
         "heading": "O que este site coleta",
         "paragraphs": [
           "Formulário de contato: se você enviar uma mensagem, o site recebe o nome, o e-mail, o assunto e o texto que você digitar. Esses dados são enviados por e-mail para {email} e usados apenas para responder a você. O código do site não os grava em banco de dados.",
-          "Limite de envios: para barrar envios repetidos, o endereço IP de quem usa o formulário é mantido apenas na memória do servidor, em uma janela de 10 minutos, e não é gravado em arquivo nem em banco de dados.",
+          "Limite de envios: o endereço IP de quem usa o formulário é usado apenas para contar os envios dos últimos 10 minutos e é mantido na memória do servidor, sem ser gravado em banco de dados.",
           "Medição de audiência: o site usa o Vercel Web Analytics para registrar visualizações de página. O código do site não inclui publicidade nem outra ferramenta de análise ou rastreamento.",
-          "Preferências no navegador: o site guarda no seu navegador, em localStorage, a sua escolha de tema claro ou escuro, na chave theme. Também define o cookie sidebar_state, com duração de 7 dias, que guarda apenas se o menu lateral está aberto ou recolhido quando você altera essa preferência."
+          "Preferências no navegador: o site guarda no seu navegador, em localStorage, a sua escolha de tema claro ou escuro, na chave theme. Também define o cookie sidebar_state, gravado quando o menu lateral é aberto ou recolhido pelo atalho de teclado (Ctrl ou Cmd + B), com duração de 7 dias, que guarda apenas se ele está aberto ou recolhido. Os players incorporados do Spotify e do YouTube podem definir os seus próprios cookies."
         ]
       },
       {
@@ -740,17 +740,17 @@
         "paragraphs": [
           "Mensagens do formulário de contato passam por um servidor SMTP configurado pelo responsável até chegar à caixa de entrada de {email}.",
           "Vercel: trata as visualizações de página registradas pelo Vercel Web Analytics, conforme a política de privacidade da Vercel.",
-          "Spotify: o servidor do site consulta a API do Spotify, com a conta do próprio dono, para mostrar a música que ele está ouvindo. Nenhum dado de visitante é enviado ao Spotify nessa consulta.",
+          "Spotify: o servidor do site consulta a API do Spotify com a conta do próprio dono, para mostrar a música que ele está ouvindo. Essas consultas não incluem dados de visitantes.",
           "YouTube: ao abrir os detalhes de uma música, o servidor do site consulta a API de dados do YouTube com o título e o artista, sem dados do visitante, e o seu navegador carrega o player incorporado de youtube.com, regido pelas políticas do YouTube e do Google.",
           "Chess.com: o servidor do site consulta a API pública e a página de perfil do Chess.com do dono para mostrar estatísticas. Nenhum dado de visitante é enviado nessa consulta.",
-          "Fora isso, o site não vende nem compartilha dados pessoais."
+          "Conteúdo incorporado: a página Sobre incorpora o player do Spotify e, quando uma música é aberta, o player do YouTube. Esses conteúdos são carregados diretamente pelo seu navegador, que se conecta aos servidores do Spotify e do YouTube. Por isso eles recebem o seu endereço IP e podem definir os seus próprios cookies, conforme as suas próprias políticas."
         ]
       },
       {
         "heading": "Retenção e exclusão",
         "paragraphs": [
           "As mensagens recebidas pelo formulário ficam na caixa de e-mail do responsável pelo tempo necessário para responder e registrar a conversa. Para pedir a exclusão da sua mensagem, escreva para {email}.",
-          "Os tokens da ferramenta Marcelo Mafra Publisher ficam no computador do dono até serem apagados. O dono pode revogar o acesso da ferramenta a qualquer momento nas configurações de segurança do TikTok e do Instagram."
+          "Os tokens da ferramenta Marcelo Mafra Publisher permanecem no arquivo de cache local no computador do dono e na cópia de segurança criptografada no cofre pessoal de credenciais do dono (que pode ser sincronizado com um repositório de código privado do dono) até o dono apagá-los ou revogar o acesso. O dono pode apagá-los a qualquer momento e revogar o acesso da ferramenta a qualquer momento nas configurações de segurança do TikTok e do Instagram."
         ]
       },
       {
