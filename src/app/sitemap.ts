@@ -9,6 +9,8 @@ const paths = [
   '/technologies',
   '/services',
   '/contact',
+  '/terms',
+  '/privacy',
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
