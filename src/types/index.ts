@@ -1,2 +1,2 @@
-export * from './spotify';
 export * from './legal';
+export * from './spotify';
