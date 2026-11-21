@@ -722,7 +722,7 @@
         "heading": "La herramienta Marcelo Mafra Publisher",
         "paragraphs": [
           "Marcelo Mafra Publisher es una herramienta personal de automatización, operada únicamente por su dueño, para publicar los videos del propio dueño en las cuentas del propio dueño de TikTok e Instagram. No se ofrece al público y no tiene otros usuarios.",
-          "La herramienta usa la autorización que el dueño concede en cada plataforma: video.upload en TikTok e instagram_business_content_publish en Instagram. Los tokens de acceso resultantes se almacenan únicamente en el computador del dueño, cifrados.",
+          "La herramienta usa la autorización que el dueño concede en cada plataforma: video.upload en TikTok e instagram_business_content_publish en Instagram. Los tokens de acceso resultantes se guardan en un archivo de caché local en el computador del dueño, que no está cifrado pero está protegido con permisos de archivo restrictivos (legible solo por la cuenta de usuario del dueño), y como copia de respaldo cifrada en el almacén personal de credenciales cifradas del dueño. No se almacenan en ningún servidor operado para la herramienta y no se comparten con nadie.",
           "La herramienta no recopila, no almacena, no vende y no comparte datos personales de ninguna otra persona."
         ]
       },
