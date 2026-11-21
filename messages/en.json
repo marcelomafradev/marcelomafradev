@@ -541,6 +541,14 @@
     "services": {
       "title": "Services",
       "description": "Web, mobile and desktop application development, APIs and AI automations through Mafradev, by Marcelo Mafra."
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Terms of use for Marcelo Mafra's website and the personal publishing tool Marcelo Mafra Publisher."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How Marcelo Mafra's website and the personal tool Marcelo Mafra Publisher handle personal data, under the Brazilian LGPD."
     }
   },
   "contact": {
@@ -647,5 +655,117 @@
       "contact": "Get in touch",
       "resume": "Download resume"
     }
+  },
+  "terms": {
+    "title": "Terms of use",
+    "updated": "Last updated: November 21, 2026",
+    "sections": [
+      {
+        "heading": "Scope",
+        "paragraphs": [
+          "These terms govern the use of this website, operated by {legalName} (trade name {tradeName}), and of the personal publishing tool Marcelo Mafra Publisher.",
+          "The Marcelo Mafra Publisher tool is not a public service: it is operated only by its owner, for personal use."
+        ]
+      },
+      {
+        "heading": "Acceptable use of the site",
+        "paragraphs": [
+          "You may browse the site and use the contact form to reach the owner. Do not use the site to send illegal, offensive or malicious content, to try to access systems without authorization, to overload the service or to send automated bulk messages."
+        ]
+      },
+      {
+        "heading": "Intellectual property",
+        "paragraphs": [
+          "The texts, images, projects and other content of this site belong to the owner or are used with the permission of their holders. Third-party trademarks mentioned belong to their respective owners. You may not copy or redistribute the site's content without written permission."
+        ]
+      },
+      {
+        "heading": "No warranty and limitation of liability",
+        "paragraphs": [
+          "The site and the information published on it are provided as is, with no warranty of availability, accuracy or fitness for a particular purpose. To the extent permitted by law, the owner is not liable for damages arising from the use of the site or from the inability to use it."
+        ]
+      },
+      {
+        "heading": "Links to third-party services",
+        "paragraphs": [
+          "The site contains links and content from third-party services, such as Spotify, YouTube, Chess.com, GitHub and LinkedIn. These services have their own terms and policies, and the owner does not control or answer for them."
+        ]
+      },
+      {
+        "heading": "Governing law",
+        "paragraphs": ["These terms are governed by the laws of Brazil."]
+      },
+      {
+        "heading": "Changes and last updated date",
+        "paragraphs": [
+          "These terms may be updated. The version in force is always the one published on this page, with the last updated date: November 21, 2026."
+        ]
+      },
+      {
+        "heading": "Contact",
+        "paragraphs": ["Questions about these terms: {email}."]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: November 21, 2026",
+    "sections": [
+      {
+        "heading": "Who is responsible",
+        "paragraphs": [
+          "This website is operated by {legalName}, trade name {tradeName}, CNPJ {cnpj}.",
+          "For any matter about this policy, write to {email}."
+        ]
+      },
+      {
+        "heading": "The Marcelo Mafra Publisher tool",
+        "paragraphs": [
+          "Marcelo Mafra Publisher is a personal automation tool, operated only by its owner, to publish the owner's own videos to the owner's own TikTok and Instagram accounts. It is not offered to the public and has no other users.",
+          "The tool uses the authorization the owner grants on each platform: video.upload on TikTok and instagram_business_content_publish on Instagram. The resulting access tokens are stored only on the owner's own computer, encrypted.",
+          "The tool does not collect, store, sell or share personal data of any other person."
+        ]
+      },
+      {
+        "heading": "What this website collects",
+        "paragraphs": [
+          "Contact form: if you send a message, the site receives the name, email, subject and text you type. This data is sent by email to {email} and used only to reply to you. The site code does not write it to a database.",
+          "Submission limit: to block repeated submissions, the IP address of whoever uses the form is kept only in the server's memory, within a 10-minute window, and is not written to a file or a database.",
+          "Audience measurement: the site uses Vercel Web Analytics to record page views. The site code includes no advertising and no other analytics or tracking tool.",
+          "Browser preferences: the site stores your choice of light or dark theme in your browser, in localStorage, under the key theme. It also sets the sidebar_state cookie, lasting 7 days, which only stores whether the side menu is open or collapsed when you change that preference."
+        ]
+      },
+      {
+        "heading": "Sharing with third parties",
+        "paragraphs": [
+          "Contact form messages go through an SMTP server configured by the owner until they reach the inbox of {email}.",
+          "Vercel: processes the page views recorded by Vercel Web Analytics, under Vercel's privacy policy.",
+          "Spotify: the site's server queries the Spotify API, using the owner's own account, to show the song the owner is listening to. No visitor data is sent to Spotify in that request.",
+          "YouTube: when you open a song's details, the site's server queries the YouTube Data API with the title and artist, without visitor data, and your browser loads the embedded player from youtube.com, which is governed by the YouTube and Google policies.",
+          "Chess.com: the site's server queries the owner's public Chess.com API and profile page to show statistics. No visitor data is sent in that request.",
+          "Apart from this, the site does not sell or share personal data."
+        ]
+      },
+      {
+        "heading": "Retention and deletion",
+        "paragraphs": [
+          "Messages received through the form stay in the owner's mailbox for as long as needed to reply and keep a record of the conversation. To request deletion of your message, write to {email}.",
+          "The Marcelo Mafra Publisher tool's tokens stay on the owner's computer until they are deleted. The owner can revoke the tool's access at any time in the TikTok and Instagram security settings."
+        ]
+      },
+      {
+        "heading": "Your rights under the LGPD",
+        "paragraphs": [
+          "Under the Brazilian General Data Protection Law (Law No. 13,709/2018), you may request confirmation that we process your data, access to it, correction of incomplete or outdated data, anonymization, blocking or deletion of unnecessary data, portability, information about sharing, and withdrawal of consent. You may also complain to the Brazilian National Data Protection Authority (ANPD).",
+          "To exercise any of these rights, write to {email}."
+        ]
+      },
+      {
+        "heading": "Changes to this policy",
+        "paragraphs": [
+          "This policy may be updated. The version in force is always the one published on this page, with the last updated date: November 21, 2026."
+        ]
+      }
+    ]
   }
 }

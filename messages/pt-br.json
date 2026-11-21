@@ -587,6 +587,14 @@
     "services": {
       "title": "Serviços",
       "description": "Desenvolvimento de aplicativos web, mobile e desktop, APIs e automações com IA pela Mafradev, de Marcelo Mafra."
+    },
+    "terms": {
+      "title": "Termos de uso",
+      "description": "Termos de uso do site de Marcelo Mafra e da ferramenta pessoal de publicação Marcelo Mafra Publisher."
+    },
+    "privacy": {
+      "title": "Política de privacidade",
+      "description": "Como o site de Marcelo Mafra e a ferramenta pessoal Marcelo Mafra Publisher tratam dados pessoais, conforme a LGPD."
     }
   },
   "services": {
@@ -647,5 +655,117 @@
       "contact": "Falar comigo",
       "resume": "Baixar currículo"
     }
+  },
+  "terms": {
+    "title": "Termos de uso",
+    "updated": "Última atualização: 21 de novembro de 2026",
+    "sections": [
+      {
+        "heading": "Escopo",
+        "paragraphs": [
+          "Estes termos regem o uso deste site, operado por {legalName} (nome fantasia {tradeName}), e da ferramenta pessoal de publicação Marcelo Mafra Publisher.",
+          "A ferramenta Marcelo Mafra Publisher não é um serviço público: é operada somente pelo seu dono, para uso próprio."
+        ]
+      },
+      {
+        "heading": "Uso aceitável do site",
+        "paragraphs": [
+          "Você pode navegar pelo site e usar o formulário de contato para falar com o responsável. Não use o site para enviar conteúdo ilegal, ofensivo ou malicioso, para tentar acessar sistemas sem autorização, para sobrecarregar o serviço ou para enviar mensagens automatizadas em massa."
+        ]
+      },
+      {
+        "heading": "Propriedade intelectual",
+        "paragraphs": [
+          "Os textos, imagens, projetos e demais conteúdos deste site pertencem ao responsável ou são usados com autorização dos seus titulares. Marcas de terceiros citadas pertencem aos seus respectivos donos. Você não pode copiar ou redistribuir o conteúdo do site sem autorização por escrito."
+        ]
+      },
+      {
+        "heading": "Sem garantia e limitação de responsabilidade",
+        "paragraphs": [
+          "O site e as informações nele publicadas são fornecidos no estado em que se encontram, sem garantia de disponibilidade, exatidão ou adequação a um fim específico. Na medida permitida pela lei, o responsável não responde por danos decorrentes do uso do site ou da impossibilidade de usá-lo."
+        ]
+      },
+      {
+        "heading": "Links para serviços de terceiros",
+        "paragraphs": [
+          "O site contém links e conteúdos de serviços de terceiros, como Spotify, YouTube, Chess.com, GitHub e LinkedIn. Esses serviços têm seus próprios termos e políticas, e o responsável não controla nem responde por eles."
+        ]
+      },
+      {
+        "heading": "Lei aplicável",
+        "paragraphs": ["Estes termos são regidos pelas leis do Brasil."]
+      },
+      {
+        "heading": "Alterações e data de atualização",
+        "paragraphs": [
+          "Estes termos podem ser atualizados. A versão em vigor é sempre a publicada nesta página, com a data de última atualização: 21 de novembro de 2026."
+        ]
+      },
+      {
+        "heading": "Contato",
+        "paragraphs": ["Dúvidas sobre estes termos: {email}."]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Política de privacidade",
+    "updated": "Última atualização: 21 de novembro de 2026",
+    "sections": [
+      {
+        "heading": "Quem é o responsável",
+        "paragraphs": [
+          "Este site é operado por {legalName}, nome fantasia {tradeName}, CNPJ {cnpj}.",
+          "Para qualquer assunto sobre esta política, escreva para {email}."
+        ]
+      },
+      {
+        "heading": "A ferramenta Marcelo Mafra Publisher",
+        "paragraphs": [
+          "Marcelo Mafra Publisher é uma ferramenta pessoal de automação, operada somente pelo seu dono, para publicar os vídeos do próprio dono nas contas do próprio dono no TikTok e no Instagram. Ela não é oferecida ao público e não tem outros usuários.",
+          "A ferramenta usa a autorização que o dono concede em cada plataforma: video.upload no TikTok e instagram_business_content_publish no Instagram. Os tokens de acesso resultantes ficam armazenados apenas no computador do dono, criptografados.",
+          "A ferramenta não coleta, não armazena, não vende e não compartilha dados pessoais de nenhuma outra pessoa."
+        ]
+      },
+      {
+        "heading": "O que este site coleta",
+        "paragraphs": [
+          "Formulário de contato: se você enviar uma mensagem, o site recebe o nome, o e-mail, o assunto e o texto que você digitar. Esses dados são enviados por e-mail para {email} e usados apenas para responder a você. O código do site não os grava em banco de dados.",
+          "Limite de envios: para barrar envios repetidos, o endereço IP de quem usa o formulário é mantido apenas na memória do servidor, em uma janela de 10 minutos, e não é gravado em arquivo nem em banco de dados.",
+          "Medição de audiência: o site usa o Vercel Web Analytics para registrar visualizações de página. O código do site não inclui publicidade nem outra ferramenta de análise ou rastreamento.",
+          "Preferências no navegador: o site guarda no seu navegador, em localStorage, a sua escolha de tema claro ou escuro, na chave theme. Também define o cookie sidebar_state, com duração de 7 dias, que guarda apenas se o menu lateral está aberto ou recolhido quando você altera essa preferência."
+        ]
+      },
+      {
+        "heading": "Compartilhamento com terceiros",
+        "paragraphs": [
+          "Mensagens do formulário de contato passam por um servidor SMTP configurado pelo responsável até chegar à caixa de entrada de {email}.",
+          "Vercel: trata as visualizações de página registradas pelo Vercel Web Analytics, conforme a política de privacidade da Vercel.",
+          "Spotify: o servidor do site consulta a API do Spotify, com a conta do próprio dono, para mostrar a música que ele está ouvindo. Nenhum dado de visitante é enviado ao Spotify nessa consulta.",
+          "YouTube: ao abrir os detalhes de uma música, o servidor do site consulta a API de dados do YouTube com o título e o artista, sem dados do visitante, e o seu navegador carrega o player incorporado de youtube.com, regido pelas políticas do YouTube e do Google.",
+          "Chess.com: o servidor do site consulta a API pública e a página de perfil do Chess.com do dono para mostrar estatísticas. Nenhum dado de visitante é enviado nessa consulta.",
+          "Fora isso, o site não vende nem compartilha dados pessoais."
+        ]
+      },
+      {
+        "heading": "Retenção e exclusão",
+        "paragraphs": [
+          "As mensagens recebidas pelo formulário ficam na caixa de e-mail do responsável pelo tempo necessário para responder e registrar a conversa. Para pedir a exclusão da sua mensagem, escreva para {email}.",
+          "Os tokens da ferramenta Marcelo Mafra Publisher ficam no computador do dono até serem apagados. O dono pode revogar o acesso da ferramenta a qualquer momento nas configurações de segurança do TikTok e do Instagram."
+        ]
+      },
+      {
+        "heading": "Seus direitos pela LGPD",
+        "paragraphs": [
+          "Conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você pode pedir a confirmação de que tratamos seus dados, o acesso a eles, a correção de dados incompletos ou desatualizados, a anonimização, o bloqueio ou a eliminação de dados desnecessários, a portabilidade, informações sobre o compartilhamento e a revogação de consentimento. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).",
+          "Para exercer qualquer desses direitos, escreva para {email}."
+        ]
+      },
+      {
+        "heading": "Alterações desta política",
+        "paragraphs": [
+          "Esta política pode ser atualizada. A versão em vigor é sempre a publicada nesta página, com a data de última atualização: 21 de novembro de 2026."
+        ]
+      }
+    ]
   }
 }

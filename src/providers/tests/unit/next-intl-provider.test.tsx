@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import { useTranslations } from 'next-intl';
+import { AbstractIntlMessages, useTranslations } from 'next-intl';
 import { describe, expect, it } from 'vitest';
 import NextIntlProvider from '@/providers/next-intl-provider';
 import ptBr from '../../../../messages/pt-br.json';
+
+const ptBrMessages = ptBr as unknown as AbstractIntlMessages;
 
 function TranslatedChild() {
   const t = useTranslations('navigation.items');
@@ -17,7 +19,7 @@ function PersonalInfoChild() {
 describe('NextIntlProvider', () => {
   it('renders a child that uses useTranslations with a known string', () => {
     render(
-      <NextIntlProvider locale="pt-br" messages={ptBr}>
+      <NextIntlProvider locale="pt-br" messages={ptBrMessages}>
         <TranslatedChild />
       </NextIntlProvider>,
     );
@@ -27,7 +29,7 @@ describe('NextIntlProvider', () => {
 
   it('exposes homepage.personal-info as personalInfo on the client messages', () => {
     render(
-      <NextIntlProvider locale="pt-br" messages={ptBr}>
+      <NextIntlProvider locale="pt-br" messages={ptBrMessages}>
         <PersonalInfoChild />
       </NextIntlProvider>,
     );
@@ -48,5 +50,4 @@ describe('NextIntlProvider', () => {
 
     expect(screen.getByText('Início')).toBeInTheDocument();
   });
-
 });
