@@ -5,6 +5,7 @@ export * from './case-studies';
 export * from './education';
 export * from './experiences';
 export * from './forms';
+export * from './legal';
 export * from './navigation';
 export * from './personal';
 export * from './projects';

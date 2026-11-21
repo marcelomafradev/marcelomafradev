@@ -4,7 +4,14 @@ import { routing } from '@/lib/navigation';
 import { OG_IMAGE_URL, localizedPath, localizedUrl } from '@/lib/site';
 
 type MetaPage =
-  'home' | 'about' | 'projects' | 'technologies' | 'services' | 'contact';
+  | 'home'
+  | 'about'
+  | 'projects'
+  | 'technologies'
+  | 'services'
+  | 'contact'
+  | 'terms'
+  | 'privacy';
 
 const pathByPage: Record<MetaPage, string> = {
   home: '/',
@@ -13,6 +20,8 @@ const pathByPage: Record<MetaPage, string> = {
   technologies: '/technologies',
   services: '/services',
   contact: '/contact',
+  terms: '/terms',
+  privacy: '/privacy',
 };
 
 export async function buildPageMetadata(

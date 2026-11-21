@@ -84,14 +84,20 @@ describe('buildPageMetadata', () => {
     ['projects', '/projects'],
     ['technologies', '/technologies'],
     ['contact', '/contact'],
+    ['terms', '/terms'],
+    ['privacy', '/privacy'],
   ] as const)(
     'maps %s page to path %s with localized openGraph url',
     async (page, path) => {
-      const metadata = await buildPageMetadata('es', page);
+      for (const locale of ['pt-br', 'en', 'es']) {
+        const metadata = await buildPageMetadata(locale, page);
 
-      expect(metadata.title).toBe(`title:${page}.title`);
-      expect(metadata.openGraph?.url).toBe(localizedUrl('es', path));
-      expect(metadata.alternates?.canonical).toBe(localizedPath('es', path));
+        expect(metadata.title).toBe(`title:${page}.title`);
+        expect(metadata.openGraph?.url).toBe(localizedUrl(locale, path));
+        expect(metadata.alternates?.canonical).toBe(
+          localizedPath(locale, path),
+        );
+      }
     },
   );
 });

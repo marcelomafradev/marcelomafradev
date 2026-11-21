@@ -8,16 +8,24 @@ vi.mock('@/lib/navigation', () => ({
   },
 }));
 
-const { SITE_URL } = await import('@/lib/site');
+const { SITE_URL, localizedUrl } = await import('@/lib/site');
 const { default: sitemap } = await import('@/app/sitemap');
 
 const ROOT_URLS = new Set([SITE_URL, `${SITE_URL}/en`, `${SITE_URL}/es`]);
 
 describe('sitemap', () => {
-  it('returns 18 entries (6 paths × 3 locales)', () => {
+  it('returns 24 entries (8 paths × 3 locales)', () => {
     const entries = sitemap();
 
-    expect(entries).toHaveLength(18);
+    expect(entries).toHaveLength(24);
+  });
+
+  it.each(['/terms', '/privacy'])('lists %s in every locale', (path) => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    for (const locale of ['pt-br', 'en', 'es']) {
+      expect(urls).toContain(localizedUrl(locale, path));
+    }
   });
 
   it("includes alternates.languages['x-default'] on every entry", () => {
