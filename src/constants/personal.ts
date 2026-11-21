@@ -6,7 +6,7 @@ export const CHESS_COM_PROFILE_URL = `https://www.chess.com/member/${CHESS_COM_U
 export const SOCIAL_LINKS = {
   github: 'https://github.com/marcelomafradev',
   linkedin: 'https://www.linkedin.com/in/marcelomafradev/',
-  instagram: 'https://www.instagram.com/marcelomafradev',
+  instagram: 'https://www.instagram.com/marcelomafradev01',
 } as const;
 
 export const COMPANY = {

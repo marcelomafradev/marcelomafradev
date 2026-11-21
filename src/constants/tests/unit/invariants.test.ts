@@ -15,6 +15,7 @@ import {
   PROJECTS,
   SERVICE_OFFERINGS,
   SIDEBAR_ITEMS,
+  SOCIAL_LINKS,
   STACK,
 } from '@/constants';
 import en from '../../../../messages/en.json';
@@ -194,6 +195,14 @@ describe('constants invariants', () => {
   describe('PERSONAL_INFO', () => {
     it('does not carry a fullstack title', () => {
       expect(PERSONAL_INFO.title).not.toContain('Fullstack');
+    });
+  });
+
+  describe('SOCIAL_LINKS', () => {
+    it('points the Instagram link to the professional profile marcelomafradev01', () => {
+      expect(SOCIAL_LINKS.instagram).toBe(
+        'https://www.instagram.com/marcelomafradev01',
+      );
     });
   });
 
