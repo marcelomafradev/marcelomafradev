@@ -133,15 +133,46 @@ describe('LegalTemplate', () => {
     });
   });
 
-  it('fills the company and contact placeholders from the constants', async () => {
-    await renderLegalTemplate('pt-br', 'privacy');
+  describe.each(['terms', 'privacy'] as const)(
+    '%s placeholders',
+    (namespace) => {
+      it.each(['pt-br', 'en', 'es'] as const)(
+        'leaves no unfilled placeholder in %s',
+        async (locale) => {
+          await renderLegalTemplate(locale, namespace);
 
-    expect(
-      screen.getAllByText(new RegExp(COMPANY.legalName)).length,
-    ).toBeGreaterThan(0);
-    expect(
-      screen.getAllByText(new RegExp(CONTACT_EMAIL)).length,
-    ).toBeGreaterThan(0);
-    expect(document.body.textContent).not.toMatch(/\{[a-zA-Z]+\}/);
-  });
+          expect(document.body.textContent).not.toMatch(/\{[a-zA-Z]+\}/);
+        },
+      );
+
+      it.each(['pt-br', 'en', 'es'] as const)(
+        'fills the contact email in %s',
+        async (locale) => {
+          await renderLegalTemplate(locale, namespace);
+
+          expect(document.body.textContent).toContain(CONTACT_EMAIL);
+        },
+      );
+    },
+  );
+
+  it.each(['pt-br', 'en', 'es'] as const)(
+    'fills the company names and tax id in the %s privacy page',
+    async (locale) => {
+      await renderLegalTemplate(locale, 'privacy');
+
+      expect(document.body.textContent).toContain(COMPANY.legalName);
+      expect(document.body.textContent).toContain(COMPANY.tradeName);
+      expect(document.body.textContent).toContain(COMPANY.cnpj);
+    },
+  );
+
+  it.each(['pt-br', 'en', 'es'] as const)(
+    'fills the company legal name in the %s terms page',
+    async (locale) => {
+      await renderLegalTemplate(locale, 'terms');
+
+      expect(document.body.textContent).toContain(COMPANY.legalName);
+    },
+  );
 });
