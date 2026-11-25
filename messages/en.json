@@ -246,6 +246,16 @@
         }
       },
       "5": {
+        "title": "Mafradev",
+        "description": "Founder & Software Engineer · Own company",
+        "workingTime": "Jan 2019 – Present · Remote",
+        "details": {
+          "1": "2019–2022 · Direct clients: e-commerce and institutional websites delivered end to end, from front end and back end to the database and deployment.",
+          "2": "2023 · Mince Joias: e-commerce with checkout, ZIP-code shipping quotes, Pix and card payments across more than one gateway, order reconciliation, and a store admin panel.",
+          "3": "2024 · Griebler Remodeling (USA): four-language website with a portfolio by category, reviews through Google sign-in, a content admin panel, and per-language SEO."
+        }
+      },
+      "6": {
         "title": "Postpay",
         "description": "Full Stack Engineer · Independent contractor",
         "workingTime": "Dec 2022 – Oct 2025 · Remote",
@@ -257,29 +267,6 @@
           "5": "React Native + Expo mobile app for Android and iOS with REST APIs, auth, and push notifications.",
           "6": "Sensitive-data protection, cloud storage, and key management practices.",
           "7": "CI/CD and operations with Docker, PM2, GitHub Actions, and EAS; reviews and tests in monorepos."
-        }
-      },
-      "6": {
-        "title": "Griebler Remodeling",
-        "description": "Full Stack Engineer · Freelance",
-        "workingTime": "Jan 2024 – Feb 2024 · Remote (USA)",
-        "details": {
-          "1": "Responsive institutional website for a Massachusetts remodeling company.",
-          "2": "Administrative dashboard for content and project management.",
-          "3": "TypeScript, Next.js, Tailwind CSS, MongoDB, and AWS hosting.",
-          "4": "i18n support and Google sign-in for the reviews acquisition flow."
-        }
-      },
-      "7": {
-        "title": "Mince Joias",
-        "description": "Full Stack Engineer · Freelance",
-        "workingTime": "Aug 2023 – Sep 2023 · Remote",
-        "details": {
-          "1": "Jewelry e-commerce with Next.js covering catalog, cart, and purchase flow.",
-          "2": "Client state with Zustand and UI with Tailwind CSS.",
-          "3": "MongoDB persistence and AWS hosting.",
-          "4": "Focus on storefront performance and conversion flow.",
-          "5": "End-to-end freelance delivery of the digital storefront."
         }
       },
       "cta": "Hire me",
