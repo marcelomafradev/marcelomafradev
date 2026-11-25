@@ -105,11 +105,11 @@ describe('Experiences', () => {
     );
 
     for (const workingTime of [
-      'Jan 2026 – Atual · Remoto',
-      'Out 2025 – Atual · Remoto',
-      'Abr 2026 – Atual · Remoto',
+      'Desde Jan 2026 · Remoto',
+      'Desde Out 2025 · Remoto',
+      'Desde Abr 2026 · Remoto',
       'Dez 2022 – Out 2025 · Remoto',
-      'Jan 2019 – Atual · Remoto',
+      'Desde Jan 2019 · Remoto',
     ]) {
       expect(
         within(spCapitalCard).queryByText(workingTime),
@@ -152,7 +152,7 @@ describe('Experiences', () => {
       'Fundador e Engenheiro de Software · Empresa própria',
     );
     expect(
-      within(card).getByText('Jan 2019 – Atual · Remoto'),
+      within(card).getByText('Desde Jan 2019 · Remoto'),
     ).toBeInTheDocument();
     expect(screen.queryByRole('link', { name: 'Mafradev' })).toBeNull();
   });
@@ -223,7 +223,7 @@ describe('Experiences', () => {
     }
   });
 
-  it('collapses the details past the first four behind a per-entry toggle', async () => {
+  it('renders at most four detail bullets per company without a per-entry toggle', async () => {
     const { Experiences } =
       await import('@/components/organisms/sections/experiences');
 
@@ -242,36 +242,44 @@ describe('Experiences', () => {
       return card;
     };
 
-    const spCapitalCard = getEntryCard('SP Capital');
-    const spCapitalDetails = spCapitalCard.querySelector(
-      'details',
-    ) as HTMLElement;
+    const expectedCounts = {
+      Onilearning: 4,
+      'SP Capital': 4,
+      Comvanilla: 4,
+      Ritmar: 4,
+      Mafradev: 3,
+      Postpay: 4,
+    };
 
-    expect(spCapitalDetails).not.toBeNull();
-    expect(spCapitalDetails.querySelector('summary')).toHaveTextContent(
-      'Ver todos os detalhes',
-    );
-    expect(within(spCapitalCard).getAllByRole('listitem')).toHaveLength(7);
-    expect(within(spCapitalDetails).getAllByRole('listitem')).toHaveLength(3);
+    for (const [name, count] of Object.entries(expectedCounts)) {
+      const card = getEntryCard(name);
 
-    const spCapitalTranslate = createTranslator({
-      locale: 'pt-br',
-      messages: ptBr,
-      namespace: 'homepage.experiences',
-    });
-
-    for (const idx of ['5', '6', '7'] as const) {
-      expect(spCapitalDetails).toHaveTextContent(
-        spCapitalTranslate(`2.details.${idx}`),
-      );
+      expect(within(card).getAllByRole('listitem')).toHaveLength(count);
+      expect(card.querySelector('details')).toBeNull();
     }
+  });
 
-    for (const idx of ['1', '2', '3', '4'] as const) {
-      expect(spCapitalDetails).not.toHaveTextContent(
-        spCapitalTranslate(`2.details.${idx}`),
-      );
+  it('renders ongoing experiences with the Desde form and never the Atual form', async () => {
+    const { Experiences } =
+      await import('@/components/organisms/sections/experiences');
+
+    const ui = await Experiences();
+    render(ui);
+
+    const comvanillaCard = screen
+      .getByRole('heading', { name: 'Comvanilla' })
+      .closest('div.space-y-3') as HTMLElement;
+
+    expect(
+      within(comvanillaCard).getByText('Desde Out 2025 · Remoto'),
+    ).toBeInTheDocument();
+
+    for (const heading of screen.getAllByRole('heading', { level: 3 })) {
+      const entries = heading.closest('div.space-y-3');
+
+      if (entries) {
+        expect(entries.textContent).not.toMatch(/ Atual\b/);
+      }
     }
-
-    expect(getEntryCard('Ritmar').querySelector('details')).toBeNull();
   });
 });

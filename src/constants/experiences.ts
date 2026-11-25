@@ -11,19 +11,19 @@ export const EXPERIENCES: Experience[] = [
     href: 'https://onilearning.com.br/',
     logo: '/companies/onilearning.svg',
     title: 'Onilearning',
-    detailsCount: 7,
+    detailsCount: 4,
   },
   {
     logo: '/companies/spcapital.svg',
     logoOnDark: true,
     title: 'SP Capital',
-    detailsCount: 7,
+    detailsCount: 4,
   },
   {
     href: 'https://comvanilla.com.br/',
     logo: '/companies/comvanilla.svg',
     title: 'Comvanilla',
-    detailsCount: 7,
+    detailsCount: 4,
   },
   {
     href: 'https://ritmar.com.br/',
@@ -40,6 +40,6 @@ export const EXPERIENCES: Experience[] = [
     href: 'https://postpay.com.br/',
     logo: '/companies/postpay.svg',
     title: 'Postpay',
-    detailsCount: 7,
+    detailsCount: 4,
   },
 ];

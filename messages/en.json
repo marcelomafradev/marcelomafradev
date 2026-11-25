@@ -195,15 +195,12 @@
       "1": {
         "title": "Onilearning",
         "description": "Tech Lead / Full Stack Engineer · Independent contractor",
-        "workingTime": "Jan 2026 – Present · Remote",
+        "workingTime": "Since Jan 2026 · Remote",
         "details": {
           "1": "Technical leadership across squads: architecture decisions, engineering standards, code review, and mentoring.",
           "2": "Technical direction of the edtech products: LMS, student portal, mobile apps, and backends.",
           "3": "Architecture and evolution of a white-label, multi-tenant student portal with React Native and Expo.",
-          "4": "Mobile LMS delivery (Ionic, Angular, and Cordova) with Android and iOS releases.",
-          "5": "REST APIs with NestJS and TypeScript using MySQL, JWT auth, cloud file storage, push notifications, and email.",
-          "6": "CI/CD and continuous delivery with Docker, GitHub Actions, and Expo Application Services (EAS).",
-          "7": "Quality practices in monorepos: automated tests, linting, pre-commit hooks, and coding standards."
+          "4": "Mobile LMS delivery (Ionic, Angular, and Cordova) with Android and iOS releases."
         }
       },
       "2": {
@@ -214,30 +211,24 @@
           "1": "End-to-end credit analysis module on the internal platform (React and NestJS): a dashboard by risk pillars, overall score, opinion, committee minutes and PDF reports, an economic group map with per-node detail, and an audit trail.",
           "2": "Credit analysis engines run in rounds that the analyst starts, continues or stops from the interface: bureau queries, financial indicators extracted from statements, a relationship map and a visit report, with some engines reading documents with AI.",
           "3": "On-demand paid credit bureau refresh, with a per-company concurrency lock, immediate refusal of simultaneous requests, and a record of who asked and who is billed.",
-          "4": "A robot that captures delivery receipts from a third-party portal: a TypeScript scraper with domain and infrastructure layers, token authentication and a health endpoint, plus a queue and worker on the platform.",
-          "5": "AI validation of the receipts: a model with configurable fallback and effort, images resized before sending, refusals routed to human review, and automatic write-off in the ERP when a receipt is approved.",
-          "6": "An access layer for the financial ERP on SQL Server, with caching and degraded reads when the database does not respond.",
-          "7": "End-to-end tests with Playwright, simulators for the scraper, the AI and the ERP, and a local Docker stack, to run the full flow without depending on production."
+          "4": "A robot that captures delivery receipts from a third-party portal: a TypeScript scraper with domain and infrastructure layers, token authentication and a health endpoint, plus a queue and worker on the platform."
         }
       },
       "3": {
         "title": "Comvanilla",
         "description": "Full Stack Engineer · Independent contractor",
-        "workingTime": "Oct 2025 – Present · Remote",
+        "workingTime": "Since Oct 2025 · Remote",
         "details": {
           "1": "Full-stack delivery of a real-estate SaaS platform (CRM, operations, listings catalog, and client portal).",
           "2": "Microservice architecture with NestJS, gRPC inter-service communication, and an API Gateway.",
           "3": "Web interfaces with Next.js (App Router), React, and Tailwind CSS.",
-          "4": "Domain and data modeling for CRM, properties, deals, and brokers.",
-          "5": "Authentication, authorization, and data isolation in a multi-tenant environment.",
-          "6": "PostgreSQL with TypeORM, Redis caching, and external service integrations.",
-          "7": "Monorepo quality and DX (pnpm and Turborepo): automated tests, code review, and standardization."
+          "4": "Domain and data modeling for CRM, properties, deals, and brokers."
         }
       },
       "4": {
         "title": "Ritmar",
         "description": "Founder & Software Engineer · Own product",
-        "workingTime": "Apr 2026 – Present · Remote",
+        "workingTime": "Since Apr 2026 · Remote",
         "details": {
           "1": "Multi-tenant management SaaS for gyms and dance schools: enrollments, classes, graduations, recurring billing and POS.",
           "2": "Pix and card billing with one gateway per school, idempotent webhooks, reconciliation and an audit trail.",
@@ -248,7 +239,7 @@
       "5": {
         "title": "Mafradev",
         "description": "Founder & Software Engineer · Own company",
-        "workingTime": "Jan 2019 – Present · Remote",
+        "workingTime": "Since Jan 2019 · Remote",
         "details": {
           "1": "2019–2022 · Direct clients: e-commerce and institutional websites delivered end to end, from front end and back end to the database and deployment.",
           "2": "2023 · Mince Joias: e-commerce with checkout, ZIP-code shipping quotes, Pix and card payments across more than one gateway, order reconciliation, and a store admin panel.",
@@ -263,10 +254,7 @@
           "1": "Evolution of payments fintech products: admin console, mobile app, and microservice backends.",
           "2": "NestJS/Node.js microservices with gRPC, messaging, PostgreSQL, Redis, and TypeORM.",
           "3": "Java/Spring Boot financial services (Pix, bank slips, receivables, and NFSe) integrated with partner institutions.",
-          "4": "Admin web experience with Next.js, React, TypeScript, and Tailwind CSS.",
-          "5": "React Native + Expo mobile app for Android and iOS with REST APIs, auth, and push notifications.",
-          "6": "Sensitive-data protection, cloud storage, and key management practices.",
-          "7": "CI/CD and operations with Docker, PM2, GitHub Actions, and EAS; reviews and tests in monorepos."
+          "4": "Admin web experience with Next.js, React, TypeScript, and Tailwind CSS."
         }
       },
       "cta": "Hire me",
