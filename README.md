@@ -1,9 +1,9 @@
-<!-- Perfil GitHub: github.com/marcelomafradev · cor de marca = primary dark do site #8297F7 -->
+<!-- Perfil GitHub: github.com/marcelomafradev · cor de marca = primary dark do site #D4A574 -->
 
 <div align="center">
 
 <!-- duration/pause altos = digita mais devagar; color = primary do portfólio -->
-<img src="https://readme-typing-svg.demolab.com?font=Sora&weight=700&size=30&duration=6000&pause=1800&color=8297F7&center=true&vCenter=true&width=820&height=60&lines=Marcelo+Mafra;Tech+Lead+%C2%B7+Full+Stack+%C2%B7+Arquitetura;Construo+plataformas+inteiras%2C+n%C3%A3o+s%C3%B3+telas" alt="Marcelo Mafra" />
+<img src="https://readme-typing-svg.demolab.com?font=Sora&weight=700&size=30&duration=6000&pause=1800&color=D4A574&center=true&vCenter=true&width=820&height=60&lines=Marcelo+Mafra;Software+Engineer+%C2%B7+Tech+Lead+%C2%B7+IA+aplicada;Construo+plataformas+inteiras%2C+n%C3%A3o+s%C3%B3+telas" alt="Marcelo Mafra" />
 
 <br />
 
@@ -13,15 +13,15 @@ e a infra no meio para não cair quando o tráfego sobe.
 
 <br />
 
-<a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/portfólio-www.marcelomafradev.com.br-8297F7?style=flat-square&labelColor=161b22" alt="Portfólio" /></a>
-<a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/PT-8297F7?style=flat-square&labelColor=161b22" alt="Português" /></a>
-<a href="https://www.marcelomafradev.com.br/en"><img src="https://img.shields.io/badge/EN-8297F7?style=flat-square&labelColor=161b22" alt="English" /></a>
+<a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/portfólio-www.marcelomafradev.com.br-D4A574?style=flat-square&labelColor=2D2621" alt="Portfólio" /></a>
+<a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/PT-D4A574?style=flat-square&labelColor=2D2621" alt="Português" /></a>
+<a href="https://www.marcelomafradev.com.br/en"><img src="https://img.shields.io/badge/EN-D4A574?style=flat-square&labelColor=2D2621" alt="English" /></a>
 
 <br />
 
-<a href="https://www.linkedin.com/in/marcelomafradev/"><img src="https://img.shields.io/badge/LinkedIn-8297F7?style=flat-square&logo=linkedin&logoColor=white&labelColor=161b22" alt="LinkedIn" /></a>
-<a href="mailto:marcelomafradev@gmail.com"><img src="https://img.shields.io/badge/E--mail-8297F7?style=flat-square&logo=gmail&logoColor=white&labelColor=161b22" alt="E-mail" /></a>
-<a href="https://wa.me/48999463777"><img src="https://img.shields.io/badge/WhatsApp-8297F7?style=flat-square&logo=whatsapp&logoColor=white&labelColor=161b22" alt="WhatsApp" /></a>
+<a href="https://www.linkedin.com/in/marcelomafradev/"><img src="https://img.shields.io/badge/LinkedIn-D4A574?style=flat-square&logo=linkedin&logoColor=white&labelColor=2D2621" alt="LinkedIn" /></a>
+<a href="mailto:marcelomafradev@gmail.com"><img src="https://img.shields.io/badge/E--mail-D4A574?style=flat-square&logo=gmail&logoColor=white&labelColor=2D2621" alt="E-mail" /></a>
+<a href="https://wa.me/48999463777"><img src="https://img.shields.io/badge/WhatsApp-D4A574?style=flat-square&logo=whatsapp&logoColor=white&labelColor=2D2621" alt="WhatsApp" /></a>
 
 <br />
 
@@ -37,7 +37,7 @@ Tech Lead e full stack. Puxo as decisões de arquitetura e acompanho o produto a
 
 Gosto de sistema multi-tenant, de código que o time consegue manter daqui a um ano, e de conversar com quem cuida do negócio. Prefiro entender o problema antes de empilhar tecnologia.
 
-Já montei bastante coisa em produção: pagamentos, edtech white-label, SaaS B2B. O detalhe está no <a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/portfólio-8297F7?style=flat-square&labelColor=161b22" alt="Portfólio" /></a>
+Já montei bastante coisa em produção: pagamentos, edtech white-label, SaaS B2B. O detalhe está no <a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/portfólio-D4A574?style=flat-square&labelColor=2D2621" alt="Portfólio" /></a>
 
 ---
 
@@ -106,10 +106,10 @@ Moro em Florianópolis. Treino jiu-jitsu há mais de dez anos (faixa marrom, uns
 
 ### Contato
 
-<a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/Portfólio-8297F7?style=flat-square&labelColor=161b22" alt="Portfólio" /></a>
-<a href="mailto:marcelomafradev@gmail.com"><img src="https://img.shields.io/badge/E--mail-8297F7?style=flat-square&logo=gmail&logoColor=white&labelColor=161b22" alt="E-mail" /></a>
-<a href="https://www.linkedin.com/in/marcelomafradev/"><img src="https://img.shields.io/badge/LinkedIn-8297F7?style=flat-square&logo=linkedin&logoColor=white&labelColor=161b22" alt="LinkedIn" /></a>
-<a href="https://wa.me/48999463777"><img src="https://img.shields.io/badge/WhatsApp-8297F7?style=flat-square&logo=whatsapp&logoColor=white&labelColor=161b22" alt="WhatsApp" /></a>
+<a href="https://www.marcelomafradev.com.br"><img src="https://img.shields.io/badge/Portfólio-D4A574?style=flat-square&labelColor=2D2621" alt="Portfólio" /></a>
+<a href="mailto:marcelomafradev@gmail.com"><img src="https://img.shields.io/badge/E--mail-D4A574?style=flat-square&logo=gmail&logoColor=white&labelColor=2D2621" alt="E-mail" /></a>
+<a href="https://www.linkedin.com/in/marcelomafradev/"><img src="https://img.shields.io/badge/LinkedIn-D4A574?style=flat-square&logo=linkedin&logoColor=white&labelColor=2D2621" alt="LinkedIn" /></a>
+<a href="https://wa.me/48999463777"><img src="https://img.shields.io/badge/WhatsApp-D4A574?style=flat-square&logo=whatsapp&logoColor=white&labelColor=2D2621" alt="WhatsApp" /></a>
 
 <br />
 
