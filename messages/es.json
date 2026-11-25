@@ -195,15 +195,12 @@
       "1": {
         "title": "Onilearning",
         "description": "Tech Lead / Desarrollador Full Stack · Autónomo",
-        "workingTime": "Ene 2026 – Actualidad · Remoto",
+        "workingTime": "Desde Ene 2026 · Remoto",
         "details": {
           "1": "Liderazgo técnico de squads: arquitectura, estándares de ingeniería, code review y mentoría.",
           "2": "Dirección técnica de los productos de edtech: AVA/LMS, portal del alumno, apps y backends.",
           "3": "Arquitectura y evolución de un portal del alumno white-label multi-tenant con React Native y Expo.",
-          "4": "Desarrollo y publicación del AVA móvil (Ionic, Angular y Cordova) para Android e iOS.",
-          "5": "APIs REST con NestJS y TypeScript usando MySQL, autenticación JWT, archivos en la nube, push y correo.",
-          "6": "Pipelines de CI/CD y entrega continua con Docker, GitHub Actions y Expo Application Services (EAS).",
-          "7": "Prácticas de calidad en monorepo: pruebas automatizadas, linting, hooks de pre-commit y estandarización."
+          "4": "Desarrollo y publicación del AVA móvil (Ionic, Angular y Cordova) para Android e iOS."
         }
       },
       "2": {
@@ -214,30 +211,24 @@
           "1": "Módulo de análisis de crédito de punta a punta en la plataforma interna (React y NestJS): panel por pilares de riesgo, score general, dictamen, acta de comité e informes en PDF, mapa de grupo económico con detalle por nodo y pista de auditoría.",
           "2": "Motores de análisis de crédito ejecutados en rondas que el analista inicia, continúa o detiene desde la interfaz: consultas a burós, indicadores financieros extraídos de estados contables, mapa de relaciones e informe de visita, con parte de los motores leyendo documentos con IA.",
           "3": "Actualización paga de consulta a buró de crédito bajo demanda, con bloqueo de concurrencia por empresa, rechazo inmediato de pedidos simultáneos y registro de quién lo solicitó y a quién se cobra.",
-          "4": "Robot de captura de comprobantes de entrega en un portal de terceros: scraper en TypeScript con capas de dominio e infraestructura, autenticación por token y endpoint de salud, más cola y worker en la plataforma.",
-          "5": "Validación de los comprobantes con IA: modelo con fallback y esfuerzo configurables, imágenes redimensionadas antes del envío, rechazos derivados a revisión humana y baja automática en el ERP cuando el comprobante se aprueba.",
-          "6": "Capa de acceso al ERP financiero en SQL Server, con caché y lectura degradada cuando la base de datos no responde.",
-          "7": "Pruebas de extremo a extremo con Playwright, simuladores del scraper, de la IA y del ERP y stack local en Docker, para ejecutar el flujo completo sin depender de producción."
+          "4": "Robot de captura de comprobantes de entrega en un portal de terceros: scraper en TypeScript con capas de dominio e infraestructura, autenticación por token y endpoint de salud, más cola y worker en la plataforma."
         }
       },
       "3": {
         "title": "Comvanilla",
         "description": "Desarrollador Full Stack · Autónomo",
-        "workingTime": "Oct 2025 – Actualidad · Remoto",
+        "workingTime": "Desde Oct 2025 · Remoto",
         "details": {
           "1": "Desarrollo full stack de una plataforma SaaS inmobiliaria (CRM, operaciones, catálogo y portal del cliente).",
           "2": "Arquitectura de microservicios con NestJS, comunicación gRPC y API Gateway.",
           "3": "Interfaces web con Next.js (App Router), React y Tailwind CSS.",
-          "4": "Modelado de dominio y datos para CRM, inmuebles, negociaciones y corredores.",
-          "5": "Autenticación, autorización y aislamiento de datos en entorno multi-tenant.",
-          "6": "PostgreSQL con TypeORM, Redis para caché e integraciones con servicios externos.",
-          "7": "Calidad y DX en monorepo (pnpm y Turborepo): pruebas, code review y estandarización."
+          "4": "Modelado de dominio y datos para CRM, inmuebles, negociaciones y corredores."
         }
       },
       "4": {
         "title": "Ritmar",
         "description": "Fundador e Ingeniero de Software · Producto propio",
-        "workingTime": "Abr 2026 – Actualidad · Remoto",
+        "workingTime": "Desde Abr 2026 · Remoto",
         "details": {
           "1": "SaaS multi-tenant de gestión para academias y escuelas de danza: matrículas, clases, graduaciones, cobro recurrente y punto de venta.",
           "2": "Cobro por Pix y tarjeta con un gateway por escuela, webhooks idempotentes, conciliación y registro de auditoría.",
@@ -248,7 +239,7 @@
       "5": {
         "title": "Mafradev",
         "description": "Fundador e Ingeniero de Software · Empresa propia",
-        "workingTime": "Ene 2019 – Actualidad · Remoto",
+        "workingTime": "Desde Ene 2019 · Remoto",
         "details": {
           "1": "2019–2022 · Clientes directos: e-commerce y sitios institucionales entregados de punta a punta, desde el front-end y el back-end hasta la base de datos y la publicación.",
           "2": "2023 · Mince Joias: e-commerce con checkout, flete calculado por código postal, Pix y tarjeta en más de una pasarela, conciliación de pedidos y panel de la tienda.",
@@ -263,10 +254,7 @@
           "1": "Evolución de productos de fintech de pagos: panel administrativo, app móvil y microservicios.",
           "2": "Microservicios NestJS/Node.js con gRPC, mensajería, PostgreSQL, Redis y TypeORM.",
           "3": "Microservicios financieros en Java/Spring Boot (Pix, boletos, cobros y NFSe) con integraciones a instituciones socias.",
-          "4": "Panel administrativo con Next.js, React, TypeScript y Tailwind CSS.",
-          "5": "App móvil con React Native y Expo (Android e iOS), APIs REST, autenticación y push.",
-          "6": "Protección de datos sensibles, almacenamiento en la nube y gestión de claves.",
-          "7": "CI/CD y operación con Docker, PM2, GitHub Actions y EAS; revisiones y pruebas en monorepo."
+          "4": "Panel administrativo con Next.js, React, TypeScript y Tailwind CSS."
         }
       },
       "cta": "Contrátame",
