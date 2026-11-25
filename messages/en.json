@@ -136,7 +136,7 @@
           "tag": "The merge gate"
         }
       },
-      "footnote": "I applied this to real products: I moved a six-person squad to a spec-driven flow in edtech, and today I build a microservice SaaS platform for the real estate market."
+      "footnote": "I applied this to real products: I moved a four-person squad to a spec-driven flow in edtech, and today I build a microservice SaaS platform for the real estate market."
     },
     "personal-info": {
       "title": "Tech Lead / Full Stack Engineer | TypeScript"
@@ -554,7 +554,7 @@
       },
       "architecture": {
         "title": "Architecture and technical leadership",
-        "description": "Architecture review, code and testing standards, and team guidance. I moved a six-person squad to a spec-driven flow."
+        "description": "Architecture review, code and testing standards, and team guidance. I moved a four-person squad to a spec-driven flow."
       }
     },
     "process": {

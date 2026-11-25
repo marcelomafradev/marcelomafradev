@@ -38,7 +38,7 @@ Trabalho IA-first, e isso aqui não significa autocomplete mais rápido. Signifi
 
 **A revisão humana é a porta do merge.** Leio o que volta. Agente acelera a produção de código e, com isso, acelera também a produção de código errado — o ganho real está em ter portões que pegam isso cedo, não em confiar mais. A responsabilidade pelo que entra em produção continua sendo de quem assina o PR.
 
-Aplico isso em produto real, não em demonstração: foi assim que levei um squad de seis pessoas para um fluxo spec-driven em edtech, e é assim que construo hoje uma plataforma SaaS de microserviços para o setor imobiliário.
+Aplico isso em produto real, não em demonstração: foi assim que levei um squad de quatro pessoas para um fluxo spec-driven em edtech, e é assim que construo hoje uma plataforma SaaS de microserviços para o setor imobiliário.
 
 ## Stack
 
