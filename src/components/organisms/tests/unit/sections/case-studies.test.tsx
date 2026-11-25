@@ -43,7 +43,7 @@ describe('CaseStudies', () => {
 
     const cards = cardsIn(container.querySelector('.grid') as HTMLElement);
 
-    expect(cards).toHaveLength(6);
+    expect(cards).toHaveLength(3);
     expect(cards).toHaveLength(CASE_STUDIES.length);
     expect(container.querySelectorAll('[data-featured="true"]')).toHaveLength(
       1,
@@ -54,36 +54,44 @@ describe('CaseStudies', () => {
     ).toHaveTextContent(items['credit-ai'].title);
   });
 
-  it('marks the last card as wide because the non-featured count is odd', () => {
+  it('renders exactly the credit AI, payments and real estate case studies in order', () => {
     const { container } = renderWithProviders(<CaseStudies />);
 
-    const cards = cardsIn(container.querySelector('.grid') as HTMLElement);
+    const titles = cardsIn(container.querySelector('.grid') as HTMLElement).map(
+      (card) => within(card).getByRole('heading', { level: 3 }).textContent,
+    );
 
-    expect(container.querySelectorAll('[data-wide="true"]')).toHaveLength(1);
-    expect(cards[cards.length - 1]).toHaveAttribute('data-wide', 'true');
-    expect(
-      within(cards[cards.length - 1]).getByRole('heading', { level: 3 }),
-    ).toHaveTextContent(items.ritmar.title);
-
-    for (const card of cards.slice(0, -1)) {
-      expect(card).not.toHaveAttribute('data-wide');
-    }
+    expect(CASE_STUDIES.map(({ id }) => id)).toEqual([
+      'credit-ai',
+      'payments',
+      'realestate',
+    ]);
+    expect(titles).toEqual([
+      items['credit-ai'].title,
+      items.payments.title,
+      items.realestate.title,
+    ]);
   });
 
-  it('spans the featured and wide cards across two columns', () => {
+  it('marks no card as wide because the non-featured count is even', () => {
+    const { container } = renderWithProviders(<CaseStudies />);
+
+    expect(container.querySelectorAll('[data-wide="true"]')).toHaveLength(0);
+  });
+
+  it('spans only the featured card across two columns', () => {
     const { container } = renderWithProviders(<CaseStudies />);
 
     const cards = cardsIn(container.querySelector('.grid') as HTMLElement);
 
     expect(cards[0]).toHaveClass('xl:col-span-2');
-    expect(cards[cards.length - 1]).toHaveClass('xl:col-span-2');
 
-    for (const card of cards.slice(1, -1)) {
+    for (const card of cards.slice(1)) {
       expect(card).not.toHaveClass('xl:col-span-2');
     }
   });
 
-  it('lays the wide card highlights out in three columns like the featured card', () => {
+  it('lays the featured card highlights out in three columns and the others in a single column', () => {
     const { container } = renderWithProviders(<CaseStudies />);
 
     const cards = cardsIn(container.querySelector('.grid') as HTMLElement);
@@ -91,11 +99,8 @@ describe('CaseStudies', () => {
       card.querySelectorAll('ul')[0] as HTMLElement;
 
     expect(highlightsOf(cards[0])).toHaveClass('xl:grid', 'xl:grid-cols-3');
-    expect(highlightsOf(cards[cards.length - 1])).toHaveClass(
-      'xl:grid',
-      'xl:grid-cols-3',
-    );
     expect(highlightsOf(cards[1])).not.toHaveClass('xl:grid');
+    expect(highlightsOf(cards[2])).not.toHaveClass('xl:grid');
   });
 
   it('lists the credit AI stack tags including Claude API and SQL Server', () => {

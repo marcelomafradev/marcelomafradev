@@ -48,10 +48,10 @@
   "homepage": {
     "hero": {
       "availability": "Open to contracts and leadership roles",
-      "role": "Tech Lead · Florianópolis, Brazil",
-      "headline": "Tech Lead in systems architecture and",
-      "headline-highlight": "applied AI.",
-      "description": "I build payments, credit, education and management systems: NestJS and Java services, React Native apps and Next.js consoles. I use AI to develop them and inside the products.",
+      "role": "Software Engineer · Tech Lead · Florianópolis, Brazil",
+      "headline": "Multi-tenant SaaS platforms, from database to app,",
+      "headline-highlight": "with AI in the workflow.",
+      "description": "NestJS and Java microservices, React Native apps in the stores and Next.js consoles for fintech, capital markets, SaaS and edtech.",
       "cta-primary": "See case studies",
       "cta-secondary": "Get in touch",
       "location": "Florianópolis, Brazil · Remote"
@@ -104,26 +104,6 @@
             "3": "A Next.js console and a React Native app on the same services, with CI/CD on Docker, PM2, and GitHub Actions."
           }
         },
-        "edtech": {
-          "sector": "Edtech",
-          "title": "White-label apps for schools",
-          "summary": "A single codebase produces independent apps per institution. Branding, bundle, integrations and features all come from tenant configuration.",
-          "highlights": {
-            "1": "A tenant registry driving both build time (bundle ID, icon, splash) and runtime (theme, LMS URL, feature flags) from one source.",
-            "2": "Continuous Android and iOS releases with Expo/EAS plus OTA updates triggered by pushes to the main branch.",
-            "3": "NestJS backends covering auth, cloud files, push, and email, alongside Next.js admin consoles and the Ionic/Angular mobile LMS."
-          }
-        },
-        "spectroscopy": {
-          "sector": "Scientific SaaS",
-          "title": "Botanical identification SaaS driven by spectroscopy",
-          "summary": "A platform wiring a near-infrared scanner to statistical identification models, with the same interface running in the browser and on the desktop.",
-          "highlights": {
-            "1": "A Next.js PWA as the single source of UI, also packaged inside a Tauri/Rust desktop shell that bridges the hardware.",
-            "2": "NestJS microservices behind a single gateway, with per-institution data isolation through PostgreSQL row level security.",
-            "3": "A monorepo with its own design system, typed HTTP contracts, and Storybook as the living UI reference."
-          }
-        },
         "realestate": {
           "sector": "Real-estate SaaS",
           "title": "Real-estate SaaS platform",
@@ -132,16 +112,6 @@
             "1": "NestJS services communicating over gRPC behind an API Gateway, with contracts versioned in a shared package.",
             "2": "Domain modeling for properties, deals, and brokers, with per-tenant authorization and data isolation.",
             "3": "A pnpm + Turborepo monorepo whose domain, UI, and config packages are reused across backend and frontend."
-          }
-        },
-        "ritmar": {
-          "sector": "SaaS for dance schools",
-          "title": "Ritmar: multi-tenant management for academies",
-          "summary": "My own product, from zero to production: enrollments, classes, graduations, recurring billing and POS, with a public website per school.",
-          "highlights": {
-            "1": "Recurring billing via Pix and card with one gateway per school, idempotent webhooks, reconciliation and an audit trail.",
-            "2": "Per-tenant isolation in PostgreSQL and a public website per subdomain or custom domain, with indexing controlled by tenant status (robots, noindex and sitemap).",
-            "3": "Full operation: implantation sales flow, per-school provisioning and Docker delivery with encrypted backups and scheduled billing routines."
           }
         }
       }
@@ -159,21 +129,6 @@
           "title": "Each phase on the right model",
           "description": "Planning, implementing, debugging and reviewing call for different models. Each phase goes to the one that performs best on it, and whoever writes the plan does not implement it.",
           "tag": "Orchestration across models"
-        },
-        "context": {
-          "title": "Project standards, versioned",
-          "description": "Module layout, logging and testing conventions live in the repository and go through PRs like any code. A new agent inherits the rule instead of guessing.",
-          "tag": "Context in the repo"
-        },
-        "tooling": {
-          "title": "Tooling over a protocol",
-          "description": "The agent reads tasks, the database, the browser and CI over MCP, without relying on context pasted by hand.",
-          "tag": "MCP"
-        },
-        "verification": {
-          "title": "Evidence before claims",
-          "description": "The test fails before the implementation, and lint, typecheck, coverage and end-to-end runs in CI act as the gate. A flaky test gets rewritten, never ignored.",
-          "tag": "TDD and CI"
         },
         "review": {
           "title": "Human review at the merge",

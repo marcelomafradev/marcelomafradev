@@ -10,6 +10,7 @@ import {
   CONTACT_NAME_MAX_LENGTH,
   CONTACT_SUBJECT_MAX_LENGTH,
   EXPERIENCES,
+  FEATURED_PROJECTS,
   METRICS,
   PERSONAL_INFO,
   PROJECTS,
@@ -87,6 +88,24 @@ describe('constants invariants', () => {
   });
 
   describe('CASE_STUDIES', () => {
+    it('keeps exactly the credit-ai, payments and realestate ids in order', () => {
+      expect(CASE_STUDIES.map((caseStudy) => caseStudy.id)).toEqual([
+        'credit-ai',
+        'payments',
+        'realestate',
+      ]);
+    });
+
+    it('does not keep unused case study messages in any locale', () => {
+      for (const locale of [ptBr, en, es]) {
+        expect(Object.keys(caseStudyItems(locale))).toEqual([
+          'credit-ai',
+          'payments',
+          'realestate',
+        ]);
+      }
+    });
+
     it('keeps every id and highlight present under the case study messages in all locales', () => {
       for (const locale of [ptBr, en, es]) {
         const items = caseStudyItems(locale);
@@ -101,6 +120,30 @@ describe('constants invariants', () => {
             );
           }
         }
+      }
+    });
+  });
+
+  describe('FEATURED_PROJECTS', () => {
+    it('features exactly ritmar, oniapp, spcapital-credit and postpay-platform', () => {
+      expect(FEATURED_PROJECTS.map((project) => project.id).sort()).toEqual([
+        'oniapp',
+        'postpay-platform',
+        'ritmar',
+        'spcapital-credit',
+      ]);
+    });
+
+    it('keeps the non-featured projects in PROJECTS so the projects page lists them', () => {
+      const ids = PROJECTS.map((project) => project.id);
+
+      for (const id of [
+        'spcapital-receipts',
+        'seja',
+        'comvanilla',
+        'mince-joias',
+      ]) {
+        expect(ids).toContain(id);
       }
     });
   });

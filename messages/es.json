@@ -48,10 +48,10 @@
   "homepage": {
     "hero": {
       "availability": "Abierto a contratos y puestos de liderazgo",
-      "role": "Tech Lead · Florianópolis, Brasil",
-      "headline": "Tech Lead en arquitectura de sistemas e",
-      "headline-highlight": "IA aplicada.",
-      "description": "Construyo sistemas de pagos, crédito, educación y gestión: servicios en NestJS y Java, apps en React Native y paneles en Next.js. Uso IA para desarrollarlos y dentro de los productos.",
+      "role": "Software Engineer · Tech Lead · Florianópolis, Brasil",
+      "headline": "Plataformas SaaS multi-tenant, de la base de datos a la app,",
+      "headline-highlight": "con IA en el flujo.",
+      "description": "Microservicios en NestJS y Java, apps React Native en las tiendas y paneles en Next.js para fintech, mercado de capitales, SaaS y edtech.",
       "cta-primary": "Ver case studies",
       "cta-secondary": "Hablemos",
       "location": "Florianópolis, Brasil · Remoto"
@@ -104,26 +104,6 @@
             "3": "Panel en Next.js y app en React Native sobre los mismos servicios, con CI/CD en Docker, PM2 y GitHub Actions."
           }
         },
-        "edtech": {
-          "sector": "Edtech",
-          "title": "Apps white-label para instituciones de enseñanza",
-          "summary": "Un único código fuente genera aplicaciones independientes por institución: identidad visual, bundle, integraciones y funcionalidades definidos por configuración de tenant.",
-          "highlights": {
-            "1": "Registry de tenants que controla el build (bundle ID, ícono, splash) y el runtime (tema, URL del LMS, features) desde una base única.",
-            "2": "Publicación continua para Android e iOS con Expo/EAS y actualizaciones OTA disparadas por push en la rama principal.",
-            "3": "Backends NestJS con autenticación, archivos en la nube, push y correo, además de paneles administrativos en Next.js y el LMS móvil en Ionic/Angular."
-          }
-        },
-        "spectroscopy": {
-          "sector": "SaaS científico",
-          "title": "SaaS de identificación botánica por espectroscopía",
-          "summary": "Plataforma que conecta un escáner de infrarrojo cercano con modelos estadísticos de identificación, con la misma interfaz corriendo en el navegador y en el escritorio.",
-          "highlights": {
-            "1": "PWA en Next.js como fuente única de la interfaz, empaquetada también en una cáscara de escritorio Tauri/Rust que hace de puente con el hardware.",
-            "2": "Microservicios NestJS detrás de un gateway único, con aislamiento de datos por institución vía row level security en PostgreSQL.",
-            "3": "Monorepo con design system propio, contratos HTTP tipados y Storybook como referencia viva de interfaz."
-          }
-        },
         "realestate": {
           "sector": "SaaS inmobiliario",
           "title": "Plataforma SaaS para el sector inmobiliario",
@@ -132,16 +112,6 @@
             "1": "Servicios NestJS comunicándose por gRPC detrás de un API Gateway, con contratos versionados en un paquete compartido.",
             "2": "Modelado de dominio para inmuebles, negociaciones y corredores, con autorización y aislamiento de datos por tenant.",
             "3": "Monorepo pnpm + Turborepo con paquetes de dominio, UI y configuración reutilizados entre backend y frontend."
-          }
-        },
-        "ritmar": {
-          "sector": "SaaS para escuelas de danza",
-          "title": "Ritmar: gestión multi-tenant para academias",
-          "summary": "Producto propio, de cero a producción: matrículas, clases, graduaciones, cobro recurrente y punto de venta, con un sitio público por escuela.",
-          "highlights": {
-            "1": "Cobro recurrente por Pix y tarjeta con un gateway por escuela, webhooks idempotentes, conciliación y registro de auditoría.",
-            "2": "Aislamiento por tenant en PostgreSQL y sitio público por subdominio o dominio propio, con indexación controlada por el estado del tenant (robots, noindex y sitemap).",
-            "3": "Operación completa: flujo comercial de implantación, aprovisionamiento por escuela y despliegue en Docker con backups cifrados y rutinas de facturación programadas."
           }
         }
       }
@@ -159,21 +129,6 @@
           "title": "Cada fase en el modelo adecuado",
           "description": "Planificar, implementar, depurar y revisar piden modelos distintos. Cada fase va al que mejor rinde en ella, y quien escribe el plan no implementa.",
           "tag": "Orquestación entre modelos"
-        },
-        "context": {
-          "title": "Estándar del proyecto versionado",
-          "description": "Las convenciones de módulo, log y prueba viven en el repositorio y pasan por PR como cualquier código. Un agente nuevo hereda la regla en vez de adivinar.",
-          "tag": "Contexto en el repositorio"
-        },
-        "tooling": {
-          "title": "Herramientas por protocolo",
-          "description": "El agente consulta tareas, base de datos, navegador y CI por MCP, sin depender de contexto pegado a mano.",
-          "tag": "MCP"
-        },
-        "verification": {
-          "title": "Evidencia antes de afirmar",
-          "description": "La prueba falla antes de la implementación, y lint, typecheck, cobertura y end-to-end en CI hacen de puerta. Una prueba inestable se rehace, nunca se ignora.",
-          "tag": "TDD y CI"
         },
         "review": {
           "title": "Revisión humana en el merge",

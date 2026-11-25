@@ -28,7 +28,7 @@ describe('getCaseStudyHighlights', () => {
     expect(
       getCaseStudyHighlights(
         translate as unknown as Parameters<typeof getCaseStudyHighlights>[0],
-        'edtech',
+        'payments',
         0,
       ),
     ).toEqual([]);
