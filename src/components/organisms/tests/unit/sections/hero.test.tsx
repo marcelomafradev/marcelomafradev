@@ -62,6 +62,17 @@ describe('Hero', () => {
     ).toBeInTheDocument();
   });
 
+  it('renders the leaner headline about multi-tenant SaaS platforms with AI in the workflow', () => {
+    renderWithProviders(<Hero />);
+
+    expect(
+      screen.getByRole('heading', {
+        name: 'Plataformas SaaS multi-tenant, do banco ao app, com IA no fluxo.',
+      }),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/Tech Lead em arquitetura/)).toBeNull();
+  });
+
   it('renders the availability badge', () => {
     renderWithProviders(<Hero />);
 

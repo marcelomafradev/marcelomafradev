@@ -71,7 +71,6 @@ export const PROJECTS: ProjectProps[] = [
       'SQL Server',
     ],
     categories: ['backend', 'platform'],
-    featured: true,
     confidential: true,
   },
   {
@@ -148,7 +147,6 @@ export const PROJECTS: ProjectProps[] = [
       'EAS',
     ],
     categories: ['mobile'],
-    featured: true,
     confidential: true,
   },
   {
@@ -185,7 +183,6 @@ export const PROJECTS: ProjectProps[] = [
       'TypeScript',
     ],
     categories: ['platform', 'web'],
-    featured: true,
     confidential: true,
   },
   {
@@ -240,7 +237,6 @@ export const PROJECTS: ProjectProps[] = [
     href: 'https://www.mincejoias.com.br/',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'AWS', 'MongoDB'],
     categories: ['web'],
-    featured: true,
   },
   {
     id: 'griebler-remodeling',

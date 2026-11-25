@@ -2,6 +2,7 @@ import { screen } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { createTranslator } from 'next-intl';
 import ptBr from '../../../../../messages/pt-br.json';
+import { FEATURED_PROJECTS } from '@/constants';
 import { renderWithProviders } from '@/tests/utils/render';
 
 const { getTranslationsMock } = vi.hoisted(() => ({
@@ -115,6 +116,40 @@ describe('HomeTemplate', () => {
         name: ptBr.homepage['resume-about-me'].title,
       }),
     ).toBeInTheDocument();
+  });
+
+  it('renders the leaner hero headline on the home', async () => {
+    const { HomeTemplate } =
+      await import('@/components/templates/home-template');
+
+    renderWithProviders(<HomeTemplate />);
+
+    expect(
+      screen.getByRole('heading', {
+        level: 1,
+        name: 'Plataformas SaaS multi-tenant, do banco ao app, com IA no fluxo.',
+      }),
+    ).toBeInTheDocument();
+  });
+
+  it('renders exactly three case study cards, three AI pillars and four featured projects', async () => {
+    const { HomeTemplate } =
+      await import('@/components/templates/home-template');
+
+    const { container } = renderWithProviders(<HomeTemplate />);
+
+    expect(container.querySelectorAll('#case-studies .grid > *')).toHaveLength(
+      3,
+    );
+    expect(container.querySelectorAll('#ai-workflow .grid > *')).toHaveLength(
+      3,
+    );
+    expect(FEATURED_PROJECTS.map(({ id }) => id)).toEqual([
+      'ritmar',
+      'spcapital-credit',
+      'oniapp',
+      'postpay-platform',
+    ]);
   });
 
   it('places the services heading before experiences and experiences before projects', async () => {

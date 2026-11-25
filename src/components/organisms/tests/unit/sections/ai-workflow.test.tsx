@@ -51,20 +51,36 @@ describe('AiWorkflow', () => {
     }
   });
 
+  it('renders exactly the spec-driven, orchestration and review pillars in order', () => {
+    renderWithProviders(<AiWorkflow />);
+
+    expect(AI_WORKFLOW_PILLARS.map(({ id }) => id)).toEqual([
+      'spec-driven',
+      'orchestration',
+      'review',
+    ]);
+    expect(Object.keys(aiWorkflow.items)).toEqual([
+      'spec-driven',
+      'orchestration',
+      'review',
+    ]);
+    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(3);
+  });
+
   it('renders the closing note about applying the workflow on real products', () => {
     renderWithProviders(<AiWorkflow />);
 
     expect(screen.getByText(aiWorkflow.footnote)).toBeInTheDocument();
   });
 
-  it('numbers the pillars from 01 to 06 in order', () => {
+  it('numbers the pillars from 01 to 03 in order', () => {
     const { container } = renderWithProviders(<AiWorkflow />);
 
     const cards = Array.from(
       (container.querySelector('.grid') as HTMLElement).children,
     ) as HTMLElement[];
 
-    expect(cards).toHaveLength(6);
+    expect(cards).toHaveLength(3);
 
     cards.forEach((card, index) => {
       expect(card.firstElementChild).toHaveTextContent(
