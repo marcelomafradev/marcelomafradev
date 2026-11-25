@@ -109,8 +109,7 @@ describe('Experiences', () => {
       'Out 2025 – Atual · Remoto',
       'Abr 2026 – Atual · Remoto',
       'Dez 2022 – Out 2025 · Remoto',
-      'Jan 2024 – Fev 2024 · Remoto (EUA)',
-      'Ago 2023 – Set 2023 · Remoto',
+      'Jan 2019 – Atual · Remoto',
     ]) {
       expect(
         within(spCapitalCard).queryByText(workingTime),
@@ -131,6 +130,33 @@ describe('Experiences', () => {
     );
   });
 
+  it('renders Mafradev as the founder company and no longer lists Griebler or Mince as experiences', async () => {
+    const { Experiences } =
+      await import('@/components/organisms/sections/experiences');
+
+    const ui = await Experiences();
+    render(ui);
+
+    const headings = screen
+      .getAllByRole('heading', { level: 3 })
+      .map((heading) => heading.textContent);
+
+    expect(headings).toContain('Mafradev');
+    expect(headings).not.toContain('Griebler Remodeling');
+    expect(headings).not.toContain('Mince Joias');
+
+    const heading = screen.getByRole('heading', { name: 'Mafradev' });
+    const card = heading.closest('div.space-y-3') as HTMLElement;
+
+    expect(card).toHaveTextContent(
+      'Fundador e Engenheiro de Software · Empresa própria',
+    );
+    expect(
+      within(card).getByText('Jan 2019 – Atual · Remoto'),
+    ).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Mafradev' })).toBeNull();
+  });
+
   it('gives every company logo a surface that stays legible in both themes', async () => {
     const { Experiences } =
       await import('@/components/organisms/sections/experiences');
@@ -144,7 +170,7 @@ describe('Experiences', () => {
       return logo.closest('div.relative')?.parentElement as HTMLElement;
     };
 
-    for (const title of ['SP Capital', 'Griebler Remodeling', 'Mince Joias']) {
+    for (const title of ['SP Capital']) {
       const container = getLogoContainer(title);
 
       expect(container).toHaveClass('bg-neutral-900');
@@ -152,7 +178,13 @@ describe('Experiences', () => {
       expect(container).toHaveClass('border-border/70', 'rounded-xl', 'border');
     }
 
-    for (const title of ['Onilearning', 'Comvanilla', 'Ritmar', 'Postpay']) {
+    for (const title of [
+      'Onilearning',
+      'Comvanilla',
+      'Ritmar',
+      'Mafradev',
+      'Postpay',
+    ]) {
       const container = getLogoContainer(title);
 
       expect(container).toHaveClass('bg-white');
@@ -178,7 +210,7 @@ describe('Experiences', () => {
 
     expect(collapsible.getByText('Ver mais experiências')).toBeInTheDocument();
 
-    for (const title of ['Postpay', 'Griebler Remodeling', 'Mince Joias']) {
+    for (const title of ['Mafradev', 'Postpay']) {
       expect(
         collapsible.getByRole('heading', { name: title }),
       ).toBeInTheDocument();

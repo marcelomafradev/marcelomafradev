@@ -246,6 +246,16 @@
         }
       },
       "5": {
+        "title": "Mafradev",
+        "description": "Fundador e Ingeniero de Software · Empresa propia",
+        "workingTime": "Ene 2019 – Actualidad · Remoto",
+        "details": {
+          "1": "2019–2022 · Clientes directos: e-commerce y sitios institucionales entregados de punta a punta, desde el front-end y el back-end hasta la base de datos y la publicación.",
+          "2": "2023 · Mince Joias: e-commerce con checkout, flete calculado por código postal, Pix y tarjeta en más de una pasarela, conciliación de pedidos y panel de la tienda.",
+          "3": "2024 · Griebler Remodeling (EE. UU.): sitio en cuatro idiomas con portafolio por categoría, reseñas con inicio de sesión de Google, panel de contenido y SEO por idioma."
+        }
+      },
+      "6": {
         "title": "Postpay",
         "description": "Desarrollador Full Stack · Autónomo",
         "workingTime": "Dic 2022 – Oct 2025 · Remoto",
@@ -257,29 +267,6 @@
           "5": "App móvil con React Native y Expo (Android e iOS), APIs REST, autenticación y push.",
           "6": "Protección de datos sensibles, almacenamiento en la nube y gestión de claves.",
           "7": "CI/CD y operación con Docker, PM2, GitHub Actions y EAS; revisiones y pruebas en monorepo."
-        }
-      },
-      "6": {
-        "title": "Griebler Remodeling",
-        "description": "Desarrollador Full Stack · Freelance",
-        "workingTime": "Ene 2024 – Feb 2024 · Remoto (EE. UU.)",
-        "details": {
-          "1": "Sitio institucional responsive para constructora en Massachusetts.",
-          "2": "Dashboard administrativo para gestión de contenido y proyectos.",
-          "3": "TypeScript, Next.js, Tailwind CSS, MongoDB y hosting en AWS.",
-          "4": "Internacionalización (i18n) y autenticación con Google para el flujo de reseñas."
-        }
-      },
-      "7": {
-        "title": "Mince Joias",
-        "description": "Desarrollador Full Stack · Freelance",
-        "workingTime": "Ago 2023 – Sep 2023 · Remoto",
-        "details": {
-          "1": "E-commerce de joyas con Next.js: catálogo, carrito y flujo de compra.",
-          "2": "Estado del cliente con Zustand e interfaz con Tailwind CSS.",
-          "3": "Persistencia con MongoDB y hosting en AWS.",
-          "4": "Enfoque en rendimiento de vitrina y conversión.",
-          "5": "Entrega end-to-end freelance de la tienda digital."
         }
       },
       "cta": "Contrátame",

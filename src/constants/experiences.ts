@@ -32,23 +32,14 @@ export const EXPERIENCES: Experience[] = [
     detailsCount: 4,
   },
   {
+    logo: '/brand/mark.svg',
+    title: 'Mafradev',
+    detailsCount: 3,
+  },
+  {
     href: 'https://postpay.com.br/',
     logo: '/companies/postpay.svg',
     title: 'Postpay',
     detailsCount: 7,
-  },
-  {
-    href: 'https://www.grieblerremodeling.com/',
-    logo: '/companies/griebler-remodeling.svg',
-    logoOnDark: true,
-    title: 'Griebler Remodeling',
-    detailsCount: 4,
-  },
-  {
-    href: 'https://www.mincejoias.com.br/',
-    logo: '/companies/mince-joias.png',
-    logoOnDark: true,
-    title: 'Mince Joias',
-    detailsCount: 5,
   },
 ];
